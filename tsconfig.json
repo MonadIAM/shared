@@ -28,7 +28,7 @@
     "forceConsistentCasingInFileNames": true,     // Requires consistent casing in file names
 
     "moduleResolution": "node",                   // Uses Node.js-style module resolution
-    "isolatedModules": true,                      // Treats each file as a separate module (does not affect declaration files)
+    "isolatedModules": false,                     // Treats each file as a separate module (does not affect declaration files)
     "incremental": true,                          // Enables incremental compilation to optimize build time
 
     "exactOptionalPropertyTypes": false,          // Does not require exact type matching for optional properties
