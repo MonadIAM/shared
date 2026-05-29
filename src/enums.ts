@@ -9,17 +9,34 @@ export enum InvalidationScope {
 
 export enum KafkaTopic {
     /* eslint-disable prettier/prettier */
-    ACCESS_CACHE_INVALIDATION_DLQ = "access-cache-invalidation-dlq",
-    ACCESS_CACHE_INVALIDATION     = "access-cache-invalidation",
-    PROJECTION_JOURNAL_DLQ        = "projection-journal-dlq",
-    PROJECTION_JOURNAL            = "projection-journal",
-    NOTIFICATION_DLQ              = "notification-dlq",
-    IDENTIFIER_DLQ                = "identifier-dlq",
-    NOTIFICATION                  = "notification",
-    ACCOUNT_DLQ                   = "account-dlq",
-    IDENTIFIER                    = "identifier",
-    BLACKLIST                     = "blacklist",
-    ACCOUNT                       = "account",
+    // account: identity -> all services
+    ACCOUNT       = "account",
+    ACCOUNT_RETRY = "account-retry",
+    ACCOUNT_DEAD  = "account-dead",
+
+    // identifier: identity -> notification
+    IDENTIFIER       = "identifier",
+    IDENTIFIER_RETRY = "identifier-retry",
+    IDENTIFIER_DEAD  = "identifier-dead",
+
+    // notification: all services -> notification
+    NOTIFICATION       = "notification",
+    NOTIFICATION_RETRY = "notification-retry",
+    NOTIFICATION_DEAD  = "notification-dead",
+
+    // projection-journal: access-control internal (redis sync)
+    PROJECTION_JOURNAL       = "projection-journal",
+    PROJECTION_JOURNAL_RETRY = "projection-journal-retry",
+    PROJECTION_JOURNAL_DEAD  = "projection-journal-dead",
+
+    // access-cache-invalidation: access-control -> all services
+    ACCESS_CACHE_INVALIDATION       = "access-cache-invalidation",
+    ACCESS_CACHE_INVALIDATION_RETRY = "access-cache-invalidation-retry",
+    ACCESS_CACHE_INVALIDATION_DEAD  = "access-cache-invalidation-dead",
+
+    // blacklist: session revocation — no retry, dead for failure analysis only
+    BLACKLIST      = "blacklist",
+    BLACKLIST_DEAD = "blacklist-dead",
     /* eslint-enable prettier/prettier */
 }
 
