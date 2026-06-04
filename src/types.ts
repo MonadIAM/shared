@@ -41,12 +41,24 @@ declare global {
         }
 
         namespace Membership {
-            type Message = {
-                actionType: MembershipTopicAction;
+            type Message = GrantMessage | RevokeMessage;
+
+            type GrantMessage = {
+                actionType: MembershipTopicAction.GRANT;
                 payload: {
                     account: string;
                     realm: string;
-                }
+                    joinedAt: number;
+                    invitedBy: string;
+                };
+            };
+
+            type RevokeMessage = {
+                actionType: MembershipTopicAction.REVOKE;
+                payload: {
+                    account: string;
+                    realm: string;
+                };
             };
         }
 
