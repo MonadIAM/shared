@@ -10,6 +10,11 @@ export enum KafkaTopic {
     MEMBERSHIP_RETRY = "membership-retry",
     MEMBERSHIP_DEAD  = "membership-dead",
 
+    // realm: access-control -> identity
+    REALM       = "realm",
+    REALM_RETRY = "realm-retry",
+    REALM_DEAD  = "realm-dead",
+
     // identifier: identity -> notification
     IDENTIFIER       = "identifier",
     IDENTIFIER_RETRY = "identifier-retry",
@@ -52,6 +57,14 @@ export enum MembershipTopicAction {
     /* eslint-disable prettier/prettier */
     REVOKE = "REVOKE",
     GRANT  = "GRANT",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum RealmTopicAction {
+    /* eslint-disable prettier/prettier */
+    REVOKE  = "REVOKE",
+    RESTORE = "RESTORE",
+    PURGE   = "PURGE",
     /* eslint-enable prettier/prettier */
 }
 
@@ -222,5 +235,12 @@ export enum PermissionCode {
     SESSION_LOGOUT        = "session.logout",
     SESSION_REVOKE        = "session.revoke",
     SESSION_REVOKE_ALL    = "session.revoke_all",
+
+    OAUTH_CLIENT_READ_ABSOLUTE = "oauth_client.read_absolute",
+    OAUTH_CLIENT_CREATE        = "oauth_client.create",
+    OAUTH_CLIENT_UPDATE        = "oauth_client.update",
+    OAUTH_CLIENT_REVOKE        = "oauth_client.revoke",
+    OAUTH_CLIENT_RESTORE       = "oauth_client.restore",
+    OAUTH_CLIENT_PURGE         = "oauth_client.purge",
     /* eslint-enable prettier/prettier */
 }

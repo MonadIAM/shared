@@ -2,6 +2,7 @@ import {
     ReauthenticationTopicAction,
     AccessCacheTopicAction,
     MembershipTopicAction,
+    RealmTopicAction,
     BlacklistTopicAction,
     AccountTopicAction,
     InvalidationScope
@@ -58,6 +59,16 @@ declare global {
                 payload: {
                     account: string;
                     realm: string;
+                };
+            };
+        }
+
+        namespace Realm {
+            type Message = {
+                actionType: RealmTopicAction;
+                payload: {
+                    realm: string;
+                    version: number;
                 };
             };
         }
