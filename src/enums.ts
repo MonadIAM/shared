@@ -232,7 +232,6 @@ export enum PermissionCode {
 
     SESSION_READ_PERSONAL = "session.read_personal",
     SESSION_READ_ABSOLUTE = "session.read_absolute",
-    SESSION_LOGOUT        = "session.logout",
     SESSION_REVOKE        = "session.revoke",
     SESSION_REVOKE_ALL    = "session.revoke_all",
 
