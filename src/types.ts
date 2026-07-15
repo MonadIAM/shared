@@ -5,18 +5,18 @@ import {
     RealmTopicAction,
     BlacklistTopicAction,
     AccountTopicAction,
-    InvalidationScope
+    InvalidationScope,
 } from "./enums";
 
 declare global {
     namespace Topics {
         namespace AccessCache {
             type Message = {
-                actionType: AccessCacheTopicAction,
+                actionType: AccessCacheTopicAction;
                 payload: {
                     items: Item[];
-                }
-            }
+                };
+            };
 
             type Item = AccountRealmItem | RealmItem | AccountItem | GlobalItem;
 
@@ -78,7 +78,7 @@ declare global {
                 actionType: AccountTopicAction;
                 payload: {
                     account: string;
-                }
+                };
             };
         }
 

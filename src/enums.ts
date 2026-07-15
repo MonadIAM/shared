@@ -102,7 +102,7 @@ export enum MessageTemplate {
 }
 
 export enum ReauthenticationTopicAction {
-    GRANT = "GRANT"
+    GRANT = "GRANT",
 }
 
 export enum BlacklistTopicAction {

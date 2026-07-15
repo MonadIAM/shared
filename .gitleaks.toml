@@ -1,0 +1,29 @@
+title = "project gitleaks config"
+
+[extend]
+useDefault = true # Uses the standard built-in gitleaks config as a base.
+
+
+
+# Global allowlist — applies to ALL rules, except those
+# explicitly scoped via targetRules in [[allowlists]].
+[[allowlists]]
+description = "global allowlist"
+
+regexTarget = "match"
+
+regexes = [
+  '''219-09-9999''',
+  '''078-05-1120''',
+  '''(9[0-9]{2}|666)-\d{2}-\d{4}''',
+]
+
+paths = [
+  '''gitleaks\.toml''',
+  '''(.*?)(jpg|jpeg|png|gif|pdf|docx?|xlsx?|pptx?|bin|svg|socket)$''',
+]
+
+stopwords = [
+  '''client''',
+  '''endpoint''',
+]
