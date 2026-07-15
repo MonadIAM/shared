@@ -8,6 +8,10 @@ const config: KnipConfig = {
         // Generated from .proto via ts-proto - not hand-authored
         "src/generated/**",
     ],
+    ignoreDependencies: [
+        // Used only as a protoc plugin binary (proto:generate script), never imported
+        "ts-proto",
+    ],
 };
 
 export default config;

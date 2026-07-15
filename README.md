@@ -1,6 +1,6 @@
-# contracts
+# @monadiam/shared
 
-Cross-service shared definitions that eliminate manual synchronization between LIAM services.
+Cross-service shared definitions that eliminate manual synchronization between MonadIAM services.
 
 ----
 
@@ -10,7 +10,7 @@ Cross-service shared definitions that eliminate manual synchronization between L
 The package is distributed directly from git and is not published to npm. To install in a consuming project:
 
 ```bash
-npm install git+https://github.com/LambdiusLab/contracts.git#v1.0.0
+npm install git+https://github.com/MonadIAM/shared.git#v1.0.0
 ```
 > A version tag after `#` is required. Without it, npm will resolve to the latest commit on the default branch.
 
