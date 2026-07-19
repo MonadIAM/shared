@@ -121,6 +121,15 @@ export enum ChangeLogTopicAction {
     ARCHIVE = "ARCHIVE",
 }
 
+export enum PlatformService {
+    /* eslint-disable prettier/prettier */
+    ACCESS_CONTROL_SERVICE = "access-control-service",
+    NOTIFICATION_SERVICE   = "notification-service",
+    CERTIFICATE_SERVICE    = "certificate-service",
+    IDENTITY_SERVICE       = "identity-service",
+    /* eslint-enable prettier/prettier */
+}
+
 export enum PermissionCode {
     /* eslint-disable prettier/prettier */
     // ---------------------------------------------------------------------------
