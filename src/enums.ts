@@ -306,11 +306,27 @@ export enum PermissionCode {
     SERVICE_CLIENT_PURGE         = "service_client.purge",
 
     // ---------------------------------------------------------------------------
-    // Certificate
+    // Notification
     // ---------------------------------------------------------------------------
 
-    CERTIFICATE_READ_PERSONAL = "certificate.read_personal",
-    CERTIFICATE_READ_ABSOLUTE = "certificate.read_absolute",
-    CERTIFICATE_REVOKE        = "certificate.revoke",
+    RECIPIENT_READ_PERSONAL      = "recipient.read_personal",
+    RECIPIENT_READ_ABSOLUTE      = "recipient.read_absolute",
+    RECIPIENT_UPDATE             = "recipient.update",
+    RECIPIENT_SELECT_OTP_CHANNEL = "recipient.select_otp_channel",
+
+    CHANNEL_READ_PERSONAL = "channel.read_personal",
+    CHANNEL_READ_ABSOLUTE = "channel.read_absolute",
+    CHANNEL_TOGGLE_SOUND  = "channel.toggle_sound",
+
+    NOTIFICATION_READ_PERSONAL = "notification.read_personal",
+    NOTIFICATION_READ_ABSOLUTE = "notification.read_absolute",
+
+    MESSAGE_READ_PERSONAL = "message.read_personal",
+    MESSAGE_READ_ABSOLUTE = "message.read_absolute",
+    MESSAGE_MARK_READ     = "message.mark_read",
+
+    PREFERENCE_READ_PERSONAL = "preference.read_personal",
+    PREFERENCE_READ_ABSOLUTE = "preference.read_absolute",
+    PREFERENCE_TOGGLE        = "preference.toggle",
     /* eslint-enable prettier/prettier */
 }
