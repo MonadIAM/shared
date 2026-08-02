@@ -53,10 +53,10 @@ declare global {
             type GrantMessage = {
                 actionType: MembershipTopicAction.GRANT;
                 payload: {
+                    invitedBy: string;
+                    joinedAt: number;
                     account: string;
                     realm: string;
-                    joinedAt: number;
-                    invitedBy: string;
                 };
             };
 
@@ -89,10 +89,17 @@ declare global {
         }
 
         namespace Notification {
-            type Message = {
-                actionType: NotificationTopicAction;
+            type CreateMessage = {
+                actionType: NotificationTopicAction.CREATE;
                 payload: ContentPayload | TemplatePayload;
             };
+
+            type CancelMessage = {
+                actionType: NotificationTopicAction.CANCEL;
+                payload: CancelPayload;
+            };
+
+            type Message = CreateMessage | CancelMessage;
 
             type BasePayload = {
                 recipient: string;
@@ -113,6 +120,11 @@ declare global {
                 params: Record<string, string>;
                 template: MessageTemplate;
                 language: string;
+            };
+
+            type CancelPayload = {
+                dedupKey: string;
+                override: ContentPayload | TemplatePayload;
             };
         }
 

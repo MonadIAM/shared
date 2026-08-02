@@ -127,6 +127,7 @@ export enum InvalidationScope {
 
 export enum NotificationTopicAction {
     CREATE = "CREATE",
+    CANCEL = "CANCEL",
 }
 
 export enum NotificationContentKind {
@@ -147,10 +148,30 @@ export enum NotificationCategory {
 
 export enum MessageTemplate {
     /* eslint-disable prettier/prettier */
+    // identity: OTP delivery
     IDENTIFIER_VERIFICATION_OTP = "IDENTIFIER_VERIFICATION_OTP",
     ACCOUNT_VERIFICATION_OTP    = "ACCOUNT_VERIFICATION_OTP",
     RESET_PASSWORD_OTP          = "RESET_PASSWORD_OTP",
-    LOGIN_OTP                   = "LOGIN_OTP"
+    LOGIN_OTP                   = "LOGIN_OTP",
+
+    // identity: security alerts
+    PASSWORD_CHANGED_VIA_RECOVERY_CODE = "PASSWORD_CHANGED_VIA_RECOVERY_CODE",
+    PASSWORD_CHANGED_VIA_OTP           = "PASSWORD_CHANGED_VIA_OTP",
+    PASSWORD_CHANGED                   = "PASSWORD_CHANGED",
+    SECOND_FACTOR_ENABLED              = "SECOND_FACTOR_ENABLED",
+    SECOND_FACTOR_RESET                = "SECOND_FACTOR_RESET",
+    RECOVERY_CODES_REGENERATED         = "RECOVERY_CODES_REGENERATED",
+    IDENTIFIER_PURGED                  = "IDENTIFIER_PURGED",
+    LOGIN_ALERT                        = "LOGIN_ALERT",
+
+    // access-control: invites
+    INVITE_RECEIVED  = "INVITE_RECEIVED",
+    INVITE_CANCELLED = "INVITE_CANCELLED",
+
+    // access-control: assignments/realm
+    ASSIGNMENT_GRANTED = "ASSIGNMENT_GRANTED",
+    ASSIGNMENT_REVOKED = "ASSIGNMENT_REVOKED",
+    REALM_EXCLUDED     = "REALM_EXCLUDED"
     /* eslint-enable prettier/prettier */
 }
 
