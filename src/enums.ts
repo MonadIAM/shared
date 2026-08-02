@@ -40,6 +40,11 @@ export enum KafkaTopic {
     NOTIFICATION_RETRY = "notification-retry",
     NOTIFICATION_DEAD  = "notification-dead",
 
+    // message-dispatch: notification internal (SES/SNS dispatch)
+    MESSAGE_DISPATCH       = "message-dispatch",
+    MESSAGE_DISPATCH_RETRY = "message-dispatch-retry",
+    MESSAGE_DISPATCH_DEAD  = "message-dispatch-dead",
+
     // projection-journal: access-control internal (redis sync)
     PROJECTION_JOURNAL       = "projection-journal",
     PROJECTION_JOURNAL_RETRY = "projection-journal-retry",
@@ -122,6 +127,22 @@ export enum InvalidationScope {
 
 export enum NotificationTopicAction {
     CREATE = "CREATE",
+}
+
+export enum NotificationContentKind {
+    /* eslint-disable prettier/prettier */
+    TEMPLATE = "TEMPLATE",
+    CONTENT  = "CONTENT",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum NotificationCategory {
+    /* eslint-disable prettier/prettier */
+    SECURITY = "SECURITY",
+    INVITES  = "INVITES",
+    SYSTEM   = "SYSTEM",
+    OTHER    = "OTHER",
+    /* eslint-enable prettier/prettier */
 }
 
 export enum MessageTemplate {

@@ -1,12 +1,17 @@
 import {
     ReauthenticationTopicAction,
     ServiceClientTopicAction,
+    NotificationContentKind,
+    NotificationTopicAction,
     AccessCacheTopicAction,
     MembershipTopicAction,
+    NotificationCategory,
     BlacklistTopicAction,
     AccountTopicAction,
     InvalidationScope,
     RealmTopicAction,
+    MessageTemplate,
+    PlatformService,
 } from "./enums";
 
 declare global {
@@ -80,6 +85,34 @@ declare global {
                 payload: {
                     account: string;
                 };
+            };
+        }
+
+        namespace Notification {
+            type Message = {
+                actionType: NotificationTopicAction;
+                payload: ContentPayload | TemplatePayload;
+            };
+
+            type BasePayload = {
+                recipient: string;
+                category: NotificationCategory;
+                sourceService: PlatformService;
+                dedupKey?: string;
+                realm?: string;
+            };
+
+            type ContentPayload = BasePayload & {
+                kind: NotificationContentKind.CONTENT;
+                title: string;
+                text: string;
+            };
+
+            type TemplatePayload = BasePayload & {
+                kind: NotificationContentKind.TEMPLATE;
+                params: Record<string, string>;
+                template: MessageTemplate;
+                language: string;
             };
         }
 
