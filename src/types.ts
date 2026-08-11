@@ -48,22 +48,82 @@ declare global {
         }
 
         namespace Membership {
-            type Message = GrantMessage | RevokeMessage;
+            type Message =
+                | LeaveRequestedMessage
+                | LeaveConfirmedMessage
+                | LeaveRejectedMessage
+                | JoinRequestedMessage
+                | JoinConfirmedMessage
+                | JoinRejectedMessage;
 
-            type GrantMessage = {
-                actionType: MembershipTopicAction.GRANT;
+            type JoinRequestedMessage = {
+                actionType: MembershipTopicAction.JOIN_REQUESTED;
                 payload: {
                     invitedBy: string;
-                    joinedAt: number;
+                    process: string;
+                    command: string;
                     account: string;
+                    invite: string;
+                    realm: string;
+                    role: string;
+                };
+            };
+
+            type JoinConfirmedMessage = {
+                actionType: MembershipTopicAction.JOIN_CONFIRMED;
+                payload: {
+                    assignment: string;
+                    invitedBy: string;
+                    joinedAt: number;
+                    process: string;
+                    command: string;
+                    account: string;
+                    invite: string;
+                    realm: string;
+                    role: string;
+                };
+            };
+
+            type JoinRejectedMessage = {
+                actionType: MembershipTopicAction.JOIN_REJECTED;
+                payload: {
+                    process: string;
+                    command: string;
+                    invite: string;
+                    reason: string;
+                };
+            };
+
+            type LeaveRequestedMessage = {
+                actionType: MembershipTopicAction.LEAVE_REQUESTED;
+                payload: {
+                    requestedBy: string;
+                    process: string;
+                    command: string;
+                    account: string;
+                    reason?: string;
                     realm: string;
                 };
             };
 
-            type RevokeMessage = {
-                actionType: MembershipTopicAction.REVOKE;
+            type LeaveConfirmedMessage = {
+                actionType: MembershipTopicAction.LEAVE_CONFIRMED;
                 payload: {
+                    process: string;
+                    command: string;
                     account: string;
+                    leftAt: number;
+                    realm: string;
+                };
+            };
+
+            type LeaveRejectedMessage = {
+                actionType: MembershipTopicAction.LEAVE_REJECTED;
+                payload: {
+                    process: string;
+                    command: string;
+                    account: string;
+                    reason: string;
                     realm: string;
                 };
             };

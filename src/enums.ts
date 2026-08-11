@@ -5,7 +5,7 @@ export enum KafkaTopic {
     ACCOUNT_RETRY = "account-retry",
     ACCOUNT_DEAD  = "account-dead",
 
-    // membership: access-control -> identity
+    // membership workflow: identity <-> access-control
     MEMBERSHIP       = "membership",
     MEMBERSHIP_RETRY = "membership-retry",
     MEMBERSHIP_DEAD  = "membership-dead",
@@ -74,8 +74,12 @@ export enum AccountTopicAction {
 
 export enum MembershipTopicAction {
     /* eslint-disable prettier/prettier */
-    REVOKE = "REVOKE",
-    GRANT  = "GRANT",
+    JOIN_REQUESTED  = "JOIN_REQUESTED",
+    JOIN_CONFIRMED  = "JOIN_CONFIRMED",
+    JOIN_REJECTED   = "JOIN_REJECTED",
+    LEAVE_REQUESTED = "LEAVE_REQUESTED",
+    LEAVE_CONFIRMED = "LEAVE_CONFIRMED",
+    LEAVE_REJECTED  = "LEAVE_REJECTED",
     /* eslint-enable prettier/prettier */
 }
 
@@ -164,7 +168,7 @@ export enum MessageTemplate {
     IDENTIFIER_PURGED                  = "IDENTIFIER_PURGED",
     LOGIN_ALERT                        = "LOGIN_ALERT",
 
-    // access-control: invites
+    // identity: invites
     INVITE_RECEIVED  = "INVITE_RECEIVED",
     INVITE_CANCELLED = "INVITE_CANCELLED",
 
@@ -281,14 +285,14 @@ export enum PermissionCode {
     ROLE_CONFLICT_MEMBER_CREATE        = "role_conflict_member.create",
     ROLE_CONFLICT_MEMBER_PURGE         = "role_conflict_member.purge",
 
+    // ---------------------------------------------------------------------------
+    // Identity
+    // ---------------------------------------------------------------------------
+
     INVITE_READ_PERSONAL = "invite.read_personal",
     INVITE_READ_ABSOLUTE = "invite.read_absolute",
     INVITE_CHANGE_STATUS = "invite.change_status",
     INVITE_CREATE        = "invite.create",
-
-    // ---------------------------------------------------------------------------
-    // Identity
-    // ---------------------------------------------------------------------------
 
     ACCOUNT_READ_PERSONAL = "account.read_personal",
     ACCOUNT_READ_COMMON   = "account.read_common",
