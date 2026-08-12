@@ -6,6 +6,7 @@ const config: KnipConfig = {
     ignore: [],
     ignoreDependencies: [
         // Used only as a protoc plugin binary (proto:generate script), never imported
+        "grpc-tools",
         "ts-proto",
     ],
 };
