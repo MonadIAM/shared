@@ -3,14 +3,14 @@
   "description": "Shared Kafka/gRPC contracts and common enums between MonadIAM services",
   "author": "Daniil Egorov (https://github.com/Lambdius)",
   "license": "UNLICENSED",
-  "version": "1.0.33",
+  "version": "1.0.36",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "bash scripts/generate-proto.sh && tsc && mkdir -p dist/proto && cp src/proto/*.proto dist/proto/",
+    "build": "sh scripts/generate-proto.sh && tsc && mkdir -p dist/proto && cp src/proto/*.proto dist/proto/",
     "prepare": "npm run build",
     "lint": "eslint .",
     "knip": "knip --config configs/knip.config.ts"

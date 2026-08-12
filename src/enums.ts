@@ -351,6 +351,9 @@ export enum PermissionCode {
     SERVICE_CLIENT_RESTORE       = "service_client.restore",
     SERVICE_CLIENT_PURGE         = "service_client.purge",
 
+    MEMBERSHIP_HISTORY_READ_PERSONAL = "membership_history.read_personal",
+    MEMBERSHIP_HISTORY_READ_ABSOLUTE = "membership_history.read_absolute",
+
     // ---------------------------------------------------------------------------
     // Notification
     // ---------------------------------------------------------------------------
