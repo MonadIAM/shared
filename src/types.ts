@@ -109,6 +109,7 @@ declare global {
             type LeaveConfirmedMessage = {
                 actionType: MembershipTopicAction.LEAVE_CONFIRMED;
                 payload: {
+                    requestedBy: string;
                     process: string;
                     command: string;
                     account: string;
