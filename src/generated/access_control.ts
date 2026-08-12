@@ -8,18 +8,23 @@
 
 export const protobufPackage = "access_control";
 
+export enum PrivilegeScope {
+  GLOBAL = "GLOBAL",
+  REALM = "REALM",
+}
+
 export interface ListEffectivePrivilegesRequest {
   account: string;
   realm: string;
 }
 
 export interface ListEffectivePrivilegesResponse {
-  privileges: { [key: string]: string };
+  privileges: { [key: string]: PrivilegeScope };
 }
 
 export interface ListEffectivePrivilegesResponse_PrivilegesEntry {
   key: string;
-  value: string;
+  value: PrivilegeScope;
 }
 
 export interface AccessControlService {

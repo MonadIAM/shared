@@ -12,6 +12,11 @@ message ListEffectivePrivilegesRequest {
     string realm = 2;
 }
 
+enum PrivilegeScope {
+    GLOBAL = 0;
+    REALM = 1;
+}
+
 message ListEffectivePrivilegesResponse {
-  map<string, string> privileges = 1;
+    map<string, PrivilegeScope> privileges = 1;
 }
