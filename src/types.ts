@@ -1,5 +1,6 @@
 import {
     ReauthenticationTopicAction,
+    InterfaceClientTopicAction,
     ServiceClientTopicAction,
     NotificationContentKind,
     NotificationTopicAction,
@@ -59,73 +60,88 @@ declare global {
             type JoinRequestedMessage = {
                 actionType: MembershipTopicAction.JOIN_REQUESTED;
                 payload: {
-                    invitedBy: string;
-                    process: string;
-                    command: string;
-                    account: string;
-                    invite: string;
+                    actor: string;
                     realm: string;
-                    role: string;
+                    input: {
+                        process: string;
+                        command: string;
+                        account: string;
+                        invite: string;
+                        role: string;
+                    };
                 };
             };
 
             type JoinConfirmedMessage = {
                 actionType: MembershipTopicAction.JOIN_CONFIRMED;
                 payload: {
-                    assignment: string;
-                    invitedBy: string;
-                    joinedAt: number;
-                    process: string;
-                    command: string;
-                    account: string;
-                    invite: string;
+                    actor: string;
                     realm: string;
-                    role: string;
+                    input: {
+                        assignment: string;
+                        joinedAt: number;
+                        process: string;
+                        command: string;
+                        account: string;
+                        invite: string;
+                        role: string;
+                    };
                 };
             };
 
             type JoinRejectedMessage = {
                 actionType: MembershipTopicAction.JOIN_REJECTED;
                 payload: {
-                    process: string;
-                    command: string;
-                    invite: string;
-                    reason: string;
+                    actor: string;
+                    realm: string;
+                    input: {
+                        process: string;
+                        command: string;
+                        invite: string;
+                        reason: string;
+                    };
                 };
             };
 
             type LeaveRequestedMessage = {
                 actionType: MembershipTopicAction.LEAVE_REQUESTED;
                 payload: {
-                    requestedBy: string;
-                    process: string;
-                    command: string;
-                    account: string;
-                    reason?: string;
+                    actor: string;
                     realm: string;
+                    input: {
+                        process: string;
+                        command: string;
+                        account: string;
+                        reason?: string;
+                    };
                 };
             };
 
             type LeaveConfirmedMessage = {
                 actionType: MembershipTopicAction.LEAVE_CONFIRMED;
                 payload: {
-                    requestedBy: string;
-                    process: string;
-                    command: string;
-                    account: string;
-                    leftAt: number;
+                    actor: string;
                     realm: string;
+                    input: {
+                        process: string;
+                        command: string;
+                        account: string;
+                        leftAt: number;
+                    };
                 };
             };
 
             type LeaveRejectedMessage = {
                 actionType: MembershipTopicAction.LEAVE_REJECTED;
                 payload: {
-                    process: string;
-                    command: string;
-                    account: string;
-                    reason: string;
+                    actor: string;
                     realm: string;
+                    input: {
+                        process: string;
+                        command: string;
+                        account: string;
+                        reason: string;
+                    };
                 };
             };
         }
@@ -134,8 +150,11 @@ declare global {
             type Message = {
                 actionType: RealmTopicAction;
                 payload: {
+                    actor: string;
                     realm: string;
-                    version: number;
+                    input: {
+                        version: number;
+                    };
                 };
             };
         }
@@ -152,40 +171,47 @@ declare global {
         namespace Notification {
             type CreateMessage = {
                 actionType: NotificationTopicAction.CREATE;
-                payload: ContentPayload | TemplatePayload;
+                payload: NotificationSpec;
             };
 
             type CancelMessage = {
                 actionType: NotificationTopicAction.CANCEL;
-                payload: CancelPayload;
+                payload: {
+                    actor?: string;
+                    realm?: string;
+                    input: {
+                        dedupKey: string;
+                        override: NotificationSpec;
+                    };
+                };
             };
 
             type Message = CreateMessage | CancelMessage;
 
-            type BasePayload = {
+            type NotificationSpec = {
+                actor?: string;
+                realm?: string;
+                input: ContentInput | TemplateInput;
+            };
+
+            type BaseInput = {
                 recipient: string;
                 category: NotificationCategory;
                 sourceService: PlatformService;
                 dedupKey?: string;
-                realm?: string;
             };
 
-            type ContentPayload = BasePayload & {
+            type ContentInput = BaseInput & {
                 kind: NotificationContentKind.CONTENT;
                 title: string;
                 text: string;
             };
 
-            type TemplatePayload = BasePayload & {
+            type TemplateInput = BaseInput & {
                 kind: NotificationContentKind.TEMPLATE;
                 params?: Record<string, string>;
                 template: MessageTemplate;
                 language: string;
-            };
-
-            type CancelPayload = {
-                dedupKey: string;
-                override: ContentPayload | TemplatePayload;
             };
         }
 
@@ -213,9 +239,28 @@ declare global {
             type Message = {
                 actionType: ServiceClientTopicAction;
                 payload: {
-                    application: string;
-                    code: string;
-                    id: string;
+                    actor: string;
+                    realm: string;
+                    input: {
+                        application: string;
+                        code: string;
+                        id: string;
+                    };
+                };
+            };
+        }
+
+        namespace InterfaceClient {
+            type Message = {
+                actionType: InterfaceClientTopicAction;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        application: string;
+                        isRevoked: boolean;
+                        id: string;
+                    };
                 };
             };
         }
