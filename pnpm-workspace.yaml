@@ -1,0 +1,10 @@
+strictPeerDependencies: true
+blockExoticSubdeps: true
+engineStrict: true
+lockfile: true
+color: true
+loglevel: warn
+savePrefix: ""
+allowBuilds:
+  unrs-resolver: true
+  grpc-tools: true

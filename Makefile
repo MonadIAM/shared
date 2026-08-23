@@ -1,5 +1,5 @@
 # Development
 lint:
-	npm run lint
+	pnpm run lint
 knip:
-	npm run knip
+	pnpm run knip

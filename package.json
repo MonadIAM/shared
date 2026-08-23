@@ -3,17 +3,24 @@
   "description": "Shared Kafka/gRPC contracts and common enums between MonadIAM services",
   "author": "Daniil Egorov (https://github.com/Lambdius)",
   "license": "UNLICENSED",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
+  "engines": {
+    "node": "24.18.0"
+  },
+  "config": {
+    "engine-strict": true
+  },
+  "packageManager": "pnpm@11.22.0",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "sh scripts/generate-proto.sh && tsc && mkdir -p dist/proto && cp src/proto/*.proto dist/proto/",
-    "prepare": "npm run build",
-    "lint": "eslint .",
-    "knip": "knip --config configs/knip.config.ts"
+    "knip": "knip --config configs/knip.config.ts",
+    "prepare": "pnpm run build",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -23,21 +30,18 @@
     "url": "https://github.com/MonadIAM/shared/issues"
   },
   "homepage": "https://github.com/MonadIAM/shared#readme",
-  "allowScripts": {
-    "grpc-tools": true
-  },
   "devDependencies": {
-    "@types/node": "26.1.2",
-    "@typescript-eslint/parser": "8.65.0",
-    "eslint": "9.39.5",
-    "eslint-plugin-import": "2.32.0",
+    "@types/node": "26.2.0",
+    "@typescript-eslint/parser": "8.67.0",
+    "eslint": "10.9.0",
+    "eslint-plugin-import-x": "4.17.1",
     "eslint-plugin-prettier": "5.5.6",
-    "globals": "17.8.0",
+    "globals": "17.11.0",
     "grpc-tools": "1.13.1",
-    "knip": "6.29.0",
+    "knip": "6.32.2",
     "prettier": "3.9.6",
-    "ts-proto": "2.12.0",
+    "ts-proto": "2.12.1",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.65.0"
+    "typescript-eslint": "8.67.0"
   }
 }
