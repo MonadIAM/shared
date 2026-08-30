@@ -3,7 +3,7 @@
   "description": "Shared Kafka/gRPC contracts and common enums between MonadIAM services",
   "author": "Daniil Egorov (https://github.com/Lambdius)",
   "license": "UNLICENSED",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "exports": {

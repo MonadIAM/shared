@@ -13,6 +13,7 @@ import {
     RealmTopicAction,
     MessageTemplate,
     PlatformService,
+    PrivilegeScope,
 } from "./enums";
 
 declare global {
@@ -34,6 +35,21 @@ declare global {
             readonly artifact: string;
             readonly group: string;
         };
+    }
+
+    namespace GRPC {
+        namespace AccessControl {
+            namespace ListEffectivePrivileges {
+                type Request = {
+                    account: string;
+                    realm: string;
+                };
+
+                type Response = {
+                    privileges: Record<string, PrivilegeScope>;
+                };
+            }
+        }
     }
 
     namespace Consumers {
