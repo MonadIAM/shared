@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package monadiam.kafka.membership.v1;
+
+message MembershipValue {
+    MembershipTopicAction action_type = 1;
+    MembershipPayload payload = 2;
+}
+
+enum MembershipTopicAction {
+    JOIN_REQUESTED = 0;
+    JOIN_CONFIRMED = 1;
+    JOIN_REJECTED = 2;
+    LEAVE_REQUESTED = 3;
+    LEAVE_CONFIRMED = 4;
+    LEAVE_REJECTED = 5;
+}
+
+message MembershipPayload {
+    string actor = 1;
+    string realm = 2;
+    MembershipInput input = 3;
+}
+
+message MembershipInput {
+    optional string assignment = 1;
+    optional double joined_at = 2;
+    string process = 3;
+    string command = 4;
+    optional string account = 5;
+    optional string invite = 6;
+    optional string role = 7;
+    optional string reason = 8;
+    optional double left_at = 9;
+}

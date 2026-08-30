@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package access_control;
+package monadiam.grpc.access_control.v1;
 
 service AccessControlService {
     rpc ListEffectivePrivileges(ListEffectivePrivilegesRequest)

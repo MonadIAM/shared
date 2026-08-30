@@ -1,123 +1,10 @@
-export enum KafkaTopic {
+export enum PlatformService {
     /* eslint-disable prettier/prettier */
-    // account: identity -> all services
-    ACCOUNT       = "account",
-    ACCOUNT_RETRY = "account-retry",
-    ACCOUNT_DEAD  = "account-dead",
-
-    // membership workflow: identity <-> access-control
-    MEMBERSHIP       = "membership",
-    MEMBERSHIP_RETRY = "membership-retry",
-    MEMBERSHIP_DEAD  = "membership-dead",
-
-    // realm: access-control -> identity
-    REALM       = "realm",
-    REALM_RETRY = "realm-retry",
-    REALM_DEAD  = "realm-dead",
-
-    // identifier: identity -> notification
-    IDENTIFIER       = "identifier",
-    IDENTIFIER_RETRY = "identifier-retry",
-    IDENTIFIER_DEAD  = "identifier-dead",
-
-    // service-client: identity -> certificate-service
-    SERVICE_CLIENT       = "service-client",
-    SERVICE_CLIENT_RETRY = "service-client-retry",
-    SERVICE_CLIENT_DEAD  = "service-client-dead",
-
-    // interface-client: identity -> all services
-    INTERFACE_CLIENT       = "interface-client",
-    INTERFACE_CLIENT_RETRY = "interface-client-retry",
-    INTERFACE_CLIENT_DEAD  = "interface-client-dead",
-
-    // access-cache: access-control -> all services
-    ACCESS_CACHE       = "access-cache",
-    ACCESS_CACHE_RETRY = "access-cache-retry",
-    ACCESS_CACHE_DEAD  = "access-cache-dead",
-
-    // notification: all services -> notification
-    NOTIFICATION       = "notification",
-    NOTIFICATION_RETRY = "notification-retry",
-    NOTIFICATION_DEAD  = "notification-dead",
-
-    // message-dispatch: notification internal (SES/SNS dispatch)
-    MESSAGE_DISPATCH       = "message-dispatch",
-    MESSAGE_DISPATCH_RETRY = "message-dispatch-retry",
-    MESSAGE_DISPATCH_DEAD  = "message-dispatch-dead",
-
-    // projection-journal: access-control internal (redis sync)
-    PROJECTION_JOURNAL       = "projection-journal",
-    PROJECTION_JOURNAL_RETRY = "projection-journal-retry",
-    PROJECTION_JOURNAL_DEAD  = "projection-journal-dead",
-
-    // reauthentication: identity -> all services
-    REAUTHENTICATION       = "reauthentication",
-    REAUTHENTICATION_RETRY = "reauthentication-retry",
-    REAUTHENTICATION_DEAD  = "reauthentication-dead",
-
-    // blacklist: session revocation — no retry, dead for failure analysis only
-    BLACKLIST      = "blacklist",
-    BLACKLIST_DEAD = "blacklist-dead",
-
-    // audit-log-archive / change-log-archive: all services -> ClickHouse, no retry/dead
-    AUDIT_LOG_ARCHIVE  = "audit-log-archive",
-    CHANGE_LOG_ARCHIVE = "change-log-archive",
+    ACCESS_CONTROL_SERVICE = "access-control-service",
+    NOTIFICATION_SERVICE   = "notification-service",
+    CERTIFICATE_SERVICE    = "certificate-service",
+    IDENTITY_SERVICE       = "identity-service",
     /* eslint-enable prettier/prettier */
-}
-
-export enum AccountTopicAction {
-    /* eslint-disable prettier/prettier */
-    CREATE = "CREATE",
-    PURGE  = "PURGE",
-    /* eslint-enable prettier/prettier */
-}
-
-export enum MembershipTopicAction {
-    /* eslint-disable prettier/prettier */
-    JOIN_REQUESTED  = "JOIN_REQUESTED",
-    JOIN_CONFIRMED  = "JOIN_CONFIRMED",
-    JOIN_REJECTED   = "JOIN_REJECTED",
-    LEAVE_REQUESTED = "LEAVE_REQUESTED",
-    LEAVE_CONFIRMED = "LEAVE_CONFIRMED",
-    LEAVE_REJECTED  = "LEAVE_REJECTED",
-    /* eslint-enable prettier/prettier */
-}
-
-export enum RealmTopicAction {
-    /* eslint-disable prettier/prettier */
-    REVOKE  = "REVOKE",
-    RESTORE = "RESTORE",
-    PURGE   = "PURGE",
-    /* eslint-enable prettier/prettier */
-}
-
-export enum ServiceClientTopicAction {
-    /* eslint-disable prettier/prettier */
-    CREATE  = "CREATE",
-    REVOKE  = "REVOKE",
-    RESTORE = "RESTORE",
-    PURGE   = "PURGE",
-    /* eslint-enable prettier/prettier */
-}
-
-export enum InterfaceClientTopicAction {
-    /* eslint-disable prettier/prettier */
-    CREATE  = "CREATE",
-    REVOKE  = "REVOKE",
-    RESTORE = "RESTORE",
-    PURGE   = "PURGE",
-    /* eslint-enable prettier/prettier */
-}
-
-export enum IdentifierTopicAction {
-    /* eslint-disable prettier/prettier */
-    CREATE = "CREATE",
-    PURGE  = "PURGE",
-    /* eslint-enable prettier/prettier */
-}
-
-export enum AccessCacheTopicAction {
-    INVALIDATE = "INVALIDATE",
 }
 
 export enum InvalidationScope {
@@ -127,11 +14,6 @@ export enum InvalidationScope {
     GLOBAL        = "GLOBAL",
     REALM         = "REALM",
     /* eslint-enable prettier/prettier */
-}
-
-export enum NotificationTopicAction {
-    CREATE = "CREATE",
-    CANCEL = "CANCEL",
 }
 
 export enum NotificationContentKind {
@@ -150,41 +32,71 @@ export enum NotificationCategory {
     /* eslint-enable prettier/prettier */
 }
 
-export enum MessageTemplate {
+export enum PrivilegeScope {
     /* eslint-disable prettier/prettier */
-    // identity: OTP delivery
-    IDENTIFIER_VERIFICATION_OTP = "IDENTIFIER_VERIFICATION_OTP",
-    ACCOUNT_VERIFICATION_OTP    = "ACCOUNT_VERIFICATION_OTP",
-    RESET_PASSWORD_OTP          = "RESET_PASSWORD_OTP",
-    LOGIN_OTP                   = "LOGIN_OTP",
-
-    // identity: security alerts
-    PASSWORD_CHANGED_VIA_RECOVERY_CODE = "PASSWORD_CHANGED_VIA_RECOVERY_CODE",
-    PASSWORD_CHANGED_VIA_OTP           = "PASSWORD_CHANGED_VIA_OTP",
-    PASSWORD_CHANGED                   = "PASSWORD_CHANGED",
-    SECOND_FACTOR_ENABLED              = "SECOND_FACTOR_ENABLED",
-    SECOND_FACTOR_RESET                = "SECOND_FACTOR_RESET",
-    RECOVERY_CODES_REGENERATED         = "RECOVERY_CODES_REGENERATED",
-    IDENTIFIER_PURGED                  = "IDENTIFIER_PURGED",
-    LOGIN_ALERT                        = "LOGIN_ALERT",
-
-    // identity: invites
-    INVITE_RECEIVED  = "INVITE_RECEIVED",
-    INVITE_CANCELLED = "INVITE_CANCELLED",
-
-    // access-control: assignments/realm
-    ASSIGNMENT_GRANTED = "ASSIGNMENT_GRANTED",
-    ASSIGNMENT_REVOKED = "ASSIGNMENT_REVOKED",
-    REALM_EXCLUDED     = "REALM_EXCLUDED"
+    GLOBAL = "GLOBAL",
+    REALM  = "REALM",
     /* eslint-enable prettier/prettier */
 }
 
-export enum ReauthenticationTopicAction {
-    GRANT = "GRANT",
+export enum MembershipTopicAction {
+    /* eslint-disable prettier/prettier */
+    LEAVE_REQUESTED = "LEAVE_REQUESTED",
+    LEAVE_CONFIRMED = "LEAVE_CONFIRMED",
+    LEAVE_REJECTED  = "LEAVE_REJECTED",
+    JOIN_REQUESTED  = "JOIN_REQUESTED",
+    JOIN_CONFIRMED  = "JOIN_CONFIRMED",
+    JOIN_REJECTED   = "JOIN_REJECTED",
+    /* eslint-enable prettier/prettier */
 }
 
-export enum BlacklistTopicAction {
-    ADD = "ADD",
+export enum ServiceClientTopicAction {
+    /* eslint-disable prettier/prettier */
+    RESTORE = "RESTORE",
+    CREATE  = "CREATE",
+    REVOKE  = "REVOKE",
+    PURGE   = "PURGE",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum InterfaceClientTopicAction {
+    /* eslint-disable prettier/prettier */
+    RESTORE = "RESTORE",
+    CREATE  = "CREATE",
+    REVOKE  = "REVOKE",
+    PURGE   = "PURGE",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum RealmTopicAction {
+    /* eslint-disable prettier/prettier */
+    RESTORE = "RESTORE",
+    REVOKE  = "REVOKE",
+    PURGE   = "PURGE",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum IdentifierTopicAction {
+    /* eslint-disable prettier/prettier */
+    CREATE = "CREATE",
+    PURGE  = "PURGE",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum NotificationTopicAction {
+    CREATE = "CREATE",
+    CANCEL = "CANCEL",
+}
+
+export enum AccountTopicAction {
+    /* eslint-disable prettier/prettier */
+    CREATE = "CREATE",
+    PURGE  = "PURGE",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum AccessCacheTopicAction {
+    INVALIDATE = "INVALIDATE",
 }
 
 export enum AuditLogTopicAction {
@@ -195,12 +107,40 @@ export enum ChangeLogTopicAction {
     ARCHIVE = "ARCHIVE",
 }
 
-export enum PlatformService {
+export enum ReauthenticationTopicAction {
+    GRANT = "GRANT",
+}
+
+export enum BlacklistTopicAction {
+    ADD = "ADD",
+}
+
+export enum MessageTemplate {
     /* eslint-disable prettier/prettier */
-    ACCESS_CONTROL_SERVICE = "access-control-service",
-    NOTIFICATION_SERVICE   = "notification-service",
-    CERTIFICATE_SERVICE    = "certificate-service",
-    IDENTITY_SERVICE       = "identity-service",
+    // identity: security alerts
+    PASSWORD_CHANGED_VIA_RECOVERY_CODE = "PASSWORD_CHANGED_VIA_RECOVERY_CODE",
+    PASSWORD_CHANGED_VIA_OTP           = "PASSWORD_CHANGED_VIA_OTP",
+    PASSWORD_CHANGED                   = "PASSWORD_CHANGED",
+    SECOND_FACTOR_ENABLED              = "SECOND_FACTOR_ENABLED",
+    SECOND_FACTOR_RESET                = "SECOND_FACTOR_RESET",
+    RECOVERY_CODES_REGENERATED         = "RECOVERY_CODES_REGENERATED",
+    IDENTIFIER_PURGED                  = "IDENTIFIER_PURGED",
+    LOGIN_ALERT                        = "LOGIN_ALERT",
+
+    // identity: OTP delivery
+    IDENTIFIER_VERIFICATION_OTP = "IDENTIFIER_VERIFICATION_OTP",
+    ACCOUNT_VERIFICATION_OTP    = "ACCOUNT_VERIFICATION_OTP",
+    RESET_PASSWORD_OTP          = "RESET_PASSWORD_OTP",
+    LOGIN_OTP                   = "LOGIN_OTP",
+
+    // access-control: assignments/realm
+    ASSIGNMENT_GRANTED = "ASSIGNMENT_GRANTED",
+    ASSIGNMENT_REVOKED = "ASSIGNMENT_REVOKED",
+    REALM_EXCLUDED     = "REALM_EXCLUDED",
+
+    // identity: invites
+    INVITE_CANCELLED = "INVITE_CANCELLED",
+    INVITE_RECEIVED  = "INVITE_RECEIVED",
     /* eslint-enable prettier/prettier */
 }
 
@@ -382,5 +322,72 @@ export enum PermissionCode {
     PREFERENCE_READ_PERSONAL = "preference.read_personal",
     PREFERENCE_READ_ABSOLUTE = "preference.read_absolute",
     PREFERENCE_TOGGLE        = "preference.toggle",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum KafkaTopic {
+    /* eslint-disable prettier/prettier */
+    // account: identity -> all services
+    ACCOUNT       = "account",
+    ACCOUNT_RETRY = "account-retry",
+    ACCOUNT_DEAD  = "account-dead",
+
+    // membership workflow: identity <-> access-control
+    MEMBERSHIP       = "membership",
+    MEMBERSHIP_RETRY = "membership-retry",
+    MEMBERSHIP_DEAD  = "membership-dead",
+
+    // realm: access-control -> identity
+    REALM       = "realm",
+    REALM_RETRY = "realm-retry",
+    REALM_DEAD  = "realm-dead",
+
+    // identifier: identity -> notification
+    IDENTIFIER       = "identifier",
+    IDENTIFIER_RETRY = "identifier-retry",
+    IDENTIFIER_DEAD  = "identifier-dead",
+
+    // service-client: identity -> certificate-service
+    SERVICE_CLIENT       = "service-client",
+    SERVICE_CLIENT_RETRY = "service-client-retry",
+    SERVICE_CLIENT_DEAD  = "service-client-dead",
+
+    // interface-client: identity -> all services
+    INTERFACE_CLIENT       = "interface-client",
+    INTERFACE_CLIENT_RETRY = "interface-client-retry",
+    INTERFACE_CLIENT_DEAD  = "interface-client-dead",
+
+    // access-cache: access-control -> all services
+    ACCESS_CACHE       = "access-cache",
+    ACCESS_CACHE_RETRY = "access-cache-retry",
+    ACCESS_CACHE_DEAD  = "access-cache-dead",
+
+    // notification: all services -> notification
+    NOTIFICATION       = "notification",
+    NOTIFICATION_RETRY = "notification-retry",
+    NOTIFICATION_DEAD  = "notification-dead",
+
+    // message-dispatch: notification internal (SES/SNS dispatch)
+    MESSAGE_DISPATCH       = "message-dispatch",
+    MESSAGE_DISPATCH_RETRY = "message-dispatch-retry",
+    MESSAGE_DISPATCH_DEAD  = "message-dispatch-dead",
+
+    // projection-journal: access-control internal (redis sync)
+    PROJECTION_JOURNAL       = "projection-journal",
+    PROJECTION_JOURNAL_RETRY = "projection-journal-retry",
+    PROJECTION_JOURNAL_DEAD  = "projection-journal-dead",
+
+    // reauthentication: identity -> all services
+    REAUTHENTICATION       = "reauthentication",
+    REAUTHENTICATION_RETRY = "reauthentication-retry",
+    REAUTHENTICATION_DEAD  = "reauthentication-dead",
+
+    // blacklist: session revocation — no retry, dead for failure analysis only
+    BLACKLIST      = "blacklist",
+    BLACKLIST_DEAD = "blacklist-dead",
+
+    // audit-log-archive / change-log-archive: all services -> ClickHouse, no retry/dead
+    AUDIT_LOG_ARCHIVE  = "audit-log-archive",
+    CHANGE_LOG_ARCHIVE = "change-log-archive",
     /* eslint-enable prettier/prettier */
 }

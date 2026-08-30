@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package monadiam.kafka.service_client.v1;
+
+message ServiceClientValue {
+    ServiceClientTopicAction action_type = 1;
+    ServiceClientPayload payload = 2;
+}
+
+enum ServiceClientTopicAction {
+    CREATE = 0;
+    REVOKE = 1;
+    RESTORE = 2;
+    PURGE = 3;
+}
+
+message ServiceClientPayload {
+    string actor = 1;
+    string realm = 2;
+    ServiceClientInput input = 3;
+}
+
+message ServiceClientInput {
+    string application = 1;
+    string code = 2;
+    string id = 3;
+}

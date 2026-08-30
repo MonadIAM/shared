@@ -16,6 +16,36 @@ import {
 } from "./enums";
 
 declare global {
+    namespace SchemaRegistry {
+        type Mode = "publish" | "verify";
+
+        type Scope = "produced" | "consumed" | "all";
+
+        type ArtifactType = "PROTOBUF";
+
+        type Protocol = "kafka" | "grpc";
+
+        type Artifact = {
+            readonly producers: readonly string[];
+            readonly consumers: readonly string[];
+            readonly artifactType: ArtifactType;
+            readonly protocol: Protocol;
+            readonly protoPath: string;
+            readonly artifact: string;
+            readonly group: string;
+        };
+    }
+
+    namespace Consumers {
+        namespace DLQ {
+            type Message = {
+                originalTopic: string;
+                payload: unknown;
+                error: string;
+            };
+        }
+    }
+
     namespace Topics {
         namespace AccessCache {
             type Message = {
@@ -262,16 +292,6 @@ declare global {
                         id: string;
                     };
                 };
-            };
-        }
-    }
-
-    namespace Consumers {
-        namespace DLQ {
-            type Message = {
-                originalTopic: string;
-                payload: unknown;
-                error: string;
             };
         }
     }

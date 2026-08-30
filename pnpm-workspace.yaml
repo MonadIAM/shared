@@ -7,4 +7,3 @@ loglevel: warn
 savePrefix: ""
 allowBuilds:
   unrs-resolver: true
-  grpc-tools: true
