@@ -26,7 +26,7 @@ export class SchemaRegistry {
     public static grpc(
         consumers: readonly PlatformService[],
         producers: readonly PlatformService[],
-        service: string,
+        service: PlatformService,
     ): SchemaRegistry.Artifact {
         return {
             protoPath: join(__dirname, `proto/grpc/${service.replaceAll("-", "_")}.proto`),

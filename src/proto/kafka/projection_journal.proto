@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package monadiam.kafka.projection_journal.v1;
+
+message ProjectionJournalValue {
+    ProjectionScript action_type = 1;
+    ProjectionJournalPayload payload = 2;
+}
+
+message ProjectionJournalPayload {
+    bytes value = 1;
+}
+
+enum ProjectionScript {
+    ROLE_PERMISSION_ASSIGNMENT_CREATE = 0;
+    ROLE_PERMISSION_ASSIGNMENT_UPDATE = 1;
+    ROLE_PERMISSION_ASSIGNMENT_PURGE = 2;
+    ACCOUNT_ROLE_ASSIGNMENT_CREATE = 3;
+    ACCOUNT_ROLE_ASSIGNMENT_UPDATE = 4;
+    ACCOUNT_ROLE_ASSIGNMENT_PURGE = 5;
+    PERMISSION_OVERRIDE_CREATE = 6;
+    PERMISSION_OVERRIDE_UPDATE = 7;
+    PERMISSION_OVERRIDE_PURGE = 8;
+    ROLE_CLOSURE_UPDATE = 9;
+    PERMISSION_CREATE = 10;
+    PERMISSION_UPDATE = 11;
+    PERMISSION_PURGE = 12;
+    REALM_CREATE = 13;
+    REALM_UPDATE = 14;
+    REALM_PURGE = 15;
+    ROLE_CREATE = 16;
+    ROLE_UPDATE = 17;
+    ROLE_PURGE = 18;
+}

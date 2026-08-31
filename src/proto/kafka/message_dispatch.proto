@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package monadiam.kafka.message_dispatch.v1;
+
+message MessageDispatchValue {
+    MessageDispatchAction action_type = 1;
+    MessageDispatchPayload payload = 2;
+}
+
+enum MessageDispatchAction {
+    DISPATCH = 0;
+}
+
+message MessageDispatchPayload {
+    string message = 1;
+}

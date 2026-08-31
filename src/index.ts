@@ -9,28 +9,14 @@ export const SCHEMA_REGISTRY_ARTIFACTS: SchemaRegistry.Artifact[] = [
     SchemaRegistry.grpc(
         [PlatformService.IDENTITY_SERVICE, PlatformService.NOTIFICATION_SERVICE],
         [PlatformService.ACCESS_CONTROL_SERVICE],
-        "access-control",
+        PlatformService.ACCESS_CONTROL_SERVICE,
     ),
-    SchemaRegistry.kafka(
-        [PlatformService.ACCESS_CONTROL_SERVICE, PlatformService.NOTIFICATION_SERVICE, PlatformService.IDENTITY_SERVICE],
-        [PlatformService.IDENTITY_SERVICE],
-        KafkaTopic.BLACKLIST,
-    ),
-    SchemaRegistry.kafka(
-        [PlatformService.ACCESS_CONTROL_SERVICE, PlatformService.NOTIFICATION_SERVICE, PlatformService.IDENTITY_SERVICE],
-        [PlatformService.IDENTITY_SERVICE],
-        KafkaTopic.REAUTHENTICATION,
-    ),
+    SchemaRegistry.kafka([PlatformService.ACCESS_CONTROL_SERVICE], [PlatformService.IDENTITY_SERVICE], KafkaTopic.ACCOUNT),
     SchemaRegistry.kafka([PlatformService.IDENTITY_SERVICE], [PlatformService.ACCESS_CONTROL_SERVICE], KafkaTopic.REALM),
     SchemaRegistry.kafka(
-        [PlatformService.ACCESS_CONTROL_SERVICE, PlatformService.NOTIFICATION_SERVICE],
-        [PlatformService.IDENTITY_SERVICE],
-        KafkaTopic.ACCOUNT,
-    ),
-    SchemaRegistry.kafka(
-        [PlatformService.ACCESS_CONTROL_SERVICE, PlatformService.NOTIFICATION_SERVICE],
-        [PlatformService.IDENTITY_SERVICE],
-        KafkaTopic.INTERFACE_CLIENT,
+        [PlatformService.IDENTITY_SERVICE, PlatformService.NOTIFICATION_SERVICE, PlatformService.TEMPLATE_SERVICE],
+        [PlatformService.ACCESS_CONTROL_SERVICE],
+        KafkaTopic.ACCESS_CACHE,
     ),
     SchemaRegistry.kafka(
         [PlatformService.IDENTITY_SERVICE, PlatformService.ACCESS_CONTROL_SERVICE],
@@ -43,13 +29,33 @@ export const SCHEMA_REGISTRY_ARTIFACTS: SchemaRegistry.Artifact[] = [
         KafkaTopic.NOTIFICATION,
     ),
     SchemaRegistry.kafka(
-        [PlatformService.IDENTITY_SERVICE, PlatformService.NOTIFICATION_SERVICE],
-        [PlatformService.ACCESS_CONTROL_SERVICE],
-        KafkaTopic.ACCESS_CACHE,
+        [
+            PlatformService.ACCESS_CONTROL_SERVICE,
+            PlatformService.NOTIFICATION_SERVICE,
+            PlatformService.IDENTITY_SERVICE,
+            PlatformService.TEMPLATE_SERVICE,
+        ],
+        [PlatformService.IDENTITY_SERVICE],
+        KafkaTopic.BLACKLIST,
     ),
     SchemaRegistry.kafka(
-        [PlatformService.CERTIFICATE_SERVICE],
+        [
+            PlatformService.ACCESS_CONTROL_SERVICE,
+            PlatformService.NOTIFICATION_SERVICE,
+            PlatformService.IDENTITY_SERVICE,
+            PlatformService.TEMPLATE_SERVICE,
+        ],
         [PlatformService.IDENTITY_SERVICE],
-        KafkaTopic.SERVICE_CLIENT,
+        KafkaTopic.REAUTHENTICATION,
+    ),
+    SchemaRegistry.kafka(
+        [PlatformService.ACCESS_CONTROL_SERVICE],
+        [PlatformService.ACCESS_CONTROL_SERVICE],
+        KafkaTopic.PROJECTION_JOURNAL,
+    ),
+    SchemaRegistry.kafka(
+        [PlatformService.NOTIFICATION_SERVICE],
+        [PlatformService.NOTIFICATION_SERVICE],
+        KafkaTopic.MESSAGE_DISPATCH,
     ),
 ];

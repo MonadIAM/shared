@@ -5,11 +5,13 @@ import {
     NotificationContentKind,
     NotificationTopicAction,
     AccessCacheTopicAction,
+    MessageDispatchAction,
     MembershipTopicAction,
     NotificationCategory,
     BlacklistTopicAction,
     AccountTopicAction,
     InvalidationScope,
+    ProjectionScript,
     RealmTopicAction,
     MessageTemplate,
     PlatformService,
@@ -258,6 +260,22 @@ declare global {
                 params?: Record<string, string>;
                 template: MessageTemplate;
                 language: string;
+            };
+        }
+
+        namespace MessageDispatch {
+            type Message = {
+                actionType: MessageDispatchAction;
+                payload: {
+                    message: string;
+                };
+            };
+        }
+
+        namespace ProjectionJournal {
+            type Message = {
+                actionType: ProjectionScript;
+                payload: Record<string, unknown>;
             };
         }
 

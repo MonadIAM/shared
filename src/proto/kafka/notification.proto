@@ -69,4 +69,5 @@ enum PlatformService {
     NOTIFICATION_SERVICE = 1;
     CERTIFICATE_SERVICE = 2;
     IDENTITY_SERVICE = 3;
+    TEMPLATE_SERVICE = 4;
 }
