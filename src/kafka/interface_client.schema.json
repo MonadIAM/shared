@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/interface-client-value.json",
+  "title": "InterfaceClientValue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["actionType", "payload"],
+  "properties": {
+    "actionType": {
+      "type": "string",
+      "enum": ["RESTORE", "CREATE", "REVOKE", "PURGE"]
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor", "realm", "input"],
+      "properties": {
+        "actor": { "type": "string" },
+        "realm": { "type": "string" },
+        "input": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["application", "isRevoked", "id"],
+          "properties": {
+            "application": { "type": "string" },
+            "isRevoked": { "type": "boolean" },
+            "id": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

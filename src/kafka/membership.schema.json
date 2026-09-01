@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/membership-value.json",
+  "title": "MembershipValue",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "JOIN_REQUESTED" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": { "type": "string" },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "command", "account", "invite", "role"],
+              "properties": {
+                "process": { "type": "string" },
+                "command": { "type": "string" },
+                "account": { "type": "string" },
+                "invite": { "type": "string" },
+                "role": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "JOIN_CONFIRMED" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": { "type": "string" },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["assignment", "joinedAt", "process", "command", "account", "invite", "role"],
+              "properties": {
+                "assignment": { "type": "string" },
+                "joinedAt": { "type": "number" },
+                "process": { "type": "string" },
+                "command": { "type": "string" },
+                "account": { "type": "string" },
+                "invite": { "type": "string" },
+                "role": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "JOIN_REJECTED" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": { "type": "string" },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "command", "invite", "reason"],
+              "properties": {
+                "process": { "type": "string" },
+                "command": { "type": "string" },
+                "invite": { "type": "string" },
+                "reason": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "LEAVE_REQUESTED" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": { "type": "string" },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "command", "account"],
+              "properties": {
+                "process": { "type": "string" },
+                "command": { "type": "string" },
+                "account": { "type": "string" },
+                "reason": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "LEAVE_CONFIRMED" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": { "type": "string" },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "command", "account", "leftAt"],
+              "properties": {
+                "process": { "type": "string" },
+                "command": { "type": "string" },
+                "account": { "type": "string" },
+                "leftAt": { "type": "number" }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "LEAVE_REJECTED" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": { "type": "string" },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "command", "account", "reason"],
+              "properties": {
+                "process": { "type": "string" },
+                "command": { "type": "string" },
+                "account": { "type": "string" },
+                "reason": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

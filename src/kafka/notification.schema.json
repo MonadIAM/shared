@@ -1,0 +1,238 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/notification-value.json",
+  "title": "NotificationValue",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "CREATE" },
+        "payload": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["input"],
+              "properties": {
+                "actor": { "type": "string" },
+                "realm": { "type": "string" },
+                "input": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["kind", "recipient", "category", "sourceService", "title", "text"],
+                  "properties": {
+                    "kind": { "const": "CONTENT" },
+                    "recipient": { "type": "string" },
+                    "category": {
+                      "type": "string",
+                      "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                    },
+                    "sourceService": {
+                      "type": "string",
+                      "enum": [
+                        "access-control-service",
+                        "notification-service",
+                        "certificate-service",
+                        "identity-service",
+                        "template-service"
+                      ]
+                    },
+                    "dedupKey": { "type": "string" },
+                    "title": { "type": "string" },
+                    "text": { "type": "string" }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["input"],
+              "properties": {
+                "actor": { "type": "string" },
+                "realm": { "type": "string" },
+                "input": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["kind", "recipient", "category", "sourceService", "template", "language"],
+                  "properties": {
+                    "kind": { "const": "TEMPLATE" },
+                    "recipient": { "type": "string" },
+                    "category": {
+                      "type": "string",
+                      "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                    },
+                    "sourceService": {
+                      "type": "string",
+                      "enum": [
+                        "access-control-service",
+                        "notification-service",
+                        "certificate-service",
+                        "identity-service",
+                        "template-service"
+                      ]
+                    },
+                    "dedupKey": { "type": "string" },
+                    "params": {
+                      "type": "object",
+                      "additionalProperties": { "type": "string" }
+                    },
+                    "template": {
+                      "type": "string",
+                      "enum": [
+                        "PASSWORD_CHANGED_VIA_RECOVERY_CODE",
+                        "PASSWORD_CHANGED_VIA_OTP",
+                        "PASSWORD_CHANGED",
+                        "SECOND_FACTOR_ENABLED",
+                        "SECOND_FACTOR_RESET",
+                        "RECOVERY_CODES_REGENERATED",
+                        "IDENTIFIER_PURGED",
+                        "LOGIN_ALERT",
+                        "IDENTIFIER_VERIFICATION_OTP",
+                        "ACCOUNT_VERIFICATION_OTP",
+                        "RESET_PASSWORD_OTP",
+                        "LOGIN_OTP",
+                        "ASSIGNMENT_GRANTED",
+                        "ASSIGNMENT_REVOKED",
+                        "REALM_EXCLUDED",
+                        "INVITE_CANCELLED",
+                        "INVITE_RECEIVED"
+                      ]
+                    },
+                    "language": { "type": "string" }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "CANCEL" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": { "type": "string" },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["dedupKey", "override"],
+              "properties": {
+                "dedupKey": { "type": "string" },
+                "override": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["input"],
+                      "properties": {
+                        "actor": { "type": "string" },
+                        "realm": { "type": "string" },
+                        "input": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": ["kind", "recipient", "category", "sourceService", "title", "text"],
+                          "properties": {
+                            "kind": { "const": "CONTENT" },
+                            "recipient": { "type": "string" },
+                            "category": {
+                              "type": "string",
+                              "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                            },
+                            "sourceService": {
+                              "type": "string",
+                              "enum": [
+                                "access-control-service",
+                                "notification-service",
+                                "certificate-service",
+                                "identity-service",
+                                "template-service"
+                              ]
+                            },
+                            "dedupKey": { "type": "string" },
+                            "title": { "type": "string" },
+                            "text": { "type": "string" }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["input"],
+                      "properties": {
+                        "actor": { "type": "string" },
+                        "realm": { "type": "string" },
+                        "input": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": ["kind", "recipient", "category", "sourceService", "template", "language"],
+                          "properties": {
+                            "kind": { "const": "TEMPLATE" },
+                            "recipient": { "type": "string" },
+                            "category": {
+                              "type": "string",
+                              "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                            },
+                            "sourceService": {
+                              "type": "string",
+                              "enum": [
+                                "access-control-service",
+                                "notification-service",
+                                "certificate-service",
+                                "identity-service",
+                                "template-service"
+                              ]
+                            },
+                            "dedupKey": { "type": "string" },
+                            "params": {
+                              "type": "object",
+                              "additionalProperties": { "type": "string" }
+                            },
+                            "template": {
+                              "type": "string",
+                              "enum": [
+                                "PASSWORD_CHANGED_VIA_RECOVERY_CODE",
+                                "PASSWORD_CHANGED_VIA_OTP",
+                                "PASSWORD_CHANGED",
+                                "SECOND_FACTOR_ENABLED",
+                                "SECOND_FACTOR_RESET",
+                                "RECOVERY_CODES_REGENERATED",
+                                "IDENTIFIER_PURGED",
+                                "LOGIN_ALERT",
+                                "IDENTIFIER_VERIFICATION_OTP",
+                                "ACCOUNT_VERIFICATION_OTP",
+                                "RESET_PASSWORD_OTP",
+                                "LOGIN_OTP",
+                                "ASSIGNMENT_GRANTED",
+                                "ASSIGNMENT_REVOKED",
+                                "REALM_EXCLUDED",
+                                "INVITE_CANCELLED",
+                                "INVITE_RECEIVED"
+                              ]
+                            },
+                            "language": { "type": "string" }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

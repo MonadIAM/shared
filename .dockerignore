@@ -1,0 +1,15 @@
+node_modules
+dist
+*.log
+pnpm-debug.log*
+
+.git
+.github
+.githooks
+
+.DS_Store
+.idea
+.vscode
+
+.env
+.env.example

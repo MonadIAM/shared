@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/access-cache-value.json",
+  "title": "AccessCacheValue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["actionType", "payload"],
+  "properties": {
+    "actionType": {
+      "type": "string",
+      "enum": ["INVALIDATE"]
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["items"],
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["scope", "account", "realm"],
+                "properties": {
+                  "scope": { "const": "ACCOUNT_REALM" },
+                  "account": { "type": "string" },
+                  "realm": { "type": "string" }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["scope", "realm"],
+                "properties": {
+                  "scope": { "const": "REALM" },
+                  "realm": { "type": "string" }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["scope", "account"],
+                "properties": {
+                  "scope": { "const": "ACCOUNT" },
+                  "account": { "type": "string" }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["scope"],
+                "properties": {
+                  "scope": { "const": "GLOBAL" }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/envelope-value.json",
+  "title": "EnvelopeValue",
+  "description": "Retry and dead-letter envelope. Wraps the value of the topic the message originally failed on.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["originalTopic", "payload", "error"],
+  "properties": {
+    "originalTopic": {
+      "type": "string",
+      "enum": [
+        "account",
+        "membership",
+        "realm",
+        "access-cache",
+        "notification",
+        "message-dispatch",
+        "projection-journal",
+        "reauthentication",
+        "blacklist"
+      ]
+    },
+    "payload": {
+      "description": "Value of the original message, shaped by the schema of originalTopic."
+    },
+    "error": {
+      "type": "string"
+    }
+  }
+}
