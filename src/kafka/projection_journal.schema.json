@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/projection-journal-value.json",
+  "title": "ProjectionJournalValue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["actionType", "payload"],
+  "properties": {
+    "actionType": {
+      "type": "string",
+      "enum": [
+        "role-permission-assignment/create",
+        "role-permission-assignment/update",
+        "role-permission-assignment/purge",
+        "account-role-assignment/create",
+        "account-role-assignment/update",
+        "account-role-assignment/purge",
+        "permission-override/create",
+        "permission-override/update",
+        "permission-override/purge",
+        "role-closure/update",
+        "permission/create",
+        "permission/update",
+        "permission/purge",
+        "realm/create",
+        "realm/update",
+        "realm/purge",
+        "role/create",
+        "role/update",
+        "role/purge"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

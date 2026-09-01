@@ -3,7 +3,7 @@
   "description": "Shared Kafka/gRPC contracts and common enums between MonadIAM services",
   "author": "Daniil Egorov (https://github.com/Lambdius)",
   "license": "UNLICENSED",
-  "version": "1.0.42",
+  "version": "2.0.0",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "exports": {
@@ -12,7 +12,7 @@
       "require": "./dist/index.js",
       "default": "./dist/index.js"
     },
-    "./proto/*": "./dist/proto/*"
+    "./grpc/*": "./src/grpc/*"
   },
   "engines": {
     "node": "24.18.0"
@@ -22,11 +22,17 @@
   },
   "packageManager": "pnpm@11.24.0",
   "files": [
-    "dist"
+    "dist",
+    "src/grpc",
+    "src/kafka",
+    "catalog.json"
   ],
   "scripts": {
-    "build": "rm -rf dist tsconfig.tsbuildinfo && tsc && mkdir -p dist/proto && cp -R src/proto/. dist/proto/",
+    "build": "rm -rf dist tsconfig.tsbuildinfo && tsc",
     "knip": "knip --config configs/knip.config.ts",
+    "verify": "./scripts/verify.sh",
+    "apply": "./scripts/apply.sh",
+    "check": "./scripts/check.sh",
     "prepare": "pnpm run build",
     "lint": "eslint ."
   },

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/blacklist-value.json",
+  "title": "BlacklistValue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["actionType", "payload"],
+  "properties": {
+    "actionType": {
+      "type": "string",
+      "enum": ["ADD"]
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expiresAt", "session"],
+      "properties": {
+        "expiresAt": { "type": "number" },
+        "session": { "type": "string" }
+      }
+    }
+  }
+}
