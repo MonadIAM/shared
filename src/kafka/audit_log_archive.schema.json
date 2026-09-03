@@ -13,14 +13,14 @@
     "payload": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "actor", "service", "action_type", "entity_type", "created_at"],
+      "required": ["id", "service", "action_type", "entity_type", "created_at"],
       "properties": {
         "id": { "type": "string" },
-        "actor": { "type": "string" },
         "service": { "type": "string" },
         "action_type": { "type": "string" },
         "entity_type": { "type": "string" },
         "created_at": { "type": "string" },
+        "actor": { "type": ["string", "null"] },
         "realm": { "type": ["string", "null"] },
         "input": { "type": ["string", "null"] },
         "user_agent": { "type": ["string", "null"] },
