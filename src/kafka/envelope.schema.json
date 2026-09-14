@@ -5,12 +5,8 @@
   "description": "Retry and dead-letter envelope. Wraps the value of the topic the message originally failed on.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["event", "originalTopic", "payload", "error"],
+  "required": ["originalTopic", "payload", "error"],
   "properties": {
-    "event": {
-      "type": "string",
-      "minLength": 1
-    },
     "originalTopic": {
       "type": "string",
       "enum": [
