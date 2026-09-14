@@ -39,6 +39,7 @@ declare global {
             type Message = {
                 originalTopic: string;
                 payload: unknown;
+                event: string;
                 error: string;
             };
         }
