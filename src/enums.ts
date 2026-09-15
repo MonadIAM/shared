@@ -408,9 +408,8 @@ export enum KafkaTopic {
     MESSAGE_DISPATCH_DEAD  = "message-dispatch-dead",
 
     // projection-journal: access-control internal (redis sync)
-    PROJECTION_JOURNAL       = "projection-journal",
-    PROJECTION_JOURNAL_RETRY = "projection-journal-retry",
-    PROJECTION_JOURNAL_DEAD  = "projection-journal-dead",
+    PROJECTION_JOURNAL      = "projection-journal",
+    PROJECTION_JOURNAL_DEAD = "projection-journal-dead",
 
     // reauthentication: identity -> all services
     REAUTHENTICATION       = "reauthentication",

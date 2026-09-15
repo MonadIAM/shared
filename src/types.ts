@@ -255,7 +255,9 @@ declare global {
         namespace ProjectionJournal {
             type Message = {
                 actionType: ProjectionScript;
-                payload: Record<string, unknown>;
+                payload: Record<string, unknown> & {
+                    realm: string;
+                };
             };
         }
 

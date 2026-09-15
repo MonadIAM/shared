@@ -246,15 +246,6 @@
     },
     {
       "groupId": "monadiam.kafka",
-      "artifactId": "projection-journal-retry-access-control-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": ["access-control-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
       "artifactId": "reauthentication-retry-access-control-service-value",
       "schemaType": "JSON",
       "protocol": "kafka",

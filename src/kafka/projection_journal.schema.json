@@ -32,7 +32,11 @@
     },
     "payload": {
       "type": "object",
-      "additionalProperties": true
+      "additionalProperties": true,
+      "required": ["realm"],
+      "properties": {
+        "realm": { "type": "string" }
+      }
     }
   }
 }
