@@ -32,6 +32,7 @@ export enum PlatformService {
     /* eslint-disable prettier/prettier */
     ACCESS_CONTROL_SERVICE = "access-control-service",
     NOTIFICATION_SERVICE   = "notification-service",
+    MULTITENANCY_SERVICE   = "multitenancy-service",
     CERTIFICATE_SERVICE    = "certificate-service",
     IDENTITY_SERVICE       = "identity-service",
     TEMPLATE_SERVICE       = "template-service",
