@@ -265,11 +265,6 @@ export enum PermissionCode {
     // Identity
     // ---------------------------------------------------------------------------
 
-    INVITE_READ_PERSONAL = "invite.read_personal",
-    INVITE_READ_ABSOLUTE = "invite.read_absolute",
-    INVITE_CHANGE_STATUS = "invite.change_status",
-    INVITE_CREATE        = "invite.create",
-
     ACCOUNT_READ_PERSONAL = "account.read_personal",
     ACCOUNT_READ_COMMON   = "account.read_common",
     ACCOUNT_READ_ABSOLUTE = "account.read_absolute",
@@ -327,13 +322,50 @@ export enum PermissionCode {
     SERVICE_CLIENT_RESTORE       = "service_client.restore",
     SERVICE_CLIENT_PURGE         = "service_client.purge",
 
-    MEMBERSHIP_READ_ABSOLUTE = "membership.read_absolute",
-    MEMBERSHIP_READ_PERSONAL = "membership.read_personal",
-    MEMBERSHIP_READ_COMMON   = "membership.read_common",
-
     MEMBERSHIP_HISTORY_READ_ABSOLUTE = "membership_history.read_absolute",
     MEMBERSHIP_HISTORY_READ_PERSONAL = "membership_history.read_personal",
     MEMBERSHIP_HISTORY_READ_COMMON   = "membership_history.read_common",
+
+    // ---------------------------------------------------------------------------
+    // Multitenancy
+    // ---------------------------------------------------------------------------
+
+    ORGANIZATION_READ_PERSONAL = "organization.read_personal",
+    ORGANIZATION_READ_ABSOLUTE = "organization.read_absolute",
+
+    INVITE_READ_PERSONAL = "invite.read_personal",
+    INVITE_READ_COMMON   = "invite.read_common",
+    INVITE_READ_ABSOLUTE = "invite.read_absolute",
+    INVITE_CHANGE_STATUS = "invite.change_status",
+    INVITE_CREATE        = "invite.create",
+
+    MEMBERSHIP_READ_PERSONAL = "membership.read_personal",
+    MEMBERSHIP_READ_COMMON   = "membership.read_common",
+    MEMBERSHIP_READ_ABSOLUTE = "membership.read_absolute",
+
+    PROJECT_READ_PERSONAL = "project.read_personal",
+    PROJECT_READ_COMMON   = "project.read_common",
+    PROJECT_READ_ABSOLUTE = "project.read_absolute",
+
+    PROJECT_ACCOUNT_ASSIGNMENT_READ_PERSONAL = "project_account_assignment.read_personal",
+    PROJECT_ACCOUNT_ASSIGNMENT_READ_COMMON   = "project_account_assignment.read_common",
+    PROJECT_ACCOUNT_ASSIGNMENT_READ_ABSOLUTE = "project_account_assignment.read_absolute",
+
+    DEPARTMENT_READ_PERSONAL = "department.read_personal",
+    DEPARTMENT_READ_COMMON   = "department.read_common",
+    DEPARTMENT_READ_ABSOLUTE = "department.read_absolute",
+
+    DEPT_ACCOUNT_ASSIGNMENT_READ_PERSONAL = "dept_account_assignment.read_personal",
+    DEPT_ACCOUNT_ASSIGNMENT_READ_COMMON   = "dept_account_assignment.read_common",
+    DEPT_ACCOUNT_ASSIGNMENT_READ_ABSOLUTE = "dept_account_assignment.read_absolute",
+
+    TEAM_READ_PERSONAL = "team.read_personal",
+    TEAM_READ_COMMON   = "team.read_common",
+    TEAM_READ_ABSOLUTE = "team.read_absolute",
+
+    TEAM_ACCOUNT_ASSIGNMENT_READ_PERSONAL = "team_account_assignment.read_personal",
+    TEAM_ACCOUNT_ASSIGNMENT_READ_COMMON   = "team_account_assignment.read_common",
+    TEAM_ACCOUNT_ASSIGNMENT_READ_ABSOLUTE = "team_account_assignment.read_absolute",
 
     // ---------------------------------------------------------------------------
     // Notification
