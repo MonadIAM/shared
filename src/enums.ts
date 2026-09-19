@@ -301,13 +301,6 @@ export enum PermissionCode {
     SESSION_REVOKE        = "session.revoke",
     SESSION_REVOKE_ALL    = "session.revoke_all",
 
-    APPLICATION_READ_ABSOLUTE = "application.read_absolute",
-    APPLICATION_CREATE        = "application.create",
-    APPLICATION_UPDATE        = "application.update",
-    APPLICATION_REVOKE        = "application.revoke",
-    APPLICATION_RESTORE       = "application.restore",
-    APPLICATION_PURGE         = "application.purge",
-
     INTERFACE_CLIENT_READ_ABSOLUTE = "interface_client.read_absolute",
     INTERFACE_CLIENT_CREATE        = "interface_client.create",
     INTERFACE_CLIENT_UPDATE        = "interface_client.update",
