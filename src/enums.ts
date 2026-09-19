@@ -433,47 +433,39 @@ export enum KafkaTopic {
     /* eslint-disable prettier/prettier */
     // account: identity -> all services
     ACCOUNT       = "account",
-    ACCOUNT_RETRY = "account-retry",
     ACCOUNT_DEAD  = "account-dead",
 
     // membership workflow: identity <-> access-control
     MEMBERSHIP       = "membership",
-    MEMBERSHIP_RETRY = "membership-retry",
     MEMBERSHIP_DEAD  = "membership-dead",
 
     // realm: access-control -> identity
     REALM       = "realm",
-    REALM_RETRY = "realm-retry",
     REALM_DEAD  = "realm-dead",
 
     // identifier: identity -> notification
     IDENTIFIER       = "identifier",
-    IDENTIFIER_RETRY = "identifier-retry",
     IDENTIFIER_DEAD  = "identifier-dead",
 
     // service-client: identity -> certificate-service
     SERVICE_CLIENT       = "service-client",
-    SERVICE_CLIENT_RETRY = "service-client-retry",
     SERVICE_CLIENT_DEAD  = "service-client-dead",
 
     // interface-client: identity -> all services
     INTERFACE_CLIENT       = "interface-client",
-    INTERFACE_CLIENT_RETRY = "interface-client-retry",
     INTERFACE_CLIENT_DEAD  = "interface-client-dead",
 
     // access-cache: access-control -> all services
     ACCESS_CACHE       = "access-cache",
-    ACCESS_CACHE_RETRY = "access-cache-retry",
     ACCESS_CACHE_DEAD  = "access-cache-dead",
 
     // notification: all services -> notification
     NOTIFICATION       = "notification",
-    NOTIFICATION_RETRY = "notification-retry",
     NOTIFICATION_DEAD  = "notification-dead",
 
     // message-dispatch: notification internal (SES/SNS dispatch)
     MESSAGE_DISPATCH       = "message-dispatch",
-    MESSAGE_DISPATCH_RETRY = "message-dispatch-retry",
+    MESSAGE_DISPATCH_RETRY = "message-dispatch-retry-notification-service",
     MESSAGE_DISPATCH_DEAD  = "message-dispatch-dead",
 
     // projection-journal: access-control internal (redis sync)
@@ -482,10 +474,9 @@ export enum KafkaTopic {
 
     // reauthentication: identity -> all services
     REAUTHENTICATION       = "reauthentication",
-    REAUTHENTICATION_RETRY = "reauthentication-retry",
     REAUTHENTICATION_DEAD  = "reauthentication-dead",
 
-    // blacklist: session revocation — no retry, dead for failure analysis only
+    // blacklist: session revocation — bounded inline retry, terminal dead-letter on failure
     BLACKLIST      = "blacklist",
     BLACKLIST_DEAD = "blacklist-dead",
 

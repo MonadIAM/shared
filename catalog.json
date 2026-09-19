@@ -174,42 +174,6 @@
     },
     {
       "groupId": "monadiam.kafka",
-      "artifactId": "reauthentication-retry-identity-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["identity-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "access-cache-retry-identity-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["identity-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "membership-retry-identity-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["identity-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "realm-retry-identity-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["identity-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
       "artifactId": "interface-client-value",
       "schemaType": "JSON",
       "protocol": "kafka",
@@ -246,102 +210,12 @@
     },
     {
       "groupId": "monadiam.kafka",
-      "artifactId": "reauthentication-retry-access-control-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": ["access-control-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "membership-retry-access-control-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": ["access-control-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "account-retry-access-control-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": ["access-control-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
       "artifactId": "message-dispatch-retry-notification-service-value",
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
       "producers": ["notification-service"],
       "consumers": ["notification-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "reauthentication-retry-notification-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["notification-service"],
-      "consumers": ["notification-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "notification-retry-notification-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["notification-service"],
-      "consumers": ["notification-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "access-cache-retry-notification-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["notification-service"],
-      "consumers": ["notification-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "reauthentication-retry-template-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["template-service"],
-      "consumers": ["template-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "access-cache-retry-template-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["template-service"],
-      "consumers": ["template-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "reauthentication-retry-multitenancy-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["multitenancy-service"],
-      "consumers": ["multitenancy-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "access-cache-retry-multitenancy-service-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["multitenancy-service"],
-      "consumers": ["multitenancy-service"]
     }
   ]
 }

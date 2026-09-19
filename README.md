@@ -46,8 +46,9 @@ gRPC artifacts use Protocol Buffers and the native API, since nothing resolves t
 
 The `groupId` field in the catalog applies to native API artifacts only.
 
-Retry subjects are scoped to the consuming service — `<topic>-retry-<service>-value` — so a failed
-message is replayed only where it failed. Dead-letter subjects stay shared, nothing consumes them.
+Ordinary consumers use bounded inline retries and publish terminal failures to shared dead-letter topics.
+Only dispatch uses delayed retry: `message-dispatch-retry-notification-service-value`.
+Dead-letter topics have no automatic replay consumers.
 
 Repeated runs are idempotent: the compatibility API returns the existing id for identical content, and native artifacts are created with `ifExists=FIND_OR_CREATE_VERSION`.
 
