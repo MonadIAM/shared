@@ -288,7 +288,6 @@ declare global {
                     actor: string;
                     realm: string;
                     input: {
-                        application: string;
                         code: string;
                         id: string;
                     };
@@ -303,7 +302,6 @@ declare global {
                     actor: string;
                     realm: string;
                     input: {
-                        application: string;
                         isRevoked: boolean;
                         id: string;
                     };

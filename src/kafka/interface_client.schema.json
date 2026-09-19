@@ -20,9 +20,8 @@
         "input": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["application", "isRevoked", "id"],
+          "required": ["isRevoked", "id"],
           "properties": {
-            "application": { "type": "string" },
             "isRevoked": { "type": "boolean" },
             "id": { "type": "string" }
           }
