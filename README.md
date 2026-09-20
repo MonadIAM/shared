@@ -48,6 +48,8 @@ The `groupId` field in the catalog applies to native API artifacts only.
 
 Ordinary consumers use bounded inline retries and publish terminal failures to shared dead-letter topics.
 Only dispatch uses delayed retry: `message-dispatch-retry-notification-service-value`.
+Realm bootstrap, membership join and ownership transfer requests and outcomes share `realm-value`.
+The separate membership topic/schema is removed; all realm workflow payloads carry `realm` for partition routing.
 Dead-letter topics have no automatic replay consumers.
 
 Repeated runs are idempotent: the compatibility API returns the existing id for identical content, and native artifacts are created with `ifExists=FIND_OR_CREATE_VERSION`.

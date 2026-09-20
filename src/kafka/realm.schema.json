@@ -2,30 +2,583 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://schemas.monadiam.local/kafka/realm-value.json",
   "title": "RealmValue",
-  "type": "object",
-  "additionalProperties": false,
-  "required": ["actionType", "payload"],
-  "properties": {
-    "actionType": {
-      "type": "string",
-      "enum": ["RESTORE", "REVOKE", "PURGE"]
-    },
-    "payload": {
+  "oneOf": [
+    {
       "type": "object",
       "additionalProperties": false,
-      "required": ["actor", "realm", "input"],
+      "required": ["actionType", "payload"],
       "properties": {
-        "actor": { "type": "string" },
-        "realm": { "type": "string" },
-        "input": {
+        "actionType": {
+          "const": "MEMBERSHIP_JOIN_REQUESTED"
+        },
+        "payload": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["version"],
+          "required": ["actor", "realm", "input"],
           "properties": {
-            "version": { "type": "number" }
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "command", "membership", "account"],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "command": {
+                  "type": "string"
+                },
+                "membership": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                },
+                "invite": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "MEMBERSHIP_JOIN_CONFIRMED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "command",
+                "membership",
+                "account",
+                "assignment",
+                "role",
+                "joinedAt"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "command": {
+                  "type": "string"
+                },
+                "membership": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                },
+                "invite": {
+                  "type": "string"
+                },
+                "assignment": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "joinedAt": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "MEMBERSHIP_JOIN_REJECTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "command",
+                "membership",
+                "account",
+                "reason"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "command": {
+                  "type": "string"
+                },
+                "membership": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                },
+                "invite": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "BOOTSTRAP_ORGANIZATION_REQUESTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "resource", "owner", "name"],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "resource": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "BOOTSTRAP_PROJECT_REQUESTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "resource",
+                "owner",
+                "organizationRealm",
+                "name"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "resource": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "organizationRealm": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "BOOTSTRAP_CONFIRMED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "resource", "type"],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "resource": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["ORGANIZATION", "PROJECT"]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "BOOTSTRAP_REJECTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "resource", "reason", "type"],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "resource": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["ORGANIZATION", "PROJECT"]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "TRANSFER_OWNERSHIP_REQUESTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "organization", "owner", "previousOwner"],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "previousOwner": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "TRANSFER_OWNERSHIP_CONFIRMED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["process", "organization", "owner", "previousOwner"],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "previousOwner": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "TRANSFER_OWNERSHIP_REJECTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "organization",
+                "owner",
+                "previousOwner",
+                "reason"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "previousOwner": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "type": "string",
+          "enum": ["SYSTEM_REVOKE", "SYSTEM_RESTORE", "SYSTEM_PURGE"]
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "type": "string",
+          "enum": [
+            "ACCOUNT_ACCESS_PURGE",
+            "ACCOUNT_ACCESS_REVOKE",
+            "ACCOUNT_ACCESS_RESTORE"
+          ]
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["account"],
+              "properties": {
+                "account": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "type": "string",
+          "enum": ["RESTORE", "REVOKE", "PURGE"]
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["version"],
+              "properties": {
+                "version": {
+                  "type": "number"
+                }
+              }
+            }
           }
         }
       }
     }
-  }
+  ]
 }

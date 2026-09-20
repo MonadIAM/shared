@@ -71,17 +71,6 @@ export enum PrivilegeScope {
     /* eslint-enable prettier/prettier */
 }
 
-export enum MembershipTopicAction {
-    /* eslint-disable prettier/prettier */
-    LEAVE_REQUESTED = "LEAVE_REQUESTED",
-    LEAVE_CONFIRMED = "LEAVE_CONFIRMED",
-    LEAVE_REJECTED  = "LEAVE_REJECTED",
-    JOIN_REQUESTED  = "JOIN_REQUESTED",
-    JOIN_CONFIRMED  = "JOIN_CONFIRMED",
-    JOIN_REJECTED   = "JOIN_REJECTED",
-    /* eslint-enable prettier/prettier */
-}
-
 export enum ServiceClientTopicAction {
     /* eslint-disable prettier/prettier */
     RESTORE = "RESTORE",
@@ -100,11 +89,33 @@ export enum InterfaceClientTopicAction {
     /* eslint-enable prettier/prettier */
 }
 
+export enum RealmType {
+    SYSTEM = "SYSTEM",
+    ORGANIZATION = "ORGANIZATION",
+    PROJECT = "PROJECT",
+}
+
 export enum RealmTopicAction {
     /* eslint-disable prettier/prettier */
-    RESTORE = "RESTORE",
-    REVOKE  = "REVOKE",
-    PURGE   = "PURGE",
+    MEMBERSHIP_JOIN_REQUESTED        = "MEMBERSHIP_JOIN_REQUESTED",
+    MEMBERSHIP_JOIN_CONFIRMED        = "MEMBERSHIP_JOIN_CONFIRMED",
+    MEMBERSHIP_JOIN_REJECTED         = "MEMBERSHIP_JOIN_REJECTED",
+    BOOTSTRAP_ORGANIZATION_REQUESTED = "BOOTSTRAP_ORGANIZATION_REQUESTED",
+    BOOTSTRAP_PROJECT_REQUESTED      = "BOOTSTRAP_PROJECT_REQUESTED",
+    BOOTSTRAP_CONFIRMED              = "BOOTSTRAP_CONFIRMED",
+    BOOTSTRAP_REJECTED               = "BOOTSTRAP_REJECTED",
+    TRANSFER_OWNERSHIP_REQUESTED     = "TRANSFER_OWNERSHIP_REQUESTED",
+    TRANSFER_OWNERSHIP_CONFIRMED     = "TRANSFER_OWNERSHIP_CONFIRMED",
+    TRANSFER_OWNERSHIP_REJECTED      = "TRANSFER_OWNERSHIP_REJECTED",
+    SYSTEM_REVOKE                    = "SYSTEM_REVOKE",
+    SYSTEM_RESTORE                   = "SYSTEM_RESTORE",
+    SYSTEM_PURGE                     = "SYSTEM_PURGE",
+    ACCOUNT_ACCESS_PURGE             = "ACCOUNT_ACCESS_PURGE",
+    ACCOUNT_ACCESS_REVOKE            = "ACCOUNT_ACCESS_REVOKE",
+    ACCOUNT_ACCESS_RESTORE           = "ACCOUNT_ACCESS_RESTORE",
+    RESTORE                          = "RESTORE",
+    REVOKE                           = "REVOKE",
+    PURGE                            = "PURGE",
     /* eslint-enable prettier/prettier */
 }
 
@@ -435,11 +446,7 @@ export enum KafkaTopic {
     ACCOUNT       = "account",
     ACCOUNT_DEAD  = "account-dead",
 
-    // membership workflow: identity <-> access-control
-    MEMBERSHIP       = "membership",
-    MEMBERSHIP_DEAD  = "membership-dead",
-
-    // realm: access-control -> identity
+    // ordered realm and membership workflows: multitenancy <-> access-control; lifecycle -> identity
     REALM       = "realm",
     REALM_DEAD  = "realm-dead",
 

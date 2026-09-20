@@ -6,7 +6,6 @@ import {
     NotificationTopicAction,
     AccessCacheTopicAction,
     MessageDispatchAction,
-    MembershipTopicAction,
     NotificationCategory,
     BlacklistTopicAction,
     AccountTopicAction,
@@ -16,6 +15,7 @@ import {
     MessageTemplate,
     PlatformService,
     PrivilegeScope,
+    RealmType,
 } from "./enums";
 
 declare global {
@@ -76,107 +76,198 @@ declare global {
             };
         }
 
-        namespace Membership {
+        namespace Realm {
             type Message =
-                | LeaveRequestedMessage
-                | LeaveConfirmedMessage
-                | LeaveRejectedMessage
-                | JoinRequestedMessage
-                | JoinConfirmedMessage
-                | JoinRejectedMessage;
+                | MembershipJoinRequestedMessage
+                | MembershipJoinConfirmedMessage
+                | MembershipJoinRejectedMessage
+                | BootstrapOrganizationRequestedMessage
+                | BootstrapProjectRequestedMessage
+                | BootstrapConfirmedMessage
+                | BootstrapRejectedMessage
+                | TransferOwnershipRequestedMessage
+                | TransferOwnershipConfirmedMessage
+                | TransferOwnershipRejectedMessage
+                | SystemLifecycleMessage
+                | AccountAccessMessage
+                | LifecycleMessage;
 
-            type JoinRequestedMessage = {
-                actionType: MembershipTopicAction.JOIN_REQUESTED;
+            type MembershipJoinRequestedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_JOIN_REQUESTED;
                 payload: {
                     actor: string;
                     realm: string;
                     input: {
                         process: string;
                         command: string;
+                        membership: string;
                         account: string;
-                        invite: string;
-                        role: string;
+                        invite?: string;
+                        role?: string;
                     };
                 };
             };
 
-            type JoinConfirmedMessage = {
-                actionType: MembershipTopicAction.JOIN_CONFIRMED;
+            type MembershipJoinConfirmedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_JOIN_CONFIRMED;
                 payload: {
                     actor: string;
                     realm: string;
                     input: {
+                        membership: string;
                         assignment: string;
                         joinedAt: number;
                         process: string;
                         command: string;
                         account: string;
-                        invite: string;
+                        invite?: string;
                         role: string;
                     };
                 };
             };
 
-            type JoinRejectedMessage = {
-                actionType: MembershipTopicAction.JOIN_REJECTED;
+            type MembershipJoinRejectedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_JOIN_REJECTED;
                 payload: {
                     actor: string;
                     realm: string;
                     input: {
+                        membership: string;
                         process: string;
                         command: string;
-                        invite: string;
+                        account: string;
+                        invite?: string;
                         reason: string;
                     };
                 };
             };
 
-            type LeaveRequestedMessage = {
-                actionType: MembershipTopicAction.LEAVE_REQUESTED;
+            type BootstrapOrganizationRequestedMessage = {
+                actionType: RealmTopicAction.BOOTSTRAP_ORGANIZATION_REQUESTED;
                 payload: {
                     actor: string;
                     realm: string;
                     input: {
+                        description?: string;
+                        resource: string;
                         process: string;
-                        command: string;
-                        account: string;
-                        reason?: string;
+                        owner: string;
+                        name: string;
                     };
                 };
             };
 
-            type LeaveConfirmedMessage = {
-                actionType: MembershipTopicAction.LEAVE_CONFIRMED;
+            type BootstrapProjectRequestedMessage = {
+                actionType: RealmTopicAction.BOOTSTRAP_PROJECT_REQUESTED;
                 payload: {
                     actor: string;
                     realm: string;
                     input: {
+                        organizationRealm: string;
+                        description?: string;
+                        resource: string;
                         process: string;
-                        command: string;
-                        account: string;
-                        leftAt: number;
+                        owner: string;
+                        name: string;
                     };
                 };
             };
 
-            type LeaveRejectedMessage = {
-                actionType: MembershipTopicAction.LEAVE_REJECTED;
+            type BootstrapConfirmedMessage = {
+                actionType: RealmTopicAction.BOOTSTRAP_CONFIRMED;
                 payload: {
                     actor: string;
                     realm: string;
                     input: {
+                        type: RealmType.ORGANIZATION | RealmType.PROJECT;
+                        resource: string;
                         process: string;
-                        command: string;
-                        account: string;
+                    };
+                };
+            };
+
+            type BootstrapRejectedMessage = {
+                actionType: RealmTopicAction.BOOTSTRAP_REJECTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        type: RealmType.ORGANIZATION | RealmType.PROJECT;
+                        resource: string;
+                        process: string;
                         reason: string;
                     };
                 };
             };
-        }
 
-        namespace Realm {
-            type Message = {
-                actionType: RealmTopicAction;
+            type TransferOwnershipRequestedMessage = {
+                actionType: RealmTopicAction.TRANSFER_OWNERSHIP_REQUESTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        previousOwner: string;
+                        organization: string;
+                        process: string;
+                        owner: string;
+                    };
+                };
+            };
+
+            type TransferOwnershipConfirmedMessage = {
+                actionType: RealmTopicAction.TRANSFER_OWNERSHIP_CONFIRMED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        previousOwner: string;
+                        organization: string;
+                        process: string;
+                        owner: string;
+                    };
+                };
+            };
+
+            type TransferOwnershipRejectedMessage = {
+                actionType: RealmTopicAction.TRANSFER_OWNERSHIP_REJECTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        previousOwner: string;
+                        organization: string;
+                        process: string;
+                        reason: string;
+                        owner: string;
+                    };
+                };
+            };
+
+            type SystemLifecycleMessage = {
+                actionType:
+                    RealmTopicAction.SYSTEM_REVOKE | RealmTopicAction.SYSTEM_RESTORE | RealmTopicAction.SYSTEM_PURGE;
+                payload: {
+                    actor: string;
+                    realm: string;
+                };
+            };
+
+            type AccountAccessMessage = {
+                actionType:
+                    | RealmTopicAction.ACCOUNT_ACCESS_PURGE
+                    | RealmTopicAction.ACCOUNT_ACCESS_REVOKE
+                    | RealmTopicAction.ACCOUNT_ACCESS_RESTORE;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        account: string;
+                    };
+                };
+            };
+
+            type LifecycleMessage = {
+                actionType: RealmTopicAction.RESTORE | RealmTopicAction.REVOKE | RealmTopicAction.PURGE;
                 payload: {
                     actor: string;
                     realm: string;
@@ -208,8 +299,8 @@ declare global {
                     actor?: string;
                     realm?: string;
                     input: {
-                        dedupKey: string;
                         override: NotificationSpec;
+                        dedupKey: string;
                     };
                 };
             };
@@ -217,15 +308,15 @@ declare global {
             type Message = CreateMessage | CancelMessage;
 
             type NotificationSpec = {
+                input: ContentInput | TemplateInput;
                 actor?: string;
                 realm?: string;
-                input: ContentInput | TemplateInput;
             };
 
             type BaseInput = {
-                recipient: string;
                 category: NotificationCategory;
                 sourceService: PlatformService;
+                recipient: string;
                 dedupKey?: string;
             };
 

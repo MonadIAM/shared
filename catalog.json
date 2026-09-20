@@ -17,7 +17,7 @@
       "protocol": "kafka",
       "path": "kafka/account.schema.json",
       "producers": ["identity-service"],
-      "consumers": ["access-control-service"]
+      "consumers": ["access-control-service", "multitenancy-service"]
     },
     {
       "groupId": "monadiam.kafka",
@@ -25,8 +25,8 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/realm.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": ["identity-service"]
+      "producers": ["multitenancy-service", "access-control-service"],
+      "consumers": ["access-control-service", "multitenancy-service", "identity-service"]
     },
     {
       "groupId": "monadiam.kafka",
@@ -36,15 +36,6 @@
       "path": "kafka/access_cache.schema.json",
       "producers": ["access-control-service"],
       "consumers": ["identity-service", "notification-service", "template-service", "multitenancy-service"]
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "membership-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/membership.schema.json",
-      "producers": ["identity-service", "access-control-service"],
-      "consumers": ["identity-service", "access-control-service"]
     },
     {
       "groupId": "monadiam.kafka",
@@ -106,16 +97,7 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": []
-    },
-    {
-      "groupId": "monadiam.kafka",
-      "artifactId": "membership-dead-value",
-      "schemaType": "JSON",
-      "protocol": "kafka",
-      "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service", "identity-service"],
+      "producers": ["access-control-service", "multitenancy-service"],
       "consumers": []
     },
     {
@@ -124,7 +106,7 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["identity-service"],
+      "producers": ["access-control-service", "multitenancy-service", "identity-service"],
       "consumers": []
     },
     {
