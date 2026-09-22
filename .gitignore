@@ -2,3 +2,10 @@
 /node_modules
 /dist
 .env
+
+# Local Graphify outputs
+/graphify-out/
+
+# Local LSP-MCP data
+/.lsmcp/*
+!/.lsmcp/config.json

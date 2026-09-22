@@ -28,13 +28,17 @@
     "catalog.json"
   ],
   "scripts": {
-    "build": "rm -rf dist tsconfig.tsbuildinfo && tsc",
+    "lint": "eslint",
+    "lint:fix": "eslint --config ./prettier.config.mjs --fix --format json | node -e \"process.stdin.on('data',d=>JSON.parse(d).forEach(f=>f.output && console.log(f.filePath)));\"",
+    "tsc": "tsc --noEmit",
     "knip": "knip --config configs/knip.config.ts",
+    "secrets:check": "gitleaks detect --config .gitleaks.toml --source .",
+    "lsp": "lsmcp --config .lsmcp/config.json",
+    "build": "rm -rf dist tsconfig.tsbuildinfo && tsc",
     "verify": "./scripts/verify.sh",
     "apply": "./scripts/apply.sh",
     "check": "./scripts/check.sh",
-    "prepare": "pnpm run build",
-    "lint": "eslint ."
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",
@@ -45,6 +49,7 @@
   },
   "homepage": "https://github.com/MonadIAM/shared#readme",
   "devDependencies": {
+    "@mizchi/lsmcp": "0.10.0",
     "@types/node": "26.2.0",
     "@typescript-eslint/parser": "8.67.0",
     "eslint": "10.9.0",
@@ -54,6 +59,7 @@
     "knip": "6.32.2",
     "prettier": "3.9.6",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.67.0"
+    "typescript-eslint": "8.67.0",
+    "typescript-language-server": "5.1.3"
   }
 }
