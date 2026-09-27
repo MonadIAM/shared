@@ -8,15 +8,71 @@
   "properties": {
     "actionType": {
       "type": "string",
-      "enum": ["CREATE", "PURGE"]
+      "enum": ["CREATE", "VERIFY", "PURGE"]
     },
     "payload": {
       "type": "object",
       "additionalProperties": false,
       "required": ["account"],
       "properties": {
-        "account": { "type": "string" }
+        "account": { "type": "string" },
+        "identifier": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "type", "value"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "type": {
+              "enum": ["email", "phone"]
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "otp": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "actionType": { "const": "CREATE" }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": ["account", "identifier", "otp"]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "actionType": {
+            "enum": ["VERIFY", "PURGE"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "not": {
+              "required": ["otp"]
+            }
+          }
+        }
+      }
+    }
+  ]
 }

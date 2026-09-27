@@ -134,6 +134,7 @@ export enum NotificationTopicAction {
 export enum AccountTopicAction {
     /* eslint-disable prettier/prettier */
     CREATE = "CREATE",
+    VERIFY = "VERIFY",
     PURGE  = "PURGE",
     /* eslint-enable prettier/prettier */
 }

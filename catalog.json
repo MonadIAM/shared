@@ -17,7 +17,7 @@
       "protocol": "kafka",
       "path": "kafka/account.schema.json",
       "producers": ["identity-service"],
-      "consumers": ["access-control-service", "multitenancy-service"]
+      "consumers": ["access-control-service", "multitenancy-service", "notification-service"]
     },
     {
       "groupId": "monadiam.kafka",

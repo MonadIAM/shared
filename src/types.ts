@@ -279,12 +279,35 @@ declare global {
         }
 
         namespace Account {
-            type Message = {
-                actionType: AccountTopicAction;
+            type Identifier = {
+                id: string;
+                type: "email" | "phone";
+                value: string;
+            };
+
+            type CreateMessage = {
+                actionType: AccountTopicAction.CREATE;
                 payload: {
                     account: string;
+                    identifier: Identifier;
+                    otp: string;
                 };
             };
+
+            type VerifyMessage = {
+                actionType: AccountTopicAction.VERIFY;
+                payload: {
+                    account: string;
+                    identifier?: Identifier;
+                };
+            };
+
+            type PurgeMessage = {
+                actionType: AccountTopicAction.PURGE;
+                payload: { account: string };
+            };
+
+            type Message = CreateMessage | VerifyMessage | PurgeMessage;
         }
 
         namespace Notification {
