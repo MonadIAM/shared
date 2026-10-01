@@ -3,7 +3,7 @@
   "description": "Shared Kafka/gRPC contracts and common enums between MonadIAM services",
   "author": "Daniil Egorov (https://github.com/Lambdius)",
   "license": "UNLICENSED",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "exports": {
@@ -12,7 +12,27 @@
       "require": "./dist/index.js",
       "default": "./dist/index.js"
     },
-    "./grpc/*": "./src/grpc/*"
+    "./grpc/*": "./src/grpc/*",
+    "./datasets/identity": {
+      "types": "./dist/datasets/identity/index.d.ts",
+      "require": "./dist/datasets/identity/index.js",
+      "default": "./dist/datasets/identity/index.js"
+    },
+    "./datasets/identity/*": {
+      "types": "./dist/datasets/identity/*.d.ts",
+      "require": "./dist/datasets/identity/*.js",
+      "default": "./dist/datasets/identity/*.js"
+    },
+    "./datasets/access-control": {
+      "types": "./dist/datasets/access-control/index.d.ts",
+      "require": "./dist/datasets/access-control/index.js",
+      "default": "./dist/datasets/access-control/index.js"
+    },
+    "./datasets/access-control/*": {
+      "types": "./dist/datasets/access-control/*.d.ts",
+      "require": "./dist/datasets/access-control/*.js",
+      "default": "./dist/datasets/access-control/*.js"
+    }
   },
   "engines": {
     "node": "24.18.0"

@@ -1,3 +1,53 @@
+export enum AccountSubject {
+    /* eslint-disable prettier/prettier */
+    SERVICE = "SERVICE",
+    SYSTEM  = "SYSTEM",
+    HUMAN   = "HUMAN",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum AccountStatus {
+    /* eslint-disable prettier/prettier */
+    DEACTIVATED = "DEACTIVATED",
+    SUSPENDED   = "SUSPENDED",
+    PENDING     = "PENDING",
+    ACTIVE      = "ACTIVE",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum IdentifierType {
+    EMAIL = "email",
+    PHONE = "phone",
+    OAUTH = "oauth",
+}
+
+export enum TokenGrantType {
+    AUTHORIZATION_CODE = "authorization_code",
+    REFRESH_TOKEN = "refresh_token",
+}
+
+export enum RoleActorType {
+    /* eslint-disable prettier/prettier */
+    SERVICE = "SERVICE",
+    SYSTEM  = "SYSTEM",
+    HUMAN   = "HUMAN",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum RoleArchetype {
+    /* eslint-disable prettier/prettier */
+    COMPOSITE = "COMPOSITE",
+    ATOMIC    = "ATOMIC",
+    /* eslint-enable prettier/prettier */
+}
+
+export enum AssignmentScope {
+    /* eslint-disable prettier/prettier */
+    REALM  = "REALM",
+    GLOBAL = "GLOBAL",
+    /* eslint-enable prettier/prettier */
+}
+
 export enum ProjectionScript {
     /* eslint-disable prettier/prettier */
     ROLE_PERMISSION_ASSIGNMENT_CREATE = "role-permission-assignment/create",
