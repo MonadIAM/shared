@@ -16,10 +16,6 @@ export const USER_PERMISSION_CODES: string[] = [
     PermissionCode.MEMBERSHIP_LEAVE,
     PermissionCode.PROJECT_READ_PERSONAL,
     PermissionCode.PROJECT_ACCOUNT_ASSIGNMENT_READ_PERSONAL,
-    PermissionCode.DEPARTMENT_READ_PERSONAL,
-    PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_READ_PERSONAL,
-    PermissionCode.TEAM_READ_PERSONAL,
-    PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_READ_PERSONAL,
 ];
 
 export const ADMIN_PERMISSION_CODES: string[] = [
@@ -88,9 +84,7 @@ export const ADMIN_PERMISSION_CODES: string[] = [
     PermissionCode.PROJECT_READ_COMMON,
     PermissionCode.PROJECT_ACCOUNT_ASSIGNMENT_READ_COMMON,
     PermissionCode.DEPARTMENT_READ_COMMON,
-    PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_READ_COMMON,
     PermissionCode.TEAM_READ_COMMON,
-    PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_READ_COMMON,
     PermissionCode.ORGANIZATION_UPDATE,
     PermissionCode.ORGANIZATION_TRANSFER_OWNERSHIP,
     PermissionCode.INVITE_CANCEL,
@@ -113,20 +107,12 @@ export const ADMIN_PERMISSION_CODES: string[] = [
     PermissionCode.DEPARTMENT_ARCHIVE,
     PermissionCode.DEPARTMENT_RESTORE,
     PermissionCode.DEPARTMENT_PURGE,
-    PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_CREATE,
-    PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_REVOKE,
-    PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_RESTORE,
-    PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_PURGE,
     PermissionCode.TEAM_CREATE,
     PermissionCode.TEAM_UPDATE,
     PermissionCode.TEAM_CHANGE_LEAD,
     PermissionCode.TEAM_ARCHIVE,
     PermissionCode.TEAM_RESTORE,
     PermissionCode.TEAM_PURGE,
-    PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_CREATE,
-    PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_REVOKE,
-    PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_RESTORE,
-    PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_PURGE,
 ];
 
 export const PROJECT_USER_PERMISSION_CODES: string[] = [

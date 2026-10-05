@@ -2,6 +2,24 @@
   "$schema": "./catalog.schema.json",
   "artifacts": [
     {
+      "groupId": "monadiam.kafka",
+      "artifactId": "position-value",
+      "schemaType": "JSON",
+      "protocol": "kafka",
+      "path": "kafka/position.schema.json",
+      "producers": ["hr-service", "multitenancy-service"],
+      "consumers": ["hr-service", "multitenancy-service"]
+    },
+    {
+      "groupId": "monadiam.kafka",
+      "artifactId": "position-dead-value",
+      "schemaType": "JSON",
+      "protocol": "kafka",
+      "path": "kafka/envelope.schema.json",
+      "producers": ["hr-service", "multitenancy-service"],
+      "consumers": []
+    },
+    {
       "groupId": "monadiam.grpc",
       "artifactId": "access-control",
       "schemaType": "PROTOBUF",

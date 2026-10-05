@@ -949,12 +949,6 @@ const dataset = [
 
     // Department
     entry(
-        "00000003-0006-4000-8000-400000000001",
-        PermissionCode.DEPARTMENT_READ_PERSONAL,
-        "Read Personal Departments",
-        "View departments assigned to the current account.",
-    ),
-    entry(
         "00000003-0006-4000-8000-400000000002",
         PermissionCode.DEPARTMENT_READ_COMMON,
         "Read Common Departments",
@@ -1003,57 +997,8 @@ const dataset = [
         "Permanently delete an archived department.",
     ),
 
-    // DeptAccountAssignment
-    entry(
-        "00000003-0007-4000-8000-400000000001",
-        PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_READ_PERSONAL,
-        "Read Personal Department Account Assignments",
-        "View department assignments of the current account.",
-    ),
-    entry(
-        "00000003-0007-4000-8000-400000000002",
-        PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_READ_COMMON,
-        "Read Common Department Account Assignments",
-        "View all department assignments within an organization realm.",
-    ),
-    entry(
-        "00000003-0007-4000-8000-400000000003",
-        PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_READ_ABSOLUTE,
-        "Read Absolute Department Account Assignments",
-        "View all department assignments.",
-    ),
-    entry(
-        "00000003-0007-4000-8000-400000000004",
-        PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_CREATE,
-        "Create Department Account Assignment",
-        "Assign an organization member to a department.",
-    ),
-    entry(
-        "00000003-0007-4000-8000-400000000005",
-        PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_REVOKE,
-        "Revoke Department Account Assignment",
-        "Revoke an account's department assignment.",
-    ),
-    entry(
-        "00000003-0007-4000-8000-400000000006",
-        PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_RESTORE,
-        "Restore Department Account Assignment",
-        "Restore a revoked department account assignment.",
-    ),
-    entry(
-        "00000003-0007-4000-8000-400000000007",
-        PermissionCode.DEPT_ACCOUNT_ASSIGNMENT_PURGE,
-        "Purge Department Account Assignment",
-        "Permanently delete a revoked department account assignment.",
-    ),
 
     // Team
-    entry(
-        "00000003-0008-4000-8000-400000000001",
-        PermissionCode.TEAM_READ_PERSONAL,
-        "Read Personal Teams",
-        "View teams assigned to the current account.",
-    ),
     entry(
         "00000003-0008-4000-8000-400000000002",
         PermissionCode.TEAM_READ_COMMON,
@@ -1103,49 +1048,6 @@ const dataset = [
         "Permanently delete an archived team.",
     ),
 
-    // TeamAccountAssignment
-    entry(
-        "00000003-0009-4000-8000-400000000001",
-        PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_READ_PERSONAL,
-        "Read Personal Team Account Assignments",
-        "View team assignments of the current account.",
-    ),
-    entry(
-        "00000003-0009-4000-8000-400000000002",
-        PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_READ_COMMON,
-        "Read Common Team Account Assignments",
-        "View all team assignments within an organization realm.",
-    ),
-    entry(
-        "00000003-0009-4000-8000-400000000003",
-        PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_READ_ABSOLUTE,
-        "Read Absolute Team Account Assignments",
-        "View all team assignments.",
-    ),
-    entry(
-        "00000003-0009-4000-8000-400000000004",
-        PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_CREATE,
-        "Create Team Account Assignment",
-        "Assign an organization member to a team.",
-    ),
-    entry(
-        "00000003-0009-4000-8000-400000000005",
-        PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_REVOKE,
-        "Revoke Team Account Assignment",
-        "Revoke an account's team assignment.",
-    ),
-    entry(
-        "00000003-0009-4000-8000-400000000006",
-        PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_RESTORE,
-        "Restore Team Account Assignment",
-        "Restore a revoked team account assignment.",
-    ),
-    entry(
-        "00000003-0009-4000-8000-400000000007",
-        PermissionCode.TEAM_ACCOUNT_ASSIGNMENT_PURGE,
-        "Purge Team Account Assignment",
-        "Permanently delete a revoked team account assignment.",
-    ),
 
     // ---------------------------------------------------------------------------
     // Notification

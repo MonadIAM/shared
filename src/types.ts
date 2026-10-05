@@ -12,6 +12,8 @@ import {
     InvalidationScope,
     ProjectionScript,
     RealmTopicAction,
+    PositionTopicAction,
+    PositionReferenceType,
     MessageTemplate,
     PlatformService,
     PrivilegeScope,
@@ -73,6 +75,175 @@ declare global {
 
             type GlobalItem = {
                 scope: InvalidationScope.GLOBAL;
+            };
+        }
+
+        namespace Position {
+            type Message =
+                | PlacementRequestedMessage
+                | PlacementConfirmedMessage
+                | PlacementRejectedMessage
+                | ReferenceRequestedMessage
+                | ReferenceConfirmedMessage
+                | ReferenceRejectedMessage
+                | LifecycleMessage
+                | DepartmentPurgedMessage
+                | TeamPurgedMessage;
+
+            type PlacementRequestedMessage = {
+                actionType: PositionTopicAction.PLACEMENT_REQUESTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        process: string;
+                        organization: string;
+                        position: string;
+                        department: string;
+                        team: string;
+                    };
+                };
+            };
+
+            type PlacementConfirmedMessage = {
+                actionType: PositionTopicAction.PLACEMENT_CONFIRMED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        process: string;
+                        organization: string;
+                        position: string;
+                        department: string;
+                        team: string;
+                    };
+                };
+            };
+
+            type PlacementRejectedMessage = {
+                actionType: PositionTopicAction.PLACEMENT_REJECTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        process: string;
+                        organization: string;
+                        position: string;
+                        department: string;
+                        team: string;
+                        reason: string;
+                    };
+                };
+            };
+
+            type ReferenceRequestedMessage = {
+                actionType: PositionTopicAction.REFERENCE_REQUESTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input:
+                        | {
+                              process: string;
+                              organization: string;
+                              position: string;
+                              department: string;
+                              type: PositionReferenceType.DEPARTMENT_MANAGER;
+                          }
+                        | {
+                              process: string;
+                              organization: string;
+                              position: string;
+                              department: string;
+                              team: string;
+                              type: PositionReferenceType.TEAM_LEAD;
+                          };
+                };
+            };
+
+            type ReferenceConfirmedMessage = {
+                actionType: PositionTopicAction.REFERENCE_CONFIRMED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input:
+                        | {
+                              process: string;
+                              organization: string;
+                              position: string;
+                              department: string;
+                              type: PositionReferenceType.DEPARTMENT_MANAGER;
+                          }
+                        | {
+                              process: string;
+                              organization: string;
+                              position: string;
+                              department: string;
+                              team: string;
+                              type: PositionReferenceType.TEAM_LEAD;
+                          };
+                };
+            };
+
+            type ReferenceRejectedMessage = {
+                actionType: PositionTopicAction.REFERENCE_REJECTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input:
+                        | {
+                              process: string;
+                              organization: string;
+                              position: string;
+                              department: string;
+                              type: PositionReferenceType.DEPARTMENT_MANAGER;
+                              reason: string;
+                          }
+                        | {
+                              process: string;
+                              organization: string;
+                              position: string;
+                              department: string;
+                              team: string;
+                              type: PositionReferenceType.TEAM_LEAD;
+                              reason: string;
+                          };
+                };
+            };
+
+            type LifecycleMessage = {
+                actionType: PositionTopicAction.ARCHIVED | PositionTopicAction.PURGED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        positions: string[];
+                    };
+                };
+            };
+
+            type DepartmentPurgedMessage = {
+                actionType: PositionTopicAction.DEPARTMENT_PURGED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        department: string;
+                    };
+                };
+            };
+
+            type TeamPurgedMessage = {
+                actionType: PositionTopicAction.TEAM_PURGED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        team: string;
+                    };
+                };
             };
         }
 

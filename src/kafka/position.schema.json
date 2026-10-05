@@ -1,0 +1,643 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.monadiam.local/kafka/position-value.json",
+  "title": "PositionValue",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "PLACEMENT_REQUESTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "organization",
+                "position",
+                "department",
+                "team"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "team": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "PLACEMENT_CONFIRMED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "organization",
+                "position",
+                "department",
+                "team"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "team": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "PLACEMENT_REJECTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "organization",
+                "position",
+                "department",
+                "team",
+                "reason"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "team": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "REFERENCE_REQUESTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "organization",
+                "position",
+                "department",
+                "type"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "team": {
+                  "type": "string"
+                },
+                "type": {
+                  "enum": [
+                    "DEPARTMENT_MANAGER",
+                    "TEAM_LEAD"
+                  ]
+                }
+              },
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "const": "DEPARTMENT_MANAGER"
+                    }
+                  },
+                  "not": {
+                    "required": [
+                      "team"
+                    ]
+                  }
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "TEAM_LEAD"
+                    }
+                  },
+                  "required": [
+                    "team"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "REFERENCE_CONFIRMED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "organization",
+                "position",
+                "department",
+                "type"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "team": {
+                  "type": "string"
+                },
+                "type": {
+                  "enum": [
+                    "DEPARTMENT_MANAGER",
+                    "TEAM_LEAD"
+                  ]
+                }
+              },
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "const": "DEPARTMENT_MANAGER"
+                    }
+                  },
+                  "not": {
+                    "required": [
+                      "team"
+                    ]
+                  }
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "TEAM_LEAD"
+                    }
+                  },
+                  "required": [
+                    "team"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "REFERENCE_REJECTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "process",
+                "organization",
+                "position",
+                "department",
+                "type",
+                "reason"
+              ],
+              "properties": {
+                "process": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                },
+                "team": {
+                  "type": "string"
+                },
+                "type": {
+                  "enum": [
+                    "DEPARTMENT_MANAGER",
+                    "TEAM_LEAD"
+                  ]
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "const": "DEPARTMENT_MANAGER"
+                    }
+                  },
+                  "not": {
+                    "required": [
+                      "team"
+                    ]
+                  }
+                },
+                {
+                  "properties": {
+                    "type": {
+                      "const": "TEAM_LEAD"
+                    }
+                  },
+                  "required": [
+                    "team"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "ARCHIVED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "organization",
+                "positions"
+              ],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "positions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "PURGED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "organization",
+                "positions"
+              ],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "positions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "DEPARTMENT_PURGED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "organization",
+                "department"
+              ],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "department": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actionType",
+        "payload"
+      ],
+      "properties": {
+        "actionType": {
+          "const": "TEAM_PURGED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "realm",
+            "input"
+          ],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "organization",
+                "team"
+              ],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "team": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

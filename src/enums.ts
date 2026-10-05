@@ -429,7 +429,6 @@ export enum PermissionCode {
     PROJECT_ACCOUNT_ASSIGNMENT_RESTORE       = "project_account_assignment.restore",
     PROJECT_ACCOUNT_ASSIGNMENT_PURGE         = "project_account_assignment.purge",
 
-    DEPARTMENT_READ_PERSONAL  = "department.read_personal",
     DEPARTMENT_READ_COMMON    = "department.read_common",
     DEPARTMENT_READ_ABSOLUTE  = "department.read_absolute",
     DEPARTMENT_CREATE         = "department.create",
@@ -439,15 +438,7 @@ export enum PermissionCode {
     DEPARTMENT_RESTORE        = "department.restore",
     DEPARTMENT_PURGE          = "department.purge",
 
-    DEPT_ACCOUNT_ASSIGNMENT_READ_PERSONAL = "dept_account_assignment.read_personal",
-    DEPT_ACCOUNT_ASSIGNMENT_READ_COMMON   = "dept_account_assignment.read_common",
-    DEPT_ACCOUNT_ASSIGNMENT_READ_ABSOLUTE = "dept_account_assignment.read_absolute",
-    DEPT_ACCOUNT_ASSIGNMENT_CREATE        = "dept_account_assignment.create",
-    DEPT_ACCOUNT_ASSIGNMENT_REVOKE        = "dept_account_assignment.revoke",
-    DEPT_ACCOUNT_ASSIGNMENT_RESTORE       = "dept_account_assignment.restore",
-    DEPT_ACCOUNT_ASSIGNMENT_PURGE         = "dept_account_assignment.purge",
 
-    TEAM_READ_PERSONAL = "team.read_personal",
     TEAM_READ_COMMON   = "team.read_common",
     TEAM_READ_ABSOLUTE = "team.read_absolute",
     TEAM_CREATE        = "team.create",
@@ -457,13 +448,6 @@ export enum PermissionCode {
     TEAM_RESTORE       = "team.restore",
     TEAM_PURGE         = "team.purge",
 
-    TEAM_ACCOUNT_ASSIGNMENT_READ_PERSONAL = "team_account_assignment.read_personal",
-    TEAM_ACCOUNT_ASSIGNMENT_READ_COMMON   = "team_account_assignment.read_common",
-    TEAM_ACCOUNT_ASSIGNMENT_READ_ABSOLUTE = "team_account_assignment.read_absolute",
-    TEAM_ACCOUNT_ASSIGNMENT_CREATE        = "team_account_assignment.create",
-    TEAM_ACCOUNT_ASSIGNMENT_REVOKE        = "team_account_assignment.revoke",
-    TEAM_ACCOUNT_ASSIGNMENT_RESTORE       = "team_account_assignment.restore",
-    TEAM_ACCOUNT_ASSIGNMENT_PURGE         = "team_account_assignment.purge",
 
     // ---------------------------------------------------------------------------
     // Notification
@@ -491,7 +475,28 @@ export enum PermissionCode {
     /* eslint-enable prettier/prettier */
 }
 
+export enum PositionTopicAction {
+    PLACEMENT_REQUESTED = "PLACEMENT_REQUESTED",
+    PLACEMENT_CONFIRMED = "PLACEMENT_CONFIRMED",
+    PLACEMENT_REJECTED = "PLACEMENT_REJECTED",
+    REFERENCE_REQUESTED = "REFERENCE_REQUESTED",
+    REFERENCE_CONFIRMED = "REFERENCE_CONFIRMED",
+    REFERENCE_REJECTED = "REFERENCE_REJECTED",
+    ARCHIVED = "ARCHIVED",
+    PURGED = "PURGED",
+    DEPARTMENT_PURGED = "DEPARTMENT_PURGED",
+    TEAM_PURGED = "TEAM_PURGED",
+}
+
+export enum PositionReferenceType {
+    DEPARTMENT_MANAGER = "DEPARTMENT_MANAGER",
+    TEAM_LEAD = "TEAM_LEAD",
+}
+
 export enum KafkaTopic {
+    POSITION = "position",
+    POSITION_DEAD = "position-dead",
+
     /* eslint-disable prettier/prettier */
     // account: identity -> all services
     ACCOUNT       = "account",
