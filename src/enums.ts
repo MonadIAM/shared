@@ -82,7 +82,7 @@ export enum PlatformService {
     /* eslint-disable prettier/prettier */
     ACCESS_CONTROL_SERVICE = "access-control-service",
     NOTIFICATION_SERVICE   = "notification-service",
-    MULTITENANCY_SERVICE   = "multitenancy-service",
+    ORGANIZATION_SERVICE   = "organization-service",
     CERTIFICATE_SERVICE    = "certificate-service",
     IDENTITY_SERVICE       = "identity-service",
     TEMPLATE_SERVICE       = "template-service",
@@ -382,7 +382,7 @@ export enum PermissionCode {
     MEMBERSHIP_HISTORY_READ_COMMON   = "membership_history.read_common",
 
     // ---------------------------------------------------------------------------
-    // Multitenancy
+    // Organization
     // ---------------------------------------------------------------------------
 
     ORGANIZATION_READ_PERSONAL      = "organization.read_personal",
@@ -502,7 +502,7 @@ export enum KafkaTopic {
     ACCOUNT       = "account",
     ACCOUNT_DEAD  = "account-dead",
 
-    // ordered realm and membership workflows: multitenancy <-> access-control; lifecycle -> identity
+    // ordered realm and membership workflows: organization <-> access-control; lifecycle -> identity
     REALM       = "realm",
     REALM_DEAD  = "realm-dead",
 

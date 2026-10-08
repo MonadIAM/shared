@@ -34,7 +34,7 @@
                       "enum": [
                         "access-control-service",
                         "notification-service",
-                        "multitenancy-service",
+                        "organization-service",
                         "certificate-service",
                         "identity-service",
                         "template-service"
@@ -70,7 +70,7 @@
                       "enum": [
                         "access-control-service",
                         "notification-service",
-                        "multitenancy-service",
+                        "organization-service",
                         "certificate-service",
                         "identity-service",
                         "template-service"
@@ -156,7 +156,7 @@
                               "enum": [
                                 "access-control-service",
                                 "notification-service",
-                                "multitenancy-service",
+                                "organization-service",
                                 "certificate-service",
                                 "identity-service",
                                 "template-service"
@@ -192,7 +192,7 @@
                               "enum": [
                                 "access-control-service",
                                 "notification-service",
-                                "multitenancy-service",
+                                "organization-service",
                                 "certificate-service",
                                 "identity-service",
                                 "template-service"
