@@ -8,7 +8,7 @@ const WEB_AUTH_ADDRESS = "http://localhost:3000/auth/login";
 const IDENTITY_PORT = 4002;
 
 const DOCS_ROUTE = "/docs/";
-const DOCS_PORTS = [4000, 4001, IDENTITY_PORT, 4003];
+const DOCS_PORTS = [4001, IDENTITY_PORT, 4003, 4004, 4005];
 const DOCS_AUTH_ANCHOR = "#identity/tag/authn/POST/api/v1/authn/password";
 const DOCS_AUTH_ADDRESS = `http://localhost:${IDENTITY_PORT}${DOCS_ROUTE}${DOCS_AUTH_ANCHOR}`;
 const DOCS_REDIRECT_URIS = `{${DOCS_PORTS.map((port) => `http://localhost:${port}${DOCS_ROUTE}`).join(",")}}`;

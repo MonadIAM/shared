@@ -51,6 +51,7 @@
       "then": {
         "properties": {
           "payload": {
+            "type": "object",
             "required": ["account", "identifier", "otp"]
           }
         }
@@ -67,6 +68,7 @@
       "then": {
         "properties": {
           "payload": {
+            "type": "object",
             "not": {
               "required": ["otp"]
             }
