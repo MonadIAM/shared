@@ -296,6 +296,10 @@
                 "resource": {
                   "type": "string"
                 },
+                "service": {
+                  "type": "string",
+                  "enum": ["access-control-service", "hr-service"]
+                },
                 "type": {
                   "type": "string",
                   "enum": ["ORGANIZATION", "PROJECT"]

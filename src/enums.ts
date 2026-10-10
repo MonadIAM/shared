@@ -86,6 +86,7 @@ export enum PlatformService {
     CERTIFICATE_SERVICE    = "certificate-service",
     IDENTITY_SERVICE       = "identity-service",
     TEMPLATE_SERVICE       = "template-service",
+    HR_SERVICE             = "hr-service",
     /* eslint-enable prettier/prettier */
 }
 

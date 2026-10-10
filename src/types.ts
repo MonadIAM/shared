@@ -5,15 +5,15 @@ import {
     NotificationContentKind,
     NotificationTopicAction,
     AccessCacheTopicAction,
+    PositionReferenceType,
     MessageDispatchAction,
     NotificationCategory,
     BlacklistTopicAction,
+    PositionTopicAction,
     AccountTopicAction,
     InvalidationScope,
     ProjectionScript,
     RealmTopicAction,
-    PositionTopicAction,
-    PositionReferenceType,
     MessageTemplate,
     PlatformService,
     PrivilegeScope,
@@ -353,6 +353,7 @@ declare global {
                         type: RealmType.ORGANIZATION | RealmType.PROJECT;
                         resource: string;
                         process: string;
+                        service?: PlatformService.ACCESS_CONTROL_SERVICE | PlatformService.HR_SERVICE;
                     };
                 };
             };

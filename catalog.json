@@ -43,8 +43,8 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/realm.schema.json",
-      "producers": ["organization-service", "access-control-service"],
-      "consumers": ["access-control-service", "organization-service", "identity-service"]
+      "producers": ["hr-service", "organization-service", "access-control-service"],
+      "consumers": ["hr-service", "access-control-service", "organization-service", "identity-service"]
     },
     {
       "groupId": "monadiam.kafka",
@@ -124,7 +124,7 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service", "organization-service", "identity-service"],
+      "producers": ["hr-service", "access-control-service", "organization-service", "identity-service"],
       "consumers": []
     },
     {
