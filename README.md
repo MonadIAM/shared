@@ -151,7 +151,7 @@ make env
 | `make lint-fix`         | Fix only Prettier violations and print changed file paths.   |
 | `make tsc`              | Check TypeScript with tsc --noEmit.                          |
 | `make knip`             | Run Knip.                                                    |
-| `make secrets-check`    | Run the hook secret scan (repository history).               |
+| `make secrets-check`    | Run the hook secret scan (staged changes).               |
 | `make lsp`              | Start the local TypeScript MCP server over stdio.            |
 | `make graphify`         | Create or update the local code graph and Markdown report.   |
 | `make graphify-rebuild` | Rescan all code files and regenerate the report.             |

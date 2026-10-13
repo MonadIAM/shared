@@ -52,7 +52,7 @@
     "lint:fix": "eslint --config ./prettier.config.mjs --fix --format json | node -e \"process.stdin.on('data',d=>JSON.parse(d).forEach(f=>f.output && console.log(f.filePath)));\"",
     "tsc": "tsc --noEmit",
     "knip": "knip --config configs/knip.config.ts",
-    "secrets:check": "gitleaks detect --config .gitleaks.toml --source .",
+    "secrets:check": "gitleaks protect --staged --config .gitleaks.toml",
     "lsp": "lsmcp --config .lsmcp/config.json",
     "build": "rm -rf dist tsconfig.tsbuildinfo && tsc",
     "verify": "./scripts/verify.sh",

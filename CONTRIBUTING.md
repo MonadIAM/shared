@@ -11,6 +11,23 @@ chmod +x .githooks/*
 git config core.hooksPath .githooks
 ```
 
+#### Checks executed on commit:
+
+Use the Node.js and pnpm versions pinned in `package.json`. The hook also
+requires `gitleaks` and `jq` in `PATH`.
+
+`pre-commit` stops at the first failure:
+
+1. `Secret scan` — Gitleaks on staged changes; missing Gitleaks rejects the commit.
+2. `Contracts` — local catalog and referenced JSON/protobuf checks.
+3. `Type check` — TypeScript check of the whole package.
+4. `Unused code` — Knip.
+5. `Lint` — ESLint on the whole package.
+
+Checks other than the secret scan use the working tree, including unstaged
+changes. CI checks PRs to `main` and also builds the package.
+This package has no unit or integration test runner.
+
 #### Allowed prefixes for commits and branches:
 `feat`, `fix`, `docs`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`.
 
