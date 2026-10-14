@@ -30,7 +30,8 @@ declare global {
                 };
 
                 type Response = {
-                    privileges: Record<string, PrivilegeScope>;
+                    privileges: Record<string, PrivilegeScope.REALM>;
+                    global: Record<string, PrivilegeScope.GLOBAL>;
                 };
             }
         }
