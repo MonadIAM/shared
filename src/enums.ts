@@ -451,6 +451,85 @@ export enum PermissionCode {
 
 
     // ---------------------------------------------------------------------------
+    // Human Resources
+    // ---------------------------------------------------------------------------
+
+    EMPLOYEE_READ_COMMON                  = "employee.read_common",
+    EMPLOYEE_READ_ABSOLUTE                = "employee.read_absolute",
+    EMPLOYEE_CREATE                       = "employee.create",
+    EMPLOYEE_UPDATE                       = "employee.update",
+    EMPLOYEE_ARCHIVE                      = "employee.archive",
+    EMPLOYEE_RESTORE                      = "employee.restore",
+    EMPLOYEE_LINK_ACCOUNT                 = "employee.link_account",
+    EMPLOYEE_SET_HRBP                     = "employee.set_hrbp",
+
+    EMPLOYMENT_READ_COMMON                = "employment.read_common",
+    EMPLOYMENT_READ_ABSOLUTE              = "employment.read_absolute",
+
+    ABSENCE_READ_COMMON                   = "absence.read_common",
+    ABSENCE_READ_ABSOLUTE                 = "absence.read_absolute",
+
+    HR_REQUEST_READ_COMMON                = "hr_request.read_common",
+    HR_REQUEST_READ_ABSOLUTE              = "hr_request.read_absolute",
+    HR_REQUEST_CREATE                     = "hr_request.create",
+    HR_REQUEST_UPDATE                     = "hr_request.update",
+    HR_REQUEST_SUBMIT                     = "hr_request.submit",
+    HR_REQUEST_WITHDRAW                   = "hr_request.withdraw",
+
+    HR_APPROVAL_STEP_READ_COMMON          = "hr_approval_step.read_common",
+    HR_APPROVAL_STEP_READ_ABSOLUTE        = "hr_approval_step.read_absolute",
+    HR_APPROVAL_STEP_APPROVE              = "hr_approval_step.approve",
+    HR_APPROVAL_STEP_REJECT               = "hr_approval_step.reject",
+    HR_APPROVAL_STEP_RETURN_FOR_REVISION  = "hr_approval_step.return_for_revision",
+    HR_APPROVAL_STEP_REASSIGN             = "hr_approval_step.reassign",
+    HR_APPROVAL_DECISION_READ_COMMON      = "hr_approval_decision.read_common",
+    HR_APPROVAL_DECISION_READ_ABSOLUTE    = "hr_approval_decision.read_absolute",
+
+    LEAVE_LEDGER_ENTRY_READ_COMMON        = "leave_ledger_entry.read_common",
+    LEAVE_LEDGER_ENTRY_READ_ABSOLUTE      = "leave_ledger_entry.read_absolute",
+
+    LEAVE_POLICY_READ_COMMON              = "leave_policy.read_common",
+    LEAVE_POLICY_READ_ABSOLUTE            = "leave_policy.read_absolute",
+    LEAVE_POLICY_CREATE                   = "leave_policy.create",
+    LEAVE_POLICY_CREATE_REVISION          = "leave_policy.create_revision",
+    LEAVE_POLICY_ARCHIVE                  = "leave_policy.archive",
+    LEAVE_POLICY_RESTORE                  = "leave_policy.restore",
+    LEAVE_POLICY_PURGE                    = "leave_policy.purge",
+
+    POSITION_READ_COMMON                  = "position.read_common",
+    POSITION_READ_ABSOLUTE                = "position.read_absolute",
+    POSITION_CREATE                       = "position.create",
+    POSITION_UPDATE                       = "position.update",
+    POSITION_ARCHIVE                      = "position.archive",
+    POSITION_RESTORE                      = "position.restore",
+    POSITION_PURGE                        = "position.purge",
+
+    POSITION_ASSIGNMENT_READ_COMMON       = "position_assignment.read_common",
+    POSITION_ASSIGNMENT_READ_ABSOLUTE     = "position_assignment.read_absolute",
+
+    WORK_CALENDAR_READ_COMMON             = "work_calendar.read_common",
+    WORK_CALENDAR_READ_ABSOLUTE           = "work_calendar.read_absolute",
+    WORK_CALENDAR_CREATE                  = "work_calendar.create",
+    WORK_CALENDAR_UPDATE                  = "work_calendar.update",
+    WORK_CALENDAR_ARCHIVE                 = "work_calendar.archive",
+    WORK_CALENDAR_RESTORE                 = "work_calendar.restore",
+    WORK_CALENDAR_PURGE                   = "work_calendar.purge",
+    WORK_CALENDAR_EXCEPTION_READ_COMMON   = "work_calendar_exception.read_common",
+    WORK_CALENDAR_EXCEPTION_READ_ABSOLUTE = "work_calendar_exception.read_absolute",
+    WORK_CALENDAR_EXCEPTION_CREATE        = "work_calendar_exception.create",
+    WORK_CALENDAR_EXCEPTION_UPDATE        = "work_calendar_exception.update",
+    WORK_CALENDAR_EXCEPTION_PURGE         = "work_calendar_exception.purge",
+
+    WORK_SCHEDULE_READ_COMMON             = "work_schedule.read_common",
+    WORK_SCHEDULE_READ_ABSOLUTE           = "work_schedule.read_absolute",
+    WORK_SCHEDULE_CREATE                  = "work_schedule.create",
+    WORK_SCHEDULE_CREATE_REVISION         = "work_schedule.create_revision",
+    WORK_SCHEDULE_ARCHIVE                 = "work_schedule.archive",
+    WORK_SCHEDULE_RESTORE                 = "work_schedule.restore",
+    WORK_SCHEDULE_PURGE                   = "work_schedule.purge",
+
+
+    // ---------------------------------------------------------------------------
     // Notification
     // ---------------------------------------------------------------------------
 

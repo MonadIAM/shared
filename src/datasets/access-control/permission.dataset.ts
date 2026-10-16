@@ -1050,6 +1050,415 @@ const dataset = [
 
 
     // ---------------------------------------------------------------------------
+    // Human Resources
+    // ---------------------------------------------------------------------------
+
+    // Employee
+    entry(
+        "00000004-0001-4000-8000-500000000001",
+        PermissionCode.EMPLOYEE_READ_COMMON,
+        "Read Common Employees",
+        "View all employees within an organization realm.",
+    ),
+    entry(
+        "00000004-0001-4000-8000-500000000002",
+        PermissionCode.EMPLOYEE_READ_ABSOLUTE,
+        "Read Absolute Employees",
+        "View all employees.",
+    ),
+    entry(
+        "00000004-0001-4000-8000-500000000003",
+        PermissionCode.EMPLOYEE_CREATE,
+        "Create Employee",
+        "Create an employee.",
+    ),
+    entry(
+        "00000004-0001-4000-8000-500000000004",
+        PermissionCode.EMPLOYEE_UPDATE,
+        "Update Employee",
+        "Modify employee metadata.",
+    ),
+    entry(
+        "00000004-0001-4000-8000-500000000005",
+        PermissionCode.EMPLOYEE_ARCHIVE,
+        "Archive Employee",
+        "Archive an employee.",
+    ),
+    entry(
+        "00000004-0001-4000-8000-500000000006",
+        PermissionCode.EMPLOYEE_RESTORE,
+        "Restore Employee",
+        "Restore an archived employee.",
+    ),
+    entry(
+        "00000004-0001-4000-8000-500000000007",
+        PermissionCode.EMPLOYEE_LINK_ACCOUNT,
+        "Link Account to Employee",
+        "Link an account to an employee.",
+    ),
+    entry(
+        "00000004-0001-4000-8000-500000000008",
+        PermissionCode.EMPLOYEE_SET_HRBP,
+        "Set Employee HRBP",
+        "Assign or replace an employee's HRBP.",
+    ),
+
+    // Employment
+    entry(
+        "00000004-0002-4000-8000-500000000001",
+        PermissionCode.EMPLOYMENT_READ_COMMON,
+        "Read Common Employments",
+        "View all employments within an organization realm.",
+    ),
+    entry(
+        "00000004-0002-4000-8000-500000000002",
+        PermissionCode.EMPLOYMENT_READ_ABSOLUTE,
+        "Read Absolute Employments",
+        "View all employments.",
+    ),
+
+    // Absence
+    entry(
+        "00000004-0003-4000-8000-500000000001",
+        PermissionCode.ABSENCE_READ_COMMON,
+        "Read Common Absences",
+        "View all absences within an organization realm.",
+    ),
+    entry(
+        "00000004-0003-4000-8000-500000000002",
+        PermissionCode.ABSENCE_READ_ABSOLUTE,
+        "Read Absolute Absences",
+        "View all absences.",
+    ),
+
+    // HRRequest
+    entry(
+        "00000004-0004-4000-8000-500000000001",
+        PermissionCode.HR_REQUEST_READ_COMMON,
+        "Read Common HR Requests",
+        "View all HR requests within an organization realm.",
+    ),
+    entry(
+        "00000004-0004-4000-8000-500000000002",
+        PermissionCode.HR_REQUEST_READ_ABSOLUTE,
+        "Read Absolute HR Requests",
+        "View all HR requests.",
+    ),
+    entry(
+        "00000004-0004-4000-8000-500000000003",
+        PermissionCode.HR_REQUEST_CREATE,
+        "Create HR Request",
+        "Create an HR request.",
+    ),
+    entry(
+        "00000004-0004-4000-8000-500000000004",
+        PermissionCode.HR_REQUEST_UPDATE,
+        "Update HR Request",
+        "Modify an HR request.",
+    ),
+    entry(
+        "00000004-0004-4000-8000-500000000005",
+        PermissionCode.HR_REQUEST_SUBMIT,
+        "Submit HR Request",
+        "Submit an HR request for approval.",
+    ),
+    entry(
+        "00000004-0004-4000-8000-500000000006",
+        PermissionCode.HR_REQUEST_WITHDRAW,
+        "Withdraw HR Request",
+        "Withdraw an HR request.",
+    ),
+
+    // HRApprovalStep
+    entry(
+        "00000004-0005-4000-8000-500000000001",
+        PermissionCode.HR_APPROVAL_STEP_READ_COMMON,
+        "Read Common HR Approval Steps",
+        "View all HR approval steps within an organization realm.",
+    ),
+    entry(
+        "00000004-0005-4000-8000-500000000002",
+        PermissionCode.HR_APPROVAL_STEP_READ_ABSOLUTE,
+        "Read Absolute HR Approval Steps",
+        "View all HR approval steps.",
+    ),
+    entry(
+        "00000004-0005-4000-8000-500000000003",
+        PermissionCode.HR_APPROVAL_STEP_APPROVE,
+        "Approve HR Approval Step",
+        "Approve an HR approval step.",
+    ),
+    entry(
+        "00000004-0005-4000-8000-500000000004",
+        PermissionCode.HR_APPROVAL_STEP_REJECT,
+        "Reject HR Approval Step",
+        "Reject an HR approval step.",
+    ),
+    entry(
+        "00000004-0005-4000-8000-500000000005",
+        PermissionCode.HR_APPROVAL_STEP_RETURN_FOR_REVISION,
+        "Return HR Approval Step for Revision",
+        "Return an HR request for revision.",
+    ),
+    entry(
+        "00000004-0005-4000-8000-500000000006",
+        PermissionCode.HR_APPROVAL_STEP_REASSIGN,
+        "Reassign HR Approval Step",
+        "Reassign an HR approval step.",
+    ),
+
+    // HRApprovalDecision
+    entry(
+        "00000004-0006-4000-8000-500000000001",
+        PermissionCode.HR_APPROVAL_DECISION_READ_COMMON,
+        "Read Common HR Approval Decisions",
+        "View all HR approval decisions within an organization realm.",
+    ),
+    entry(
+        "00000004-0006-4000-8000-500000000002",
+        PermissionCode.HR_APPROVAL_DECISION_READ_ABSOLUTE,
+        "Read Absolute HR Approval Decisions",
+        "View all HR approval decisions.",
+    ),
+
+    // LeaveLedgerEntry
+    entry(
+        "00000004-0007-4000-8000-500000000001",
+        PermissionCode.LEAVE_LEDGER_ENTRY_READ_COMMON,
+        "Read Common Leave Ledger Entries",
+        "View all leave ledger entries within an organization realm.",
+    ),
+    entry(
+        "00000004-0007-4000-8000-500000000002",
+        PermissionCode.LEAVE_LEDGER_ENTRY_READ_ABSOLUTE,
+        "Read Absolute Leave Ledger Entries",
+        "View all leave ledger entries.",
+    ),
+
+    // LeavePolicy
+    entry(
+        "00000004-0008-4000-8000-500000000001",
+        PermissionCode.LEAVE_POLICY_READ_COMMON,
+        "Read Common Leave Policies",
+        "View all leave policies within an organization realm.",
+    ),
+    entry(
+        "00000004-0008-4000-8000-500000000002",
+        PermissionCode.LEAVE_POLICY_READ_ABSOLUTE,
+        "Read Absolute Leave Policies",
+        "View all leave policies.",
+    ),
+    entry(
+        "00000004-0008-4000-8000-500000000003",
+        PermissionCode.LEAVE_POLICY_CREATE,
+        "Create Leave Policy",
+        "Create a leave policy.",
+    ),
+    entry(
+        "00000004-0008-4000-8000-500000000004",
+        PermissionCode.LEAVE_POLICY_CREATE_REVISION,
+        "Create Leave Policy Revision",
+        "Create a revision of a leave policy.",
+    ),
+    entry(
+        "00000004-0008-4000-8000-500000000005",
+        PermissionCode.LEAVE_POLICY_ARCHIVE,
+        "Archive Leave Policy",
+        "Archive a leave policy.",
+    ),
+    entry(
+        "00000004-0008-4000-8000-500000000006",
+        PermissionCode.LEAVE_POLICY_RESTORE,
+        "Restore Leave Policy",
+        "Restore an archived leave policy.",
+    ),
+    entry(
+        "00000004-0008-4000-8000-500000000007",
+        PermissionCode.LEAVE_POLICY_PURGE,
+        "Purge Leave Policy",
+        "Permanently delete an archived leave policy.",
+    ),
+
+    // Position
+    entry(
+        "00000004-0009-4000-8000-500000000001",
+        PermissionCode.POSITION_READ_COMMON,
+        "Read Common Positions",
+        "View all positions within an organization realm.",
+    ),
+    entry(
+        "00000004-0009-4000-8000-500000000002",
+        PermissionCode.POSITION_READ_ABSOLUTE,
+        "Read Absolute Positions",
+        "View all positions.",
+    ),
+    entry(
+        "00000004-0009-4000-8000-500000000003",
+        PermissionCode.POSITION_CREATE,
+        "Create Position",
+        "Create a position.",
+    ),
+    entry(
+        "00000004-0009-4000-8000-500000000004",
+        PermissionCode.POSITION_UPDATE,
+        "Update Position",
+        "Modify position metadata.",
+    ),
+    entry(
+        "00000004-0009-4000-8000-500000000005",
+        PermissionCode.POSITION_ARCHIVE,
+        "Archive Position",
+        "Archive a position.",
+    ),
+    entry(
+        "00000004-0009-4000-8000-500000000006",
+        PermissionCode.POSITION_RESTORE,
+        "Restore Position",
+        "Restore an archived position.",
+    ),
+    entry(
+        "00000004-0009-4000-8000-500000000007",
+        PermissionCode.POSITION_PURGE,
+        "Purge Position",
+        "Permanently delete an archived position.",
+    ),
+
+    // PositionAssignment
+    entry(
+        "00000004-0010-4000-8000-500000000001",
+        PermissionCode.POSITION_ASSIGNMENT_READ_COMMON,
+        "Read Common Position Assignments",
+        "View all position assignments within an organization realm.",
+    ),
+    entry(
+        "00000004-0010-4000-8000-500000000002",
+        PermissionCode.POSITION_ASSIGNMENT_READ_ABSOLUTE,
+        "Read Absolute Position Assignments",
+        "View all position assignments.",
+    ),
+
+    // WorkCalendar
+    entry(
+        "00000004-0011-4000-8000-500000000001",
+        PermissionCode.WORK_CALENDAR_READ_COMMON,
+        "Read Common Work Calendars",
+        "View all work calendars within an organization realm.",
+    ),
+    entry(
+        "00000004-0011-4000-8000-500000000002",
+        PermissionCode.WORK_CALENDAR_READ_ABSOLUTE,
+        "Read Absolute Work Calendars",
+        "View all work calendars.",
+    ),
+    entry(
+        "00000004-0011-4000-8000-500000000003",
+        PermissionCode.WORK_CALENDAR_CREATE,
+        "Create Work Calendar",
+        "Create a work calendar.",
+    ),
+    entry(
+        "00000004-0011-4000-8000-500000000004",
+        PermissionCode.WORK_CALENDAR_UPDATE,
+        "Update Work Calendar",
+        "Modify work calendar metadata.",
+    ),
+    entry(
+        "00000004-0011-4000-8000-500000000005",
+        PermissionCode.WORK_CALENDAR_ARCHIVE,
+        "Archive Work Calendar",
+        "Archive a work calendar.",
+    ),
+    entry(
+        "00000004-0011-4000-8000-500000000006",
+        PermissionCode.WORK_CALENDAR_RESTORE,
+        "Restore Work Calendar",
+        "Restore an archived work calendar.",
+    ),
+    entry(
+        "00000004-0011-4000-8000-500000000007",
+        PermissionCode.WORK_CALENDAR_PURGE,
+        "Purge Work Calendar",
+        "Permanently delete an archived work calendar.",
+    ),
+
+    // WorkCalendarException
+    entry(
+        "00000004-0012-4000-8000-500000000001",
+        PermissionCode.WORK_CALENDAR_EXCEPTION_READ_COMMON,
+        "Read Common Work Calendar Exceptions",
+        "View all work calendar exceptions within an organization realm.",
+    ),
+    entry(
+        "00000004-0012-4000-8000-500000000002",
+        PermissionCode.WORK_CALENDAR_EXCEPTION_READ_ABSOLUTE,
+        "Read Absolute Work Calendar Exceptions",
+        "View all work calendar exceptions.",
+    ),
+    entry(
+        "00000004-0012-4000-8000-500000000003",
+        PermissionCode.WORK_CALENDAR_EXCEPTION_CREATE,
+        "Create Work Calendar Exception",
+        "Create a work calendar exception.",
+    ),
+    entry(
+        "00000004-0012-4000-8000-500000000004",
+        PermissionCode.WORK_CALENDAR_EXCEPTION_UPDATE,
+        "Update Work Calendar Exception",
+        "Modify a work calendar exception.",
+    ),
+    entry(
+        "00000004-0012-4000-8000-500000000005",
+        PermissionCode.WORK_CALENDAR_EXCEPTION_PURGE,
+        "Purge Work Calendar Exception",
+        "Permanently delete a work calendar exception.",
+    ),
+
+    // WorkSchedule
+    entry(
+        "00000004-0013-4000-8000-500000000001",
+        PermissionCode.WORK_SCHEDULE_READ_COMMON,
+        "Read Common Work Schedules",
+        "View all work schedules within an organization realm.",
+    ),
+    entry(
+        "00000004-0013-4000-8000-500000000002",
+        PermissionCode.WORK_SCHEDULE_READ_ABSOLUTE,
+        "Read Absolute Work Schedules",
+        "View all work schedules.",
+    ),
+    entry(
+        "00000004-0013-4000-8000-500000000003",
+        PermissionCode.WORK_SCHEDULE_CREATE,
+        "Create Work Schedule",
+        "Create a work schedule.",
+    ),
+    entry(
+        "00000004-0013-4000-8000-500000000004",
+        PermissionCode.WORK_SCHEDULE_CREATE_REVISION,
+        "Create Work Schedule Revision",
+        "Create a revision of a work schedule.",
+    ),
+    entry(
+        "00000004-0013-4000-8000-500000000005",
+        PermissionCode.WORK_SCHEDULE_ARCHIVE,
+        "Archive Work Schedule",
+        "Archive a work schedule.",
+    ),
+    entry(
+        "00000004-0013-4000-8000-500000000006",
+        PermissionCode.WORK_SCHEDULE_RESTORE,
+        "Restore Work Schedule",
+        "Restore an archived work schedule.",
+    ),
+    entry(
+        "00000004-0013-4000-8000-500000000007",
+        PermissionCode.WORK_SCHEDULE_PURGE,
+        "Purge Work Schedule",
+        "Permanently delete an archived work schedule.",
+    ),
+
+
+    // ---------------------------------------------------------------------------
     // Notification
     // ---------------------------------------------------------------------------
 
