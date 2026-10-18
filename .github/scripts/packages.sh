@@ -19,20 +19,37 @@ source_digest=''
 published_tag=''
 
 load_versions() {
-    local packages
+    local page response status body url
 
-    packages=$(gh api --paginate --slurp \
-        "/orgs/MonadIAM/packages?package_type=container&per_page=100")
+    versions='[]'
+    for ((page = 1; ; page++)); do
+        url="https://api.github.com$PACKAGE_API/versions?per_page=100&page=$page"
+        response=$(curl --silent --show-error \
+            --connect-timeout 5 --max-time 30 \
+            --header "Authorization: Bearer $GITHUB_TOKEN" \
+            --header "Accept: application/vnd.github+json" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            --write-out $'\n%{http_code}' "$url")
+        status="${response##*$'\n'}"
+        body="${response%$'\n'*}"
 
-    if jq -e --arg name "$PACKAGE" \
-        'any(.[][]; .name == $name)' <<< "$packages" >/dev/null; then
-        versions=$(gh api --paginate --slurp \
-            "$PACKAGE_API/versions?per_page=100" | jq 'add')
+        if [[ "$status" == 200 ]]; then
+            versions=$(jq -c --argjson batch "$body" '. + $batch' <<< "$versions")
+            if [[ $(jq 'length' <<< "$body") -lt 100 ]]; then
+                break
+            fi
+        elif [[ "$status" == 404 && "$page" == 1 ]]; then
+            break
+        else
+            printf 'Failed to list package versions: GET %s; HTTP %s\n%s\n' \
+                "$url" "$status" "${body:0:4096}" >&2
+            exit 1
+        fi
+    done
 
-        source_digest=$(jq -r --arg tag "$sha_tag" '
-            .[] | select(.metadata.container.tags | index($tag)) | .name
-        ' <<< "$versions")
-    fi
+    source_digest=$(jq -r --arg tag "$sha_tag" '
+        .[] | select(.metadata.container.tags | index($tag)) | .name
+    ' <<< "$versions")
 }
 
 publish_commit() {
