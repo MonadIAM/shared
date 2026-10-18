@@ -2,58 +2,20 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
-CATALOG_FILE="${CATALOG_FILE:-"$ROOT_DIR/catalog.json"}"
-SCHEMA_DIR="${SCHEMA_DIR:-"$ROOT_DIR/src"}"
-ENV_FILE="${ENV_FILE:-"$ROOT_DIR/.env"}"
-
-if [ -f "$ENV_FILE" ]; then
-    set -a
-    . "$ENV_FILE"
-    set +a
-fi
-
-REGISTRY_URL="${1:-${SCHEMA_REGISTRY_URL:-}}"
-REGISTRY_API_PATH="${SCHEMA_REGISTRY_API_PATH:-/apis/registry/v3}"
-REGISTRY_CCOMPAT_PATH="${SCHEMA_REGISTRY_CCOMPAT_PATH:-/apis/ccompat/v7}"
-
-if [ -z "$REGISTRY_URL" ]; then
-    echo "SCHEMA_REGISTRY_URL is required" >&2
-    exit 1
-fi
-
-REGISTRY_API="${REGISTRY_URL%/}${REGISTRY_API_PATH}"
-REGISTRY_CCOMPAT="${REGISTRY_URL%/}${REGISTRY_CCOMPAT_PATH}"
-
-command -v curl >/dev/null 2>&1 || {
-    echo "curl is required" >&2
-    exit 1
-}
-
-command -v jq >/dev/null 2>&1 || {
-    echo "jq is required" >&2
-    exit 1
-}
-
-"$ROOT_DIR/scripts/check.sh" >/dev/null
+. "$ROOT_DIR/scripts/registry.sh"
+registry_initialize "$@"
 
 create_group() {
     local group_id="$1"
-    local status
+    local payload
 
-    status="$(
-        jq -n --arg groupId "$group_id" '{ groupId: $groupId }' \
-            | curl -sS -o /dev/null -w "%{http_code}" \
-                -X POST "$REGISTRY_API/groups" \
-                -H "Content-Type: application/json" \
-                --data-binary @-
-    )"
+    payload="$(jq -n --arg groupId "$group_id" '{ groupId: $groupId }')"
+    registry_request POST "$REGISTRY_API/groups" application/json <<< "$payload"
 
-    case "$status" in
+    case "$REGISTRY_STATUS" in
         200 | 204 | 409) ;;
         *)
-            echo "Failed to create registry group $group_id: HTTP $status" >&2
-            exit 1
-            ;;
+            registry_fail "Failed to create registry group $group_id" ;;
     esac
 }
 
@@ -61,11 +23,11 @@ publish_grpc_artifact() {
     local group_id="$1"
     local artifact_id="$2"
     local artifact_path="$SCHEMA_DIR/$3"
-    local status
+    local payload
 
     create_group "$group_id"
 
-    status="$(
+    payload="$(
         jq -n \
             --arg artifactId "$artifact_id" \
             --rawfile content "$artifact_path" \
@@ -78,51 +40,38 @@ publish_grpc_artifact() {
                         contentType: "text/plain"
                     }
                 }
-            }' \
-            | curl -sS -o /dev/null -w "%{http_code}" \
-                -X POST "$REGISTRY_API/groups/$group_id/artifacts?ifExists=FIND_OR_CREATE_VERSION&canonical=true" \
-                -H "Content-Type: application/json" \
-                --data-binary @-
+            }'
     )"
+    registry_request POST "$REGISTRY_API/groups/$group_id/artifacts?ifExists=FIND_OR_CREATE_VERSION&canonical=true" application/json <<< "$payload"
 
-    case "$status" in
+    case "$REGISTRY_STATUS" in
         200)
-            echo "[SchemaRegistry]: applied - $group_id/$artifact_id"
-            ;;
+            echo "[SchemaRegistry]: applied - $group_id/$artifact_id" ;;
         *)
-            echo "Failed to apply $group_id/$artifact_id: HTTP $status" >&2
-            exit 1
-            ;;
+            registry_fail "Failed to apply $group_id/$artifact_id" ;;
     esac
 }
 
 publish_kafka_subject() {
     local subject="$1"
     local artifact_path="$SCHEMA_DIR/$2"
-    local status
+    local payload
 
-    status="$(
+    payload="$(
         jq -n \
             --rawfile content "$artifact_path" \
-            '{ schema: $content, schemaType: "JSON" }' \
-            | curl -sS -o /dev/null -w "%{http_code}" \
-                -X POST "$REGISTRY_CCOMPAT/subjects/$subject/versions" \
-                -H "Content-Type: application/vnd.schemaregistry.v1+json" \
-                --data-binary @-
+            '{ schema: $content, schemaType: "JSON" }'
     )"
+    registry_request POST "$REGISTRY_CCOMPAT/subjects/$subject/versions" \
+        "application/vnd.schemaregistry.v1+json" <<< "$payload"
 
-    case "$status" in
+    case "$REGISTRY_STATUS" in
         200)
-            echo "[SchemaRegistry]: applied - $subject"
-            ;;
+            echo "[SchemaRegistry]: applied - $subject" ;;
         409)
-            echo "Incompatible schema for subject $subject" >&2
-            exit 1
-            ;;
+            registry_fail "Incompatible schema for subject $subject" ;;
         *)
-            echo "Failed to apply $subject: HTTP $status" >&2
-            exit 1
-            ;;
+            registry_fail "Failed to apply $subject" ;;
     esac
 }
 

@@ -95,6 +95,12 @@ jobs:
       - name: Build package
         run: pnpm run build
 
+      - name: Build schema publisher image
+        run: make image IMAGE=monadiam/shared-schemas:ci VCS_REF="$GITHUB_SHA"
+
+      - name: Check schema publisher image
+        run: docker run --rm --read-only --network none monadiam/shared-schemas:ci scripts/check.sh
+
   ci:
     name: CI passed
     if: ${{ always() }}
