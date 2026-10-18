@@ -2,8 +2,8 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
-CATALOG_FILE="${CATALOG_FILE:-"$ROOT_DIR/catalog.json"}"
-SCHEMA_DIR="${SCHEMA_DIR:-"$ROOT_DIR/src"}"
+CATALOG_FILE="$ROOT_DIR/catalog.json"
+SCHEMA_DIR="$ROOT_DIR/src"
 
 command -v jq >/dev/null 2>&1 || {
     echo "jq is required" >&2
@@ -27,18 +27,15 @@ while IFS=$'\t' read -r schema_type path; do
 
     case "$schema_type" in
         JSON)
-            jq empty "$artifact_path"
-            ;;
+            jq empty "$artifact_path" ;;
         PROTOBUF)
             grep -Eq '^syntax = "proto3";' "$artifact_path" || {
                 echo "Invalid protobuf syntax header: $path" >&2
                 exit 1
-            }
-            ;;
+            } ;;
         *)
             echo "Unsupported schema type: $schema_type" >&2
-            exit 1
-            ;;
+            exit 1 ;;
     esac
 done < <(jq -r '.artifacts[] | [.schemaType, .path] | @tsv' "$CATALOG_FILE")
 

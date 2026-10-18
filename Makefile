@@ -1,6 +1,8 @@
-.PHONY: build lint lint-fix tsc knip secrets-check lsp env check apply verify graphify graphify-rebuild graphify-html
+.PHONY: build lint lint-fix tsc knip secrets-check lsp env check apply verify image image-publish image-release image-cleanup graphify graphify-rebuild graphify-html
 
 GRAPHIFY ?= graphify
+IMAGE ?= monadiam/shared-schemas:local
+VCS_REF ?= $(shell git rev-parse HEAD)
 
 # Development
 build:
@@ -27,6 +29,16 @@ apply:
 	pnpm run apply
 verify:
 	pnpm run verify
+image:
+	docker build --build-arg VCS_REF="$(VCS_REF)" --tag "$(IMAGE)" .
+
+# GHCR (GitHub Actions)
+image-publish:
+	bash .github/scripts/packages.sh sha
+image-release:
+	bash .github/scripts/packages.sh release
+image-cleanup:
+	bash .github/scripts/packages.sh cleanup
 
 # Local code graph
 graphify:

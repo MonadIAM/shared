@@ -91,32 +91,65 @@ package root exports only common definitions and does not load seed data.
 <details>
 <summary><strong>Schema Registry</strong></summary>
 
-The catalog is applied through two APIs of the same Apicurio Registry.
+Source: [catalog.json](catalog.json); artifact paths are relative to `src/`.
 
-Kafka artifacts are published through the Confluent compatibility API, because runtime clients
-resolve schemas by subject name and that namespace is the registry default group:
+| Protocol | Format   | API                 | Group            | Artifact        |
+| :------- | :------- | :------------------ | :--------------- | :-------------- |
+| Kafka    | JSON     | `/apis/ccompat/v7`  | `default`        | `<topic>-value` |
+| gRPC     | Protobuf | `/apis/registry/v3` | `monadiam.grpc`  | `<service>`     |
 
-| API                 | Subject shape   |
-|:--------------------|:----------------|
-| `/apis/ccompat/v7`  | `<topic>-value` |
+Kafka clients load schemas from Apicurio. gRPC loads `.proto` from `@monadiam/shared`;
+registry publication stores the contract. Catalog `groupId` applies only to gRPC.
 
-gRPC artifacts use Protocol Buffers and the native API, since nothing resolves them at runtime:
+| Script / image                       | Responsibility                                        |
+| :----------------------------------- | :---------------------------------------------------- |
+| [check.sh](scripts/check.sh)         | Check catalog, files, JSON syntax and proto3 headers  |
+| [verify.sh](scripts/verify.sh)       | Check compatibility; create no groups or artifacts    |
+| [apply.sh](scripts/apply.sh)         | Publish schemas; identical content reuses its version |
+| [registry.sh](scripts/registry.sh)   | Configuration, HTTP timeouts and error details        |
+| [Dockerfile](Dockerfile)             | Catalog + scripts; Bash/curl/jq; UID/GID `65532`      |
 
-| Group ID        | Artifact ID shape |
-|:----------------|:------------------|
-| `monadiam.grpc` | `<service>`       |
+```bash
+# Local: configure .env first (see Environment).
+make check
+make verify
+make apply
 
-The `groupId` field in the catalog applies to native API artifacts only.
+# Image: default command is scripts/apply.sh.
+make image IMAGE=monadiam/shared-schemas:local
+```
 
-Ordinary consumers use bounded inline retries and publish terminal failures to shared dead-letter topics.
-Only dispatch uses delayed retry: `message-dispatch-retry-notification-service-value`.
-Realm bootstrap, membership join and ownership transfer requests and outcomes share `realm-value`.
-The separate membership topic/schema is removed; all realm workflow payloads carry `realm` for partition routing.
-Dead-letter topics have no automatic replay consumers.
+In containers, provide `SCHEMA_REGISTRY_URL`; select `scripts/verify.sh` or
+`scripts/apply.sh`. Read-only filesystem is supported. Planned stand order:
+`Apicurio Ready -> Job (verify -> apply) -> services`.
 
-Repeated runs are idempotent: the compatibility API returns the existing id for identical content, and native artifacts are created with `ifExists=FIND_OR_CREATE_VERSION`.
+| Execution rule  | Behavior                                                          |
+| :-------------- | :---------------------------------------------------------------- |
+| New gRPC group  | Local check only; full server validity check on publication       |
+| Partial failure | Previous writes remain; rerun after correcting the error          |
+| HTTP failure    | Nonzero exit, status and response body; no automatic retries      |
 
-Artifact paths in `catalog.json` are resolved against `src`. Override with `SCHEMA_DIR` if needed.
+</details>
+
+----
+
+<details>
+<summary><strong>Container package (GHCR)</strong></summary>
+
+Image: `ghcr.io/monadiam/shared-schemas` (`linux/amd64`).
+Workflows: [CI](.github/workflows/ci.yml), [publish](.github/workflows/publish.yml), [release](.github/workflows/release.yml).
+Publication and retention: [packages.sh](.github/scripts/packages.sh).
+
+| Event / setting    | Behavior                                                       |
+| :----------------- | :------------------------------------------------------------- |
+| PR / merge queue   | Checks and image build; no publication                         |
+| Merge into main    | Build and publish image as `sha-<full commit SHA>`             |
+| Git tag `vX.Y.Z`   | Require `package.json.version = X.Y.Z`; add image tag `X.Y.Z`  |
+| Release image      | Reuse published SHA digest; no rebuild or tag overwrite        |
+| Stand              | Pin release as `<image>:<version>@sha256:<digest>`             |
+| Retention          | Keep last 10 SHA builds and current commit                     |
+| Protected images   | Keep releases, custom tags and untagged manifests              |
+| Authentication     | CI uses `GITHUB_TOKEN`; public pulls require no credentials    |
 
 </details>
 
@@ -131,11 +164,17 @@ Create local variables from the example file:
 make env
 ```
 
-| Variable                       | Example                 | Purpose                          |
-|:-------------------------------|:------------------------|:---------------------------------|
-| `SCHEMA_REGISTRY_URL`          | `http://localhost:8081` | Apicurio Registry base URL       |
-| `SCHEMA_REGISTRY_API_PATH`     | `/apis/registry/v3`     | Apicurio native API path         |
-| `SCHEMA_REGISTRY_CCOMPAT_PATH` | `/apis/ccompat/v7`      | Confluent compatibility API path |
+| Variable                                  | Example                   | Purpose                                |
+| :---------------------------------------- | :------------------------ | :------------------------------------- |
+| `SCHEMA_REGISTRY_URL`                     | `http://localhost:8081`   | Apicurio Registry base URL             |
+| `SCHEMA_REGISTRY_API_PATH`                | `/apis/registry/v3`       | Apicurio native API path               |
+| `SCHEMA_REGISTRY_CCOMPAT_PATH`            | `/apis/ccompat/v7`        | Confluent compatibility API path       |
+| `SCHEMA_REGISTRY_CONNECT_TIMEOUT_SECONDS` | `5`                       | Maximum connection time, seconds       |
+| `SCHEMA_REGISTRY_REQUEST_TIMEOUT_SECONDS` | `30`                      | Maximum complete request time, seconds |
+
+All five settings are required. Local scripts read `.env`; the image declares API
+paths and timeouts through `ENV`, and requires `SCHEMA_REGISTRY_URL` at runtime.
+Missing or empty values fail immediately; scripts do not supply fallback values.
 
 </details>
 
@@ -144,22 +183,32 @@ make env
 <details>
 <summary><strong>Commands</strong></summary>
 
-| Makefile                | Description                                                  |
-|:------------------------|:-------------------------------------------------------------|
-| `make build`            | Compile the package into `dist`.                             |
-| `make lint`             | Run ESLint.                                                  |
-| `make lint-fix`         | Fix only Prettier violations and print changed file paths.   |
-| `make tsc`              | Check TypeScript with tsc --noEmit.                          |
-| `make knip`             | Run Knip.                                                    |
-| `make secrets-check`    | Run the hook secret scan (staged changes).               |
-| `make lsp`              | Start the local TypeScript MCP server over stdio.            |
-| `make graphify`         | Create or update the local code graph and Markdown report.   |
-| `make graphify-rebuild` | Rescan all code files and regenerate the report.             |
-| `make graphify-html`    | Update the graph and report, then export HTML visualization. |
-| `make env`              | Create `.env` from `.env.example`.                           |
-| `make check`            | Validate local catalog and referenced artifacts.             |
-| `make apply`            | Publish catalog artifacts to Schema Registry.                |
-| `make verify`           | Check catalog artifacts for compatibility.                   |
+| Makefile                | Description                                                                |
+|:------------------------|:---------------------------------------------------------------------------|
+| **Development**         |                                                                            |
+| `make build`            | Compile the package into `dist`.                                           |
+| `make lint`             | Run ESLint.                                                                |
+| `make lint-fix`         | Fix only Prettier violations and print changed file paths.                 |
+| `make tsc`              | Check TypeScript with tsc --noEmit.                                        |
+| `make knip`             | Run Knip.                                                                  |
+| `make secrets-check`    | Run the hook secret scan (staged changes).                                 |
+| `make lsp`              | Start the local TypeScript MCP server over stdio.                          |
+| `make graphify`         | Create or update the local code graph and Markdown report.                 |
+| `make graphify-rebuild` | Rescan all code files and regenerate the report.                           |
+| `make graphify-html`    | Update the graph and report, then export HTML visualization.               |
+| **Schema Registry**     |                                                                            |
+| `make env`              | Create `.env` from `.env.example`.                                         |
+| `make check`            | Check catalog, artifact files, JSON syntax and proto3 headers; no network. |
+| `make verify`           | Check schema compatibility; create no groups or artifacts.                 |
+| `make apply`            | Publish schemas to Apicurio; identical content reuses its version.         |
+| **Container / GHCR**    |                                                                            |
+| `make image`            | Build catalog/scripts image; configurable `IMAGE` and `VCS_REF`.           |
+| `make image-publish`    | Publish existing `monadiam/shared-schemas:ci` as `sha-<HEAD>` in GHCR.     |
+| `make image-release`    | Assign the package version to the published SHA image; no rebuild.         |
+| `make image-cleanup`    | Delete old SHA images according to the GHCR retention policy.              |
+
+GHCR targets run in Actions with `GITHUB_TOKEN`; publish/release also require
+`GITHUB_STEP_SUMMARY`, and release requires `GITHUB_REF_NAME`.
 
 </details>
 
@@ -182,19 +231,46 @@ pnpm add git+https://github.com/MonadIAM/shared.git#v2.0.0
 <details>
 <summary><strong>Releasing a new version</strong></summary>
 
-1. Update `version` field in `package.json`.
-2. Commit changes:
-```bash
-git add .
-git commit -m "feat: add new message templates"
-```
-3. Create tag and push:
-```sh
-git tag v2.0.0
-git push origin main --tags
-```
+1. Create a branch from current `main`:
 
-Schema changes and TypeScript changes share one version, so bump it for schema edits as well.
+   ```bash
+   git switch main
+   git pull --ff-only origin main
+   git switch -c feat/message-templates
+   ```
+
+2. Make changes and update `package.json.version` to the next release version.
+   Schema and TypeScript changes share this version.
+
+3. Commit and push the branch:
+
+   ```bash
+   git add .
+   git commit -m "feat: add new message templates"
+   git push -u origin feat/message-templates
+   ```
+
+4. Open a PR into `main`. Wait for required checks, including **CI passed**, then
+   merge. Wait for **Publish schema image** to succeed for the resulting commit:
+   it builds and publishes `ghcr.io/monadiam/shared-schemas:sha-<commit SHA>`.
+
+5. Update local `main`. Its latest commit should be your published release commit:
+
+   ```bash
+   git switch main
+   git pull --ff-only origin main
+   ```
+
+6. Create and push the tag matching `package.json.version` (example: `2.0.20`):
+
+   ```bash
+   git tag v2.0.20
+   git push origin v2.0.20
+   ```
+
+7. Wait for **Release schema image**. It verifies `vX.Y.Z` against
+   `package.json.version` and adds image tag `X.Y.Z` to the published SHA image
+   without rebuilding. Use the digest from the workflow summary in stand.
 
 </details>
 
