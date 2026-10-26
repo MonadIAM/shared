@@ -3,6 +3,14 @@ title = "project gitleaks config"
 [extend]
 useDefault = true # Uses the standard built-in gitleaks config as a base.
 
+[[allowlists]]
+description = "Demo leave operation identifiers"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^src/datasets/demo/hr/(hr-request|leave-ledger-entry)\.dataset\.ts$''']
+regexTarget = "secret"
+regexes = ['''^(?:(?:reserve|consume)/)?leave/(?:nimbus/E[0-9]{3}|orbit/[XF][0-9]{3})$''']
+
 
 
 # Global allowlist — applies to ALL rules, except those

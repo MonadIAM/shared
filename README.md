@@ -68,21 +68,15 @@ Registry publication is performed by the scripts in this repository, not during 
 <details>
 <summary><strong>Database seed datasets</strong></summary>
 
-Seed datasets are compiled and shipped with this package, grouped by service:
+Datasets are grouped under `src/datasets/system` (bootstrap data) and
+`src/datasets/demo` (demonstration data), each with catalogs for all five services.
 
 ```ts
-import { dataset, bootstrap } from "@monadiam/shared/datasets/access-control";
+import { dataset, bootstrap } from "@monadiam/shared/datasets/system/access-control";
 
 dataset.Roles.redis;
 bootstrap.ADMIN_PERMISSION_CODES;
 ```
-
-Individual modules keep their original names and named exports, for example
-`@monadiam/shared/datasets/identity/interface-client.dataset`.
-
-Database connections, migrations, seed execution order, and Redis Lua scripts
-remain in the consuming services. Import datasets through their subpaths; the
-package root exports only common definitions and does not load seed data.
 
 </details>
 
