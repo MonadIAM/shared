@@ -522,6 +522,7 @@ declare global {
 
             type ContentInput = BaseInput & {
                 kind: NotificationContentKind.CONTENT;
+                language?: string;
                 title: string;
                 text: string;
             };
