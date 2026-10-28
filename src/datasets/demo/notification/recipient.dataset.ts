@@ -1,4 +1,24 @@
 const dataset = [
+    {
+        id: "00000010-0000-4000-8000-100000000001",
+        account: "00000000-0000-4000-8000-000000000001",
+        locale: "en",
+        timezone: "UTC",
+        default_otp_channel_id: null,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "00000010-0000-4000-8000-100000000002",
+        account: "00000000-0000-4000-8000-100000000002",
+        locale: "en",
+        timezone: "UTC",
+        default_otp_channel_id: null,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
     // E001 - Nathaniel Brooks
     {
         id: "064df7bb-184a-5971-a758-d1c11d8d2545",
