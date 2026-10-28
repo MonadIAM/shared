@@ -16,6 +16,7 @@
       "required": ["account"],
       "properties": {
         "account": { "type": "string" },
+        "locale": { "type": "string", "minLength": 1 },
         "identifier": {
           "type": "object",
           "additionalProperties": false,
