@@ -463,6 +463,7 @@ declare global {
                 payload: {
                     account: string;
                     identifier: Identifier;
+                    locale?: string;
                     otp: string;
                 };
             };
@@ -472,6 +473,7 @@ declare global {
                 payload: {
                     account: string;
                     identifier?: Identifier;
+                    locale?: string;
                 };
             };
 
