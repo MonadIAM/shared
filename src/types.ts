@@ -464,6 +464,7 @@ declare global {
                     account: string;
                     identifier: Identifier;
                     locale?: string;
+                    timezone?: string;
                     otp: string;
                 };
             };
@@ -474,6 +475,7 @@ declare global {
                     account: string;
                     identifier?: Identifier;
                     locale?: string;
+                    timezone?: string;
                 };
             };
 
