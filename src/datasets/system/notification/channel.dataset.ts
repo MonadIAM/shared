@@ -1,4 +1,59 @@
-const dataset: never[] = [];
+const CREATED_AT = new Date("2026-01-01T00:00:00.000Z");
+
+const dataset = [
+    {
+        id: "00000011-0000-4000-8000-100000000001",
+        recipient_id: "00000010-0000-4000-8000-100000000001",
+        type: "IN_APP",
+        address: null,
+        source_identifier: null,
+        sound_enabled: true,
+        is_verified: true,
+        verified_at: CREATED_AT,
+        created_at: CREATED_AT,
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "00000011-0000-4000-8000-100000000002",
+        recipient_id: "00000010-0000-4000-8000-100000000001",
+        type: "EMAIL",
+        address: "admin@example.com",
+        source_identifier: "00000001-0000-4000-8000-100000000001",
+        sound_enabled: null,
+        is_verified: true,
+        verified_at: CREATED_AT,
+        created_at: CREATED_AT,
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "00000011-0000-4000-8000-100000000003",
+        recipient_id: "00000010-0000-4000-8000-100000000002",
+        type: "IN_APP",
+        address: null,
+        source_identifier: null,
+        sound_enabled: true,
+        is_verified: true,
+        verified_at: CREATED_AT,
+        created_at: CREATED_AT,
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "00000011-0000-4000-8000-100000000004",
+        recipient_id: "00000010-0000-4000-8000-100000000002",
+        type: "EMAIL",
+        address: "user@example.com",
+        source_identifier: "00000001-0000-4000-8000-100000000002",
+        sound_enabled: null,
+        is_verified: true,
+        verified_at: CREATED_AT,
+        created_at: CREATED_AT,
+        updated_at: null,
+        version: 1,
+    },
+];
 
 export const Channels = {
     name: "channel",
