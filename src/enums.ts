@@ -237,6 +237,7 @@ export enum MessageTemplate {
     // identity: OTP delivery
     IDENTIFIER_VERIFICATION_OTP = "IDENTIFIER_VERIFICATION_OTP",
     ACCOUNT_VERIFICATION_OTP    = "ACCOUNT_VERIFICATION_OTP",
+    REAUTHENTICATION_OTP        = "REAUTHENTICATION_OTP",
     RESET_PASSWORD_OTP          = "RESET_PASSWORD_OTP",
     LOGIN_OTP                   = "LOGIN_OTP",
 
@@ -341,9 +342,11 @@ export enum PermissionCode {
     ACCOUNT_READ_ABSOLUTE = "account.read_absolute",
     ACCOUNT_SUSPEND       = "account.suspend",
     ACCOUNT_RESTORE       = "account.restore",
+    ACCOUNT_DEACTIVATE    = "account.deactivate",
 
     REAUTHENTICATION_CONFIRM_PASSWORD      = "reauthentication.confirm_password",
     REAUTHENTICATION_CONFIRM_SECOND_FACTOR = "reauthentication.confirm_second_factor",
+    REAUTHENTICATION_CONFIRM_OTP           = "reauthentication.confirm_otp",
 
     IDENTIFIER_READ_PERSONAL         = "identifier.read_personal",
     IDENTIFIER_READ_ABSOLUTE         = "identifier.read_absolute",
