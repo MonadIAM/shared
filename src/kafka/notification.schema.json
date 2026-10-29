@@ -67,7 +67,7 @@
                 "input": {
                   "type": "object",
                   "additionalProperties": false,
-                  "required": ["kind", "recipient", "category", "sourceService", "template", "language"],
+                  "required": ["kind", "recipient", "category", "sourceService", "template"],
                   "properties": {
                     "kind": { "const": "TEMPLATE" },
                     "recipient": { "type": "string" },
@@ -208,7 +208,7 @@
                         "input": {
                           "type": "object",
                           "additionalProperties": false,
-                          "required": ["kind", "recipient", "category", "sourceService", "template", "language"],
+                          "required": ["kind", "recipient", "category", "sourceService", "template"],
                           "properties": {
                             "kind": { "const": "TEMPLATE" },
                             "recipient": { "type": "string" },

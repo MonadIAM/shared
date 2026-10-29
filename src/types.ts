@@ -538,7 +538,7 @@ declare global {
                 kind: NotificationContentKind.TEMPLATE;
                 params?: Record<string, string>;
                 template: MessageTemplate;
-                language: string;
+                language?: string;
             };
         }
 
