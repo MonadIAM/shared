@@ -17,6 +17,7 @@ import {
     MessageTemplate,
     PlatformService,
     PrivilegeScope,
+    ChannelType,
     RealmType,
 } from "./enums";
 
@@ -513,7 +514,13 @@ declare global {
                 realm?: string;
             };
 
+            type Delivery = {
+                channelType: ChannelType.EMAIL | ChannelType.SMS;
+                address: string;
+            };
+
             type BaseInput = {
+                delivery?: Delivery;
                 category: NotificationCategory;
                 sourceService: PlatformService;
                 recipient: string;

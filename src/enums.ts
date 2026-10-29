@@ -99,6 +99,14 @@ export enum InvalidationScope {
     /* eslint-enable prettier/prettier */
 }
 
+export enum ChannelType {
+    /* eslint-disable prettier/prettier */
+    IN_APP = "IN_APP",
+    EMAIL  = "EMAIL",
+    SMS    = "SMS",
+    /* eslint-enable prettier/prettier */
+}
+
 export enum NotificationContentKind {
     /* eslint-disable prettier/prettier */
     TEMPLATE = "TEMPLATE",
