@@ -450,6 +450,12 @@ const dataset = [
         "Restore Account",
         "Restore a suspended account.",
     ),
+    entry(
+        "00000003-0002-4000-8000-200000000006",
+        PermissionCode.ACCOUNT_DEACTIVATE,
+        "Deactivate Own Account",
+        "Voluntarily deactivate the current account.",
+    ),
 
     // Reauthentication
     entry(
@@ -463,6 +469,12 @@ const dataset = [
         PermissionCode.REAUTHENTICATION_CONFIRM_SECOND_FACTOR,
         "Confirm Reauthentication by Second Factor",
         "Confirm reauthentication using a second factor.",
+    ),
+    entry(
+        "00000003-0003-4000-8000-200000000003",
+        PermissionCode.REAUTHENTICATION_CONFIRM_OTP,
+        "Confirm Reauthentication by Email",
+        "Confirm reauthentication using a verified email when no password or second factor is configured.",
     ),
 
     // Identifier

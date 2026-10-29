@@ -2617,6 +2617,28 @@ const dataset = [
         created_at: new Date("2026-01-01T00:00:00.000Z"),
         version: 1,
     },
+    {
+        id: "00000003-0002-4000-8000-200000000006",
+        code: "account.deactivate",
+        name: "Deactivate Own Account",
+        description: "Voluntarily deactivate the current account.",
+        realm_id: "00000001-0000-4000-8000-100000000001",
+        is_system_managed: true,
+        is_revoked: false,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        version: 1,
+    },
+    {
+        id: "00000003-0003-4000-8000-200000000003",
+        code: "reauthentication.confirm_otp",
+        name: "Confirm Reauthentication by Email",
+        description: "Confirm reauthentication using a verified email when no password or second factor is configured.",
+        realm_id: "00000001-0000-4000-8000-100000000001",
+        is_system_managed: true,
+        is_revoked: false,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        version: 1,
+    },
 ];
 
 export const Permissions = {
