@@ -16,7 +16,28 @@
       "required": ["expiresAt", "session"],
       "properties": {
         "expiresAt": { "type": "number" },
-        "session": { "type": "string" }
+        "session": { "type": "string" },
+        "proof": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["method"],
+              "properties": {
+                "method": { "enum": ["password", "otp"] }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["method", "factor"],
+              "properties": {
+                "method": { "const": "totp" },
+                "factor": { "type": "string", "format": "uuid" }
+              }
+            }
+          ]
+        }
       }
     }
   }

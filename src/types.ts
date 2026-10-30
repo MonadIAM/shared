@@ -5,6 +5,7 @@ import {
     NotificationContentKind,
     NotificationTopicAction,
     AccessCacheTopicAction,
+    ReauthenticationMethod,
     PositionReferenceType,
     MessageDispatchAction,
     NotificationCategory,
@@ -571,11 +572,16 @@ declare global {
         }
 
         namespace Reauthentication {
+            type Proof =
+                | { method: ReauthenticationMethod.PASSWORD | ReauthenticationMethod.OTP }
+                | { method: ReauthenticationMethod.TOTP; factor: string };
+
             type Message = {
                 actionType: ReauthenticationTopicAction;
                 payload: {
                     expiresAt: number;
                     session: string;
+                    proof?: Proof;
                 };
             };
         }

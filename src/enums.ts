@@ -218,6 +218,14 @@ export enum ReauthenticationTopicAction {
     GRANT = "GRANT",
 }
 
+export enum ReauthenticationMethod {
+    /* eslint-disable prettier/prettier */
+    PASSWORD = "password",
+    OTP      = "otp",
+    TOTP     = "totp",
+    /* eslint-enable prettier/prettier */
+}
+
 export enum BlacklistTopicAction {
     ADD = "ADD",
 }
