@@ -192,9 +192,12 @@ export enum NotificationTopicAction {
 
 export enum AccountTopicAction {
     /* eslint-disable prettier/prettier */
-    CREATE = "CREATE",
-    VERIFY = "VERIFY",
-    PURGE  = "PURGE",
+    EMAIL_VERIFIED = "EMAIL_VERIFIED",
+    EMAIL_SELECTED = "EMAIL_SELECTED",
+    EMAIL_PURGED   = "EMAIL_PURGED",
+    CREATE         = "CREATE",
+    VERIFY         = "VERIFY",
+    PURGE          = "PURGE",
     /* eslint-enable prettier/prettier */
 }
 

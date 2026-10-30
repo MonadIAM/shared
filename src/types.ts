@@ -486,7 +486,40 @@ declare global {
                 payload: { account: string };
             };
 
-            type Message = CreateMessage | VerifyMessage | PurgeMessage;
+            type EmailIdentifier = Identifier & { type: "email" };
+
+            type EmailVerifiedMessage = {
+                actionType: AccountTopicAction.EMAIL_VERIFIED;
+                payload: {
+                    identifier: EmailIdentifier;
+                    account: string;
+                };
+            };
+
+            type EmailSelectedMessage = {
+                actionType: AccountTopicAction.EMAIL_SELECTED;
+                payload: {
+                    identifier: EmailIdentifier;
+                    account: string;
+                };
+            };
+
+            type EmailPurgedMessage = {
+                actionType: AccountTopicAction.EMAIL_PURGED;
+                payload: {
+                    replacement?: EmailIdentifier;
+                    identifier: EmailIdentifier;
+                    account: string;
+                };
+            };
+
+            type Message =
+                | EmailVerifiedMessage
+                | EmailSelectedMessage
+                | EmailPurgedMessage
+                | CreateMessage
+                | VerifyMessage
+                | PurgeMessage;
         }
 
         namespace Notification {

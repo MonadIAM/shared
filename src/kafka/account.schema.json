@@ -8,7 +8,7 @@
   "properties": {
     "actionType": {
       "type": "string",
-      "enum": ["CREATE", "VERIFY", "PURGE"]
+      "enum": ["CREATE", "VERIFY", "PURGE", "EMAIL_VERIFIED", "EMAIL_SELECTED", "EMAIL_PURGED"]
     },
     "payload": {
       "type": "object",
@@ -35,6 +35,9 @@
               "minLength": 1
             }
           }
+        },
+        "replacement": {
+          "$ref": "#/properties/payload/properties/identifier"
         },
         "otp": {
           "type": "string",
@@ -75,6 +78,37 @@
               "required": ["otp"]
             }
           }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "actionType": { "enum": ["EMAIL_VERIFIED", "EMAIL_SELECTED", "EMAIL_PURGED"] }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "required": ["account", "identifier"],
+            "properties": {
+              "identifier": { "properties": { "type": { "const": "email" } } },
+              "replacement": { "properties": { "type": { "const": "email" } } }
+            },
+            "not": { "required": ["otp"] }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "actionType": { "not": { "const": "EMAIL_PURGED" } }
+        }
+      },
+      "then": {
+        "properties": {
+          "payload": { "not": { "required": ["replacement"] } }
         }
       }
     }
