@@ -241,6 +241,7 @@ export enum MessageTemplate {
     PASSWORD_CHANGED                   = "PASSWORD_CHANGED",
     SECOND_FACTOR_ENABLED              = "SECOND_FACTOR_ENABLED",
     SECOND_FACTOR_RESET                = "SECOND_FACTOR_RESET",
+    SECOND_FACTOR_PURGED               = "SECOND_FACTOR_PURGED",
     RECOVERY_CODES_REGENERATED         = "RECOVERY_CODES_REGENERATED",
     IDENTIFIER_PURGED                  = "IDENTIFIER_PURGED",
     LOGIN_ALERT                        = "LOGIN_ALERT",
