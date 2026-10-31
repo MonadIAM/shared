@@ -5,45 +5,6 @@ Cross-service shared definitions that eliminate manual synchronization between M
 ----
 
 <details>
-<summary><strong>Local Code Graph (Graphify)</strong></summary>
-
-Install once with [uv](https://docs.astral.sh/uv/), then open a new terminal:
-
-```sh
-uv tool install graphifyy==0.9.65
-uv tool update-shell
-```
-
-Run `make graphify` from the repository root to create or update the local code
-graph and report. No API key is required. Outputs in `graphify-out/` are ignored
-by Git. Agent guidance: [AGENTS.md](AGENTS.md).
-
-</details>
-
-----
-
-<details>
-<summary><strong>Local TypeScript Navigation (LSP-MCP)</strong></summary>
-
-[lsmcp](https://github.com/mizchi/lsmcp) and TypeScript Language Server are pinned
-dev dependencies. Install with `pnpm install` using the Node version from
-`package.json`. Run `make lsp` from the repository root to start the stdio MCP
-server; an MCP client must connect to it to issue queries.
-
-For an MCP client, use command `node`, arguments
-`["node_modules/@mizchi/lsmcp/dist/lsmcp.js", "--config", ".lsmcp/config.json"]`,
-and set its working directory to this repository. Desktop clients may need an
-absolute Node executable path. Configuration: [.lsmcp/config.json](.lsmcp/config.json).
-Local indexes and caches are ignored by Git. Agent guidance: [AGENTS.md](AGENTS.md).
-
-TypeScript navigation covers local declarations in `src`. Protobuf and Kafka
-JSON schemas are checked separately with `make check`.
-
-</details>
-
-----
-
-<details>
 <summary><strong>Contracts</strong></summary>
 
 The package keeps TypeScript contracts and the schema artifacts registered in the Schema Registry:
@@ -186,10 +147,6 @@ Missing or empty values fail immediately; scripts do not supply fallback values.
 | `make tsc`              | Check TypeScript with tsc --noEmit.                                        |
 | `make knip`             | Run Knip.                                                                  |
 | `make secrets-check`    | Run the hook secret scan (staged changes).                                 |
-| `make lsp`              | Start the local TypeScript MCP server over stdio.                          |
-| `make graphify`         | Create or update the local code graph and Markdown report.                 |
-| `make graphify-rebuild` | Rescan all code files and regenerate the report.                           |
-| `make graphify-html`    | Update the graph and report, then export HTML visualization.               |
 | **Schema Registry**     |                                                                            |
 | `make env`              | Create `.env` from `.env.example`.                                         |
 | `make check`            | Check catalog, artifact files, JSON syntax and proto3 headers; no network. |

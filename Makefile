@@ -1,6 +1,5 @@
-.PHONY: build lint lint-fix tsc knip secrets-check lsp env check apply verify image image-publish image-release image-cleanup graphify graphify-rebuild graphify-html
+.PHONY: build lint lint-fix tsc knip secrets-check env check apply verify image image-publish image-release image-cleanup
 
-GRAPHIFY ?= graphify
 IMAGE ?= monadiam/shared-schemas:local
 VCS_REF ?= $(shell git rev-parse HEAD)
 
@@ -17,8 +16,6 @@ knip:
 	pnpm run knip
 secrets-check:
 	pnpm run secrets:check
-lsp:
-	@pnpm --silent run lsp
 
 # Contracts
 env:
@@ -39,15 +36,3 @@ image-release:
 	bash .github/scripts/packages.sh release
 image-cleanup:
 	bash .github/scripts/packages.sh cleanup
-
-# Local code graph
-graphify:
-	$(GRAPHIFY) extract . --code-only
-	$(GRAPHIFY) cluster-only . --no-viz --no-label
-
-graphify-rebuild:
-	$(GRAPHIFY) extract . --code-only --force
-	$(GRAPHIFY) cluster-only . --no-viz --no-label
-
-graphify-html: graphify
-	$(GRAPHIFY) export html
