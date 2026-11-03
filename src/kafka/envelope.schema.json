@@ -13,6 +13,7 @@
         "account",
         "membership",
         "realm",
+        "position",
         "access-cache",
         "notification",
         "message-dispatch",
