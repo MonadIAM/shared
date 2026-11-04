@@ -173,6 +173,126 @@
       "required": ["actionType", "payload"],
       "properties": {
         "actionType": {
+          "const": "MEMBERSHIP_LEAVE_REQUESTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["organization", "process", "account"],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "process": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "MEMBERSHIP_LEAVE_CONFIRMED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["organization", "process", "account"],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "process": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "MEMBERSHIP_LEAVE_REJECTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["organization", "process", "account", "reason"],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "process": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
           "const": "BOOTSTRAP_ORGANIZATION_REQUESTED"
         },
         "payload": {
