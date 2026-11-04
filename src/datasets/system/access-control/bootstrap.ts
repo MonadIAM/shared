@@ -16,6 +16,13 @@ export const USER_PERMISSION_CODES: string[] = [
     PermissionCode.MEMBERSHIP_LEAVE,
     PermissionCode.PROJECT_READ_PERSONAL,
     PermissionCode.PROJECT_ACCOUNT_ASSIGNMENT_READ_PERSONAL,
+
+    PermissionCode.EMPLOYEE_READ_PERSONAL,
+    PermissionCode.HR_REQUEST_READ_PERSONAL,
+    PermissionCode.HR_REQUEST_CREATE_PERSONAL,
+    PermissionCode.HR_REQUEST_UPDATE_PERSONAL,
+    PermissionCode.HR_REQUEST_SUBMIT_PERSONAL,
+    PermissionCode.HR_REQUEST_WITHDRAW_PERSONAL,
 ];
 
 export const ADMIN_PERMISSION_CODES: string[] = [
@@ -126,12 +133,14 @@ export const ADMIN_PERMISSION_CODES: string[] = [
     PermissionCode.EMPLOYMENT_READ_ABSOLUTE,
     PermissionCode.ABSENCE_READ_COMMON,
     PermissionCode.ABSENCE_READ_ABSOLUTE,
+    PermissionCode.HR_REQUEST_READ_ASSIGNED,
     PermissionCode.HR_REQUEST_READ_COMMON,
     PermissionCode.HR_REQUEST_READ_ABSOLUTE,
     PermissionCode.HR_REQUEST_CREATE,
     PermissionCode.HR_REQUEST_UPDATE,
     PermissionCode.HR_REQUEST_SUBMIT,
     PermissionCode.HR_REQUEST_WITHDRAW,
+    PermissionCode.HR_APPROVAL_STEP_READ_ASSIGNED,
     PermissionCode.HR_APPROVAL_STEP_READ_COMMON,
     PermissionCode.HR_APPROVAL_STEP_READ_ABSOLUTE,
     PermissionCode.HR_APPROVAL_STEP_APPROVE,

@@ -7,7 +7,7 @@ const VERIFIED_AT = new Date("2026-01-01T00:00:00.000Z");
 
 const dataset = [
     {
-        id: "00000001-0000-4000-8000-100000000001",
+        id: "74e70d3a-5130-4b3a-9ab6-cbfe430a5813",
         type: IdentifierType.EMAIL,
         identity: "admin@example.com",
         provider_user_id: null,
@@ -20,7 +20,7 @@ const dataset = [
         last_used_at: null,
     },
     {
-        id: "00000001-0000-4000-8000-100000000002",
+        id: "562458c0-9d34-4882-8bcd-fdf79aed979c",
         type: IdentifierType.EMAIL,
         identity: "user@example.com",
         provider_user_id: null,

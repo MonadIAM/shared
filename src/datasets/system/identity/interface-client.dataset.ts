@@ -8,8 +8,8 @@ const DOCS_AUTH_PATH = "/docs/#identity/tag/authn/POST/api/v1/authn/password";
 const WEB_REDIRECT_URIS: string[] = JSON.parse(process.env.WEB_OAUTH_REDIRECT_URIS!);
 const DOCS_REDIRECT_URIS: string[] = JSON.parse(process.env.DOCS_OAUTH_REDIRECT_URIS!);
 
-export const WEB_INTERFACE_CLIENT_ID = "00000003-0000-4000-8000-130000000001";
-export const DOCS_INTERFACE_CLIENT_ID = "00000003-0000-4000-8000-130000000002";
+export const WEB_INTERFACE_CLIENT_ID = "f0d7e044-92c9-4a54-8969-173ecd8198af";
+export const DOCS_INTERFACE_CLIENT_ID = "9631482c-2e84-43d0-ae97-5efe0290fc28";
 
 const dataset = [
     {
