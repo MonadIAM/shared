@@ -255,6 +255,9 @@ declare global {
                 | MembershipJoinRequestedMessage
                 | MembershipJoinConfirmedMessage
                 | MembershipJoinRejectedMessage
+                | MembershipLeaveRequestedMessage
+                | MembershipLeaveConfirmedMessage
+                | MembershipLeaveRejectedMessage
                 | BootstrapOrganizationRequestedMessage
                 | BootstrapProjectRequestedMessage
                 | BootstrapConfirmedMessage
@@ -311,6 +314,46 @@ declare global {
                         command: string;
                         account: string;
                         invite?: string;
+                        reason: string;
+                    };
+                };
+            };
+
+            type MembershipLeaveRequestedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_LEAVE_REQUESTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        process: string;
+                        account: string;
+                    };
+                };
+            };
+
+            type MembershipLeaveConfirmedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_LEAVE_CONFIRMED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        process: string;
+                        account: string;
+                    };
+                };
+            };
+
+            type MembershipLeaveRejectedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_LEAVE_REJECTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        process: string;
+                        account: string;
                         reason: string;
                     };
                 };

@@ -22762,6 +22762,18 @@ const dataset = [
         created_at: new Date("2026-01-01T00:00:00.000Z"),
         version: 1,
     },
+    // nimbus.people-operator / hr_request.read_assigned
+    {
+        id: "c75f1cff-7d19-41da-b8c1-3eefbd4dc268",
+        role_id: "55d7a15b-3536-40d2-ba80-a2675b9e86c7",
+        permission_id: "8be5a7ed-7333-444d-8c43-7b18b9bf053d",
+        realm_id: "2fd2dfdd-8df2-4ad6-83a3-cc2333888f28",
+        scope: AssignmentScope.REALM,
+        is_system_managed: false,
+        is_revoked: false,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        version: 1,
+    },
     // nimbus.people-operator / hr_approval_step.read_assigned
     {
         id: "e8dc63c8-7e5a-40a5-ae9b-8d1628d793a5",
@@ -23139,6 +23151,18 @@ const dataset = [
         id: "d4c80dc3-3cf0-4e5b-9413-158449bacf61",
         role_id: "36be95f8-d94d-4732-bd4b-7e58e7ffaf5e",
         permission_id: "af7965ce-c474-43b7-9127-de7a7526be49",
+        realm_id: "0a583c93-bbc0-4af6-978d-4b8000fa72be",
+        scope: AssignmentScope.REALM,
+        is_system_managed: false,
+        is_revoked: false,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        version: 1,
+    },
+    // orbit.people-operator / hr_request.read_assigned
+    {
+        id: "c65fc831-fcb2-4e54-9388-8ee7b9799280",
+        role_id: "36be95f8-d94d-4732-bd4b-7e58e7ffaf5e",
+        permission_id: "8be5a7ed-7333-444d-8c43-7b18b9bf053d",
         realm_id: "0a583c93-bbc0-4af6-978d-4b8000fa72be",
         scope: AssignmentScope.REALM,
         is_system_managed: false,
@@ -47818,6 +47842,19 @@ const redis = [
         version: 1,
         permission_realm_id: "74e70d3a-5130-4b3a-9ab6-cbfe430a5813",
     },
+    // nimbus.people-operator / hr_request.read_assigned
+    {
+        id: "c75f1cff-7d19-41da-b8c1-3eefbd4dc268",
+        role_id: "55d7a15b-3536-40d2-ba80-a2675b9e86c7",
+        permission_id: "8be5a7ed-7333-444d-8c43-7b18b9bf053d",
+        realm_id: "2fd2dfdd-8df2-4ad6-83a3-cc2333888f28",
+        scope: AssignmentScope.REALM,
+        is_system_managed: false,
+        is_revoked: false,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        version: 1,
+        permission_realm_id: "74e70d3a-5130-4b3a-9ab6-cbfe430a5813",
+    },
     // nimbus.people-operator / hr_approval_step.read_assigned
     {
         id: "e8dc63c8-7e5a-40a5-ae9b-8d1628d793a5",
@@ -48226,6 +48263,19 @@ const redis = [
         id: "d4c80dc3-3cf0-4e5b-9413-158449bacf61",
         role_id: "36be95f8-d94d-4732-bd4b-7e58e7ffaf5e",
         permission_id: "af7965ce-c474-43b7-9127-de7a7526be49",
+        realm_id: "0a583c93-bbc0-4af6-978d-4b8000fa72be",
+        scope: AssignmentScope.REALM,
+        is_system_managed: false,
+        is_revoked: false,
+        created_at: new Date("2026-01-01T00:00:00.000Z"),
+        version: 1,
+        permission_realm_id: "74e70d3a-5130-4b3a-9ab6-cbfe430a5813",
+    },
+    // orbit.people-operator / hr_request.read_assigned
+    {
+        id: "c65fc831-fcb2-4e54-9388-8ee7b9799280",
+        role_id: "36be95f8-d94d-4732-bd4b-7e58e7ffaf5e",
+        permission_id: "8be5a7ed-7333-444d-8c43-7b18b9bf053d",
         realm_id: "0a583c93-bbc0-4af6-978d-4b8000fa72be",
         scope: AssignmentScope.REALM,
         is_system_managed: false,
