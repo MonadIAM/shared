@@ -4,14 +4,20 @@ title = "project gitleaks config"
 useDefault = true # Uses the standard built-in gitleaks config as a base.
 
 [[allowlists]]
+description = "System password permission UUIDs"
+targetRules = ["generic-api-key"]
+condition = "AND"
+paths = ['''^src/datasets/system/access-control/role-permission-assignment\.dataset\.ts$''']
+regexTarget = "match"
+regexes = ['''^(?:REAUTHENTICATION_CONFIRM_PASSWORD|PASSWORD_CHANGE)\s*=\s*"[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}"$''']
+
+[[allowlists]]
 description = "Demo leave operation identifiers"
 targetRules = ["generic-api-key"]
 condition = "AND"
 paths = ['''^src/datasets/demo/hr/(hr-request|leave-ledger-entry)\.dataset\.ts$''']
 regexTarget = "secret"
 regexes = ['''^(?:(?:reserve|consume)/)?leave/(?:nimbus/E[0-9]{3}|orbit/[XF][0-9]{3})$''']
-
-
 
 # Global allowlist — applies to ALL rules, except those
 # explicitly scoped via targetRules in [[allowlists]].

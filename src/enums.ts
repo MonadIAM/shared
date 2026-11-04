@@ -485,6 +485,7 @@ export enum PermissionCode {
     EMPLOYEE_RESTORE                      = "employee.restore",
     EMPLOYEE_LINK_ACCOUNT                 = "employee.link_account",
     EMPLOYEE_SET_HRBP                     = "employee.set_hrbp",
+    EMPLOYEE_READ_PERSONAL                = "employee.read_personal",
 
     EMPLOYMENT_READ_COMMON                = "employment.read_common",
     EMPLOYMENT_READ_ABSOLUTE              = "employment.read_absolute",
@@ -498,6 +499,12 @@ export enum PermissionCode {
     HR_REQUEST_UPDATE                     = "hr_request.update",
     HR_REQUEST_SUBMIT                     = "hr_request.submit",
     HR_REQUEST_WITHDRAW                   = "hr_request.withdraw",
+    HR_REQUEST_READ_PERSONAL              = "hr_request.read_personal",
+    HR_REQUEST_CREATE_PERSONAL            = "hr_request.create_personal",
+    HR_REQUEST_UPDATE_PERSONAL            = "hr_request.update_personal",
+    HR_REQUEST_SUBMIT_PERSONAL            = "hr_request.submit_personal",
+    HR_REQUEST_WITHDRAW_PERSONAL          = "hr_request.withdraw_personal",
+    HR_REQUEST_READ_ASSIGNED              = "hr_request.read_assigned",
 
     HR_APPROVAL_STEP_READ_COMMON          = "hr_approval_step.read_common",
     HR_APPROVAL_STEP_READ_ABSOLUTE        = "hr_approval_step.read_absolute",
@@ -505,6 +512,7 @@ export enum PermissionCode {
     HR_APPROVAL_STEP_REJECT               = "hr_approval_step.reject",
     HR_APPROVAL_STEP_RETURN_FOR_REVISION  = "hr_approval_step.return_for_revision",
     HR_APPROVAL_STEP_REASSIGN             = "hr_approval_step.reassign",
+    HR_APPROVAL_STEP_READ_ASSIGNED        = "hr_approval_step.read_assigned",
     HR_APPROVAL_DECISION_READ_COMMON      = "hr_approval_decision.read_common",
     HR_APPROVAL_DECISION_READ_ABSOLUTE    = "hr_approval_decision.read_absolute",
 

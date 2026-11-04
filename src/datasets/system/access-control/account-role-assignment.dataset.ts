@@ -21,8 +21,8 @@ const entry = (id: string, role: string, account: string) => ({
 });
 
 const dataset = [
-    entry("00000010-0000-4000-8000-100000000001", ADMINISTRATOR_ROLE_ID, ADMIN_ACCOUNT_ID),
-    entry("00000010-0000-4000-8000-100000000002", SYSTEM_USER_ROLE_ID,   USER_ACCOUNT_ID),
+    entry("0303d328-d5e5-4069-8c4d-1443a7dc58d3", ADMINISTRATOR_ROLE_ID, ADMIN_ACCOUNT_ID),
+    entry("fbadf344-ad35-41c5-b19e-19d6d8a34936", SYSTEM_USER_ROLE_ID,   USER_ACCOUNT_ID),
 ];
 
 export const AccountRoleAssignments = {

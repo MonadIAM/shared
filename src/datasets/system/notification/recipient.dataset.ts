@@ -4,7 +4,7 @@ const CREATED_AT = new Date("2026-01-01T00:00:00.000Z");
 
 const dataset = [
     {
-        id: "00000010-0000-4000-8000-100000000001",
+        id: "0303d328-d5e5-4069-8c4d-1443a7dc58d3",
         account: ADMIN_ACCOUNT_ID,
         locale: "en",
         timezone: "UTC",
@@ -14,7 +14,7 @@ const dataset = [
         version: 1,
     },
     {
-        id: "00000010-0000-4000-8000-100000000002",
+        id: "fbadf344-ad35-41c5-b19e-19d6d8a34936",
         account: USER_ACCOUNT_ID,
         locale: "en",
         timezone: "UTC",
