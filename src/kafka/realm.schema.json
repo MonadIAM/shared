@@ -9,6 +9,126 @@
       "required": ["actionType", "payload"],
       "properties": {
         "actionType": {
+          "const": "MEMBERSHIP_ENSURE_REQUESTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["organization", "process", "account"],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "process": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "MEMBERSHIP_ENSURE_CONFIRMED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["organization", "process", "account"],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "process": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
+          "const": "MEMBERSHIP_ENSURE_REJECTED"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["actor", "realm", "input"],
+          "properties": {
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["organization", "process", "account", "reason"],
+              "properties": {
+                "organization": {
+                  "type": "string"
+                },
+                "process": {
+                  "type": "string"
+                },
+                "account": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": {
           "const": "MEMBERSHIP_JOIN_REQUESTED"
         },
         "payload": {
@@ -37,6 +157,9 @@
                   "type": "string"
                 },
                 "account": {
+                  "type": "string"
+                },
+                "hrRequest": {
                   "type": "string"
                 },
                 "invite": {
@@ -93,6 +216,9 @@
                   "type": "string"
                 },
                 "account": {
+                  "type": "string"
+                },
+                "hrRequest": {
                   "type": "string"
                 },
                 "invite": {
@@ -153,6 +279,9 @@
                   "type": "string"
                 },
                 "account": {
+                  "type": "string"
+                },
+                "hrRequest": {
                   "type": "string"
                 },
                 "invite": {

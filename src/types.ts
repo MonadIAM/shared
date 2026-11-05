@@ -252,6 +252,9 @@ declare global {
 
         namespace Realm {
             type Message =
+                | MembershipEnsureRequestedMessage
+                | MembershipEnsureConfirmedMessage
+                | MembershipEnsureRejectedMessage
                 | MembershipJoinRequestedMessage
                 | MembershipJoinConfirmedMessage
                 | MembershipJoinRejectedMessage
@@ -269,6 +272,46 @@ declare global {
                 | AccountAccessMessage
                 | LifecycleMessage;
 
+            type MembershipEnsureRequestedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_ENSURE_REQUESTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        process: string;
+                        account: string;
+                    };
+                };
+            };
+
+            type MembershipEnsureConfirmedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_ENSURE_CONFIRMED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        process: string;
+                        account: string;
+                    };
+                };
+            };
+
+            type MembershipEnsureRejectedMessage = {
+                actionType: RealmTopicAction.MEMBERSHIP_ENSURE_REJECTED;
+                payload: {
+                    actor: string;
+                    realm: string;
+                    input: {
+                        organization: string;
+                        process: string;
+                        account: string;
+                        reason: string;
+                    };
+                };
+            };
+
             type MembershipJoinRequestedMessage = {
                 actionType: RealmTopicAction.MEMBERSHIP_JOIN_REQUESTED;
                 payload: {
@@ -278,6 +321,7 @@ declare global {
                         process: string;
                         command: string;
                         membership: string;
+                        hrRequest?: string;
                         account: string;
                         invite?: string;
                         role?: string;
@@ -292,6 +336,7 @@ declare global {
                     realm: string;
                     input: {
                         membership: string;
+                        hrRequest?: string;
                         assignment: string;
                         joinedAt: number;
                         process: string;
@@ -310,6 +355,7 @@ declare global {
                     realm: string;
                     input: {
                         membership: string;
+                        hrRequest?: string;
                         process: string;
                         command: string;
                         account: string;
