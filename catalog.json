@@ -61,7 +61,7 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/notification.schema.json",
-      "producers": ["identity-service", "access-control-service"],
+      "producers": ["hr-service", "identity-service", "access-control-service"],
       "consumers": ["notification-service"]
     },
     {

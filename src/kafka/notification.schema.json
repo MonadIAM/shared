@@ -37,7 +37,8 @@
                         "organization-service",
                         "certificate-service",
                         "identity-service",
-                        "template-service"
+                        "template-service",
+                        "hr-service"
                       ]
                     },
                     "dedupKey": { "type": "string" },
@@ -83,7 +84,8 @@
                         "organization-service",
                         "certificate-service",
                         "identity-service",
-                        "template-service"
+                        "template-service",
+                        "hr-service"
                       ]
                     },
                     "dedupKey": { "type": "string" },
@@ -121,11 +123,61 @@
                         "ASSIGNMENT_REVOKED",
                         "REALM_EXCLUDED",
                         "INVITE_CANCELLED",
-                        "INVITE_RECEIVED"
+                        "INVITE_RECEIVED",
+                        "HR_APPROVAL_REQUIRED",
+                        "HR_APPROVAL_REASSIGNED",
+                        "HR_REQUEST_RETURNED",
+                        "HR_REQUEST_REJECTED",
+                        "HR_REQUEST_APPROVED",
+                        "HR_REQUEST_APPLIED",
+                        "HR_REQUEST_FAILED"
                       ]
                     },
                     "language": { "type": "string" }
-                  }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "template": {
+                            "enum": [
+                              "HR_APPROVAL_REQUIRED",
+                              "HR_APPROVAL_REASSIGNED",
+                              "HR_REQUEST_RETURNED",
+                              "HR_REQUEST_REJECTED",
+                              "HR_REQUEST_APPROVED",
+                              "HR_REQUEST_APPLIED",
+                              "HR_REQUEST_FAILED"
+                            ]
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": ["dedupKey", "params"],
+                        "properties": {
+                          "sourceService": { "const": "hr-service" },
+                          "params": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": ["requestId", "requestType"],
+                            "properties": {
+                              "requestId": {
+                                "type": "string",
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                              },
+                              "requestType": {
+                                "enum": [
+                                  "HIRE", "REHIRE", "TRANSFER", "CHANGE_TERMS", "TERMINATE",
+                                  "ABSENCE", "OVERTIME", "LEAVE_ADJUSTMENT", "CANCEL_REQUEST"
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "not": { "required": ["delivery"] }
+                      }
+                    }
+                  ]
                 }
               }
             }
@@ -180,7 +232,8 @@
                                 "organization-service",
                                 "certificate-service",
                                 "identity-service",
-                                "template-service"
+                                "template-service",
+                                "hr-service"
                               ]
                             },
                             "dedupKey": { "type": "string" },
@@ -226,7 +279,8 @@
                                 "organization-service",
                                 "certificate-service",
                                 "identity-service",
-                                "template-service"
+                                "template-service",
+                                "hr-service"
                               ]
                             },
                             "dedupKey": { "type": "string" },
@@ -259,21 +313,105 @@
                                 "ACCOUNT_VERIFICATION_OTP",
                                 "RESET_PASSWORD_OTP",
                                 "LOGIN_OTP",
-                        "REAUTHENTICATION_OTP",
+                                "REAUTHENTICATION_OTP",
                                 "ASSIGNMENT_GRANTED",
                                 "ASSIGNMENT_REVOKED",
                                 "REALM_EXCLUDED",
                                 "INVITE_CANCELLED",
-                                "INVITE_RECEIVED"
+                                "INVITE_RECEIVED",
+                                "HR_APPROVAL_REQUIRED",
+                                "HR_APPROVAL_REASSIGNED",
+                                "HR_REQUEST_RETURNED",
+                                "HR_REQUEST_REJECTED",
+                                "HR_REQUEST_APPROVED",
+                                "HR_REQUEST_APPLIED",
+                                "HR_REQUEST_FAILED"
                               ]
                             },
                             "language": { "type": "string" }
-                          }
+                          },
+                          "allOf": [
+                            {
+                              "if": {
+                                "properties": {
+                                  "template": {
+                                    "enum": [
+                                      "HR_APPROVAL_REQUIRED",
+                                      "HR_APPROVAL_REASSIGNED",
+                                      "HR_REQUEST_RETURNED",
+                                      "HR_REQUEST_REJECTED",
+                                      "HR_REQUEST_APPROVED",
+                                      "HR_REQUEST_APPLIED",
+                                      "HR_REQUEST_FAILED"
+                                    ]
+                                  }
+                                }
+                              },
+                              "then": {
+                                "required": ["dedupKey", "params"],
+                                "properties": {
+                                  "sourceService": { "const": "hr-service" },
+                                  "params": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "required": ["requestId", "requestType"],
+                                    "properties": {
+                                      "requestId": {
+                                        "type": "string",
+                                        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                                      },
+                                      "requestType": {
+                                        "enum": [
+                                          "HIRE", "REHIRE", "TRANSFER", "CHANGE_TERMS", "TERMINATE",
+                                          "ABSENCE", "OVERTIME", "LEAVE_ADJUSTMENT", "CANCEL_REQUEST"
+                                        ]
+                                      }
+                                    }
+                                  }
+                                },
+                                "not": { "required": ["delivery"] }
+                              }
+                            }
+                          ]
                         }
                       }
                     }
                   ]
                 }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actionType", "payload"],
+      "properties": {
+        "actionType": { "const": "CANCEL" },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["realm", "input"],
+          "properties": {
+            "actor": { "type": "string" },
+            "realm": {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+            },
+            "input": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["invalidate", "recipient", "sourceService", "dedupKey"],
+              "properties": {
+                "invalidate": { "const": true },
+                "recipient": {
+                  "type": "string",
+                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                },
+                "sourceService": { "const": "hr-service" },
+                "dedupKey": { "type": "string", "minLength": 1 }
               }
             }
           }
