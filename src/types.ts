@@ -622,10 +622,12 @@ declare global {
                 payload: {
                     actor?: string;
                     realm?: string;
-                    input: {
-                        override: NotificationSpec;
-                        dedupKey: string;
-                    };
+                    input:
+                        | {
+                              override: NotificationSpec;
+                              dedupKey: string;
+                          }
+                        | InvalidateInput;
                 };
             };
 
@@ -640,6 +642,29 @@ declare global {
             type Delivery = {
                 channelType: ChannelType.EMAIL | ChannelType.SMS;
                 address: string;
+            };
+
+            type InvalidateInput = {
+                invalidate: true;
+                recipient: string;
+                sourceService: PlatformService.HR_SERVICE;
+                dedupKey: string;
+            };
+
+            type HRRequestType =
+                | "HIRE"
+                | "REHIRE"
+                | "TRANSFER"
+                | "CHANGE_TERMS"
+                | "TERMINATE"
+                | "ABSENCE"
+                | "OVERTIME"
+                | "LEAVE_ADJUSTMENT"
+                | "CANCEL_REQUEST";
+
+            type HRTemplateParams = {
+                requestId: string;
+                requestType: HRRequestType;
             };
 
             type BaseInput = {
@@ -657,12 +682,31 @@ declare global {
                 text: string;
             };
 
+            type HRTemplate =
+                | MessageTemplate.HR_APPROVAL_REASSIGNED
+                | MessageTemplate.HR_APPROVAL_REQUIRED
+                | MessageTemplate.HR_REQUEST_RETURNED
+                | MessageTemplate.HR_REQUEST_REJECTED
+                | MessageTemplate.HR_REQUEST_APPROVED
+                | MessageTemplate.HR_REQUEST_APPLIED
+                | MessageTemplate.HR_REQUEST_FAILED;
+
             type TemplateInput = BaseInput & {
                 kind: NotificationContentKind.TEMPLATE;
-                params?: Record<string, string>;
-                template: MessageTemplate;
                 language?: string;
-            };
+            } & (
+                    | {
+                          template: Exclude<MessageTemplate, HRTemplate>;
+                          params?: Record<string, string>;
+                      }
+                    | {
+                          sourceService: PlatformService.HR_SERVICE;
+                          params: HRTemplateParams;
+                          template: HRTemplate;
+                          dedupKey: string;
+                          delivery?: never;
+                      }
+                );
         }
 
         namespace MessageDispatch {
