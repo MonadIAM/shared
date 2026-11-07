@@ -1,10 +1,10 @@
-import { NotificationCategory } from "../../../enums";
+import { NotificationCategory, ChannelType } from "../../../enums";
 
 const dataset = [
     {
         id: "11247eb6-af28-4bcf-86fd-1c129c92daf1",
         recipient_id: "0303d328-d5e5-4069-8c4d-1443a7dc58d3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-01T00:00:00.000Z"),
@@ -14,7 +14,7 @@ const dataset = [
     {
         id: "0b832a24-1742-468c-b4aa-a6c03185c345",
         recipient_id: "0303d328-d5e5-4069-8c4d-1443a7dc58d3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-01T00:00:00.000Z"),
@@ -24,7 +24,7 @@ const dataset = [
     {
         id: "56d50287-f4dc-4c84-b4dd-14bc5e3bb71d",
         recipient_id: "0303d328-d5e5-4069-8c4d-1443a7dc58d3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-01T00:00:00.000Z"),
@@ -34,7 +34,7 @@ const dataset = [
     {
         id: "c151d6c6-6d36-457a-8382-aa5ba6fe28c9",
         recipient_id: "fbadf344-ad35-41c5-b19e-19d6d8a34936",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-01T00:00:00.000Z"),
@@ -44,7 +44,7 @@ const dataset = [
     {
         id: "7ade166e-f9ec-45c6-a971-302415a1d4cc",
         recipient_id: "fbadf344-ad35-41c5-b19e-19d6d8a34936",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-01T00:00:00.000Z"),
@@ -54,7 +54,7 @@ const dataset = [
     {
         id: "0a23fcbe-8ca9-4475-b986-b05bbb569763",
         recipient_id: "fbadf344-ad35-41c5-b19e-19d6d8a34936",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-01T00:00:00.000Z"),
@@ -65,7 +65,7 @@ const dataset = [
     {
         id: "fb30ac88-bf96-4e90-b38f-7062ed2b0923",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -76,7 +76,7 @@ const dataset = [
     {
         id: "844039fd-0812-45e9-975d-959a9d7d9ff0",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -87,7 +87,7 @@ const dataset = [
     {
         id: "3afcb943-3964-492f-9d28-9341456ebe2b",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -98,7 +98,7 @@ const dataset = [
     {
         id: "e551e243-5bfb-4eef-8054-1d0314302f5d",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -109,7 +109,7 @@ const dataset = [
     {
         id: "278112b0-1e31-4873-98bb-2724d00c4f1f",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -120,7 +120,7 @@ const dataset = [
     {
         id: "510f1b02-1353-42e2-8a0c-fd25c8805097",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -131,7 +131,7 @@ const dataset = [
     {
         id: "f1abd62d-359a-4174-bf1b-99ea58614aa6",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -142,7 +142,7 @@ const dataset = [
     {
         id: "353c338b-1990-4fdf-8bd3-9fd238a939f1",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -153,7 +153,7 @@ const dataset = [
     {
         id: "abaff911-5955-4020-a42b-dde074964c80",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -164,7 +164,7 @@ const dataset = [
     {
         id: "39015627-c415-420b-b8df-9fc9d2891db5",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -175,7 +175,7 @@ const dataset = [
     {
         id: "55ca8c80-b8b1-4c26-8dac-dfe5cb8d7388",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -186,7 +186,7 @@ const dataset = [
     {
         id: "9a5006be-fea4-4592-984a-0a92ee32ecdd",
         recipient_id: "064df7bb-184a-4971-a758-d1c11d8d2545",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -197,7 +197,7 @@ const dataset = [
     {
         id: "6a23afc1-b868-4bc7-bf13-dd73a246a31c",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -208,7 +208,7 @@ const dataset = [
     {
         id: "484c471f-973b-46da-9ae5-5ab270acd659",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -219,7 +219,7 @@ const dataset = [
     {
         id: "660b5076-26ca-47d6-b86e-16ac2180bfd5",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -230,7 +230,7 @@ const dataset = [
     {
         id: "b49ab81a-710f-43eb-b344-cba826e2e308",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -241,7 +241,7 @@ const dataset = [
     {
         id: "9c6ce5ce-f553-4ced-865c-6f748dba136c",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -252,7 +252,7 @@ const dataset = [
     {
         id: "dfa3950d-52c4-421f-9ecc-97479350d199",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -263,7 +263,7 @@ const dataset = [
     {
         id: "40d4e266-72bf-45b1-81ae-ce23d4709387",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -274,7 +274,7 @@ const dataset = [
     {
         id: "c42779ed-6a4a-4dd0-8a5e-dcc74049e661",
         recipient_id: "b793d601-4355-4f05-b5c3-3dcfd294b348",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -285,7 +285,7 @@ const dataset = [
     {
         id: "40be3236-cfeb-487f-a9f7-242ee7cf9dfc",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -296,7 +296,7 @@ const dataset = [
     {
         id: "b0255abf-955c-4333-9b8a-5eb68d0cd71c",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -307,7 +307,7 @@ const dataset = [
     {
         id: "892c73ac-7b3e-46c4-b3d6-92cd3a5b64d4",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -318,7 +318,7 @@ const dataset = [
     {
         id: "c71c9430-c178-43f3-af66-2c77c0a01d50",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -329,7 +329,7 @@ const dataset = [
     {
         id: "aba3e96c-9638-4e20-9865-6bd32325b452",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -340,7 +340,7 @@ const dataset = [
     {
         id: "59a6694d-1308-4bd4-9b10-c01896a4c673",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -351,7 +351,7 @@ const dataset = [
     {
         id: "223fa3a9-44a8-4983-8fd7-5c664d92ef86",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -362,7 +362,7 @@ const dataset = [
     {
         id: "b2cf3e2d-7a3e-4ea1-b018-654212b183ee",
         recipient_id: "e4573c8d-eff7-4515-92bb-eaaa1622da1a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -373,7 +373,7 @@ const dataset = [
     {
         id: "36a710a1-5f6e-446d-8c0a-16cfb9dcd006",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -384,7 +384,7 @@ const dataset = [
     {
         id: "8830f04a-862f-4e58-99ed-ab614c6f0d02",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -395,7 +395,7 @@ const dataset = [
     {
         id: "f4c01c81-202e-4e77-b1d0-5714ce41e7d9",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -406,7 +406,7 @@ const dataset = [
     {
         id: "06c4a472-2a45-40e7-bf3c-057f74e22630",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -417,7 +417,7 @@ const dataset = [
     {
         id: "72c541b7-9072-4972-97f0-f670695dc2f8",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -428,7 +428,7 @@ const dataset = [
     {
         id: "168f8563-715a-43e6-b1b0-1a28adfd4a35",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -439,7 +439,7 @@ const dataset = [
     {
         id: "1f475e8c-cfc9-495a-8a57-3dd44d1d7448",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -450,7 +450,7 @@ const dataset = [
     {
         id: "bcc021cd-6f35-400c-993e-45c48b3c8337",
         recipient_id: "413d9e01-0693-4122-b2c2-37386f44c7a1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -461,7 +461,7 @@ const dataset = [
     {
         id: "37988550-4480-497b-97e5-aa20e8e83edd",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -472,7 +472,7 @@ const dataset = [
     {
         id: "309b14a9-7840-466d-8d2a-3b4a30ac9bc6",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -483,7 +483,7 @@ const dataset = [
     {
         id: "e71ddea0-9d30-4073-80d0-aebdf0d6df51",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -494,7 +494,7 @@ const dataset = [
     {
         id: "7587e580-43cb-49e5-813c-4155a15e62c3",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -505,7 +505,7 @@ const dataset = [
     {
         id: "8aea7125-0be3-4783-9e81-2cce26a0ba6f",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -516,7 +516,7 @@ const dataset = [
     {
         id: "5b441154-dbf0-416a-8a48-3282c52a0448",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -527,7 +527,7 @@ const dataset = [
     {
         id: "8762bc73-9157-4a10-9d8f-2379e3148171",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -538,7 +538,7 @@ const dataset = [
     {
         id: "10acb637-b700-42aa-a830-a6e2b22a3441",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -549,7 +549,7 @@ const dataset = [
     {
         id: "0ee73635-3446-4260-bf6e-8c74eee7ff8b",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -560,7 +560,7 @@ const dataset = [
     {
         id: "dc17f447-c20e-4959-938b-e45d5133d1b2",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -571,7 +571,7 @@ const dataset = [
     {
         id: "4527b02f-5604-47d3-a242-5f247461319d",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -582,7 +582,7 @@ const dataset = [
     {
         id: "d8d88dc7-fa83-4b09-b5f5-798445302827",
         recipient_id: "9d0f9fc2-4703-4e05-92a2-31a563f9f7db",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -593,7 +593,7 @@ const dataset = [
     {
         id: "796d5d8c-0d8a-4e2b-afa1-28a685a3a9fc",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -604,7 +604,7 @@ const dataset = [
     {
         id: "b213eddc-be88-4401-8d92-766401511ee4",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -615,7 +615,7 @@ const dataset = [
     {
         id: "b3c8a51f-482a-4e44-ba9a-ffc8464a99d0",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -626,7 +626,7 @@ const dataset = [
     {
         id: "eb523345-033b-483a-82a8-58995f5271ae",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -637,7 +637,7 @@ const dataset = [
     {
         id: "236ecd65-627f-43a9-b716-2a26a71c7850",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -648,7 +648,7 @@ const dataset = [
     {
         id: "9b8bf382-7831-497a-950b-9202568fda83",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -659,7 +659,7 @@ const dataset = [
     {
         id: "4d264adc-65f3-4853-b459-21fe9e981818",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -670,7 +670,7 @@ const dataset = [
     {
         id: "9a108404-bbcf-4525-b6f7-a25017a20cdd",
         recipient_id: "8bb01c33-c483-4083-b3eb-22d2b2e70f09",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -681,7 +681,7 @@ const dataset = [
     {
         id: "2511a1e6-c28e-4323-9c6c-a6500d82a060",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -692,7 +692,7 @@ const dataset = [
     {
         id: "c9c1f606-8d4a-42ac-8628-4779b14ea8d9",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -703,7 +703,7 @@ const dataset = [
     {
         id: "f1e44b3e-aaf8-4275-a279-0c844a875847",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -714,7 +714,7 @@ const dataset = [
     {
         id: "3efce77a-2297-41b4-bc80-34d853954b92",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -725,7 +725,7 @@ const dataset = [
     {
         id: "65a2a3f4-7ec9-4062-b892-9e2ce8a0381f",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -736,7 +736,7 @@ const dataset = [
     {
         id: "185abc26-33d8-459b-a192-07b246e17da5",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -747,7 +747,7 @@ const dataset = [
     {
         id: "da190f22-afc8-4a8d-9569-fe4e13f7fd06",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -758,7 +758,7 @@ const dataset = [
     {
         id: "0e584c4e-e22f-483b-99d8-1ac0bbc6f6fe",
         recipient_id: "262174dd-f576-47b7-984e-30d485a5f6c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -769,7 +769,7 @@ const dataset = [
     {
         id: "b48c85a8-8e4c-4700-9a71-532a56a4ddc8",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -780,7 +780,7 @@ const dataset = [
     {
         id: "dae58ef0-65e0-4bc3-a538-e3e06696335b",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -791,7 +791,7 @@ const dataset = [
     {
         id: "db21cfea-9d5e-4357-ae89-560af2dda702",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -802,7 +802,7 @@ const dataset = [
     {
         id: "f41dc4bd-eaed-4956-9648-0b16a9eac426",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -813,7 +813,7 @@ const dataset = [
     {
         id: "f08b4564-5634-4423-b265-2a6e50d20035",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -824,7 +824,7 @@ const dataset = [
     {
         id: "84995d6a-51b3-4140-a17d-2263ad5f7369",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -835,7 +835,7 @@ const dataset = [
     {
         id: "8c68ea3e-ce26-482c-a39b-6e859a9f1005",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -846,7 +846,7 @@ const dataset = [
     {
         id: "24f7200b-7de6-4b5b-8c0e-5ee9991bc38e",
         recipient_id: "ea408a34-7b85-4334-b896-931dd2bac521",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -857,7 +857,7 @@ const dataset = [
     {
         id: "bff5890e-2a9b-4c10-8dbe-ef80a2a5ed87",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -868,7 +868,7 @@ const dataset = [
     {
         id: "c138bc2e-3c7e-4204-8d17-1e92579468de",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -879,7 +879,7 @@ const dataset = [
     {
         id: "6e82d300-64c6-4d10-8edf-25fb9d9d03f1",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -890,7 +890,7 @@ const dataset = [
     {
         id: "a4abe4fd-3ec1-4897-96c4-01e9c5c473a4",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -901,7 +901,7 @@ const dataset = [
     {
         id: "f5753aba-4545-458b-b267-976cbe9d1c92",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -912,7 +912,7 @@ const dataset = [
     {
         id: "f243aee2-c8ca-4e89-a2ec-d537bf91c6d8",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -923,7 +923,7 @@ const dataset = [
     {
         id: "faefc8b4-2a1e-41ff-b6a2-54b251adb50c",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -934,7 +934,7 @@ const dataset = [
     {
         id: "1ffe589e-40ae-4803-8468-237c739bb497",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -945,7 +945,7 @@ const dataset = [
     {
         id: "dcd1aa4d-147f-46d3-85b4-7c580fc688ad",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -956,7 +956,7 @@ const dataset = [
     {
         id: "3ac7e670-993f-4ea0-8256-917ee423d00c",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -967,7 +967,7 @@ const dataset = [
     {
         id: "901723cf-a730-4a6f-bd60-ea7a4ec6ae54",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -978,7 +978,7 @@ const dataset = [
     {
         id: "b6f7d58e-8c52-4aa6-8d19-73240ff565c2",
         recipient_id: "5e370d3f-b089-41e5-b2bd-d340b23bd428",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -989,7 +989,7 @@ const dataset = [
     {
         id: "291c5b3f-7018-431e-ad01-861647aa44cc",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1000,7 +1000,7 @@ const dataset = [
     {
         id: "c122a682-00ae-4dc6-8da5-2518548452b0",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1011,7 +1011,7 @@ const dataset = [
     {
         id: "82925d6c-053a-432b-bd66-865647576fcc",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1022,7 +1022,7 @@ const dataset = [
     {
         id: "eb2911f6-8a58-4e7b-9c83-23503d914146",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1033,7 +1033,7 @@ const dataset = [
     {
         id: "db485933-0232-4798-8980-680cbe4de52c",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1044,7 +1044,7 @@ const dataset = [
     {
         id: "1780370c-e6cf-4098-a55a-13d9b81fc37f",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1055,7 +1055,7 @@ const dataset = [
     {
         id: "9d6127e2-9eac-4b03-9031-5dd226ed6712",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1066,7 +1066,7 @@ const dataset = [
     {
         id: "5f3a123b-0764-4f3c-8dac-c3d153e50816",
         recipient_id: "ada7c41b-85d2-4fd9-a85e-6d6a8c55c45b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1077,7 +1077,7 @@ const dataset = [
     {
         id: "a139f5ce-a6d2-4cbb-ab40-3fc4799ca95b",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1088,7 +1088,7 @@ const dataset = [
     {
         id: "c0120555-ce9f-45cd-9f80-11717183ad7f",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1099,7 +1099,7 @@ const dataset = [
     {
         id: "6322d17d-392d-40a4-89ed-ed5a0ca03e83",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1110,7 +1110,7 @@ const dataset = [
     {
         id: "720421b8-1567-4d6c-94d2-f31ac018cfb1",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1121,7 +1121,7 @@ const dataset = [
     {
         id: "fbed3098-bcb8-4411-9fe0-2e1de3ae7f69",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1132,7 +1132,7 @@ const dataset = [
     {
         id: "a7f3e09d-44d5-4722-b56d-a67d6885e937",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1143,7 +1143,7 @@ const dataset = [
     {
         id: "1910d61b-d0f8-44e0-8bd0-c55c1ef506e8",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1154,7 +1154,7 @@ const dataset = [
     {
         id: "8aed726c-b4f2-40aa-bfdf-93d36691057e",
         recipient_id: "38581e68-907a-4bff-a07a-4985b51f113f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1165,7 +1165,7 @@ const dataset = [
     {
         id: "95cc8578-e710-452d-9e4c-8ea286d67ae7",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1176,7 +1176,7 @@ const dataset = [
     {
         id: "9a2b6801-8cf7-4198-a8fb-c95674b5e769",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1187,7 +1187,7 @@ const dataset = [
     {
         id: "fc8b05f2-2842-4e2a-88c4-219e2d829123",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1198,7 +1198,7 @@ const dataset = [
     {
         id: "bd347a00-0a25-4202-b62c-34acc270446a",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1209,7 +1209,7 @@ const dataset = [
     {
         id: "1efa2333-ac58-4075-8c59-3f879e74996f",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1220,7 +1220,7 @@ const dataset = [
     {
         id: "92374ab1-69b5-4ad1-9e4a-7b15008192ac",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1231,7 +1231,7 @@ const dataset = [
     {
         id: "d8c90bb0-5d19-4940-8159-bc653ad70dbf",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1242,7 +1242,7 @@ const dataset = [
     {
         id: "355be85d-6ddf-42d7-9f1e-098b7cb79cc0",
         recipient_id: "f5346414-7f36-4638-a7ee-91a8340e7144",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1253,7 +1253,7 @@ const dataset = [
     {
         id: "9a5bb8c3-2651-4ccd-a183-485c670ef72e",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1264,7 +1264,7 @@ const dataset = [
     {
         id: "0e2f60b4-2e4f-43d0-b9ca-93c8bb6c0bf3",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1275,7 +1275,7 @@ const dataset = [
     {
         id: "3c28b9d1-d28a-49f3-90ce-7705dbbfc9f0",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1286,7 +1286,7 @@ const dataset = [
     {
         id: "b61c28a1-875d-48cc-b2e5-4ccb8eb83ac2",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1297,7 +1297,7 @@ const dataset = [
     {
         id: "e0db2e76-5fde-4a09-8faf-9e6bbde7e8d4",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1308,7 +1308,7 @@ const dataset = [
     {
         id: "61172330-1702-4711-8604-ed8c864f99c5",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1319,7 +1319,7 @@ const dataset = [
     {
         id: "dfaaa3f9-54da-402e-935c-0cf6b69297c4",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1330,7 +1330,7 @@ const dataset = [
     {
         id: "e0fb43a9-ebb7-4cb5-844c-52754f54ae8d",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1341,7 +1341,7 @@ const dataset = [
     {
         id: "0f420023-9a49-4cf5-9a5d-c8a40dc37f19",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1352,7 +1352,7 @@ const dataset = [
     {
         id: "6db28511-2b22-4172-a7d9-b520366774f0",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1363,7 +1363,7 @@ const dataset = [
     {
         id: "78d07d05-9a75-4d7d-90bf-3d347f259a9c",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1374,7 +1374,7 @@ const dataset = [
     {
         id: "ce45e305-1f93-47d1-a19e-63f4933aea63",
         recipient_id: "a84c2cc5-d5cb-49d1-bf0d-7337fb95e06c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -1385,7 +1385,7 @@ const dataset = [
     {
         id: "799476ea-b890-4597-a437-fb9be86b4f0c",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1396,7 +1396,7 @@ const dataset = [
     {
         id: "21bd3d45-58b0-4437-beb2-e937e45ffadd",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1407,7 +1407,7 @@ const dataset = [
     {
         id: "31ae8454-15e9-4ecb-afb5-3b5ce0eb5956",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1418,7 +1418,7 @@ const dataset = [
     {
         id: "c7971f2c-4db8-434c-9940-b9b134cb2388",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1429,7 +1429,7 @@ const dataset = [
     {
         id: "c4d78bbd-007a-40ce-87dc-b440390fd0ba",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1440,7 +1440,7 @@ const dataset = [
     {
         id: "cfbadf66-d985-4171-981b-29ce01999a54",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1451,7 +1451,7 @@ const dataset = [
     {
         id: "e501849c-e12b-4a2e-9c75-61fa4011e5ff",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1462,7 +1462,7 @@ const dataset = [
     {
         id: "0e1634b4-bf64-48ee-853e-090e36edc461",
         recipient_id: "c1a03894-3dcd-4412-9191-15cb4ee8a65e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -1473,7 +1473,7 @@ const dataset = [
     {
         id: "eee0c183-6d04-4fae-9085-23984648047f",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1484,7 +1484,7 @@ const dataset = [
     {
         id: "4f74cd6e-b6d6-4d39-9fde-0e47303d83d5",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1495,7 +1495,7 @@ const dataset = [
     {
         id: "e4e47150-d771-472d-b283-99757ecd4714",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1506,7 +1506,7 @@ const dataset = [
     {
         id: "1dbf2b85-7752-4a40-9578-a12d2a99a3b8",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1517,7 +1517,7 @@ const dataset = [
     {
         id: "64bef32e-06d2-416a-92bf-b845c1227ba2",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1528,7 +1528,7 @@ const dataset = [
     {
         id: "5839f8ee-0e6a-421d-aa1a-326e3ad65d39",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1539,7 +1539,7 @@ const dataset = [
     {
         id: "9f5ceafe-1dc7-473d-9c66-4efaced80f25",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1550,7 +1550,7 @@ const dataset = [
     {
         id: "268a61f5-c82f-41dc-84d6-2b89f90ffc17",
         recipient_id: "884942a2-70c9-4334-9a12-ffe0ca64eb07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -1561,7 +1561,7 @@ const dataset = [
     {
         id: "afdf1a5a-fe5a-4945-9882-e7460a2fd1a7",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1572,7 +1572,7 @@ const dataset = [
     {
         id: "0baeb627-eefb-4371-ad2e-6d4834755215",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1583,7 +1583,7 @@ const dataset = [
     {
         id: "19c2c1e3-f9db-4a1f-8b92-bcc926ee6fca",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1594,7 +1594,7 @@ const dataset = [
     {
         id: "34be3f17-88ac-40eb-a1af-808c5af56f65",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1605,7 +1605,7 @@ const dataset = [
     {
         id: "39e26259-6c22-4eef-8baf-a63640da9063",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1616,7 +1616,7 @@ const dataset = [
     {
         id: "cbe88459-2f54-4aeb-ae83-84d10a09bf2b",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1627,7 +1627,7 @@ const dataset = [
     {
         id: "6a062da4-5ca7-4011-be57-6e688c694a30",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1638,7 +1638,7 @@ const dataset = [
     {
         id: "bd507555-2d80-45af-80c2-25338a97fbca",
         recipient_id: "c0a8add3-ee50-4b28-abf0-34a4ce29e7b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -1649,7 +1649,7 @@ const dataset = [
     {
         id: "a703047a-1fb7-4c48-ae85-e3a96caa93dc",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1660,7 +1660,7 @@ const dataset = [
     {
         id: "86e93527-0220-45bc-825d-d6e9b9ee7300",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1671,7 +1671,7 @@ const dataset = [
     {
         id: "282deb17-a817-41b1-9170-4c8ecce2a6d0",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1682,7 +1682,7 @@ const dataset = [
     {
         id: "921d0025-736f-419e-81c4-b65e6c6cf89e",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1693,7 +1693,7 @@ const dataset = [
     {
         id: "7f0d7b49-e79e-41b4-826e-a36aae553b06",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1704,7 +1704,7 @@ const dataset = [
     {
         id: "7e0f2a6d-c22c-422c-9cd8-c6a2d654a48b",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1715,7 +1715,7 @@ const dataset = [
     {
         id: "dbf2c327-b885-4455-b5f1-46fffff8a688",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1726,7 +1726,7 @@ const dataset = [
     {
         id: "3ceba932-ba63-41f2-bbb0-96a55b5cdf61",
         recipient_id: "face7878-e5ff-4751-b60e-e0c26919c0ac",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -1737,7 +1737,7 @@ const dataset = [
     {
         id: "a82a8a7a-62c1-4eed-9f49-b8f200a6330d",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1748,7 +1748,7 @@ const dataset = [
     {
         id: "324bc985-dc11-4aa3-8687-98d864fd6d95",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1759,7 +1759,7 @@ const dataset = [
     {
         id: "7e977cd8-65c3-4f6f-9d1f-426f467ab256",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1770,7 +1770,7 @@ const dataset = [
     {
         id: "b3956c22-128b-4f72-89d8-50ed7a41c4fe",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1781,7 +1781,7 @@ const dataset = [
     {
         id: "70517f6c-155a-4a3c-b8e5-5821a1103f14",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1792,7 +1792,7 @@ const dataset = [
     {
         id: "ca602fb0-0acd-4037-b641-e336bd1f44d8",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1803,7 +1803,7 @@ const dataset = [
     {
         id: "d229641c-498c-4658-82a5-a7025a7be4d0",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1814,7 +1814,7 @@ const dataset = [
     {
         id: "9fbae55e-f26a-4123-8e18-37066e0728e1",
         recipient_id: "c97169bc-6570-4cc2-ab46-b045dad35630",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -1825,7 +1825,7 @@ const dataset = [
     {
         id: "357586cd-3e24-48d4-ae44-a6fb24097604",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1836,7 +1836,7 @@ const dataset = [
     {
         id: "4c2a2a06-d918-463c-9e23-cecc133bc721",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1847,7 +1847,7 @@ const dataset = [
     {
         id: "78c9e394-5c68-4a61-a802-13e749623964",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1858,7 +1858,7 @@ const dataset = [
     {
         id: "3c72785b-03c8-449c-b9fe-5a2c605f7254",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1869,7 +1869,7 @@ const dataset = [
     {
         id: "57b45f84-5ce0-4e44-8453-3713b000435e",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1880,7 +1880,7 @@ const dataset = [
     {
         id: "de64a69b-4479-473d-950e-0f526030e26e",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1891,7 +1891,7 @@ const dataset = [
     {
         id: "ca92a2b2-b9db-4402-8129-4919e38ea227",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1902,7 +1902,7 @@ const dataset = [
     {
         id: "72b5be52-b9d9-4f4f-9c7b-db90df9a6f51",
         recipient_id: "c25c0587-1262-4b2e-b1bf-c1fa4dc43c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -1913,7 +1913,7 @@ const dataset = [
     {
         id: "4201018a-5cbf-46a9-adbb-9bb9316920a6",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -1924,7 +1924,7 @@ const dataset = [
     {
         id: "05fad4e5-9e5f-40bd-b98d-f695c897dbfa",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -1935,7 +1935,7 @@ const dataset = [
     {
         id: "cf033f7b-6247-4813-bd49-644bcde4725c",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -1946,7 +1946,7 @@ const dataset = [
     {
         id: "0cffb1bd-4508-4b72-a25f-01562d3137be",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -1957,7 +1957,7 @@ const dataset = [
     {
         id: "6666c9ab-08fb-48da-954d-888f6ad26207",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -1968,7 +1968,7 @@ const dataset = [
     {
         id: "e85d1ecc-d5ea-43e4-9d2a-06e540aefb01",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -1979,7 +1979,7 @@ const dataset = [
     {
         id: "ef5159ca-a9f9-420c-a1c4-350e80993bc6",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -1990,7 +1990,7 @@ const dataset = [
     {
         id: "65a94b36-e8ff-4e03-acdb-8911499e6548",
         recipient_id: "a429f85d-0c2c-4d0d-a872-fdc6b837c8bb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -2001,7 +2001,7 @@ const dataset = [
     {
         id: "a64d5ad8-febc-48d1-946a-624feee95d54",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2012,7 +2012,7 @@ const dataset = [
     {
         id: "1951afc0-9939-4d38-8a4e-240472da2672",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2023,7 +2023,7 @@ const dataset = [
     {
         id: "224f53c8-2828-409b-ada4-dfbbba40f67c",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2034,7 +2034,7 @@ const dataset = [
     {
         id: "f5d0d350-60ca-4792-9f61-51432cd0402a",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2045,7 +2045,7 @@ const dataset = [
     {
         id: "3d6361ca-e16d-44e8-8907-643fd55cae6d",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2056,7 +2056,7 @@ const dataset = [
     {
         id: "b25ffb47-7409-4a46-a3b1-daa75c5ce9c7",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2067,7 +2067,7 @@ const dataset = [
     {
         id: "a6aa8e42-7e33-4029-8242-f49107ceb2bc",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2078,7 +2078,7 @@ const dataset = [
     {
         id: "d8f36d98-4078-4e92-aa12-13b714e99233",
         recipient_id: "ce251786-235b-4815-9fbe-d23ff071619a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -2089,7 +2089,7 @@ const dataset = [
     {
         id: "d4182030-ce38-43e7-b58e-1b506028bdfe",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2100,7 +2100,7 @@ const dataset = [
     {
         id: "cef31db2-f44b-496c-89a9-33fa5d1d6621",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2111,7 +2111,7 @@ const dataset = [
     {
         id: "b9d3002e-92ab-490d-9da4-d40e90f832a1",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2122,7 +2122,7 @@ const dataset = [
     {
         id: "665a6564-785d-4bdb-8ded-e5e29f4186b8",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2133,7 +2133,7 @@ const dataset = [
     {
         id: "b5ee46f4-2d8a-425d-8198-32bd672b54de",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2144,7 +2144,7 @@ const dataset = [
     {
         id: "380146b5-a454-421d-b131-c81749a1394e",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2155,7 +2155,7 @@ const dataset = [
     {
         id: "ee1d55d6-433a-4871-9334-34cd333062e4",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2166,7 +2166,7 @@ const dataset = [
     {
         id: "dc5460fd-05fe-40c5-b42b-a6a417905b80",
         recipient_id: "b6d788d5-0f84-432c-8f14-8ac9c7e94f82",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -2177,7 +2177,7 @@ const dataset = [
     {
         id: "ad2fec26-9633-4eab-96f0-96f906b290a6",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2188,7 +2188,7 @@ const dataset = [
     {
         id: "76cc6c17-be01-4cd9-90dd-fededd2a7105",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2199,7 +2199,7 @@ const dataset = [
     {
         id: "159ecf6b-b75a-4a6e-9986-c64702a527b9",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2210,7 +2210,7 @@ const dataset = [
     {
         id: "a4eff557-725d-4b43-8cd1-c21159f1abec",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2221,7 +2221,7 @@ const dataset = [
     {
         id: "d5e52f0b-8142-4a81-b3a1-4816b2f90652",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2232,7 +2232,7 @@ const dataset = [
     {
         id: "6a324cf7-bb62-4e1f-88fc-916d45ca42d1",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2243,7 +2243,7 @@ const dataset = [
     {
         id: "5c350d53-7789-406a-8db5-858cf6e15b2e",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2254,7 +2254,7 @@ const dataset = [
     {
         id: "f7429569-1180-4c2b-be77-caa8ed8e027e",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2265,7 +2265,7 @@ const dataset = [
     {
         id: "af4f95d7-8161-4cae-98fc-b88f35ea8b6d",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2276,7 +2276,7 @@ const dataset = [
     {
         id: "ea2a3a8d-8655-4f91-a113-6c98668b24f0",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2287,7 +2287,7 @@ const dataset = [
     {
         id: "a483d00b-786b-4c32-96f7-9271753c2248",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2298,7 +2298,7 @@ const dataset = [
     {
         id: "9b9beb5b-f467-4104-871c-f4b903b0a9f6",
         recipient_id: "e91f802e-7247-4753-94ab-21def42bf5dc",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -2309,7 +2309,7 @@ const dataset = [
     {
         id: "7f4c01e3-9ffc-4108-8ed6-26ec2c7a5c27",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2320,7 +2320,7 @@ const dataset = [
     {
         id: "deb5d3ec-9786-4598-a6ba-d4dcb898bdea",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2331,7 +2331,7 @@ const dataset = [
     {
         id: "6376b0ac-1a54-4d32-afd9-6ce37decb73d",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2342,7 +2342,7 @@ const dataset = [
     {
         id: "4ea98bf1-9cff-4181-bbdc-03628aa58dfc",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2353,7 +2353,7 @@ const dataset = [
     {
         id: "81dba244-6e53-46a5-89b4-e8325e653d07",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2364,7 +2364,7 @@ const dataset = [
     {
         id: "664a4d1b-d956-4ee4-a259-ca093c4ba58d",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2375,7 +2375,7 @@ const dataset = [
     {
         id: "c3f89f76-2128-4c9a-94d0-57091a288361",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2386,7 +2386,7 @@ const dataset = [
     {
         id: "14927e67-695f-4ebe-a137-87a081febdc1",
         recipient_id: "f6c5bd98-0aa3-478c-907b-7c2649c3df88",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -2397,7 +2397,7 @@ const dataset = [
     {
         id: "f13e59aa-012b-406b-b26d-428962fadd75",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2408,7 +2408,7 @@ const dataset = [
     {
         id: "cd4dbb80-ecde-401d-8ea6-69c9560f899b",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2419,7 +2419,7 @@ const dataset = [
     {
         id: "804a1592-465e-4fad-bffa-483790c4ef08",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2430,7 +2430,7 @@ const dataset = [
     {
         id: "22d44eb2-6d0f-4cc4-9396-45615a708f9e",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2441,7 +2441,7 @@ const dataset = [
     {
         id: "dc8b9c4d-2ac2-4bed-b1b1-b3aff57bebea",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2452,7 +2452,7 @@ const dataset = [
     {
         id: "6c260582-5d32-4052-8cc0-f9d7c767c90d",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2463,7 +2463,7 @@ const dataset = [
     {
         id: "3829f1c8-570b-40d4-886c-9062bef6e5a9",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2474,7 +2474,7 @@ const dataset = [
     {
         id: "2805a8ca-3436-4868-ae88-4ca3dee97f3e",
         recipient_id: "0c33eb3e-0828-4aac-a3e8-fb028a311e13",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -2485,7 +2485,7 @@ const dataset = [
     {
         id: "b0aaf868-746f-4a7c-8420-0f3386a0c29d",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2496,7 +2496,7 @@ const dataset = [
     {
         id: "33cd8121-696f-4ae0-b9b5-33e6090ad5ff",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2507,7 +2507,7 @@ const dataset = [
     {
         id: "f6375313-c50d-4d8d-b398-9d54e14d4b7f",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2518,7 +2518,7 @@ const dataset = [
     {
         id: "6d5543cf-cd88-47fd-99c1-4a4c45802589",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2529,7 +2529,7 @@ const dataset = [
     {
         id: "49a14d66-9604-4dcd-b069-b96ea2799f09",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2540,7 +2540,7 @@ const dataset = [
     {
         id: "83b7eb9b-19df-4b35-a00b-7f07d2625cb9",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2551,7 +2551,7 @@ const dataset = [
     {
         id: "744a5693-aa3f-4a06-90fe-3d8f9abbd6fb",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2562,7 +2562,7 @@ const dataset = [
     {
         id: "0e762ed4-723c-4f9a-8c38-1669ca9209a0",
         recipient_id: "2c22e44f-1c4d-4f28-9e16-88b4f3f7a670",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -2573,7 +2573,7 @@ const dataset = [
     {
         id: "7a3d026e-4763-4880-9afa-0be157738863",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2584,7 +2584,7 @@ const dataset = [
     {
         id: "aff6d41b-dd1f-450e-8796-d26eb907902d",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2595,7 +2595,7 @@ const dataset = [
     {
         id: "cd313ce3-7e7a-4359-8887-35de3793afc5",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2606,7 +2606,7 @@ const dataset = [
     {
         id: "e660517c-d0df-45c7-bdae-c3617d91e9eb",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2617,7 +2617,7 @@ const dataset = [
     {
         id: "c02d6344-79c6-431b-aca8-78cba3cb0d06",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2628,7 +2628,7 @@ const dataset = [
     {
         id: "515692e3-9a93-4b3c-8a8d-c4e1dc2d45d6",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2639,7 +2639,7 @@ const dataset = [
     {
         id: "d13c1eb0-9b2c-439a-b268-8d0a105af868",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2650,7 +2650,7 @@ const dataset = [
     {
         id: "69069ccc-7e88-4ff7-ab0a-e51d74e4a1b0",
         recipient_id: "034c9dca-e722-49b8-8939-4bd69c5512ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -2661,7 +2661,7 @@ const dataset = [
     {
         id: "2d3cac51-c6e6-4ec0-8871-181d253351f0",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2672,7 +2672,7 @@ const dataset = [
     {
         id: "96fbb51a-1494-44d2-87e1-413834d36d77",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2683,7 +2683,7 @@ const dataset = [
     {
         id: "66c2623f-843d-4e70-bb08-34edad16939f",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2694,7 +2694,7 @@ const dataset = [
     {
         id: "ad7a5cb2-261f-47db-84f3-0c634e6cdcf6",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2705,7 +2705,7 @@ const dataset = [
     {
         id: "3dd13f07-5188-4889-857e-bf09185a1158",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2716,7 +2716,7 @@ const dataset = [
     {
         id: "c1db20e1-60d0-438a-9d7b-c8c6196a751b",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2727,7 +2727,7 @@ const dataset = [
     {
         id: "dcd83580-f6f2-475b-b750-9d9399ec8a5e",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2738,7 +2738,7 @@ const dataset = [
     {
         id: "fc46ed15-e9db-4bc6-8f58-c99eca9c33ab",
         recipient_id: "655dc958-54e5-4dd8-8407-36fa538d80c5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -2749,7 +2749,7 @@ const dataset = [
     {
         id: "af39f1b8-8e7f-4d72-b46e-280517974bbd",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2760,7 +2760,7 @@ const dataset = [
     {
         id: "f92b7074-65ff-4ef2-8732-8d8a107f9f8a",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2771,7 +2771,7 @@ const dataset = [
     {
         id: "2173a0dd-6746-4c17-9652-915b8e29cb49",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2782,7 +2782,7 @@ const dataset = [
     {
         id: "0d5dd788-edd3-45fc-924a-25e6a4d20619",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2793,7 +2793,7 @@ const dataset = [
     {
         id: "8a0da467-25d3-45cf-b169-7bd61b3f8ca5",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2804,7 +2804,7 @@ const dataset = [
     {
         id: "eceb7b0e-ff16-47a5-8c6d-137644f59b23",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2815,7 +2815,7 @@ const dataset = [
     {
         id: "63a4c227-752f-426f-82aa-a816703bd38e",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2826,7 +2826,7 @@ const dataset = [
     {
         id: "3a90493b-daa3-4254-b4f9-3f602be05608",
         recipient_id: "bbd41ee5-2a60-47be-91f2-b7937604677c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -2837,7 +2837,7 @@ const dataset = [
     {
         id: "6900f4e0-c1a6-4506-bdaa-65e28d268fea",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2848,7 +2848,7 @@ const dataset = [
     {
         id: "aee107ee-2d91-4b5c-9b25-71049fb51e0d",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2859,7 +2859,7 @@ const dataset = [
     {
         id: "b96c90c4-3f59-4c05-bb1a-835a245c54af",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2870,7 +2870,7 @@ const dataset = [
     {
         id: "9b3cd993-3a7d-4310-abdc-41b58372824a",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2881,7 +2881,7 @@ const dataset = [
     {
         id: "a0674a58-d9f9-463f-9061-699ff51a6585",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2892,7 +2892,7 @@ const dataset = [
     {
         id: "d4ff91ea-2d5c-4801-9eb2-87226a63108a",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2903,7 +2903,7 @@ const dataset = [
     {
         id: "20598223-1d0d-4d94-a5e5-bc00b954a33b",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2914,7 +2914,7 @@ const dataset = [
     {
         id: "d21a6791-ff62-4872-a32d-03af9325f94f",
         recipient_id: "76258339-ee5f-44cc-b5d5-f184526f4ea6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -2925,7 +2925,7 @@ const dataset = [
     {
         id: "1fa4e6d4-df2e-4ab9-bdb8-21f280bb9f71",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -2936,7 +2936,7 @@ const dataset = [
     {
         id: "2ef22b34-f874-42f5-ac3c-66e7d8c8bd87",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -2947,7 +2947,7 @@ const dataset = [
     {
         id: "a0a13b4b-1f4b-46df-8022-c988c709c8cc",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -2958,7 +2958,7 @@ const dataset = [
     {
         id: "2b7537ef-8d40-4746-b188-5d5c4f48a9b6",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -2969,7 +2969,7 @@ const dataset = [
     {
         id: "d0470d53-605c-498d-9793-9e4b27954c76",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -2980,7 +2980,7 @@ const dataset = [
     {
         id: "8c66f52e-77d3-4b7e-9aa9-6f7bc7623bd0",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -2991,7 +2991,7 @@ const dataset = [
     {
         id: "c2430f90-1a58-4eae-95a3-9f4758d7e502",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -3002,7 +3002,7 @@ const dataset = [
     {
         id: "22ef9af4-1a92-4a7d-93f1-e4fd92c370fc",
         recipient_id: "92ed92b4-fc1c-46e8-a61e-ec53f52e1f1b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -3013,7 +3013,7 @@ const dataset = [
     {
         id: "fc6f3ab0-f67a-4903-ba13-a8dd41f2018c",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3024,7 +3024,7 @@ const dataset = [
     {
         id: "40a9bdaa-54cb-4d3d-b035-74234f3364ea",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3035,7 +3035,7 @@ const dataset = [
     {
         id: "cf75948f-6175-478c-98b0-177c9d02148b",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3046,7 +3046,7 @@ const dataset = [
     {
         id: "83a88b66-f5dc-4833-8a8b-c8d579adc652",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3057,7 +3057,7 @@ const dataset = [
     {
         id: "40d64aac-941b-400d-ad97-6fcb4c72142b",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3068,7 +3068,7 @@ const dataset = [
     {
         id: "c752e97f-bc5c-4f1f-b0ce-8027ee70ec9b",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3079,7 +3079,7 @@ const dataset = [
     {
         id: "f4603069-a36e-4c97-ae20-63ec51595aa2",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3090,7 +3090,7 @@ const dataset = [
     {
         id: "4b4a8a71-6872-421a-943f-962d17992518",
         recipient_id: "e6a8c4d1-f129-4801-97be-d0be80ebb156",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -3101,7 +3101,7 @@ const dataset = [
     {
         id: "deb5da15-ffeb-48e2-b070-7a8c3b257d95",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3112,7 +3112,7 @@ const dataset = [
     {
         id: "e3c0e85b-aac2-4917-8365-401d9b165342",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3123,7 +3123,7 @@ const dataset = [
     {
         id: "63013ded-7fab-425e-b272-dd2a590d4fe8",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3134,7 +3134,7 @@ const dataset = [
     {
         id: "0b3cf268-5d37-41ec-80fa-6b24b3b3bcd5",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3145,7 +3145,7 @@ const dataset = [
     {
         id: "fbe7b68e-04ae-45e6-90d8-79a647ba368e",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3156,7 +3156,7 @@ const dataset = [
     {
         id: "27c8d728-8159-422e-9cb6-15431b85ae36",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3167,7 +3167,7 @@ const dataset = [
     {
         id: "33d27557-da6b-49ed-b6a6-db72971d9f8f",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3178,7 +3178,7 @@ const dataset = [
     {
         id: "11f8d0d8-524b-479e-8e7e-b769670bfd2d",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3189,7 +3189,7 @@ const dataset = [
     {
         id: "a777500b-c33a-42a0-b41d-c82901893213",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3200,7 +3200,7 @@ const dataset = [
     {
         id: "b7244d54-0235-485d-94af-08c7e384c531",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3211,7 +3211,7 @@ const dataset = [
     {
         id: "0a0a94d0-77ea-47b6-bb0b-819aba4a8496",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3222,7 +3222,7 @@ const dataset = [
     {
         id: "06bb7ff1-e79b-47b0-82d3-90d1314a3542",
         recipient_id: "ee11415a-9c6f-4a03-a5b9-b896045a1eb7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -3233,7 +3233,7 @@ const dataset = [
     {
         id: "750c97f9-b68d-4c9e-a95f-5fd85c0bc4fd",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3244,7 +3244,7 @@ const dataset = [
     {
         id: "24f16b2d-7582-4777-8b10-e53779df0bca",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3255,7 +3255,7 @@ const dataset = [
     {
         id: "da5818e0-93ef-4b19-bfe0-9accd1b85c7e",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3266,7 +3266,7 @@ const dataset = [
     {
         id: "1fe1454f-3590-4d73-9d36-b077af94c996",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3277,7 +3277,7 @@ const dataset = [
     {
         id: "6e19ee8d-620b-4037-9080-854dd2207151",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3288,7 +3288,7 @@ const dataset = [
     {
         id: "a5418d87-d329-4036-9c4d-3fc7ba47b211",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3299,7 +3299,7 @@ const dataset = [
     {
         id: "6980ee72-b34a-4685-9d8c-f36b3b742420",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3310,7 +3310,7 @@ const dataset = [
     {
         id: "e8469c55-0f17-4170-bf97-b1cb5f01cf8d",
         recipient_id: "64c139bd-c74c-4d14-b089-7d8d119f7bc0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -3321,7 +3321,7 @@ const dataset = [
     {
         id: "dfeca07d-ae95-4203-8f62-0e5bf83874f2",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3332,7 +3332,7 @@ const dataset = [
     {
         id: "6fae37b6-06bd-4fc7-866a-364f68b57f47",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3343,7 +3343,7 @@ const dataset = [
     {
         id: "b9d9fa29-184d-45e1-814e-372715b9b1e3",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3354,7 +3354,7 @@ const dataset = [
     {
         id: "3fb95b6f-ccd4-4687-b4c8-1a59baf024cb",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3365,7 +3365,7 @@ const dataset = [
     {
         id: "aca47f1d-bc93-4a68-a13d-eb233c8c3491",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3376,7 +3376,7 @@ const dataset = [
     {
         id: "2405a518-f8be-4f7f-af7c-0448c92d65a9",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3387,7 +3387,7 @@ const dataset = [
     {
         id: "34f5ad72-bc9f-4921-bc88-0f3a2c6d3965",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3398,7 +3398,7 @@ const dataset = [
     {
         id: "86644f87-0758-4c87-bccc-e0560a7f0593",
         recipient_id: "849bc3b0-b59b-4e06-be7c-6ba333281193",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -3409,7 +3409,7 @@ const dataset = [
     {
         id: "7e9d2700-d696-4100-9387-b016cb45552b",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3420,7 +3420,7 @@ const dataset = [
     {
         id: "dcfbffde-946d-4be1-b15b-bc0c47afe8ff",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3431,7 +3431,7 @@ const dataset = [
     {
         id: "cd5692b6-a3b5-4128-873b-fdcddfa5bf3f",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3442,7 +3442,7 @@ const dataset = [
     {
         id: "b64c4c26-9eea-46c4-96f1-755ee9224e72",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3453,7 +3453,7 @@ const dataset = [
     {
         id: "d628abf1-9359-4abc-b6b3-8e050fb288a7",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3464,7 +3464,7 @@ const dataset = [
     {
         id: "ed2898cd-381f-44f7-bca1-c20488f3b08a",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3475,7 +3475,7 @@ const dataset = [
     {
         id: "b01e3260-3ce9-4ac6-a23b-fa17231a6859",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3486,7 +3486,7 @@ const dataset = [
     {
         id: "e682c2a4-cfb6-449b-a373-18d511f93e8f",
         recipient_id: "b5faffc8-0ef3-4fc2-9811-34ee61baad52",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -3497,7 +3497,7 @@ const dataset = [
     {
         id: "92d9eb34-a9de-4336-97f4-77c6355691dd",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3508,7 +3508,7 @@ const dataset = [
     {
         id: "6fc578ed-2a65-4d25-a692-cc1bd7602cf4",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3519,7 +3519,7 @@ const dataset = [
     {
         id: "98b7e7cc-b932-4980-8116-0687968ca8b2",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3530,7 +3530,7 @@ const dataset = [
     {
         id: "875ef9f1-6363-458b-833d-15853abe4607",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3541,7 +3541,7 @@ const dataset = [
     {
         id: "bf631282-0413-4689-ac38-827a011e2554",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3552,7 +3552,7 @@ const dataset = [
     {
         id: "84fc501d-0f6d-4d73-9cd3-afbbf424b19d",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3563,7 +3563,7 @@ const dataset = [
     {
         id: "1c45dab5-ad12-4645-a5b2-c94f74f25f72",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3574,7 +3574,7 @@ const dataset = [
     {
         id: "c25c97f4-9a5f-4e42-8046-4b5ed9f770a2",
         recipient_id: "05808865-a48f-4c07-ad47-381215409cc4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -3585,7 +3585,7 @@ const dataset = [
     {
         id: "fb58ebeb-6aec-454a-ac66-b9757cfd0f53",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3596,7 +3596,7 @@ const dataset = [
     {
         id: "f10f34dc-d080-4860-b763-990f3c7a50f2",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3607,7 +3607,7 @@ const dataset = [
     {
         id: "26c30290-4234-41b2-8a89-3f3d0fe58f09",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3618,7 +3618,7 @@ const dataset = [
     {
         id: "859757d0-d604-4d6d-8141-e69758050fcd",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3629,7 +3629,7 @@ const dataset = [
     {
         id: "4bf1223b-5fb3-41f1-831a-b90f168dc8f5",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3640,7 +3640,7 @@ const dataset = [
     {
         id: "1289bfe3-c150-4dfb-9042-03d3acb2e439",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3651,7 +3651,7 @@ const dataset = [
     {
         id: "36f80122-516d-4c17-a85f-adaef60a5c4d",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3662,7 +3662,7 @@ const dataset = [
     {
         id: "3af81706-68d1-4d8b-8ac6-6bbd09e64f4a",
         recipient_id: "d2657cff-9bc0-4393-909e-2df1166f5574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -3673,7 +3673,7 @@ const dataset = [
     {
         id: "77efde61-f9a2-479c-83da-b9649a5ac15a",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3684,7 +3684,7 @@ const dataset = [
     {
         id: "1c8dbc3b-29e9-48da-b865-2246e1eb3eaa",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3695,7 +3695,7 @@ const dataset = [
     {
         id: "3f334a08-c614-41dd-bda0-1abf9780521f",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3706,7 +3706,7 @@ const dataset = [
     {
         id: "a1e41171-cdae-42ed-846d-b5d89adf3983",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3717,7 +3717,7 @@ const dataset = [
     {
         id: "800897f5-ce0a-459a-8e41-6126d9432762",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3728,7 +3728,7 @@ const dataset = [
     {
         id: "31aee10c-9786-45bd-8d81-79ab9e804f9c",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3739,7 +3739,7 @@ const dataset = [
     {
         id: "2dbdb734-1095-4aba-b5c2-bdcf1a0b9103",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3750,7 +3750,7 @@ const dataset = [
     {
         id: "79927dbf-f6ff-4388-906f-4849b64e4b4f",
         recipient_id: "5ab8b9fb-27a8-458d-9720-6510fdcfe7fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -3761,7 +3761,7 @@ const dataset = [
     {
         id: "32ee24d2-95fe-4ab7-81a6-245f8812017f",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3772,7 +3772,7 @@ const dataset = [
     {
         id: "bdcbdd0f-6b7e-4ab2-8497-f3f094dabdb0",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3783,7 +3783,7 @@ const dataset = [
     {
         id: "94236436-c19a-4476-a692-b139c55b6498",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3794,7 +3794,7 @@ const dataset = [
     {
         id: "68034223-be38-4ef4-a358-3a695f028895",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3805,7 +3805,7 @@ const dataset = [
     {
         id: "a851f425-8e55-4821-b6d8-413d92a3a3ca",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3816,7 +3816,7 @@ const dataset = [
     {
         id: "4b69d015-904b-40e2-b3b0-2d365c228140",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3827,7 +3827,7 @@ const dataset = [
     {
         id: "0e7deac0-3338-475c-9e4a-2d26d6be076a",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3838,7 +3838,7 @@ const dataset = [
     {
         id: "9b028f07-f03e-44bb-9abf-925f8829cf8b",
         recipient_id: "f28c87da-c886-48fd-bbba-b2c3441d53ca",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -3849,7 +3849,7 @@ const dataset = [
     {
         id: "04c205bb-e3b2-4328-90e8-8571902252d0",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3860,7 +3860,7 @@ const dataset = [
     {
         id: "d58de4f6-e86e-4924-b87b-46999787d91a",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3871,7 +3871,7 @@ const dataset = [
     {
         id: "86e3b178-7556-4825-8659-75c04f492dd7",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3882,7 +3882,7 @@ const dataset = [
     {
         id: "4c080a21-9f00-4b53-8496-0a963e80e219",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3893,7 +3893,7 @@ const dataset = [
     {
         id: "2cc61a69-66fc-4dd2-b763-7a18f28dd5a7",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3904,7 +3904,7 @@ const dataset = [
     {
         id: "7aa3847f-9a02-494f-805d-544b8fe6500d",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3915,7 +3915,7 @@ const dataset = [
     {
         id: "d92374bf-9f81-474e-aa2c-6ac319d839f4",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3926,7 +3926,7 @@ const dataset = [
     {
         id: "89b7b7f5-5866-4bd4-bf93-7d78795b38b5",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3937,7 +3937,7 @@ const dataset = [
     {
         id: "3fb44c38-8315-4570-ba37-bfd0d96b73c8",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3948,7 +3948,7 @@ const dataset = [
     {
         id: "a6925f47-8a29-4cb0-8696-9e342f9136c5",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3959,7 +3959,7 @@ const dataset = [
     {
         id: "a2b66acf-9c5e-4744-ac4b-6431603140bc",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3970,7 +3970,7 @@ const dataset = [
     {
         id: "58433442-6b1d-4682-9b93-cf85bcd8d951",
         recipient_id: "60111196-1c62-4ed5-b176-5db233df7727",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -3981,7 +3981,7 @@ const dataset = [
     {
         id: "27636e65-1670-4cd7-8b88-61ed0c30f6cc",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -3992,7 +3992,7 @@ const dataset = [
     {
         id: "01341dc3-ca46-4e8c-9ff5-ea8a71ac40d1",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4003,7 +4003,7 @@ const dataset = [
     {
         id: "1b36a037-c3f8-40f8-b91f-ae21d26dc205",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4014,7 +4014,7 @@ const dataset = [
     {
         id: "cd3a660f-5a1d-4aaa-9488-5fab82b4dda5",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4025,7 +4025,7 @@ const dataset = [
     {
         id: "62d85ddf-53e5-481a-99ee-55d5530b47eb",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4036,7 +4036,7 @@ const dataset = [
     {
         id: "bf765405-e458-46bb-abda-69ff69ca297b",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4047,7 +4047,7 @@ const dataset = [
     {
         id: "25b38e0b-e318-4d6b-af01-c2507b91e3d1",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4058,7 +4058,7 @@ const dataset = [
     {
         id: "082a3de6-a214-4185-8c62-0f37d9bfe775",
         recipient_id: "8781c2c7-4ac6-42e6-b854-f4fe804392aa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4069,7 +4069,7 @@ const dataset = [
     {
         id: "1ff90fe6-27d6-4b42-be31-eebdef89d5c4",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4080,7 +4080,7 @@ const dataset = [
     {
         id: "4a4096af-4625-440e-9a7b-c68e85602ae6",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4091,7 +4091,7 @@ const dataset = [
     {
         id: "56a84774-b214-4b6f-a034-4040eca13368",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4102,7 +4102,7 @@ const dataset = [
     {
         id: "f20853e0-37a1-4cb6-8394-7a96b3f04a04",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4113,7 +4113,7 @@ const dataset = [
     {
         id: "beccc562-9f04-4e32-adf1-337997518581",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4124,7 +4124,7 @@ const dataset = [
     {
         id: "46c22421-1be1-4815-b228-9549686816ff",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4135,7 +4135,7 @@ const dataset = [
     {
         id: "bf5d61bd-339d-49cb-a92a-2b5787f663f9",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4146,7 +4146,7 @@ const dataset = [
     {
         id: "824a9a5a-6ef1-47ab-a895-491a4676d5d0",
         recipient_id: "c67dd0b0-eb8e-458f-bb9e-466e23c368ed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -4157,7 +4157,7 @@ const dataset = [
     {
         id: "f71e13b3-f9b9-40c9-8235-675b0c18d716",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4168,7 +4168,7 @@ const dataset = [
     {
         id: "e55d39dd-906d-42d2-ac0e-3682a828cb65",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4179,7 +4179,7 @@ const dataset = [
     {
         id: "c641e76b-a063-4d04-845a-f277d94f5a06",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4190,7 +4190,7 @@ const dataset = [
     {
         id: "e90b05ca-6106-4e08-a352-0e714326d769",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4201,7 +4201,7 @@ const dataset = [
     {
         id: "31fcd18c-e3b1-45db-be2e-e8ec69791968",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4212,7 +4212,7 @@ const dataset = [
     {
         id: "e9c0ca9b-4cd8-43b9-9d62-cbbc6dd4fc55",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4223,7 +4223,7 @@ const dataset = [
     {
         id: "8ee47b92-6f27-479d-a529-42bb833b2123",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4234,7 +4234,7 @@ const dataset = [
     {
         id: "0733a8ed-a733-47bb-ad0e-1eb4a39e2769",
         recipient_id: "8b101469-aae4-4d8b-9f63-8a06dcaa3304",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -4245,7 +4245,7 @@ const dataset = [
     {
         id: "db3d50bf-cfa0-4d1f-8c1c-11caf2be64ca",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4256,7 +4256,7 @@ const dataset = [
     {
         id: "af7746cf-a6b8-4ff2-b2ac-034f6ccfaf3b",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4267,7 +4267,7 @@ const dataset = [
     {
         id: "70c0217a-7773-454e-9921-f3259cddd2f1",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4278,7 +4278,7 @@ const dataset = [
     {
         id: "ce3fef76-4442-46b9-937d-5dcd4b1ed129",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4289,7 +4289,7 @@ const dataset = [
     {
         id: "6f7deea7-a7ae-4099-8235-b77181f4e6ab",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4300,7 +4300,7 @@ const dataset = [
     {
         id: "0d40f915-f77b-4502-9cfc-f2d1c58297e0",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4311,7 +4311,7 @@ const dataset = [
     {
         id: "97a59767-1c46-4728-838b-681011b8a7f3",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4322,7 +4322,7 @@ const dataset = [
     {
         id: "5b09d773-4d61-4171-8627-3922c90fac33",
         recipient_id: "369f4498-9a79-4141-a420-f734e4d041ea",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -4333,7 +4333,7 @@ const dataset = [
     {
         id: "c8ac68e8-c85c-44f0-b338-07749ecb3ad0",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4344,7 +4344,7 @@ const dataset = [
     {
         id: "3d940e21-3a41-471d-a62d-60551e16f670",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4355,7 +4355,7 @@ const dataset = [
     {
         id: "2ac00b94-af2a-4078-ab60-3d4819bc1f8d",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4366,7 +4366,7 @@ const dataset = [
     {
         id: "10a832c8-a1b2-4b23-9408-42413a3d85fb",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4377,7 +4377,7 @@ const dataset = [
     {
         id: "584b666d-c49c-4723-8c99-59ecb0812628",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4388,7 +4388,7 @@ const dataset = [
     {
         id: "97ec900e-243e-4a6a-9c35-7a50a9f0bcf6",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4399,7 +4399,7 @@ const dataset = [
     {
         id: "4385d8a8-e139-42e3-8e2d-917592991ce9",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4410,7 +4410,7 @@ const dataset = [
     {
         id: "92656525-110b-402e-89e6-5e92228fdc26",
         recipient_id: "b042822d-1971-49d1-8013-41b78ec43e3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -4421,7 +4421,7 @@ const dataset = [
     {
         id: "f14432ac-d7b0-4caa-aaeb-1da9d01cb8b3",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4432,7 +4432,7 @@ const dataset = [
     {
         id: "18f23b3f-972c-471d-b3bb-0d4633f06e18",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4443,7 +4443,7 @@ const dataset = [
     {
         id: "3512baa5-598a-4a0b-9e65-8840c2dce74d",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4454,7 +4454,7 @@ const dataset = [
     {
         id: "87b42f22-fce6-4b7a-af91-4bccddc97dcd",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4465,7 +4465,7 @@ const dataset = [
     {
         id: "3db25c26-2463-4096-9768-0f5abe287e6a",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4476,7 +4476,7 @@ const dataset = [
     {
         id: "e2c86ab9-80e8-4881-8106-50000c4db27e",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4487,7 +4487,7 @@ const dataset = [
     {
         id: "f8ad9af9-a0fa-4aab-8676-3c68a0d07abc",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4498,7 +4498,7 @@ const dataset = [
     {
         id: "f12430d8-94b1-4cb4-a650-1297fc135178",
         recipient_id: "e9278f78-0113-43f7-a1ba-232dd86c8add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -4509,7 +4509,7 @@ const dataset = [
     {
         id: "7cc9914b-dbc5-4827-a766-3a54e14ea68a",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4520,7 +4520,7 @@ const dataset = [
     {
         id: "d26e8e90-9795-4d96-bd6d-bab9f04fe439",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4531,7 +4531,7 @@ const dataset = [
     {
         id: "c0244aa0-56cc-4925-8f6a-d4cfc5dca4a5",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4542,7 +4542,7 @@ const dataset = [
     {
         id: "81d83d4e-a63f-434d-9318-ae5c1e403673",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4553,7 +4553,7 @@ const dataset = [
     {
         id: "091eb404-cf90-49fb-895c-50655fd80d18",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4564,7 +4564,7 @@ const dataset = [
     {
         id: "637a795b-9c0f-4b24-aa0b-c9fc1deafb63",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4575,7 +4575,7 @@ const dataset = [
     {
         id: "f9108fa1-187e-4793-a931-039e9e590f98",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4586,7 +4586,7 @@ const dataset = [
     {
         id: "6f108333-429a-4150-a2e5-43dfb742e88c",
         recipient_id: "88d0c95c-0896-4d20-a151-74c31e65395c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -4597,7 +4597,7 @@ const dataset = [
     {
         id: "8c61771a-1dfe-4fed-8ac3-9734935e37e4",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4608,7 +4608,7 @@ const dataset = [
     {
         id: "173a70f2-f343-4be9-b6d2-582b633b96e6",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4619,7 +4619,7 @@ const dataset = [
     {
         id: "7af7ffd2-af68-4ea9-aecc-c07a23d44b0e",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4630,7 +4630,7 @@ const dataset = [
     {
         id: "4e59c31b-2794-4bcb-8eda-d055253ea6be",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4641,7 +4641,7 @@ const dataset = [
     {
         id: "b6493245-eade-4816-b905-86b7d5d6dbf7",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4652,7 +4652,7 @@ const dataset = [
     {
         id: "498ebd76-9331-4fbe-8bd1-5392bc87dc36",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4663,7 +4663,7 @@ const dataset = [
     {
         id: "ab4c8676-0b77-4292-8926-d5d050e3d608",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4674,7 +4674,7 @@ const dataset = [
     {
         id: "424fa924-a2c2-4748-9ede-4e151e613be3",
         recipient_id: "693ac8d9-656d-4e25-9ab7-16341fa2f509",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -4685,7 +4685,7 @@ const dataset = [
     {
         id: "0e79e5e4-7ab6-4547-adae-b608eee4501f",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4696,7 +4696,7 @@ const dataset = [
     {
         id: "5d4e5ebe-5991-4515-9b6d-437bf1386bd6",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4707,7 +4707,7 @@ const dataset = [
     {
         id: "2c2d6542-cc2a-4632-823e-96c2e058d2e9",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4718,7 +4718,7 @@ const dataset = [
     {
         id: "f0bb9e4f-d7b1-4877-8e82-d455e31f6cf9",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4729,7 +4729,7 @@ const dataset = [
     {
         id: "63a2d22e-24ea-4b3c-8195-59cdca39a170",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4740,7 +4740,7 @@ const dataset = [
     {
         id: "12394ce9-6d32-4916-b471-7dade9c8309b",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4751,7 +4751,7 @@ const dataset = [
     {
         id: "7ccdb6b3-41ce-4097-a193-137627a245fe",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4762,7 +4762,7 @@ const dataset = [
     {
         id: "8dfb3385-0874-405c-873b-90153d01f6da",
         recipient_id: "5d86698f-a8b8-4fce-bf64-e1a2a404256c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -4773,7 +4773,7 @@ const dataset = [
     {
         id: "17e5cc5f-a8d8-484c-bb4b-9fb7c046947c",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4784,7 +4784,7 @@ const dataset = [
     {
         id: "ac0fb80f-1ffe-4527-8091-776bbe26e81b",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4795,7 +4795,7 @@ const dataset = [
     {
         id: "863ab4de-b3a9-4911-915e-50939c11c765",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4806,7 +4806,7 @@ const dataset = [
     {
         id: "eaaa7b78-59d3-4261-9f45-b0adf6432e2d",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4817,7 +4817,7 @@ const dataset = [
     {
         id: "d360a683-f41e-4b5d-a0d1-eecd6e761423",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4828,7 +4828,7 @@ const dataset = [
     {
         id: "a4dc3ab9-c31d-4a01-9c5f-18883246964f",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4839,7 +4839,7 @@ const dataset = [
     {
         id: "eef24cb5-2084-4776-9908-f37d5e29c0a9",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4850,7 +4850,7 @@ const dataset = [
     {
         id: "d022d09c-f434-40ee-9561-8642389f6990",
         recipient_id: "d085b138-f6bd-444e-9ec9-83fd2e6ad2e4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -4861,7 +4861,7 @@ const dataset = [
     {
         id: "83d2e531-7c9b-400d-8754-3b98ba0f5642",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4872,7 +4872,7 @@ const dataset = [
     {
         id: "7ed5f9b4-1f30-432f-a78f-d3c6ea5c164f",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4883,7 +4883,7 @@ const dataset = [
     {
         id: "5a0228ed-b235-46d5-9e66-8804fd0b2da6",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4894,7 +4894,7 @@ const dataset = [
     {
         id: "0488f0a2-a677-47fc-86ab-b34beec47346",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4905,7 +4905,7 @@ const dataset = [
     {
         id: "e4da5c4d-bf82-4b11-8366-d24dfb7d21d3",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4916,7 +4916,7 @@ const dataset = [
     {
         id: "5f788f5e-8685-4d96-ac06-1e011bf36b76",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4927,7 +4927,7 @@ const dataset = [
     {
         id: "7c59b385-b83d-4572-9643-6b269c1b4445",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4938,7 +4938,7 @@ const dataset = [
     {
         id: "e3d8713a-0261-49b2-bded-a7de935a73d6",
         recipient_id: "cfc3d041-b200-4b02-99a5-d8b0e9447d41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -4949,7 +4949,7 @@ const dataset = [
     {
         id: "8fdd2fa2-e196-4cec-b703-94d6bed7ce16",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4960,7 +4960,7 @@ const dataset = [
     {
         id: "e112175e-57b7-4b50-9f6f-d6bc4e474bde",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4971,7 +4971,7 @@ const dataset = [
     {
         id: "30634881-d1a8-4043-9513-131cef33c738",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4982,7 +4982,7 @@ const dataset = [
     {
         id: "66a6f2f3-616a-4a22-8539-3cf325011fdf",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -4993,7 +4993,7 @@ const dataset = [
     {
         id: "bb7e67e9-53b5-4086-ae65-3d74e71deed8",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5004,7 +5004,7 @@ const dataset = [
     {
         id: "0c62950b-06f9-4482-aea3-8bcd85859f89",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5015,7 +5015,7 @@ const dataset = [
     {
         id: "2b2a9743-1a70-4a6a-bb6b-33d7251799b8",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5026,7 +5026,7 @@ const dataset = [
     {
         id: "f3e0656c-0eb7-49bf-a703-a835edeaf17e",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5037,7 +5037,7 @@ const dataset = [
     {
         id: "16f00247-77fd-493b-bd31-e6b5cb3eacce",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5048,7 +5048,7 @@ const dataset = [
     {
         id: "78f7dba2-19d4-4b45-bcca-6b6bfa5b56f1",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5059,7 +5059,7 @@ const dataset = [
     {
         id: "474e7a35-41ba-4cc9-8820-0089ff2cd7c1",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5070,7 +5070,7 @@ const dataset = [
     {
         id: "39585bd1-dfba-4a7a-99a0-7ae0e4e2abfe",
         recipient_id: "52ae406f-76c1-4bf0-ab99-1fa0c15a2e71",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -5081,7 +5081,7 @@ const dataset = [
     {
         id: "ad0d47e0-817f-40db-8853-c364c4fe5902",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5092,7 +5092,7 @@ const dataset = [
     {
         id: "96fcabf2-dc6c-442b-847f-eae8de961cf4",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5103,7 +5103,7 @@ const dataset = [
     {
         id: "c2a4a149-572a-4f88-9de5-a570c4f2b5bb",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5114,7 +5114,7 @@ const dataset = [
     {
         id: "a9de150d-891d-4463-b975-5ea466e2f8bc",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5125,7 +5125,7 @@ const dataset = [
     {
         id: "1607c998-2d9d-4330-bc0b-86d17583fdd4",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5136,7 +5136,7 @@ const dataset = [
     {
         id: "ab99693c-8cc4-4d55-a621-f010e5d1674e",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5147,7 +5147,7 @@ const dataset = [
     {
         id: "60a97eae-43c4-4f48-be9e-cddaebbcbd4f",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5158,7 +5158,7 @@ const dataset = [
     {
         id: "312e3236-8b06-41c3-9be8-b87356269d63",
         recipient_id: "dab26c03-c3b1-432b-bd95-3df4d5fab80f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -5169,7 +5169,7 @@ const dataset = [
     {
         id: "62ebd001-05c6-400a-86a0-2dbd9eecdc1f",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5180,7 +5180,7 @@ const dataset = [
     {
         id: "0c85d8f4-0778-4c55-b302-c4b2eb6431bb",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5191,7 +5191,7 @@ const dataset = [
     {
         id: "d982f4d9-1009-4552-8caa-685c4f2c84c4",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5202,7 +5202,7 @@ const dataset = [
     {
         id: "41e33cb0-f6b1-4de9-8752-4c4613b2d574",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5213,7 +5213,7 @@ const dataset = [
     {
         id: "3f52fff5-5e11-4a93-a09f-92ea7583280c",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5224,7 +5224,7 @@ const dataset = [
     {
         id: "7920f10e-f0b8-4413-92de-b70dc4ca7e9c",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5235,7 +5235,7 @@ const dataset = [
     {
         id: "d4901de7-04f1-44c2-b32f-df3f35843412",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5246,7 +5246,7 @@ const dataset = [
     {
         id: "a7851db4-7c4d-4bbb-9437-9daef0aef8bb",
         recipient_id: "cfeb6f54-f480-4564-92c5-32dce3812a94",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -5257,7 +5257,7 @@ const dataset = [
     {
         id: "afe6fbfe-3574-4149-b9a9-e138753a723d",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5268,7 +5268,7 @@ const dataset = [
     {
         id: "223b04b4-a926-4385-b540-ec83d7c57af5",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5279,7 +5279,7 @@ const dataset = [
     {
         id: "c29918f8-0dfc-4dc0-b11e-60cd068b4cde",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5290,7 +5290,7 @@ const dataset = [
     {
         id: "c05922c4-bfa8-4658-a5d9-0b009f998a70",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5301,7 +5301,7 @@ const dataset = [
     {
         id: "41cd7ff9-1698-434b-9044-d775f7371db0",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5312,7 +5312,7 @@ const dataset = [
     {
         id: "320d65b9-aaf6-402c-9514-1cab973e639e",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5323,7 +5323,7 @@ const dataset = [
     {
         id: "c95d42f4-1db7-48d3-a8b0-2d998919bf7d",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5334,7 +5334,7 @@ const dataset = [
     {
         id: "9c2db97f-b345-44b0-898e-c735b922deba",
         recipient_id: "940afc0f-d148-4e72-8c42-4ec6f4286fd8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -5345,7 +5345,7 @@ const dataset = [
     {
         id: "ce9f2275-e450-4720-a8d1-953dc642e71d",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5356,7 +5356,7 @@ const dataset = [
     {
         id: "ced106fa-29d1-4c83-b9bb-3c55faf9b33f",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5367,7 +5367,7 @@ const dataset = [
     {
         id: "878b105e-9c4a-46a5-b616-28421d670d00",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5378,7 +5378,7 @@ const dataset = [
     {
         id: "a9c38ce0-0029-4ba7-bd98-3d83256845c0",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5389,7 +5389,7 @@ const dataset = [
     {
         id: "919f322c-6fdd-4f00-bb09-aaf23b8396b2",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5400,7 +5400,7 @@ const dataset = [
     {
         id: "f5732691-fbff-4211-a6ee-1a5a53365549",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5411,7 +5411,7 @@ const dataset = [
     {
         id: "9ab8e840-ec59-4b16-9efe-7fc60f01c422",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5422,7 +5422,7 @@ const dataset = [
     {
         id: "d0cbfd6c-b41b-45ee-af64-5e767d8936fe",
         recipient_id: "b0c179d5-7d0a-48dc-b022-62ea6cce8726",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -5433,7 +5433,7 @@ const dataset = [
     {
         id: "a4cfc4bd-1ac1-4ad8-9503-99c66ad3f398",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5444,7 +5444,7 @@ const dataset = [
     {
         id: "5a466543-6583-4c66-a889-0e4b8ea5ca17",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5455,7 +5455,7 @@ const dataset = [
     {
         id: "dc4ae2d9-fc78-454c-98f2-9a30c8904c4e",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5466,7 +5466,7 @@ const dataset = [
     {
         id: "c7336930-bc79-4103-8425-0489bb957d96",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5477,7 +5477,7 @@ const dataset = [
     {
         id: "2f651c93-e4f0-4156-ae21-dc0524f534f9",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5488,7 +5488,7 @@ const dataset = [
     {
         id: "ea47ea3f-544d-4441-946e-46e0276714c6",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5499,7 +5499,7 @@ const dataset = [
     {
         id: "5c355e34-4c02-4364-b0c4-ee26ffa14381",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5510,7 +5510,7 @@ const dataset = [
     {
         id: "64459c61-ed2a-414f-a9f4-f287f0328864",
         recipient_id: "dd32e6a7-5962-4059-bbee-9c6987a0fcc2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -5521,7 +5521,7 @@ const dataset = [
     {
         id: "b690c4ad-8ccf-407c-9096-0c1e2812a48f",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5532,7 +5532,7 @@ const dataset = [
     {
         id: "d87b3413-a986-41db-ad0e-a9cab4303f36",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5543,7 +5543,7 @@ const dataset = [
     {
         id: "54e8dbf0-c1b1-41bd-88e3-ee6aa8ef0a1b",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5554,7 +5554,7 @@ const dataset = [
     {
         id: "1c32dd8e-fec5-48d4-aed0-6f95e1baf3ba",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5565,7 +5565,7 @@ const dataset = [
     {
         id: "f82bf730-d33f-45bf-8b56-56552a1c5428",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5576,7 +5576,7 @@ const dataset = [
     {
         id: "d989ae20-05d2-42dc-b26b-0cbc5ac8f03e",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5587,7 +5587,7 @@ const dataset = [
     {
         id: "592118cd-078b-4ad2-add9-7199907757cc",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5598,7 +5598,7 @@ const dataset = [
     {
         id: "841b7d44-bb80-45e9-a135-7ee8e68826af",
         recipient_id: "44169e76-606f-48fd-8bb8-624ac411e761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -5609,7 +5609,7 @@ const dataset = [
     {
         id: "093a78ec-753a-49f4-a49c-5ed60df91875",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5620,7 +5620,7 @@ const dataset = [
     {
         id: "aa5ad3ac-5e0b-4fd3-9d9a-dc2acb757f02",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5631,7 +5631,7 @@ const dataset = [
     {
         id: "3f3e4275-a22b-46f0-96ae-010c7df97077",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5642,7 +5642,7 @@ const dataset = [
     {
         id: "71c54be1-1121-4a97-811f-80572af451f8",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5653,7 +5653,7 @@ const dataset = [
     {
         id: "030ec2a2-f99d-4d76-b562-d80e2c8488f9",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5664,7 +5664,7 @@ const dataset = [
     {
         id: "0f2ebcbb-9fbd-4b10-8abe-8c08ccd4e6ed",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5675,7 +5675,7 @@ const dataset = [
     {
         id: "81117df9-f09f-4a18-aaac-82b1cba9da58",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5686,7 +5686,7 @@ const dataset = [
     {
         id: "a950a9c1-5184-4a80-bbb7-70af1581b5f3",
         recipient_id: "e26284f2-ece5-4f46-9ae1-6c44e28e4762",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -5697,7 +5697,7 @@ const dataset = [
     {
         id: "cbad0569-bd2f-4ce7-ad18-2417649c9f66",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5708,7 +5708,7 @@ const dataset = [
     {
         id: "10b7c2ff-0c23-4378-a4df-cad9485724b0",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5719,7 +5719,7 @@ const dataset = [
     {
         id: "7cfa7545-5746-480a-b576-81e3c7849cec",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5730,7 +5730,7 @@ const dataset = [
     {
         id: "0dfd8a83-7d5c-417b-9ca6-92bdf610622b",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5741,7 +5741,7 @@ const dataset = [
     {
         id: "2cf6bdcc-6a89-4da7-a461-bfcc3ef21681",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5752,7 +5752,7 @@ const dataset = [
     {
         id: "ef29865a-9229-4ce9-89df-3c13572a1a1e",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5763,7 +5763,7 @@ const dataset = [
     {
         id: "2a45fef1-f45e-4071-adb7-33ce42ca3261",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5774,7 +5774,7 @@ const dataset = [
     {
         id: "8eb3464b-b9a6-4738-b780-9ce7861b9a39",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5785,7 +5785,7 @@ const dataset = [
     {
         id: "d41fff33-4e12-4423-a735-46fc57d2ba3a",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5796,7 +5796,7 @@ const dataset = [
     {
         id: "a8759e94-2ccd-4c03-bd0d-973de0acb766",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5807,7 +5807,7 @@ const dataset = [
     {
         id: "bfe6916d-f8fb-4115-a62f-58cedc654751",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5818,7 +5818,7 @@ const dataset = [
     {
         id: "20b80afe-4e99-4e6d-853b-834126d845ae",
         recipient_id: "63927b40-5298-4ec1-a0ee-b1b9e0ecf976",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -5829,7 +5829,7 @@ const dataset = [
     {
         id: "aeef9303-c544-4915-ba3f-0ff3a3adb979",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5840,7 +5840,7 @@ const dataset = [
     {
         id: "6214efaa-75cb-4001-be52-c986ab24a3e8",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5851,7 +5851,7 @@ const dataset = [
     {
         id: "abd9452a-6988-4f3b-9baf-6942c33eb0f1",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5862,7 +5862,7 @@ const dataset = [
     {
         id: "1e641b42-cea2-4e3c-bf75-04236863c5cb",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5873,7 +5873,7 @@ const dataset = [
     {
         id: "634ff024-b078-4a46-a907-aed86e26bd9a",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5884,7 +5884,7 @@ const dataset = [
     {
         id: "1c1daa24-1bd4-46be-8271-7455177349a3",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5895,7 +5895,7 @@ const dataset = [
     {
         id: "6c69bcdb-37d7-4286-a96d-3c41eb27ec57",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5906,7 +5906,7 @@ const dataset = [
     {
         id: "3f61fbb4-e1c3-4242-89f0-d333dffb2dfd",
         recipient_id: "f1ee3e00-036d-476b-8255-2a1af5de40a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -5917,7 +5917,7 @@ const dataset = [
     {
         id: "1041b842-cf17-43de-a9c0-724a02a6f8dc",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -5928,7 +5928,7 @@ const dataset = [
     {
         id: "ff29bf26-cb8c-4e83-8c6b-140a5c387bbf",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -5939,7 +5939,7 @@ const dataset = [
     {
         id: "ced3d345-b186-4a03-9794-b2d11d5d81f9",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -5950,7 +5950,7 @@ const dataset = [
     {
         id: "f4c7625c-6415-45b3-a518-de7f21cae68d",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -5961,7 +5961,7 @@ const dataset = [
     {
         id: "2a96cb12-dcb2-460e-a8b1-a683beddedcc",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -5972,7 +5972,7 @@ const dataset = [
     {
         id: "312e8f79-6dbd-4d8b-b350-d7aa1410a7aa",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -5983,7 +5983,7 @@ const dataset = [
     {
         id: "355299ea-a8d3-446e-80cd-c77ce3c1a44a",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -5994,7 +5994,7 @@ const dataset = [
     {
         id: "b6ce531a-5997-4168-a966-09efa781f23d",
         recipient_id: "22036644-7674-4128-8b46-82c39b70ea23",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -6005,7 +6005,7 @@ const dataset = [
     {
         id: "608de339-b448-4c31-a8cc-944c1362a837",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6016,7 +6016,7 @@ const dataset = [
     {
         id: "4ce22792-3a4f-4aa7-b1f9-46569d882499",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6027,7 +6027,7 @@ const dataset = [
     {
         id: "c62aac10-c308-4779-80ca-f88aab763cdc",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6038,7 +6038,7 @@ const dataset = [
     {
         id: "547712b8-055d-46f7-b40b-46bb56d2600c",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6049,7 +6049,7 @@ const dataset = [
     {
         id: "0b6aebe2-d864-4766-a152-35dc511f3139",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6060,7 +6060,7 @@ const dataset = [
     {
         id: "d7aba5c1-34d1-4404-9d01-568901356da6",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6071,7 +6071,7 @@ const dataset = [
     {
         id: "c4700b69-d3aa-4669-b78c-b11cad69ebbe",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6082,7 +6082,7 @@ const dataset = [
     {
         id: "426d9dd4-d614-4b41-b391-1eecd6b96c8f",
         recipient_id: "412553d8-7aee-41c2-8b50-cc5ff54917b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -6093,7 +6093,7 @@ const dataset = [
     {
         id: "58b3e67e-3e1b-429b-a2cb-4b93c0fd5268",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6104,7 +6104,7 @@ const dataset = [
     {
         id: "ce9b4384-3a17-4074-92d8-5284bc489726",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6115,7 +6115,7 @@ const dataset = [
     {
         id: "9751e089-e98d-4ee9-9ea5-69a869919416",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6126,7 +6126,7 @@ const dataset = [
     {
         id: "43db4d64-9ca8-497e-bb21-5827092cce86",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6137,7 +6137,7 @@ const dataset = [
     {
         id: "452cec00-c904-4101-b136-03b62bc63bd7",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6148,7 +6148,7 @@ const dataset = [
     {
         id: "bbaab898-7f41-418c-88c6-249d9d1c8d4a",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6159,7 +6159,7 @@ const dataset = [
     {
         id: "5e17a826-bc7a-44c9-a92a-82a5261c2654",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6170,7 +6170,7 @@ const dataset = [
     {
         id: "4e42d7ab-b5ee-4ad6-9724-9771ace3838c",
         recipient_id: "18b7bee7-f090-4066-8ebc-3121f9ee7180",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -6181,7 +6181,7 @@ const dataset = [
     {
         id: "09081a22-8e4a-4bd1-8d63-e8f32ddf9af5",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6192,7 +6192,7 @@ const dataset = [
     {
         id: "605e31a0-b98b-41ab-80f4-dcc181f588b2",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6203,7 +6203,7 @@ const dataset = [
     {
         id: "ce74c753-3d6a-485f-9829-8d9167147f36",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6214,7 +6214,7 @@ const dataset = [
     {
         id: "3f84c053-9134-4c77-9bc8-299eb35e3b0b",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6225,7 +6225,7 @@ const dataset = [
     {
         id: "2ecb6ae1-c716-4757-b6aa-5f0295285925",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6236,7 +6236,7 @@ const dataset = [
     {
         id: "3c203ea5-727a-411a-9917-3995f23f643d",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6247,7 +6247,7 @@ const dataset = [
     {
         id: "23f9b89d-964d-4fc8-907a-e5a698cadccb",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6258,7 +6258,7 @@ const dataset = [
     {
         id: "10586728-371e-48f7-b57b-df7b4325b9fc",
         recipient_id: "ecea4bad-55a5-4df3-a6f0-3d9243c6a538",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -6269,7 +6269,7 @@ const dataset = [
     {
         id: "952fc236-f465-4c38-b21e-dda9a3f6ae5e",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6280,7 +6280,7 @@ const dataset = [
     {
         id: "b35512a0-170a-44dc-a35d-6d3ccd9e0aa0",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6291,7 +6291,7 @@ const dataset = [
     {
         id: "06fc2100-3367-420b-8208-cfeb29d4e87c",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6302,7 +6302,7 @@ const dataset = [
     {
         id: "bc4ba6b2-e7f1-45ca-8530-9d6c52b2abaf",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6313,7 +6313,7 @@ const dataset = [
     {
         id: "e6cff2f9-e40a-42da-89bb-0294932972de",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6324,7 +6324,7 @@ const dataset = [
     {
         id: "ef5517ee-0722-4ca0-8a87-ed31f04f0ceb",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6335,7 +6335,7 @@ const dataset = [
     {
         id: "71388496-84bb-4021-ace8-5b1c282020c5",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6346,7 +6346,7 @@ const dataset = [
     {
         id: "2c83db0c-e9ee-4ca2-b65b-163af87e2a4b",
         recipient_id: "4d961fbf-2886-4aeb-98ec-445497493b0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -6357,7 +6357,7 @@ const dataset = [
     {
         id: "1a8acff5-a7a6-4dc0-8616-774b17ae2f59",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6368,7 +6368,7 @@ const dataset = [
     {
         id: "455349bd-f9a9-4eca-a165-89b2c4801da2",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6379,7 +6379,7 @@ const dataset = [
     {
         id: "0bdb615b-0843-4259-8f66-4344a4c867e8",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6390,7 +6390,7 @@ const dataset = [
     {
         id: "20df4792-923a-4989-9654-d0f4aa0e8d5d",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6401,7 +6401,7 @@ const dataset = [
     {
         id: "ca5a5716-8c3c-46b6-ac8a-f26d9bdcd690",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6412,7 +6412,7 @@ const dataset = [
     {
         id: "9a7f7db9-e815-4f16-aba2-c8b4b63a48b4",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6423,7 +6423,7 @@ const dataset = [
     {
         id: "42c11423-7293-4d8e-bebc-466f60eaf573",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6434,7 +6434,7 @@ const dataset = [
     {
         id: "4fd89d81-cff2-4e0f-8bb7-408a8e7ffbbe",
         recipient_id: "41691b41-779b-469a-a2a4-9cc6b001b5da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -6445,7 +6445,7 @@ const dataset = [
     {
         id: "4c3edd33-05e1-421a-bb27-afdebf4024d9",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6456,7 +6456,7 @@ const dataset = [
     {
         id: "4559b2b7-6f7f-4952-b4ef-d3cddc65f6fd",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6467,7 +6467,7 @@ const dataset = [
     {
         id: "76c7bd76-e53a-425a-9770-5fbfb0fa8d7b",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6478,7 +6478,7 @@ const dataset = [
     {
         id: "8571fe4e-7db0-4212-82df-771e624e03e4",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6489,7 +6489,7 @@ const dataset = [
     {
         id: "596a03b1-d23f-4d0a-87be-38a8201e6505",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6500,7 +6500,7 @@ const dataset = [
     {
         id: "f9ac1796-8be2-4341-94bf-ad561ca3a0eb",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6511,7 +6511,7 @@ const dataset = [
     {
         id: "054e79c0-cac1-4c6c-aced-dd2076cb3072",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6522,7 +6522,7 @@ const dataset = [
     {
         id: "e4743c04-1519-4979-a0bd-eee87f6eece6",
         recipient_id: "42e7710f-521d-4e5b-a995-921d11bd192c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -6533,7 +6533,7 @@ const dataset = [
     {
         id: "fa09876b-e7a0-4eb9-9cbc-3f7eb7cef172",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6544,7 +6544,7 @@ const dataset = [
     {
         id: "b0e84153-1c62-42ec-89e9-93394aefdfac",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6555,7 +6555,7 @@ const dataset = [
     {
         id: "9c1cb1f0-41ce-4600-baa5-e33ea0391a18",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6566,7 +6566,7 @@ const dataset = [
     {
         id: "2a7ec892-013b-471c-906d-21439f6bd88d",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6577,7 +6577,7 @@ const dataset = [
     {
         id: "f06a1435-06d4-4cd6-8aa8-9290d30f777e",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6588,7 +6588,7 @@ const dataset = [
     {
         id: "d7543114-5afc-408a-96dc-03f28695ad42",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6599,7 +6599,7 @@ const dataset = [
     {
         id: "a46232b8-e01e-474a-a9de-4af9c3b03127",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6610,7 +6610,7 @@ const dataset = [
     {
         id: "abbf98f5-6612-40ba-ad49-0428eb282dc8",
         recipient_id: "1ddeeba6-74b6-4f1a-b6db-fd7a33a51cab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -6621,7 +6621,7 @@ const dataset = [
     {
         id: "9697f6c9-e3b1-415b-841b-cd79a32f68cc",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6632,7 +6632,7 @@ const dataset = [
     {
         id: "ef3ab25d-f13e-4cba-9a1c-a5fc6ec180a2",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6643,7 +6643,7 @@ const dataset = [
     {
         id: "ab88adcc-82d7-4425-9724-ac14ca05c79e",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6654,7 +6654,7 @@ const dataset = [
     {
         id: "608a3d78-4eb0-429b-a4d1-35abe0eb90aa",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6665,7 +6665,7 @@ const dataset = [
     {
         id: "934ebf42-2f84-4430-b6c2-6708c1bfa916",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6676,7 +6676,7 @@ const dataset = [
     {
         id: "a06f32e7-b50b-409f-8db3-6bdaf4be94d9",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6687,7 +6687,7 @@ const dataset = [
     {
         id: "c82891b4-f072-4a32-87c4-04e9fedd933b",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6698,7 +6698,7 @@ const dataset = [
     {
         id: "ac268f8d-ff3c-4ed5-8823-3905d2a17b76",
         recipient_id: "704537f5-5306-4a56-bab2-4991c843838b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -6709,7 +6709,7 @@ const dataset = [
     {
         id: "f8f63767-0290-4d40-9d0a-a243316aae41",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6720,7 +6720,7 @@ const dataset = [
     {
         id: "9847c93b-07e6-44dc-bf40-229971f15211",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6731,7 +6731,7 @@ const dataset = [
     {
         id: "28d6ccf1-5a46-42a2-b6b0-b4d3bd1c5df5",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6742,7 +6742,7 @@ const dataset = [
     {
         id: "b49fff1d-821f-4cc9-baf7-f8059f2e4d65",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6753,7 +6753,7 @@ const dataset = [
     {
         id: "d8574702-b178-4851-9b0b-f1e004ac621b",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6764,7 +6764,7 @@ const dataset = [
     {
         id: "22c7cfde-d5e0-4706-8ab3-f07343ae6796",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6775,7 +6775,7 @@ const dataset = [
     {
         id: "ed8ed4ed-31d5-4dd0-8b0b-340b21886138",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6786,7 +6786,7 @@ const dataset = [
     {
         id: "387e87a9-97ca-473c-9f63-bca541f6a10c",
         recipient_id: "e5cfa6ce-b359-4463-977b-cd36c9dc2caa",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -6797,7 +6797,7 @@ const dataset = [
     {
         id: "180231f4-ff39-44ce-8067-2ed33cf8be0e",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6808,7 +6808,7 @@ const dataset = [
     {
         id: "3847f60a-c0e1-4a83-a404-1678b8094f53",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6819,7 +6819,7 @@ const dataset = [
     {
         id: "7aa8f0b7-e4e7-4244-a550-49200f82b244",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6830,7 +6830,7 @@ const dataset = [
     {
         id: "e108d5a0-3829-43a1-9dba-5b9acfa7b066",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6841,7 +6841,7 @@ const dataset = [
     {
         id: "35a984a1-11fc-4761-838b-523efbbeea7f",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6852,7 +6852,7 @@ const dataset = [
     {
         id: "98ff7145-0297-4fc4-8ee7-0772bf9acb27",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6863,7 +6863,7 @@ const dataset = [
     {
         id: "b4f48ac4-0af7-4a76-8eb0-583b9f714880",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6874,7 +6874,7 @@ const dataset = [
     {
         id: "0b661124-e1dc-47bb-9ba9-6f4d9da9dd2c",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6885,7 +6885,7 @@ const dataset = [
     {
         id: "ec55a595-0e8c-4a36-8f78-f78537b2d4b8",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6896,7 +6896,7 @@ const dataset = [
     {
         id: "47db080c-67bd-4574-bc91-8b257bc86748",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6907,7 +6907,7 @@ const dataset = [
     {
         id: "f8e0c739-1a40-470d-ba4a-9146f35bb632",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6918,7 +6918,7 @@ const dataset = [
     {
         id: "1c3e81fe-d711-4e7c-8584-ecba5fd4eb05",
         recipient_id: "b495b500-ca6f-4e97-ba25-64400d446c42",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -6929,7 +6929,7 @@ const dataset = [
     {
         id: "a45cd8e1-faa6-465f-85de-a502fdd893dd",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -6940,7 +6940,7 @@ const dataset = [
     {
         id: "5a3a4f03-7bc6-4f2f-b681-70568ad259b2",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -6951,7 +6951,7 @@ const dataset = [
     {
         id: "5b0c8591-7494-4859-80ea-49d8e0f31752",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -6962,7 +6962,7 @@ const dataset = [
     {
         id: "c950448e-9f06-4e44-9a3b-8bf6da2bd55d",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -6973,7 +6973,7 @@ const dataset = [
     {
         id: "63b2d062-da73-473c-9aba-fbb37b0e59cf",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -6984,7 +6984,7 @@ const dataset = [
     {
         id: "30701842-f6f8-4c4b-af76-11f8aa121a07",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -6995,7 +6995,7 @@ const dataset = [
     {
         id: "91ad70e0-c761-4919-878c-a3e94ea2730b",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -7006,7 +7006,7 @@ const dataset = [
     {
         id: "1f28e399-d7f9-432e-94f4-d6aef2ade2f8",
         recipient_id: "5d4a0dc8-fa1c-4ad5-b569-d3abb89c6063",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -7017,7 +7017,7 @@ const dataset = [
     {
         id: "7603e0af-e60a-4b88-bfb1-c86878de488c",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7028,7 +7028,7 @@ const dataset = [
     {
         id: "406785c5-661c-46cf-921b-5edbb62aac6c",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7039,7 +7039,7 @@ const dataset = [
     {
         id: "0b69b957-b1f7-4b58-807e-29f7b059afbd",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7050,7 +7050,7 @@ const dataset = [
     {
         id: "af1f4f09-c6d7-48c5-ba7a-4295cfaad652",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7061,7 +7061,7 @@ const dataset = [
     {
         id: "50a38305-4237-42ea-bf26-4b4a4437dd73",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7072,7 +7072,7 @@ const dataset = [
     {
         id: "8f2326cf-ba40-40f2-a83d-6c20c5c66428",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7083,7 +7083,7 @@ const dataset = [
     {
         id: "eb595ff0-2048-4a8e-a567-2ec8caf5de47",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7094,7 +7094,7 @@ const dataset = [
     {
         id: "21382a6e-611b-46d7-9704-0cea99ab6f5e",
         recipient_id: "f7438553-4b60-40ae-8f93-ddcd3c2f2af3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -7105,7 +7105,7 @@ const dataset = [
     {
         id: "ab941be6-98cc-4101-b8a3-0596b3dd8410",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7116,7 +7116,7 @@ const dataset = [
     {
         id: "e89c0c02-7ec4-42a2-a0dc-f0935dee36ae",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7127,7 +7127,7 @@ const dataset = [
     {
         id: "a3898b91-cda8-413b-8fa8-b4fd943a3bde",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7138,7 +7138,7 @@ const dataset = [
     {
         id: "35909183-77ae-4e43-a3cb-517ba8caf10c",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7149,7 +7149,7 @@ const dataset = [
     {
         id: "d403a333-2c59-4f2b-bb7c-11e47ec23dbf",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7160,7 +7160,7 @@ const dataset = [
     {
         id: "84922a47-ab81-4e6d-861b-7174f562dd94",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7171,7 +7171,7 @@ const dataset = [
     {
         id: "bfb5259b-c381-4abe-9437-9447484b3e53",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7182,7 +7182,7 @@ const dataset = [
     {
         id: "23e51135-3c93-4406-a6b4-84d2506adf67",
         recipient_id: "982eb997-256e-4a5f-aad3-5333e35b4224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -7193,7 +7193,7 @@ const dataset = [
     {
         id: "cb6db225-6727-4c88-8035-f2d667fa6ee6",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7204,7 +7204,7 @@ const dataset = [
     {
         id: "54602c4c-86de-48ae-8b9f-cf7a312aa909",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7215,7 +7215,7 @@ const dataset = [
     {
         id: "4fec35eb-9b7b-40ac-af7d-f4cf8eae71b6",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7226,7 +7226,7 @@ const dataset = [
     {
         id: "ee4b7421-8754-44a6-88de-65e4c856a585",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7237,7 +7237,7 @@ const dataset = [
     {
         id: "b5ed2cad-c3a8-413e-a622-6eb0a6a85a42",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7248,7 +7248,7 @@ const dataset = [
     {
         id: "7b8b7e2d-e4ce-4eba-8e76-0e6e9210614b",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7259,7 +7259,7 @@ const dataset = [
     {
         id: "3bc60bca-3a8d-46f1-b778-2fa8d04adb87",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7270,7 +7270,7 @@ const dataset = [
     {
         id: "27026295-bd6d-49f1-946b-6b2a6ecaa17d",
         recipient_id: "2fd6fd16-0102-4c9c-897e-31f08799473b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -7281,7 +7281,7 @@ const dataset = [
     {
         id: "ad658f92-8ccd-4da5-b470-9b4130aeb8d4",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7292,7 +7292,7 @@ const dataset = [
     {
         id: "25915c6f-9f73-45ab-ae05-6143db1cc8e6",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7303,7 +7303,7 @@ const dataset = [
     {
         id: "941cb068-65f2-4904-b806-ca7095bba381",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7314,7 +7314,7 @@ const dataset = [
     {
         id: "e01475c5-f03c-40c9-99b1-42df1437dcbf",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7325,7 +7325,7 @@ const dataset = [
     {
         id: "76834658-75e3-4102-9aaa-fc963dfd7133",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7336,7 +7336,7 @@ const dataset = [
     {
         id: "0da6893e-37e9-49aa-a232-324d69c60f14",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7347,7 +7347,7 @@ const dataset = [
     {
         id: "ffb6ac98-403d-48c8-b077-b2d9b64dc575",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7358,7 +7358,7 @@ const dataset = [
     {
         id: "faa8385f-3b62-42bc-a91b-53b56a629046",
         recipient_id: "8ef34557-76d4-4bd7-947f-60aab30f0fae",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -7369,7 +7369,7 @@ const dataset = [
     {
         id: "eb126ccf-c1ec-4a7e-8b40-8984456d4967",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7380,7 +7380,7 @@ const dataset = [
     {
         id: "c851135e-5ef0-4c2d-aa29-aeee9085b3a6",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7391,7 +7391,7 @@ const dataset = [
     {
         id: "cc28f454-6ffe-45f0-85f5-9aa223a7d1f9",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7402,7 +7402,7 @@ const dataset = [
     {
         id: "daf8eb15-99c4-4297-b599-934c86f0ca5e",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7413,7 +7413,7 @@ const dataset = [
     {
         id: "286dccc8-d7af-4f19-bb08-ade2941300bc",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7424,7 +7424,7 @@ const dataset = [
     {
         id: "2f01138e-1d1b-4670-9569-c888705eda03",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7435,7 +7435,7 @@ const dataset = [
     {
         id: "fd66d4d5-e3aa-493c-8e17-f33687a793fd",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7446,7 +7446,7 @@ const dataset = [
     {
         id: "fb5baedd-42b7-430e-9d64-d793506da49c",
         recipient_id: "8fee0bce-bf6b-40ec-abe8-a53163869322",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -7457,7 +7457,7 @@ const dataset = [
     {
         id: "0e683c80-7ebe-46d9-b5a2-071d999c67c2",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7468,7 +7468,7 @@ const dataset = [
     {
         id: "1f245ce3-af0d-4b3a-88a1-a44dea6423b4",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7479,7 +7479,7 @@ const dataset = [
     {
         id: "968f6d0d-dff1-4120-80ee-29a0065f6151",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7490,7 +7490,7 @@ const dataset = [
     {
         id: "dc0a8ffc-e461-44a2-ad94-56acfb6503d5",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7501,7 +7501,7 @@ const dataset = [
     {
         id: "da466d10-bca8-46f6-acae-f95e87910fa3",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7512,7 +7512,7 @@ const dataset = [
     {
         id: "c0bd2e3f-12f5-4146-ab14-9c2062ea174b",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7523,7 +7523,7 @@ const dataset = [
     {
         id: "62395804-6c01-4dbe-b972-060512a914b1",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7534,7 +7534,7 @@ const dataset = [
     {
         id: "d2155978-b2c2-47eb-8f8d-f1d2a9c66f94",
         recipient_id: "c7e2c9ec-bab5-40ea-8813-7c8ab2c60df8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -7545,7 +7545,7 @@ const dataset = [
     {
         id: "995d1ee3-0955-4488-a4f0-5a3f3e309363",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7556,7 +7556,7 @@ const dataset = [
     {
         id: "1fb2babc-43a3-4835-834e-6912a586a230",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7567,7 +7567,7 @@ const dataset = [
     {
         id: "10900b86-b53f-49c5-8b53-a34ec4504bb2",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7578,7 +7578,7 @@ const dataset = [
     {
         id: "6a2e8ba8-b72d-447e-9599-c9bd10b67c17",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7589,7 +7589,7 @@ const dataset = [
     {
         id: "a297ed66-bce5-4877-b44b-774fbe9e71ad",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7600,7 +7600,7 @@ const dataset = [
     {
         id: "6c161726-b3a5-47d4-a54e-797da761dde3",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7611,7 +7611,7 @@ const dataset = [
     {
         id: "1ad6bead-3d10-4551-a758-c10cfbe20247",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7622,7 +7622,7 @@ const dataset = [
     {
         id: "7a0f16a3-df8f-4711-8eb1-f823619126a7",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7633,7 +7633,7 @@ const dataset = [
     {
         id: "91e3704c-6b40-40ff-95be-0e45bd1e2949",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7644,7 +7644,7 @@ const dataset = [
     {
         id: "cc67d822-6c2e-4e48-a754-52a1e0ef9864",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7655,7 +7655,7 @@ const dataset = [
     {
         id: "56220b58-e674-4fd0-a2f1-ec063d688f76",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7666,7 +7666,7 @@ const dataset = [
     {
         id: "ea5b3ee3-0526-4fa1-a4a5-b39be12d5b16",
         recipient_id: "33b51f24-230a-4134-adee-0aa5bd8936b1",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -7677,7 +7677,7 @@ const dataset = [
     {
         id: "8dabdace-246a-4bc6-8a6c-4fc3a16c1db7",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7688,7 +7688,7 @@ const dataset = [
     {
         id: "3d1a15e3-d124-4a3a-9328-ab96059841fb",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7699,7 +7699,7 @@ const dataset = [
     {
         id: "5fa55e6e-33ad-4ec0-92de-74dee5cadcea",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7710,7 +7710,7 @@ const dataset = [
     {
         id: "a71d763c-1410-426b-a9ce-251b3eb435d3",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7721,7 +7721,7 @@ const dataset = [
     {
         id: "0e428c61-a277-4904-b933-30658f812ad6",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7732,7 +7732,7 @@ const dataset = [
     {
         id: "fa42e7a8-21fd-41e6-a0fa-3a1d59f9a59e",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7743,7 +7743,7 @@ const dataset = [
     {
         id: "a44a2f9b-847f-44cd-9464-6f510d913c04",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7754,7 +7754,7 @@ const dataset = [
     {
         id: "51c8e311-958a-41f9-9d54-20df9453e876",
         recipient_id: "0a39aa60-4a5e-4fb6-8a64-6fc44081d2af",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -7765,7 +7765,7 @@ const dataset = [
     {
         id: "26a4598c-fc71-497b-bef8-04a8e7ae157e",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7776,7 +7776,7 @@ const dataset = [
     {
         id: "0ad1f7f3-dd09-44d0-881b-89f413184d73",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7787,7 +7787,7 @@ const dataset = [
     {
         id: "05f0e1c4-b8f0-4abe-90a8-84f167311d85",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7798,7 +7798,7 @@ const dataset = [
     {
         id: "8f3a4b27-0a8e-45fb-a35b-c1e889bbd8ae",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7809,7 +7809,7 @@ const dataset = [
     {
         id: "8341e18b-f283-46ad-96ec-ab85f9ba7b60",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7820,7 +7820,7 @@ const dataset = [
     {
         id: "6591cecd-165e-4fcd-846f-ceacb2426781",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7831,7 +7831,7 @@ const dataset = [
     {
         id: "4eef1c27-68eb-4793-82b5-9e15eb7d9902",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7842,7 +7842,7 @@ const dataset = [
     {
         id: "b0b46a4e-72c5-4828-b9bf-3e946cf558b6",
         recipient_id: "823124e9-7c52-431a-a2ef-75f772b30a24",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -7853,7 +7853,7 @@ const dataset = [
     {
         id: "bb6e26cc-928f-4a70-b8e2-dfb589edae94",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7864,7 +7864,7 @@ const dataset = [
     {
         id: "115d0b49-5d76-4eb0-88d6-af99bf494e19",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7875,7 +7875,7 @@ const dataset = [
     {
         id: "c9f22662-ec2b-47cf-b2f0-b6b04aeb0b50",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7886,7 +7886,7 @@ const dataset = [
     {
         id: "847a54b2-e116-447e-9b09-232d6eceff53",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7897,7 +7897,7 @@ const dataset = [
     {
         id: "078ef04a-38ee-485f-af53-be0bbab87837",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7908,7 +7908,7 @@ const dataset = [
     {
         id: "4a1471b4-77e6-43ce-bca3-ef0c73dd85aa",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7919,7 +7919,7 @@ const dataset = [
     {
         id: "0e8a7a5b-77eb-4e32-8fee-a1e664a3e366",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7930,7 +7930,7 @@ const dataset = [
     {
         id: "ea32acf7-d114-4db0-87df-b393a157863b",
         recipient_id: "249a661d-2746-4c39-b97c-cb137b0f37f7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -7941,7 +7941,7 @@ const dataset = [
     {
         id: "7b4103ad-5750-4a46-bcdf-636d6983a5cc",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -7952,7 +7952,7 @@ const dataset = [
     {
         id: "34923f97-bc30-4176-aa4b-ebc7517da083",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -7963,7 +7963,7 @@ const dataset = [
     {
         id: "0b989c6d-78e4-47f0-a727-8e17d8c91fca",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -7974,7 +7974,7 @@ const dataset = [
     {
         id: "02b46bd6-5003-4787-b945-a60c7409f71e",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -7985,7 +7985,7 @@ const dataset = [
     {
         id: "b1945c36-43a3-4713-a901-15154c8ee082",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -7996,7 +7996,7 @@ const dataset = [
     {
         id: "57bbca8a-3cd4-4348-bbce-bd62416ceb1b",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -8007,7 +8007,7 @@ const dataset = [
     {
         id: "34e4d65a-bdca-4414-a4d2-2b949c9bc754",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -8018,7 +8018,7 @@ const dataset = [
     {
         id: "629705a4-5514-4b2d-bb9c-9342829e4e33",
         recipient_id: "9b97c5a1-d3f9-4b9b-ae92-95afa6a27e36",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -8029,7 +8029,7 @@ const dataset = [
     {
         id: "82cb6aca-8c40-4ae7-a8d4-b488b3372a77",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8040,7 +8040,7 @@ const dataset = [
     {
         id: "b77cc198-61f3-48dd-9713-d83c84487e52",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8051,7 +8051,7 @@ const dataset = [
     {
         id: "8b81894a-b0d6-4a5a-bc96-dffc21ca8c8e",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8062,7 +8062,7 @@ const dataset = [
     {
         id: "cea841da-ac31-4aba-a856-a3555cff64ca",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8073,7 +8073,7 @@ const dataset = [
     {
         id: "8291fc57-9765-4596-90ae-9597d083c728",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8084,7 +8084,7 @@ const dataset = [
     {
         id: "1a3dba99-1b84-4875-8410-6ada7fa3b8b8",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8095,7 +8095,7 @@ const dataset = [
     {
         id: "a9464cf3-5b65-4fe5-8189-155192d295fe",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8106,7 +8106,7 @@ const dataset = [
     {
         id: "77fc91fb-4148-4a7d-99a2-fb4a1a9caa80",
         recipient_id: "d8fc4479-f286-4a6f-b3ce-994df710434d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -8117,7 +8117,7 @@ const dataset = [
     {
         id: "67570f71-bc25-47cc-af16-7b51a70d3ac4",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8128,7 +8128,7 @@ const dataset = [
     {
         id: "7f2675cd-a2f2-4492-9a69-e4b68fbfa8ff",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8139,7 +8139,7 @@ const dataset = [
     {
         id: "0d768aa4-9170-4f68-872d-40a40b16b453",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8150,7 +8150,7 @@ const dataset = [
     {
         id: "9d5c171b-fc8d-413a-a921-89013d7ca768",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8161,7 +8161,7 @@ const dataset = [
     {
         id: "1c08549e-3f5d-4bb1-81ec-4f2aacfd7425",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8172,7 +8172,7 @@ const dataset = [
     {
         id: "f9190419-cf05-4ff2-adc7-00583e451867",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8183,7 +8183,7 @@ const dataset = [
     {
         id: "f406cebb-1c66-40bc-a03e-dfb2632fe3db",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8194,7 +8194,7 @@ const dataset = [
     {
         id: "bc4071be-8a01-4b28-b378-62f492b1d28f",
         recipient_id: "9e407613-d6c8-4841-9e50-e0999279bce1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -8205,7 +8205,7 @@ const dataset = [
     {
         id: "7fe2d439-5f4a-48ee-ab59-739469751510",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8216,7 +8216,7 @@ const dataset = [
     {
         id: "0cc9e924-2871-4c85-9489-75f4b646c0a5",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8227,7 +8227,7 @@ const dataset = [
     {
         id: "ad5ad030-5b20-4dee-bebb-16a013a64112",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8238,7 +8238,7 @@ const dataset = [
     {
         id: "8fbf904f-de89-491d-9af5-cb5d17ccd1b4",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8249,7 +8249,7 @@ const dataset = [
     {
         id: "272d5963-f4b4-412c-9ad9-a27628bfb238",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8260,7 +8260,7 @@ const dataset = [
     {
         id: "dd75f8e5-fced-4754-a99f-f7009c0d9172",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8271,7 +8271,7 @@ const dataset = [
     {
         id: "bf3290eb-f0c8-416d-8056-27879b0b7565",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8282,7 +8282,7 @@ const dataset = [
     {
         id: "fb5acacd-c6bf-42fb-b9e1-c72565885ff5",
         recipient_id: "b4dcf9b2-7660-485c-91f3-e57e8bca3e49",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -8293,7 +8293,7 @@ const dataset = [
     {
         id: "36dfa151-ebdc-4cec-be1a-cb5df26332c9",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8304,7 +8304,7 @@ const dataset = [
     {
         id: "4127e94f-dce6-48ba-91c9-c761064cff5c",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8315,7 +8315,7 @@ const dataset = [
     {
         id: "9989fcf8-632a-452b-a3d3-3e1a56861e1b",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8326,7 +8326,7 @@ const dataset = [
     {
         id: "dc665e33-3d0d-45d1-8f4b-c0071de1302a",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8337,7 +8337,7 @@ const dataset = [
     {
         id: "53046d9c-b34e-44bb-88ce-388bfebc9cab",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8348,7 +8348,7 @@ const dataset = [
     {
         id: "754646b9-cf60-45a7-bcf7-b0a1d09ce8d5",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8359,7 +8359,7 @@ const dataset = [
     {
         id: "4bacd647-446a-416c-8f44-66565e0a746d",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8370,7 +8370,7 @@ const dataset = [
     {
         id: "7aa44084-cf60-411f-acc4-379ed79998fd",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8381,7 +8381,7 @@ const dataset = [
     {
         id: "ef96c953-6682-4623-a2e1-e19d2ba4ab79",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8392,7 +8392,7 @@ const dataset = [
     {
         id: "00643adc-9151-48ae-9da9-144124592e9e",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8403,7 +8403,7 @@ const dataset = [
     {
         id: "568676a7-f6e7-4af4-9749-4364a0a5b18a",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8414,7 +8414,7 @@ const dataset = [
     {
         id: "57606134-17d8-4a95-9a6d-424cf784aa51",
         recipient_id: "f21e11dd-3fe3-4a18-9145-b9af5464de79",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -8425,7 +8425,7 @@ const dataset = [
     {
         id: "a9773d18-2ff3-41fb-9405-f2b4d9b6bb40",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8436,7 +8436,7 @@ const dataset = [
     {
         id: "ffc4fd69-7176-45e6-9842-e6d2ffee1580",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8447,7 +8447,7 @@ const dataset = [
     {
         id: "af75d0fa-9707-4ff2-b441-2ba3377830f1",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8458,7 +8458,7 @@ const dataset = [
     {
         id: "712352fc-f439-4fe4-b2d2-b08e07e4f652",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8469,7 +8469,7 @@ const dataset = [
     {
         id: "c9d2f52c-bc9e-4422-8186-2f71215cddb0",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8480,7 +8480,7 @@ const dataset = [
     {
         id: "034a449e-4c92-4ad7-b8bb-a10606f875b6",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8491,7 +8491,7 @@ const dataset = [
     {
         id: "6117694b-dcff-4d6a-bbce-b1f8e60e39f7",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8502,7 +8502,7 @@ const dataset = [
     {
         id: "cf664688-ec3b-4646-b56f-fee9aac8b69c",
         recipient_id: "8bc47428-ff02-4602-b311-6b0e6e35789d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -8513,7 +8513,7 @@ const dataset = [
     {
         id: "bf871994-7ba6-4bd5-a5e0-52e0a9dacaa9",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8524,7 +8524,7 @@ const dataset = [
     {
         id: "59875cf5-1d9f-455f-9631-9e6b8c2ae835",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8535,7 +8535,7 @@ const dataset = [
     {
         id: "10dcbf4e-855e-4eec-8309-bb977afc4b49",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8546,7 +8546,7 @@ const dataset = [
     {
         id: "98166a30-6555-46cd-8f27-cecd3fc41cec",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8557,7 +8557,7 @@ const dataset = [
     {
         id: "dfff5cff-3a17-4d78-baf1-8af737342849",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8568,7 +8568,7 @@ const dataset = [
     {
         id: "c2bad5b8-c3b5-4659-a1c0-9cdad6c36ca5",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8579,7 +8579,7 @@ const dataset = [
     {
         id: "713121f9-fe7b-459c-b93b-d4ec8cbd86fa",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8590,7 +8590,7 @@ const dataset = [
     {
         id: "98e4ee4c-51ee-40e3-811c-406f429ca880",
         recipient_id: "655c91f0-b13c-4d6e-a50e-7e7f7914d06a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -8601,7 +8601,7 @@ const dataset = [
     {
         id: "657fd54c-7047-4cd7-80db-c24db71796cd",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8612,7 +8612,7 @@ const dataset = [
     {
         id: "52581982-3173-4f74-87e4-d5c487a3de94",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8623,7 +8623,7 @@ const dataset = [
     {
         id: "d031765d-2467-4ea3-85a8-0fd5599b4b45",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8634,7 +8634,7 @@ const dataset = [
     {
         id: "0b7aec5a-95d6-4a23-bc09-659d96b99c18",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8645,7 +8645,7 @@ const dataset = [
     {
         id: "566ca4d8-5824-45af-bc06-70b75a0f5805",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8656,7 +8656,7 @@ const dataset = [
     {
         id: "7bb269e0-5542-4968-8ff2-a87d1ff3fff1",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8667,7 +8667,7 @@ const dataset = [
     {
         id: "22a3ddb9-6fba-4616-abdc-4f515e8e3950",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8678,7 +8678,7 @@ const dataset = [
     {
         id: "cd702563-cb3a-43d7-8412-d1f40ac00dda",
         recipient_id: "0ef7cb74-a73e-4523-928b-2fd09addc999",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -8689,7 +8689,7 @@ const dataset = [
     {
         id: "6f588a33-1d76-4307-975a-05b067773697",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8700,7 +8700,7 @@ const dataset = [
     {
         id: "d886e595-521d-49aa-8a87-9810f80a924b",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8711,7 +8711,7 @@ const dataset = [
     {
         id: "551041f7-2f3c-4449-a2b4-279c2ea5598e",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8722,7 +8722,7 @@ const dataset = [
     {
         id: "f4a48ff3-a3dc-429e-9924-ad01da6ae12e",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8733,7 +8733,7 @@ const dataset = [
     {
         id: "56052045-322c-45b4-98c1-f8a5329b8425",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8744,7 +8744,7 @@ const dataset = [
     {
         id: "523b68a8-002d-4c83-9929-8bec5eefd4d4",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8755,7 +8755,7 @@ const dataset = [
     {
         id: "90348950-b931-4951-a60a-c7cdd33125c9",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8766,7 +8766,7 @@ const dataset = [
     {
         id: "3bf665e1-c6cf-4db4-96df-c71154cf28a0",
         recipient_id: "71dbb839-9edb-41e6-87aa-dc242b6ed550",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -8777,7 +8777,7 @@ const dataset = [
     {
         id: "d9fe78ad-4056-40fd-ad50-c89adaa9202f",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8788,7 +8788,7 @@ const dataset = [
     {
         id: "a3361202-c9b1-4c5e-aa29-19e55bd28309",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8799,7 +8799,7 @@ const dataset = [
     {
         id: "7b8d9854-a07d-404f-8378-9b1a869128bf",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8810,7 +8810,7 @@ const dataset = [
     {
         id: "5317494b-cd43-4e9c-83d0-02ebc6e09aa7",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8821,7 +8821,7 @@ const dataset = [
     {
         id: "8cd763f8-f32f-49d7-825b-e7d301187717",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8832,7 +8832,7 @@ const dataset = [
     {
         id: "1d47322f-a5ec-42e9-842c-c52ca6e3ae87",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8843,7 +8843,7 @@ const dataset = [
     {
         id: "1f076989-5cad-43aa-8408-2cd412d8359f",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8854,7 +8854,7 @@ const dataset = [
     {
         id: "cfa14c19-12ce-4f37-8c7c-87a8059a7c29",
         recipient_id: "c44acd1a-e71b-4298-ac20-ea903b2eb75f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -8865,7 +8865,7 @@ const dataset = [
     {
         id: "93f32ede-bbc8-41c9-b875-a08d2b7f7884",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8876,7 +8876,7 @@ const dataset = [
     {
         id: "d1e67733-2801-4f59-9062-43ca05dc2f1d",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8887,7 +8887,7 @@ const dataset = [
     {
         id: "71191ef2-6dc6-48a7-960a-f4578a4a7f34",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8898,7 +8898,7 @@ const dataset = [
     {
         id: "637e2cbd-c972-4aa5-8617-a646b41ea831",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8909,7 +8909,7 @@ const dataset = [
     {
         id: "6c32a211-2689-49a4-9253-f13f767c5553",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8920,7 +8920,7 @@ const dataset = [
     {
         id: "e3d06612-b0af-4d4e-84cc-fb1a9fbaefae",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8931,7 +8931,7 @@ const dataset = [
     {
         id: "b761ed7c-cf96-439c-b7c2-cb6c43f7e791",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8942,7 +8942,7 @@ const dataset = [
     {
         id: "9142e710-5ed3-415f-98dc-b088312928cf",
         recipient_id: "15e7cf28-8855-459e-a92b-752ec219f7a8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -8953,7 +8953,7 @@ const dataset = [
     {
         id: "045109ef-d897-4e8e-b8f9-a5bca5234a99",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -8964,7 +8964,7 @@ const dataset = [
     {
         id: "30ce5913-089c-4f6b-9e06-c78d48b4f6f1",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -8975,7 +8975,7 @@ const dataset = [
     {
         id: "eb86f4fe-b321-4e0a-b2e2-dc44d7778d67",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -8986,7 +8986,7 @@ const dataset = [
     {
         id: "5cf39321-3ad1-4f4d-bfc1-2c5df8c1f45f",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -8997,7 +8997,7 @@ const dataset = [
     {
         id: "5ae874f4-4149-4cf1-a00b-bef1e9f39217",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -9008,7 +9008,7 @@ const dataset = [
     {
         id: "a639187d-dd73-48b2-9d1d-0d09459e73d1",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -9019,7 +9019,7 @@ const dataset = [
     {
         id: "48c0179d-1efa-4464-95e0-781c01b22cdd",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -9030,7 +9030,7 @@ const dataset = [
     {
         id: "d9e337e6-b18d-4ef7-b31d-e91ff8f4af59",
         recipient_id: "3dab2d46-a3f9-4008-8075-672f43ccbe3a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -9041,7 +9041,7 @@ const dataset = [
     {
         id: "6a950286-fd2a-4fc1-b5d2-0a12460f0131",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9052,7 +9052,7 @@ const dataset = [
     {
         id: "6132a725-1738-41c6-9cb4-f51f970a9495",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9063,7 +9063,7 @@ const dataset = [
     {
         id: "839d3ee1-17dc-4069-ae88-000c407f91dd",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9074,7 +9074,7 @@ const dataset = [
     {
         id: "dfeae5ca-9b9b-4b8b-8cb7-1d0f6e5c6ca7",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9085,7 +9085,7 @@ const dataset = [
     {
         id: "a26a71cb-de96-4252-8625-99929fbaef34",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9096,7 +9096,7 @@ const dataset = [
     {
         id: "6d8abdee-3064-437c-aeb4-e4e213e787dc",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9107,7 +9107,7 @@ const dataset = [
     {
         id: "ecbbec02-35be-4a04-a22f-aca93ed90313",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9118,7 +9118,7 @@ const dataset = [
     {
         id: "c966da16-7e37-45a3-b4ad-b4d4c219677b",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9129,7 +9129,7 @@ const dataset = [
     {
         id: "81418dc0-2cbe-498d-a058-10b45d645152",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9140,7 +9140,7 @@ const dataset = [
     {
         id: "589c84c5-9039-463d-8a06-2c3105cae42d",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9151,7 +9151,7 @@ const dataset = [
     {
         id: "fd8018b2-8cf1-4933-94f6-e708e5dd797e",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9162,7 +9162,7 @@ const dataset = [
     {
         id: "80fdb554-faee-4c56-9eb5-af96224301c7",
         recipient_id: "ad01cd75-9fb2-48a0-9135-bd85fbcd75c3",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -9173,7 +9173,7 @@ const dataset = [
     {
         id: "d7a96968-d91c-40e6-ad31-e0985687939e",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9184,7 +9184,7 @@ const dataset = [
     {
         id: "c195f5c8-c470-40af-bf38-147a45b74bfb",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9195,7 +9195,7 @@ const dataset = [
     {
         id: "cedf8f79-7cd2-4f7e-a677-2766a411d3e7",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9206,7 +9206,7 @@ const dataset = [
     {
         id: "59e4b80d-75f1-4b33-85d2-26cd90c36faa",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9217,7 +9217,7 @@ const dataset = [
     {
         id: "66cbcaff-d4f7-43c3-9a8c-b7976775471d",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9228,7 +9228,7 @@ const dataset = [
     {
         id: "d15d0f50-3326-427d-ae34-59c74c87b462",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9239,7 +9239,7 @@ const dataset = [
     {
         id: "9bb04d56-cc69-427e-a1f6-fa5ae403cdfb",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9250,7 +9250,7 @@ const dataset = [
     {
         id: "df1a92d9-f821-4950-a861-3ff6de6f85fb",
         recipient_id: "555d7684-02be-4804-9baf-8579083648df",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -9261,7 +9261,7 @@ const dataset = [
     {
         id: "812fb257-471d-4e3c-a398-2004b0b972d3",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9272,7 +9272,7 @@ const dataset = [
     {
         id: "69357045-2afd-4757-a680-ce1c7f5b1dcc",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9283,7 +9283,7 @@ const dataset = [
     {
         id: "f5d47dd7-14da-47c8-8696-b0f2555592a3",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9294,7 +9294,7 @@ const dataset = [
     {
         id: "c7c70c91-8d8d-4b6d-a80c-c728e29a462e",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9305,7 +9305,7 @@ const dataset = [
     {
         id: "ff598477-5657-4049-8a3f-8083702ccb76",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9316,7 +9316,7 @@ const dataset = [
     {
         id: "e648a77b-3759-4919-943a-794f3c3ed17d",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9327,7 +9327,7 @@ const dataset = [
     {
         id: "057506a5-c1e9-4717-9375-a4e1d2e2fa5f",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9338,7 +9338,7 @@ const dataset = [
     {
         id: "5088c21f-b33c-466a-a69c-44ee1f1e05f5",
         recipient_id: "f335be08-9f88-4c6c-a759-b3837b7deb55",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -9349,7 +9349,7 @@ const dataset = [
     {
         id: "ef4715ea-f0c4-4dfa-92aa-a6827cbbe8a8",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9360,7 +9360,7 @@ const dataset = [
     {
         id: "fd5433ed-6c3f-41fd-91be-64c2136f9fcd",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9371,7 +9371,7 @@ const dataset = [
     {
         id: "e6d4ff0f-3150-45f9-b1f9-7ae51ff646a1",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9382,7 +9382,7 @@ const dataset = [
     {
         id: "4578a960-56e1-4a39-935b-f67f3fd6a3bb",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9393,7 +9393,7 @@ const dataset = [
     {
         id: "94bcd7c5-7f5b-4a65-abe9-f3a47d63299c",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9404,7 +9404,7 @@ const dataset = [
     {
         id: "2883b06b-d8e9-4f0d-ad4a-d758fe5ec201",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9415,7 +9415,7 @@ const dataset = [
     {
         id: "dfc0ae2a-31b1-440e-970d-643e9c34e65a",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9426,7 +9426,7 @@ const dataset = [
     {
         id: "539be054-de92-4911-a310-b7cec7a2b74d",
         recipient_id: "20710dfa-0b99-40c6-aa1d-e035fe28d1d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -9437,7 +9437,7 @@ const dataset = [
     {
         id: "a40888aa-9391-49bc-89eb-07c3b4d1551f",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9448,7 +9448,7 @@ const dataset = [
     {
         id: "7ffec419-aab7-4f75-a727-3b9f73b52d8a",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9459,7 +9459,7 @@ const dataset = [
     {
         id: "679e87dc-6b06-4956-8ecd-1db5f565478f",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9470,7 +9470,7 @@ const dataset = [
     {
         id: "737c85fa-d130-4f12-9be1-1a400e3c2b52",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9481,7 +9481,7 @@ const dataset = [
     {
         id: "65c15c5f-dfe2-4211-8527-071d3e0d1812",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9492,7 +9492,7 @@ const dataset = [
     {
         id: "c05b4496-7bbc-4879-a237-6f42276d6568",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9503,7 +9503,7 @@ const dataset = [
     {
         id: "ca79244a-3145-479f-8f80-f7956dffdc88",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9514,7 +9514,7 @@ const dataset = [
     {
         id: "98f26d0c-4c5b-4868-af71-2ea462c68ab5",
         recipient_id: "637e36e3-324b-4fa9-bbaf-93623423cc07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -9525,7 +9525,7 @@ const dataset = [
     {
         id: "73ba94d8-bcb4-4f8e-8116-f4f0fedd82c8",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9536,7 +9536,7 @@ const dataset = [
     {
         id: "2642b960-f4e3-47b5-b74b-b6a49a082fe0",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9547,7 +9547,7 @@ const dataset = [
     {
         id: "b1510146-8c2e-44a5-a690-4c6599a62764",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9558,7 +9558,7 @@ const dataset = [
     {
         id: "d7512d52-053e-445c-8707-84f5f18ad82e",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9569,7 +9569,7 @@ const dataset = [
     {
         id: "f20641ec-5750-45f3-9c5e-3257d3e3df98",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9580,7 +9580,7 @@ const dataset = [
     {
         id: "d25d700f-7c17-40b2-b187-08b865f16508",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9591,7 +9591,7 @@ const dataset = [
     {
         id: "7c998a08-8a7d-4429-8fd7-b4b9355306b4",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9602,7 +9602,7 @@ const dataset = [
     {
         id: "e7dadf57-9ebc-4d0e-99a4-e985a306d836",
         recipient_id: "8867928f-e80e-4793-a100-f185d22a753b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -9613,7 +9613,7 @@ const dataset = [
     {
         id: "f0de1d94-1962-44a1-865f-a238536c667b",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9624,7 +9624,7 @@ const dataset = [
     {
         id: "82ae7e97-5301-4d52-b83f-b3a4d251cd9e",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9635,7 +9635,7 @@ const dataset = [
     {
         id: "2185f705-a341-4700-a325-1a883aaff3e3",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9646,7 +9646,7 @@ const dataset = [
     {
         id: "88dd1418-42ae-4be1-b5f7-ab2389115f1b",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9657,7 +9657,7 @@ const dataset = [
     {
         id: "d84816c9-70cd-4c19-b8d5-8abd77a6bcdf",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9668,7 +9668,7 @@ const dataset = [
     {
         id: "2c388bb3-dee6-443e-9695-e2339f104ac6",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9679,7 +9679,7 @@ const dataset = [
     {
         id: "034effa3-3357-41d1-8a41-51415f192576",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9690,7 +9690,7 @@ const dataset = [
     {
         id: "903f8213-42f9-4fea-8eba-0ea6a1e80f5e",
         recipient_id: "064051be-4cf0-41a3-b713-93e2a6e6f01c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -9701,7 +9701,7 @@ const dataset = [
     {
         id: "c2cc49e4-9e46-49ad-804a-de9b92c30c4f",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9712,7 +9712,7 @@ const dataset = [
     {
         id: "f25daa20-cad3-4f91-9e6e-c95a2242d7f5",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9723,7 +9723,7 @@ const dataset = [
     {
         id: "bf6d0fe5-6279-4eeb-ba32-0cd3c8140628",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9734,7 +9734,7 @@ const dataset = [
     {
         id: "47b0421d-a5ad-4214-8b90-2269f44592de",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9745,7 +9745,7 @@ const dataset = [
     {
         id: "c3cfcbf2-bda7-4e2f-b65b-85d4c8869273",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9756,7 +9756,7 @@ const dataset = [
     {
         id: "7542af33-101a-4311-bcad-4b950ad61342",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9767,7 +9767,7 @@ const dataset = [
     {
         id: "26641496-35c7-4614-a570-cbbb0c8ef337",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9778,7 +9778,7 @@ const dataset = [
     {
         id: "3ee4e925-a133-47a7-b576-67ecb9f427a3",
         recipient_id: "e5c33a9a-c752-40c0-a501-7aa73178b508",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -9789,7 +9789,7 @@ const dataset = [
     {
         id: "ba2bd1ac-5508-4bc7-b438-7158849b272b",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9800,7 +9800,7 @@ const dataset = [
     {
         id: "30f3b917-44a8-4024-9ccd-a7e3c0c5d72b",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9811,7 +9811,7 @@ const dataset = [
     {
         id: "94a16d2f-dc8b-4739-a035-bf84e972e17b",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9822,7 +9822,7 @@ const dataset = [
     {
         id: "d076086c-ba08-40b5-8b09-7fefb58fe476",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9833,7 +9833,7 @@ const dataset = [
     {
         id: "6344299a-7ca6-497c-b26c-5f2bbb42777d",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9844,7 +9844,7 @@ const dataset = [
     {
         id: "d0b55a1b-41cb-4ca5-a472-a760a6842892",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9855,7 +9855,7 @@ const dataset = [
     {
         id: "3266704f-876c-4c92-a26a-43e3ec37775f",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9866,7 +9866,7 @@ const dataset = [
     {
         id: "48f17f5a-d08e-414e-90a4-d8c9cfd0deb5",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9877,7 +9877,7 @@ const dataset = [
     {
         id: "e825a3af-e578-456d-b446-f1818dcee2b3",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9888,7 +9888,7 @@ const dataset = [
     {
         id: "12abdd49-66da-4a8f-a14c-43e44bc52b7f",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9899,7 +9899,7 @@ const dataset = [
     {
         id: "4ec3e232-5fbb-48ba-aa46-cda4c4a1e240",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9910,7 +9910,7 @@ const dataset = [
     {
         id: "af5a6c58-44b4-45ff-8c3e-3cca2886f85d",
         recipient_id: "47f0313f-e540-4576-95f1-86efc372fd39",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -9921,7 +9921,7 @@ const dataset = [
     {
         id: "29e9d6ba-6266-43ce-bdae-9a947a9ab240",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -9932,7 +9932,7 @@ const dataset = [
     {
         id: "c44a799d-34d6-4c08-9a50-b152b3d16b1f",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -9943,7 +9943,7 @@ const dataset = [
     {
         id: "f5d2daa7-dff9-4aa2-b242-b2030ac37c05",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -9954,7 +9954,7 @@ const dataset = [
     {
         id: "5534b142-ef53-41dc-a717-c606c82b573b",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -9965,7 +9965,7 @@ const dataset = [
     {
         id: "8748e3b7-07eb-4308-b6cf-7c22fbac9df2",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -9976,7 +9976,7 @@ const dataset = [
     {
         id: "dc8977f8-e900-4b6d-9898-888537fb994f",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -9987,7 +9987,7 @@ const dataset = [
     {
         id: "03bc2d23-04ce-44a3-a002-92a63700780a",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -9998,7 +9998,7 @@ const dataset = [
     {
         id: "5906a0ca-216e-41f0-aadb-bf20af4c2603",
         recipient_id: "7ef27bff-112a-40fb-9af7-7f688e0b73fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -10009,7 +10009,7 @@ const dataset = [
     {
         id: "86f4e947-b7cd-4ed4-b85c-d7a0948e25d6",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10020,7 +10020,7 @@ const dataset = [
     {
         id: "3ca7d5f8-521e-4f71-b196-12d920aa5474",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10031,7 +10031,7 @@ const dataset = [
     {
         id: "9c011e05-6ea1-4a33-ac35-8f6554e9a50b",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10042,7 +10042,7 @@ const dataset = [
     {
         id: "b18b9259-6159-4d62-857c-4021a7cddc21",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10053,7 +10053,7 @@ const dataset = [
     {
         id: "1c34ac78-525e-4d82-9cb1-8390db51d6b9",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10064,7 +10064,7 @@ const dataset = [
     {
         id: "26c0d02e-0922-40e7-864a-668974b891df",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10075,7 +10075,7 @@ const dataset = [
     {
         id: "2dd6afe0-6b58-41f9-9c3c-e0aae6099c39",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10086,7 +10086,7 @@ const dataset = [
     {
         id: "d703e21f-5e43-4b71-8337-795d6164b3e9",
         recipient_id: "9650e621-7359-4184-9a01-9e79d7e5776a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -10097,7 +10097,7 @@ const dataset = [
     {
         id: "7360de25-667c-4774-b8f4-de10a4fe693f",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10108,7 +10108,7 @@ const dataset = [
     {
         id: "b2f80e77-7525-4a68-9b77-8df1b59566fb",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10119,7 +10119,7 @@ const dataset = [
     {
         id: "28d2ec4e-2f7f-4d43-a5ce-0d9887d0732c",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10130,7 +10130,7 @@ const dataset = [
     {
         id: "98f27390-daad-4bf9-bd16-d8594cfdb4c1",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10141,7 +10141,7 @@ const dataset = [
     {
         id: "1af04d3b-140f-4f85-a4ad-51561aa455a6",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10152,7 +10152,7 @@ const dataset = [
     {
         id: "0564c83b-b387-44a0-8a58-c6ef1cf1f5a3",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10163,7 +10163,7 @@ const dataset = [
     {
         id: "573baba7-29c2-4df0-8124-d7ead3898986",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10174,7 +10174,7 @@ const dataset = [
     {
         id: "ed1c6335-b884-4bb5-9c7a-9be88194c881",
         recipient_id: "c1b3765f-c8a2-4151-9437-41febc50ba4d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -10185,7 +10185,7 @@ const dataset = [
     {
         id: "11066670-39d0-4358-b3eb-141b0e09276d",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10196,7 +10196,7 @@ const dataset = [
     {
         id: "94ac5570-e526-4b4e-85a3-69545b99638f",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10207,7 +10207,7 @@ const dataset = [
     {
         id: "6a8bc777-954b-48d8-8af6-836677910135",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10218,7 +10218,7 @@ const dataset = [
     {
         id: "6aa12d29-ce00-40fd-91e9-42213480ebda",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10229,7 +10229,7 @@ const dataset = [
     {
         id: "0d38067d-938d-4e76-9814-8ca336004830",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10240,7 +10240,7 @@ const dataset = [
     {
         id: "d2809d4f-8dcc-462b-8035-e1086b6f3a23",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10251,7 +10251,7 @@ const dataset = [
     {
         id: "00c04158-40ed-406b-a855-b52239fa7772",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10262,7 +10262,7 @@ const dataset = [
     {
         id: "ab2f8887-c180-4f4b-8026-f5211f67ebdb",
         recipient_id: "b5cf9fd5-b4b1-49cc-9fb2-c83dd38341c0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -10273,7 +10273,7 @@ const dataset = [
     {
         id: "feb0f654-068a-4f5b-b2e7-bf61c628c542",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10284,7 +10284,7 @@ const dataset = [
     {
         id: "1a793fa4-61ea-457d-8182-9e703a18ac9b",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10295,7 +10295,7 @@ const dataset = [
     {
         id: "955359b7-642c-4f2d-93e9-e5e7feed64e6",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10306,7 +10306,7 @@ const dataset = [
     {
         id: "3f7c5c44-03ed-4fd5-a263-9fb9f5dea438",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10317,7 +10317,7 @@ const dataset = [
     {
         id: "94ea5417-fc9f-42c7-b3dc-84f25b6d6cf8",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10328,7 +10328,7 @@ const dataset = [
     {
         id: "35ad70cf-a219-43c7-bb0e-f870fcb2791e",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10339,7 +10339,7 @@ const dataset = [
     {
         id: "6a62035e-6ac1-407a-a0c3-2e784afe1335",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10350,7 +10350,7 @@ const dataset = [
     {
         id: "321cb8c5-9db3-47b4-89fd-eb8068428129",
         recipient_id: "2dc793a6-32eb-4754-9815-92083c2d5761",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -10361,7 +10361,7 @@ const dataset = [
     {
         id: "e5ebfc39-b812-43a4-b516-392836009d6b",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10372,7 +10372,7 @@ const dataset = [
     {
         id: "5d8b8d18-4c4c-434e-9b27-14306416cf67",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10383,7 +10383,7 @@ const dataset = [
     {
         id: "bd839415-0282-4a14-8a48-aaaea0c81cfb",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10394,7 +10394,7 @@ const dataset = [
     {
         id: "c8fe2a48-5931-49a4-bcd0-d917482258c5",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10405,7 +10405,7 @@ const dataset = [
     {
         id: "71e9e451-c7eb-455d-b809-c63c69d68a8e",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10416,7 +10416,7 @@ const dataset = [
     {
         id: "8061d499-830a-44a1-8cd9-4b250a9385fb",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10427,7 +10427,7 @@ const dataset = [
     {
         id: "de799742-72a8-475a-a1e8-967fcad84be6",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10438,7 +10438,7 @@ const dataset = [
     {
         id: "dd3a4bfa-7f1c-4710-90ce-a044b2cc1889",
         recipient_id: "7e1ef5c6-968f-4db6-9c48-45884caa7b57",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -10449,7 +10449,7 @@ const dataset = [
     {
         id: "b8ee71e0-829e-42c6-8ed3-5f796696d3e9",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10460,7 +10460,7 @@ const dataset = [
     {
         id: "d5f853f1-1045-40c4-871e-5c1c9457fb85",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10471,7 +10471,7 @@ const dataset = [
     {
         id: "c6ab4eb4-648a-48f9-8d4c-e88173805c2a",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10482,7 +10482,7 @@ const dataset = [
     {
         id: "0bcb8aca-7bf3-4263-b460-d7c69dcfbba3",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10493,7 +10493,7 @@ const dataset = [
     {
         id: "65ada43c-7a29-41eb-bf3c-d66211827635",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10504,7 +10504,7 @@ const dataset = [
     {
         id: "432c26bd-61ec-40a4-9b88-1e43288c4956",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10515,7 +10515,7 @@ const dataset = [
     {
         id: "c2e0ee73-498a-4875-9a68-a16d360ef9a6",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10526,7 +10526,7 @@ const dataset = [
     {
         id: "eb375137-fbd4-4c98-b8ae-5d6a6f730dbc",
         recipient_id: "7f408307-4301-45e3-a254-d25951230fed",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -10537,7 +10537,7 @@ const dataset = [
     {
         id: "8dc310aa-6b40-48d5-9b2e-4860a9c450ec",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10548,7 +10548,7 @@ const dataset = [
     {
         id: "7d2fc28c-97f2-466f-bd2c-abd4c26eb96f",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10559,7 +10559,7 @@ const dataset = [
     {
         id: "cf80fd42-1625-4d8d-b9aa-058b6e23725b",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10570,7 +10570,7 @@ const dataset = [
     {
         id: "e7e62370-13fb-4c66-b60c-e9415ce988d9",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10581,7 +10581,7 @@ const dataset = [
     {
         id: "c1a9dea3-adf2-404a-921a-cbaff0a8c06f",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10592,7 +10592,7 @@ const dataset = [
     {
         id: "4d1b4432-f8f3-4190-bb21-c9c72915a81a",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10603,7 +10603,7 @@ const dataset = [
     {
         id: "47242cc3-bb15-4d36-bf8d-92fa390eb4ba",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10614,7 +10614,7 @@ const dataset = [
     {
         id: "59645db9-b102-4072-8555-f8da39628c2b",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10625,7 +10625,7 @@ const dataset = [
     {
         id: "2a187b94-2365-4c47-bf42-c6d620274cee",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10636,7 +10636,7 @@ const dataset = [
     {
         id: "c1fa7700-2c38-4c33-9e2b-f6a57f86a029",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10647,7 +10647,7 @@ const dataset = [
     {
         id: "7dab0e1d-2282-467c-8e8c-de86bf2ee872",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10658,7 +10658,7 @@ const dataset = [
     {
         id: "4666de4f-f588-4586-a398-ab3daa897865",
         recipient_id: "8fa11676-0ce5-415b-8485-6f416cbd7270",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -10669,7 +10669,7 @@ const dataset = [
     {
         id: "c8acdc08-8319-4f73-8608-a5c1a5f3f28a",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10680,7 +10680,7 @@ const dataset = [
     {
         id: "56ec8b02-4916-42da-af63-620dc04ef964",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10691,7 +10691,7 @@ const dataset = [
     {
         id: "2e8ff279-5542-4cc2-9cf9-ad819b1189eb",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10702,7 +10702,7 @@ const dataset = [
     {
         id: "9d9325cd-0e8f-452b-832f-63ef78506fb7",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10713,7 +10713,7 @@ const dataset = [
     {
         id: "d44e0c11-80de-48de-8d5d-32b2ed910f7c",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10724,7 +10724,7 @@ const dataset = [
     {
         id: "4d37b4a6-3a2c-45b7-b05c-95c3a8ca3faf",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10735,7 +10735,7 @@ const dataset = [
     {
         id: "f42dc0ba-8cf4-470c-a2d3-61c1a58657e5",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10746,7 +10746,7 @@ const dataset = [
     {
         id: "edca7d1a-b5d9-49e9-a086-110a63ed552f",
         recipient_id: "e7370812-a7ea-4afe-a308-d66fb5100e54",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -10757,7 +10757,7 @@ const dataset = [
     {
         id: "132089a1-9e2a-42f4-ad73-dcfcda7aa278",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10768,7 +10768,7 @@ const dataset = [
     {
         id: "30e0add9-eff9-474c-9adc-20ac4b7c5bc7",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10779,7 +10779,7 @@ const dataset = [
     {
         id: "15ba1c0b-93f2-45ff-8413-22ffb113c67f",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10790,7 +10790,7 @@ const dataset = [
     {
         id: "c93ed47d-f965-4fef-abba-0df3513da574",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10801,7 +10801,7 @@ const dataset = [
     {
         id: "fd398fcc-0ab6-4087-87a7-a955c724fb11",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10812,7 +10812,7 @@ const dataset = [
     {
         id: "e33180e5-278a-4db9-b76a-cf4ee0213c8d",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10823,7 +10823,7 @@ const dataset = [
     {
         id: "1b9e18ab-5b23-489e-b0a1-7eb135d062b5",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10834,7 +10834,7 @@ const dataset = [
     {
         id: "fbb96a43-d5c0-471d-9721-dbe34ccbfab1",
         recipient_id: "aef2ac71-ac33-46bd-ad2a-8365c956c439",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -10845,7 +10845,7 @@ const dataset = [
     {
         id: "0d41aa32-70a5-4381-b80e-173376ff418f",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10856,7 +10856,7 @@ const dataset = [
     {
         id: "45a9e0c7-2a3f-465e-b2c3-7d7dbcfadb94",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10867,7 +10867,7 @@ const dataset = [
     {
         id: "506e1f1b-3d65-49c9-a120-a378eca82f4d",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10878,7 +10878,7 @@ const dataset = [
     {
         id: "18eedc36-2b0c-4b17-9f34-172d1da050fe",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10889,7 +10889,7 @@ const dataset = [
     {
         id: "12605c3b-c812-44e0-a5b5-a47cdc44cccc",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10900,7 +10900,7 @@ const dataset = [
     {
         id: "cb4b64fc-94d4-4c09-8f05-8f5607f1a42a",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10911,7 +10911,7 @@ const dataset = [
     {
         id: "97ee809c-8322-4040-9811-3f666eb6f720",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10922,7 +10922,7 @@ const dataset = [
     {
         id: "9b32353b-8fc7-4a24-b7f5-3e454b8eee1f",
         recipient_id: "bd9d2237-92b7-4f46-b1c2-23ab4d304fbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -10933,7 +10933,7 @@ const dataset = [
     {
         id: "67fc356e-ed0f-495d-91f5-795e33526638",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -10944,7 +10944,7 @@ const dataset = [
     {
         id: "5d0f2af8-162b-4b9e-95de-e578ab1acd54",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -10955,7 +10955,7 @@ const dataset = [
     {
         id: "f6907fed-6153-4060-87aa-eb3bc92a69de",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -10966,7 +10966,7 @@ const dataset = [
     {
         id: "9be52a49-abeb-4649-9599-19c7ee54e446",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -10977,7 +10977,7 @@ const dataset = [
     {
         id: "783af3bd-ef2f-4db2-a454-eacba72ece93",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -10988,7 +10988,7 @@ const dataset = [
     {
         id: "fff9caf8-e924-4bf7-863e-fd40b0cb6851",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -10999,7 +10999,7 @@ const dataset = [
     {
         id: "f217db3c-6f53-4a33-9a28-c2ab1022a3fc",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -11010,7 +11010,7 @@ const dataset = [
     {
         id: "e78acda7-0088-4194-bd01-6be2a23dccd1",
         recipient_id: "c817d3ec-e07f-406e-a454-b4c77aa7f0fd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -11021,7 +11021,7 @@ const dataset = [
     {
         id: "ff7bbe81-8dec-42a0-8267-a64612e3a124",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11032,7 +11032,7 @@ const dataset = [
     {
         id: "80891e16-2a03-4590-8293-517d92a1d715",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11043,7 +11043,7 @@ const dataset = [
     {
         id: "eba37f8e-8dd2-437d-9e29-f2514d70f6f3",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11054,7 +11054,7 @@ const dataset = [
     {
         id: "9c91ca42-2062-4d5a-ae1c-2f38df21f1ab",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11065,7 +11065,7 @@ const dataset = [
     {
         id: "f354c520-7cb8-4a1d-a62b-94c785a27bf7",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11076,7 +11076,7 @@ const dataset = [
     {
         id: "ffa643d0-ecb4-4b63-8b3c-51eb156d6a60",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11087,7 +11087,7 @@ const dataset = [
     {
         id: "0dc8d769-4698-4589-a531-07fa45e299c4",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11098,7 +11098,7 @@ const dataset = [
     {
         id: "841d3296-48cb-48da-bcb9-c4b591aaeb1d",
         recipient_id: "c27969e8-6868-4dee-8f1d-2b66e4c77f4b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -11109,7 +11109,7 @@ const dataset = [
     {
         id: "4bce1885-0005-46d4-a2a8-d10fb4e56875",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11120,7 +11120,7 @@ const dataset = [
     {
         id: "47bc1597-d870-4a31-aaaf-ccd7905ec50f",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11131,7 +11131,7 @@ const dataset = [
     {
         id: "d6576a4e-779e-4343-83d8-c0bf383de030",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11142,7 +11142,7 @@ const dataset = [
     {
         id: "128b02f6-ca5e-47a7-8755-4865015c1db3",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11153,7 +11153,7 @@ const dataset = [
     {
         id: "ecf106b6-af4f-4fcd-965e-ee19970491e5",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11164,7 +11164,7 @@ const dataset = [
     {
         id: "7406d8db-54d5-49ed-a0b1-f13136235473",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11175,7 +11175,7 @@ const dataset = [
     {
         id: "5734cd47-4c6f-47d4-8f53-984f543ffa2c",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11186,7 +11186,7 @@ const dataset = [
     {
         id: "613e905c-95d1-4c58-a633-af8f4b8d0042",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11197,7 +11197,7 @@ const dataset = [
     {
         id: "3e938b43-6a5b-4e96-a30c-93a2f8ee5048",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11208,7 +11208,7 @@ const dataset = [
     {
         id: "c10f068d-8a2d-483f-ac4e-bef3c924304b",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11219,7 +11219,7 @@ const dataset = [
     {
         id: "a23de1dc-29a8-4386-9a2d-fca03173c882",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11230,7 +11230,7 @@ const dataset = [
     {
         id: "6090bd19-6e62-44e2-8a6f-660ce8d00d58",
         recipient_id: "84b7a9c2-444b-4215-ac7f-ef640e9abe89",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -11241,7 +11241,7 @@ const dataset = [
     {
         id: "bb3920a0-b80a-40bf-85b3-84d7597e5dae",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11252,7 +11252,7 @@ const dataset = [
     {
         id: "f0170dfe-d07f-4ea3-97d0-8cf718e554f3",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11263,7 +11263,7 @@ const dataset = [
     {
         id: "4730fd44-8101-4bcb-9d4f-0cd0f26e29fb",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11274,7 +11274,7 @@ const dataset = [
     {
         id: "1b9a5593-af3b-4ab8-b9c0-259313a0380e",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11285,7 +11285,7 @@ const dataset = [
     {
         id: "adaad1aa-8ecf-47ea-bbef-374940c21e99",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11296,7 +11296,7 @@ const dataset = [
     {
         id: "88e1f03c-efd8-44f4-bbe4-632ec1de7900",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11307,7 +11307,7 @@ const dataset = [
     {
         id: "90105ce9-b887-4361-8061-65812979c846",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11318,7 +11318,7 @@ const dataset = [
     {
         id: "eb011e2f-71be-45f6-b061-b2b79a00bfaa",
         recipient_id: "73232381-8c41-436c-8206-5b5a54a199b7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -11329,7 +11329,7 @@ const dataset = [
     {
         id: "8a602182-beaf-4548-9e87-5ed91e692f1b",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11340,7 +11340,7 @@ const dataset = [
     {
         id: "d97f10e5-500e-4f69-a200-1a0c6f99a63a",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11351,7 +11351,7 @@ const dataset = [
     {
         id: "4ffb2133-ee20-4466-8a00-d2070960cfa5",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11362,7 +11362,7 @@ const dataset = [
     {
         id: "df4a636a-6a13-4c92-a531-b7802f60bf2c",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11373,7 +11373,7 @@ const dataset = [
     {
         id: "a887defe-09c0-4ab5-8727-1c73b9ddbeb7",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11384,7 +11384,7 @@ const dataset = [
     {
         id: "b0da31b6-4a45-4e2c-be0e-c054f7e4955f",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11395,7 +11395,7 @@ const dataset = [
     {
         id: "9b088682-cb8a-4b68-8cd7-33c389319a01",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11406,7 +11406,7 @@ const dataset = [
     {
         id: "b99d4f45-6b0d-4a7a-a892-a801b1dbd3ad",
         recipient_id: "c25bec8e-4e90-413d-99f9-bdcb6e9ae51c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -11417,7 +11417,7 @@ const dataset = [
     {
         id: "926d362a-b5b3-436e-b4c4-290bd14a0ec4",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11428,7 +11428,7 @@ const dataset = [
     {
         id: "232596c6-ad55-42f5-8397-619711bddbbd",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11439,7 +11439,7 @@ const dataset = [
     {
         id: "473a611d-45d6-4a49-a180-c41f514faf2a",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11450,7 +11450,7 @@ const dataset = [
     {
         id: "99246b40-60a3-4933-b2e6-9591522cf74f",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11461,7 +11461,7 @@ const dataset = [
     {
         id: "8d3c32e3-9c4a-4eb4-af8c-881ca4aba5ce",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11472,7 +11472,7 @@ const dataset = [
     {
         id: "904d229a-643d-4a97-9370-002d8457295e",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11483,7 +11483,7 @@ const dataset = [
     {
         id: "fbbb5a6f-eceb-490f-ab0a-170ae7f5b643",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11494,7 +11494,7 @@ const dataset = [
     {
         id: "6f56962c-4748-4d4e-9dbe-36e7d9194282",
         recipient_id: "8ebe7a49-5af4-44ea-b7af-64847ac73dbe",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -11505,7 +11505,7 @@ const dataset = [
     {
         id: "81848a91-eb70-4084-a6c8-7f45fc647e80",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11516,7 +11516,7 @@ const dataset = [
     {
         id: "9374feaa-2883-49b3-84b4-c6b20d98ead0",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11527,7 +11527,7 @@ const dataset = [
     {
         id: "2fe112a9-e757-4324-9faf-0ab02783cbc5",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11538,7 +11538,7 @@ const dataset = [
     {
         id: "fdcc337c-6d3a-4aeb-bdf0-55e06626cd5f",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11549,7 +11549,7 @@ const dataset = [
     {
         id: "80ef1571-2dd8-4cab-99b6-4254348f8aa5",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11560,7 +11560,7 @@ const dataset = [
     {
         id: "39168b25-cdce-4516-ba58-42c7a281f9aa",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11571,7 +11571,7 @@ const dataset = [
     {
         id: "7f854bb6-c510-47fd-a7f7-18e1f11f9946",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11582,7 +11582,7 @@ const dataset = [
     {
         id: "971dd712-5fe5-45da-9127-1206e20a3c22",
         recipient_id: "a15a92f4-b68b-4570-8005-0a8df2f2a88a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -11593,7 +11593,7 @@ const dataset = [
     {
         id: "ae3e7a5b-9905-4c4d-adad-c502094e57bd",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11604,7 +11604,7 @@ const dataset = [
     {
         id: "e53e6836-8e46-4264-bf0c-3936ac1756f6",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11615,7 +11615,7 @@ const dataset = [
     {
         id: "65dedda8-6183-4c8a-ac35-b0c48c135e17",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11626,7 +11626,7 @@ const dataset = [
     {
         id: "3539d76f-2b52-41ce-82e9-658fe50f3a0f",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11637,7 +11637,7 @@ const dataset = [
     {
         id: "84487e7b-17f1-42f9-8953-09a640a8fb00",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11648,7 +11648,7 @@ const dataset = [
     {
         id: "995d0998-b792-4fe0-963d-ab7f75b9d805",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11659,7 +11659,7 @@ const dataset = [
     {
         id: "5aab5613-29c8-4a00-84f5-c3423d803dbc",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11670,7 +11670,7 @@ const dataset = [
     {
         id: "5c07fae0-1646-4b2b-bf09-af0e8f7a7bd6",
         recipient_id: "9d7c752f-4373-49ab-add1-612a5f05a32b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -11681,7 +11681,7 @@ const dataset = [
     {
         id: "2a3269e2-8c89-4253-a573-4216627a5ca9",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11692,7 +11692,7 @@ const dataset = [
     {
         id: "6fbcd3d6-33c4-44fc-9b34-f42b3380852e",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11703,7 +11703,7 @@ const dataset = [
     {
         id: "985400aa-bf5b-43b7-ba5a-3e8126158b11",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11714,7 +11714,7 @@ const dataset = [
     {
         id: "28709087-e0bf-4170-b453-8bd911b0a18f",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11725,7 +11725,7 @@ const dataset = [
     {
         id: "f4f0a2ee-2e75-4709-b99e-4438c6106332",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11736,7 +11736,7 @@ const dataset = [
     {
         id: "b9a035e9-4a9b-41e5-a8b6-552519defe56",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11747,7 +11747,7 @@ const dataset = [
     {
         id: "26c4cc63-a12c-4189-81d1-30fd0dce5ffc",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11758,7 +11758,7 @@ const dataset = [
     {
         id: "a77c7185-1278-4750-b67d-2cab1a6fa5f8",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11769,7 +11769,7 @@ const dataset = [
     {
         id: "de6dd31b-5fe0-40cd-9eb7-e86d7d31458f",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11780,7 +11780,7 @@ const dataset = [
     {
         id: "c7f7be23-60f3-424c-a268-d5287cbc3a22",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11791,7 +11791,7 @@ const dataset = [
     {
         id: "6874973e-9a41-47ca-ae88-98ef9ddd5379",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11802,7 +11802,7 @@ const dataset = [
     {
         id: "98a90421-89c0-4277-b6f4-4e17a36a1b6b",
         recipient_id: "36b69f8a-86c5-4c4b-91fb-0d60e7bfe200",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -11813,7 +11813,7 @@ const dataset = [
     {
         id: "63ff7f20-4be9-4314-885c-07a99d28eab1",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11824,7 +11824,7 @@ const dataset = [
     {
         id: "6dbdcf06-3922-4a11-9153-630b9f51db3d",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11835,7 +11835,7 @@ const dataset = [
     {
         id: "07d5ab05-9a95-4324-a5b1-da53890e07fe",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11846,7 +11846,7 @@ const dataset = [
     {
         id: "1e3f0d29-f263-4472-a2ab-8c5adac5047b",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11857,7 +11857,7 @@ const dataset = [
     {
         id: "9f921af1-ea04-41fd-9ebe-2be5efb5985d",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11868,7 +11868,7 @@ const dataset = [
     {
         id: "3d1daae5-c734-4465-8e5b-a9ea50c612a3",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11879,7 +11879,7 @@ const dataset = [
     {
         id: "86e99039-db10-4115-b643-642e14c57287",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11890,7 +11890,7 @@ const dataset = [
     {
         id: "72a96e28-e60c-4962-b9b7-076eeb297ce6",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11901,7 +11901,7 @@ const dataset = [
     {
         id: "38cc5331-b30c-436e-806b-02f4b410b5dd",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11912,7 +11912,7 @@ const dataset = [
     {
         id: "d2a88869-c1c9-492c-9ecb-e414e36a4fc0",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11923,7 +11923,7 @@ const dataset = [
     {
         id: "91b92e4b-fc5c-422c-9b57-4cea8fc2c585",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11934,7 +11934,7 @@ const dataset = [
     {
         id: "8cd57dc8-61e9-4699-ab77-1d9e1cf0dc3f",
         recipient_id: "cc859b38-841c-47d4-bc96-6b2e44d1a574",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -11945,7 +11945,7 @@ const dataset = [
     {
         id: "3ffbb7fd-e468-4991-92f4-d029bbe8f2a6",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -11956,7 +11956,7 @@ const dataset = [
     {
         id: "65ced8a6-b202-48eb-9679-4d76a396a906",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -11967,7 +11967,7 @@ const dataset = [
     {
         id: "acb56c73-ca82-446a-b5ac-5f1dd5e704e4",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -11978,7 +11978,7 @@ const dataset = [
     {
         id: "b1c76577-5012-4af0-9913-7d1f5145fa9b",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -11989,7 +11989,7 @@ const dataset = [
     {
         id: "0b8e4de2-f9c3-43f3-a7b8-93bc09e7f946",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12000,7 +12000,7 @@ const dataset = [
     {
         id: "3f734faf-38f2-4a68-a3f5-4d6469f2737a",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12011,7 +12011,7 @@ const dataset = [
     {
         id: "243eeb7e-71f7-4564-8368-6f578d78dbc8",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12022,7 +12022,7 @@ const dataset = [
     {
         id: "6241498e-ed57-42a2-8eb3-294fe87034da",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12033,7 +12033,7 @@ const dataset = [
     {
         id: "412c24a5-45c2-4bc9-b144-2654d8304b5f",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12044,7 +12044,7 @@ const dataset = [
     {
         id: "63d77e97-c2aa-4814-a16d-bc7d7a02926b",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12055,7 +12055,7 @@ const dataset = [
     {
         id: "6403b5b2-c439-4629-b0b2-9fa9e468d6a4",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12066,7 +12066,7 @@ const dataset = [
     {
         id: "d6277543-a8a7-4b70-9cc3-7245c4561598",
         recipient_id: "701c0bd5-90d1-4096-9d2f-e545228b795c",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -12077,7 +12077,7 @@ const dataset = [
     {
         id: "2ab69c17-525a-4a25-826d-bebba39d7acc",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12088,7 +12088,7 @@ const dataset = [
     {
         id: "b50ff1f9-e4ee-4f54-8355-d5918b25da58",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12099,7 +12099,7 @@ const dataset = [
     {
         id: "cd0b6ef5-8b04-40a6-9867-4784710d58f2",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12110,7 +12110,7 @@ const dataset = [
     {
         id: "b572c0dc-d825-457d-bacb-33f2f5a3229d",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12121,7 +12121,7 @@ const dataset = [
     {
         id: "110963cf-312a-4fcc-93c2-0a5e3d528334",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12132,7 +12132,7 @@ const dataset = [
     {
         id: "f8eaa193-2a4b-47c8-84c3-829c2ec44a04",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12143,7 +12143,7 @@ const dataset = [
     {
         id: "c770e536-053b-4ce1-aa97-5a716c78cd7d",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12154,7 +12154,7 @@ const dataset = [
     {
         id: "be02b012-9f4b-4166-895e-ae9e0caaebce",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12165,7 +12165,7 @@ const dataset = [
     {
         id: "1ba032ae-1a15-4345-a542-2753f2f4fa7d",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12176,7 +12176,7 @@ const dataset = [
     {
         id: "566b7c33-2cbc-4a82-8d4d-53f894509ba2",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12187,7 +12187,7 @@ const dataset = [
     {
         id: "c5d1378d-b6a5-4232-b7e0-51d098da742f",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12198,7 +12198,7 @@ const dataset = [
     {
         id: "1c07536d-94fd-4bf5-a75e-b8d58d5bc927",
         recipient_id: "e149b372-f3ce-4f84-857b-46aa9236cf20",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -12209,7 +12209,7 @@ const dataset = [
     {
         id: "23c2d209-b79a-4c59-988a-e061d13885da",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12220,7 +12220,7 @@ const dataset = [
     {
         id: "3f4f0259-ce7a-4b27-b317-c44dabbb43ac",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12231,7 +12231,7 @@ const dataset = [
     {
         id: "80c79f2b-9ede-4ec9-bdce-e5897169eaeb",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12242,7 +12242,7 @@ const dataset = [
     {
         id: "a2d0ea5b-f565-4a63-af78-0bb8d9a29d8e",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12253,7 +12253,7 @@ const dataset = [
     {
         id: "c9f4afc2-93d8-468a-a920-650d904d1a70",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12264,7 +12264,7 @@ const dataset = [
     {
         id: "da62c35b-af0a-4af5-be02-79a7a324fe67",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12275,7 +12275,7 @@ const dataset = [
     {
         id: "d3363fe4-375a-4393-9330-e6c5c775d2ed",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12286,7 +12286,7 @@ const dataset = [
     {
         id: "060945a0-e65e-420d-81c6-f7117c92971c",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12297,7 +12297,7 @@ const dataset = [
     {
         id: "33bb25be-53ea-4573-b93a-1464d647becf",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12308,7 +12308,7 @@ const dataset = [
     {
         id: "b48a39e2-ff40-4b1e-a57d-5cd2a472d355",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12319,7 +12319,7 @@ const dataset = [
     {
         id: "9f3c6ea6-c3ee-4158-bb58-2b1010503da7",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12330,7 +12330,7 @@ const dataset = [
     {
         id: "b4a8e325-e563-492f-a869-55cd1d1d5e02",
         recipient_id: "676a4e43-70e8-42e1-8713-51ff1ec4460f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -12341,7 +12341,7 @@ const dataset = [
     {
         id: "ccf25182-b144-4962-8070-0320f48edd93",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12352,7 +12352,7 @@ const dataset = [
     {
         id: "4b99b046-a978-44f8-9c42-3aeb0cc4b05b",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12363,7 +12363,7 @@ const dataset = [
     {
         id: "4ffa51d4-075c-473b-8402-c1fcc5fddb3c",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12374,7 +12374,7 @@ const dataset = [
     {
         id: "b5588302-6b1f-4f5f-9329-89d55e59cfec",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12385,7 +12385,7 @@ const dataset = [
     {
         id: "13cb7a3a-d4c9-4668-8233-40a9884b7a73",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12396,7 +12396,7 @@ const dataset = [
     {
         id: "94accd7c-5e55-4e97-a692-f79939541d76",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12407,7 +12407,7 @@ const dataset = [
     {
         id: "d7c1ea32-ab03-4ce5-bd21-07fad8dc2028",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12418,7 +12418,7 @@ const dataset = [
     {
         id: "c78dc3c2-65c0-4887-86bd-22c4cb39b400",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12429,7 +12429,7 @@ const dataset = [
     {
         id: "6ec07541-dbf6-4e02-b312-de7a76ba9fed",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12440,7 +12440,7 @@ const dataset = [
     {
         id: "3fe98b94-cb67-47c9-b88d-b8b5a10bdcd9",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12451,7 +12451,7 @@ const dataset = [
     {
         id: "16c819da-7517-4861-a9c2-cbf0da837f66",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12462,7 +12462,7 @@ const dataset = [
     {
         id: "9de15c99-0854-4b97-b4ef-e56a4d19eda8",
         recipient_id: "47fb5624-6355-46b5-bf82-e9239d65bb6f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -12473,7 +12473,7 @@ const dataset = [
     {
         id: "ff868a2d-52aa-4356-9393-77f74337246f",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12484,7 +12484,7 @@ const dataset = [
     {
         id: "0d0d1042-16fa-42b7-9f0f-e77bdf59a70d",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12495,7 +12495,7 @@ const dataset = [
     {
         id: "4639925b-a7e3-4158-8163-e5b36c79444a",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12506,7 +12506,7 @@ const dataset = [
     {
         id: "14f1ff0c-ee2e-40b9-b679-e66b596ef83a",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12517,7 +12517,7 @@ const dataset = [
     {
         id: "3068a37e-3af9-4ed7-ab6d-f84443d4772a",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12528,7 +12528,7 @@ const dataset = [
     {
         id: "863e7bce-f172-4329-9adf-5f463ed4958f",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12539,7 +12539,7 @@ const dataset = [
     {
         id: "9929a490-5eab-4d06-8942-cc4643ac5de9",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12550,7 +12550,7 @@ const dataset = [
     {
         id: "a8542ec2-19d6-44ad-b485-9024021a02d5",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12561,7 +12561,7 @@ const dataset = [
     {
         id: "0f409470-30ef-44cb-ba71-fe6f5428aa2f",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12572,7 +12572,7 @@ const dataset = [
     {
         id: "841a4d66-798b-4ef4-a570-0d26ac45f2df",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12583,7 +12583,7 @@ const dataset = [
     {
         id: "32bf2274-b97b-4b8b-849e-23c38aaead12",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12594,7 +12594,7 @@ const dataset = [
     {
         id: "88908dac-c38f-4f2a-9d9a-ce390b735a41",
         recipient_id: "d9af694a-4e24-4244-a9f1-e8a74c1de165",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -12605,7 +12605,7 @@ const dataset = [
     {
         id: "fab1f737-c1fc-4a93-b5a6-971375031ef0",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12616,7 +12616,7 @@ const dataset = [
     {
         id: "ec994e34-2d1d-4f45-ab42-050939071d41",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12627,7 +12627,7 @@ const dataset = [
     {
         id: "0255a484-5096-424e-a2a2-10c52e9beedf",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12638,7 +12638,7 @@ const dataset = [
     {
         id: "8e84fa0d-7b1d-40aa-af97-5f736fde02af",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12649,7 +12649,7 @@ const dataset = [
     {
         id: "47a99d47-935f-4e21-a479-eb39dc4cc45e",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12660,7 +12660,7 @@ const dataset = [
     {
         id: "de4a011b-c2e3-41f3-8aec-155f05164c9d",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12671,7 +12671,7 @@ const dataset = [
     {
         id: "50d4c319-5bd1-4265-bcc4-e2a8ad0e7763",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12682,7 +12682,7 @@ const dataset = [
     {
         id: "36a6211e-497f-4539-b696-b7d0aadbc43b",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12693,7 +12693,7 @@ const dataset = [
     {
         id: "c7401268-f82f-4d9d-8a0b-8b1a28a7f394",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12704,7 +12704,7 @@ const dataset = [
     {
         id: "6432abd5-6ad4-4863-84bf-0dc2b688b8f9",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12715,7 +12715,7 @@ const dataset = [
     {
         id: "b69b7eb9-a0a3-4562-9e9f-bd2eacdb61b7",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12726,7 +12726,7 @@ const dataset = [
     {
         id: "a7a1616a-4776-4b6f-a62c-6761fade9c5d",
         recipient_id: "4cfccfb1-f6ef-4741-b967-2c38ed1a134e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -12737,7 +12737,7 @@ const dataset = [
     {
         id: "5398a3fe-9e4b-43a3-b78f-171dd3e6635c",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12748,7 +12748,7 @@ const dataset = [
     {
         id: "51913954-8c1e-4a6b-a294-e5303bf0ac7a",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12759,7 +12759,7 @@ const dataset = [
     {
         id: "7145321d-57e8-459a-92cb-f2e64f53df07",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12770,7 +12770,7 @@ const dataset = [
     {
         id: "6589adcf-785c-41f4-8753-3e35c4a6826d",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12781,7 +12781,7 @@ const dataset = [
     {
         id: "fac13a6c-d27d-41fb-b0e8-f625efaf6d22",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12792,7 +12792,7 @@ const dataset = [
     {
         id: "179598ef-d263-409a-83c8-d992dcab4250",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12803,7 +12803,7 @@ const dataset = [
     {
         id: "d27bd601-12cf-4667-b1f0-09344a23b2a0",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12814,7 +12814,7 @@ const dataset = [
     {
         id: "917d2a21-d231-427f-b010-2a90f8799443",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12825,7 +12825,7 @@ const dataset = [
     {
         id: "c0ca93ee-1620-4132-8cda-3960b34bccbb",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12836,7 +12836,7 @@ const dataset = [
     {
         id: "6c2ec139-6da4-4d2c-9af2-16253951d8ec",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12847,7 +12847,7 @@ const dataset = [
     {
         id: "6e609c9f-c6d0-449b-a5b1-fdd9b4cd3583",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12858,7 +12858,7 @@ const dataset = [
     {
         id: "aa86a926-c34b-4e75-ad17-aa3f55c7b746",
         recipient_id: "53f26494-af75-460c-b127-c873f902b943",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -12869,7 +12869,7 @@ const dataset = [
     {
         id: "f6169da8-9ab0-4777-abcc-d23264faf8d3",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12880,7 +12880,7 @@ const dataset = [
     {
         id: "32632ed0-2eb5-4132-a8a0-036f5e100c5e",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12891,7 +12891,7 @@ const dataset = [
     {
         id: "794ea73f-2d59-4647-ae01-06e94b88acb0",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12902,7 +12902,7 @@ const dataset = [
     {
         id: "44cef066-ff0a-40cf-94d5-dbcaa5373611",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12913,7 +12913,7 @@ const dataset = [
     {
         id: "c6949cc3-146f-483c-a1ce-072bd68443f5",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12924,7 +12924,7 @@ const dataset = [
     {
         id: "e0110eef-daff-4fc7-8df6-9baeb1928412",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12935,7 +12935,7 @@ const dataset = [
     {
         id: "11cca0a7-c1e7-4341-8667-a2244377ed24",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12946,7 +12946,7 @@ const dataset = [
     {
         id: "7dfddd22-c202-4ae6-a2bc-464eca67b738",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12957,7 +12957,7 @@ const dataset = [
     {
         id: "01e20587-a9ac-4b1c-bc57-4a2db0a51eba",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12968,7 +12968,7 @@ const dataset = [
     {
         id: "6f99bb62-35d0-451d-94c1-af3fde09f27a",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12979,7 +12979,7 @@ const dataset = [
     {
         id: "35b896a3-ef2b-4288-b9dc-9484c1463859",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -12990,7 +12990,7 @@ const dataset = [
     {
         id: "58ec2afa-62bd-40ef-ae64-293de8056e7e",
         recipient_id: "afe38bb8-5a15-4dc4-9ffc-3c8fe7702d65",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -13001,7 +13001,7 @@ const dataset = [
     {
         id: "3a0a16af-4c4c-48e6-900b-ee9d14ce1e61",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13012,7 +13012,7 @@ const dataset = [
     {
         id: "16b4caa8-ace7-4422-b0cd-6e4fc8f8d1c2",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13023,7 +13023,7 @@ const dataset = [
     {
         id: "38ce67bd-ef8b-44bc-b725-539573b97086",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13034,7 +13034,7 @@ const dataset = [
     {
         id: "53fd96cb-3d45-4808-8789-4011f5afe280",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13045,7 +13045,7 @@ const dataset = [
     {
         id: "cd5b1f4a-5ad1-4a8b-aac8-0282d574b4c1",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13056,7 +13056,7 @@ const dataset = [
     {
         id: "ee8e2765-2dfa-4d0f-82a5-21594e7708c4",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13067,7 +13067,7 @@ const dataset = [
     {
         id: "215e8ba5-c743-4934-b448-e4ddae46464c",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13078,7 +13078,7 @@ const dataset = [
     {
         id: "a972de43-3f96-4173-94d3-b7e0a545f016",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13089,7 +13089,7 @@ const dataset = [
     {
         id: "628117be-075b-4fd0-b6d2-4a9bc36fa10e",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13100,7 +13100,7 @@ const dataset = [
     {
         id: "47b71797-ea72-40a7-ae1c-9f8d31789821",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13111,7 +13111,7 @@ const dataset = [
     {
         id: "910acf05-9c16-401c-b8a4-9feb1b09f279",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13122,7 +13122,7 @@ const dataset = [
     {
         id: "f3264183-9b3f-4ef8-9c49-5096a7d51e71",
         recipient_id: "e0c09e0c-80d6-4397-a51e-cd277e89468d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -13133,7 +13133,7 @@ const dataset = [
     {
         id: "be69d420-7928-4548-922d-ba9d73b0a2b1",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13144,7 +13144,7 @@ const dataset = [
     {
         id: "d2f2ba8b-26c5-4870-93f8-e9a6093cdb3c",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13155,7 +13155,7 @@ const dataset = [
     {
         id: "103ed410-feeb-4f37-8246-768b7aad818e",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13166,7 +13166,7 @@ const dataset = [
     {
         id: "a55db08c-4d4e-4192-ade2-cae7077b43d0",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13177,7 +13177,7 @@ const dataset = [
     {
         id: "3f56d5df-73ca-4f12-8006-ec7be86f3151",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13188,7 +13188,7 @@ const dataset = [
     {
         id: "60ed162c-4574-4b36-a139-99708d838a43",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13199,7 +13199,7 @@ const dataset = [
     {
         id: "1a65e022-3ad4-4265-bb7e-700cd5f71b43",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13210,7 +13210,7 @@ const dataset = [
     {
         id: "5833de4d-aa1b-47bf-b2bd-902170ef4dea",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13221,7 +13221,7 @@ const dataset = [
     {
         id: "23fb80aa-4a28-40ee-bfd2-e45010706bcf",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13232,7 +13232,7 @@ const dataset = [
     {
         id: "90903683-22f0-4435-aa3d-dc619026eb92",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13243,7 +13243,7 @@ const dataset = [
     {
         id: "240c1365-7194-46e8-9adc-b38e582428a2",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13254,7 +13254,7 @@ const dataset = [
     {
         id: "38b0fa7a-d94f-4b0f-ba4a-533821e4a93c",
         recipient_id: "e5e180cf-1eb9-4ac6-8549-0929750222c6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -13265,7 +13265,7 @@ const dataset = [
     {
         id: "ed88f06e-7e46-4c5d-9d72-655c1b575352",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13276,7 +13276,7 @@ const dataset = [
     {
         id: "cbf228ed-25fa-4100-898a-b759a95d7e77",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13287,7 +13287,7 @@ const dataset = [
     {
         id: "414fb346-9ff6-449e-88f7-ed2f6f6d9f18",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13298,7 +13298,7 @@ const dataset = [
     {
         id: "975f2135-2602-4fa9-aa56-d2ca1bfc73f7",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13309,7 +13309,7 @@ const dataset = [
     {
         id: "0695d766-2798-42c2-8130-1799aeb978e5",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13320,7 +13320,7 @@ const dataset = [
     {
         id: "bcc620c9-a2a8-4079-9047-8c2856507477",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13331,7 +13331,7 @@ const dataset = [
     {
         id: "21464941-007a-4142-b3b8-441583faad13",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13342,7 +13342,7 @@ const dataset = [
     {
         id: "015db00e-3385-4884-8533-bc8ae35fd232",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13353,7 +13353,7 @@ const dataset = [
     {
         id: "5a111422-d157-44d9-9d0b-1941a42333fa",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13364,7 +13364,7 @@ const dataset = [
     {
         id: "963c8cae-9099-4571-b705-0988ff63bac8",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13375,7 +13375,7 @@ const dataset = [
     {
         id: "4287a93b-b847-4604-a89e-867ab902158d",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13386,7 +13386,7 @@ const dataset = [
     {
         id: "14b9d80d-9310-4cab-bacf-160868454d50",
         recipient_id: "18a9dcde-838e-48b2-9b29-d7c71652e284",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -13397,7 +13397,7 @@ const dataset = [
     {
         id: "99496bca-677a-43b4-b6a3-151204bfcea5",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13408,7 +13408,7 @@ const dataset = [
     {
         id: "cc8acca6-77ba-41e4-9e23-75fee9cc0ce2",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13419,7 +13419,7 @@ const dataset = [
     {
         id: "dec90421-fab9-4912-9633-6fa088bd886e",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13430,7 +13430,7 @@ const dataset = [
     {
         id: "2eec258a-7ed8-4a69-bf58-df20196d0fba",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13441,7 +13441,7 @@ const dataset = [
     {
         id: "224400ff-368e-44bc-952a-8d0b384f48dd",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13452,7 +13452,7 @@ const dataset = [
     {
         id: "0da07175-ad68-4322-a287-437a4bec7ee2",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13463,7 +13463,7 @@ const dataset = [
     {
         id: "f8f67862-ab6a-485e-8f23-7ea6faec7a56",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13474,7 +13474,7 @@ const dataset = [
     {
         id: "31ff364d-b37f-4350-98d9-4ddf8ca9e18e",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13485,7 +13485,7 @@ const dataset = [
     {
         id: "c38fb549-cd1b-4864-9713-023447e92bc7",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13496,7 +13496,7 @@ const dataset = [
     {
         id: "71b75eb9-e68a-4a7c-9c76-7e0b9ee71430",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13507,7 +13507,7 @@ const dataset = [
     {
         id: "ca06d0a6-2246-4cb1-bf69-ce683a05bcf4",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13518,7 +13518,7 @@ const dataset = [
     {
         id: "8b939df7-e1b1-45f3-8e20-b593ca5fa43b",
         recipient_id: "84640775-9967-465c-95d6-599f6127783a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -13529,7 +13529,7 @@ const dataset = [
     {
         id: "29774897-e26e-4643-a553-b87a095c23ef",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13540,7 +13540,7 @@ const dataset = [
     {
         id: "39f7fffc-ce31-4389-8dac-5047dde73da6",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13551,7 +13551,7 @@ const dataset = [
     {
         id: "586cbb53-138b-471a-aac4-c2c97c466998",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13562,7 +13562,7 @@ const dataset = [
     {
         id: "368f157c-8640-496e-b0d4-15af521c8969",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13573,7 +13573,7 @@ const dataset = [
     {
         id: "124803af-1f27-4db2-993d-9c64d529647a",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13584,7 +13584,7 @@ const dataset = [
     {
         id: "3650feb6-1f30-47a6-91c0-2113bc6c1c5f",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13595,7 +13595,7 @@ const dataset = [
     {
         id: "c4b117c9-0f40-4391-b0ad-dde4beef7ac9",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13606,7 +13606,7 @@ const dataset = [
     {
         id: "89994e54-91a0-4bae-8581-7be59435bb7a",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13617,7 +13617,7 @@ const dataset = [
     {
         id: "e42deaab-2231-489f-980a-d46c05249ab4",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13628,7 +13628,7 @@ const dataset = [
     {
         id: "c3cbec6d-512f-4c6e-8582-1601ada4b81a",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13639,7 +13639,7 @@ const dataset = [
     {
         id: "840c72f9-44e8-4703-b225-2d22e961a73d",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13650,7 +13650,7 @@ const dataset = [
     {
         id: "02799064-3867-4cc6-ade1-dc34aac937a7",
         recipient_id: "284820eb-ef3b-4d45-acc0-cf151dd22f9d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -13661,7 +13661,7 @@ const dataset = [
     {
         id: "14d8ccad-d49e-4848-a477-01ba25a556d9",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13672,7 +13672,7 @@ const dataset = [
     {
         id: "b6eed2e6-c8fd-45f2-a0f9-a5d209683d0c",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13683,7 +13683,7 @@ const dataset = [
     {
         id: "72c52b05-b8f9-4664-b8f1-048181870f42",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13694,7 +13694,7 @@ const dataset = [
     {
         id: "fffb2cb6-18ca-467f-8ecb-d7834ad4645d",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13705,7 +13705,7 @@ const dataset = [
     {
         id: "5f3ba45e-9e78-42ee-be32-0d75c11bc0e6",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13716,7 +13716,7 @@ const dataset = [
     {
         id: "b06f1533-559c-4482-976f-85274fc871ef",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13727,7 +13727,7 @@ const dataset = [
     {
         id: "643ccf56-7b7c-4a2e-a843-289d8e908798",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13738,7 +13738,7 @@ const dataset = [
     {
         id: "67cc0d6b-99e3-4e40-9bd0-7291d2259cb7",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13749,7 +13749,7 @@ const dataset = [
     {
         id: "539eed56-fe29-4ff2-a100-aebfb59245ec",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13760,7 +13760,7 @@ const dataset = [
     {
         id: "1270c1d7-6bba-42fd-8c06-a9a6a74ad676",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13771,7 +13771,7 @@ const dataset = [
     {
         id: "99e868cf-aa98-4827-a443-25fff0d2812b",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13782,7 +13782,7 @@ const dataset = [
     {
         id: "3ef595f4-fe35-4392-a672-4828e42799ee",
         recipient_id: "74dc423c-dd3c-4b45-8a19-41eeee3df805",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -13793,7 +13793,7 @@ const dataset = [
     {
         id: "facbbfd7-922c-46db-a6ea-8575d7d58df7",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13804,7 +13804,7 @@ const dataset = [
     {
         id: "2ff01092-c949-465d-969d-066940e6efa2",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13815,7 +13815,7 @@ const dataset = [
     {
         id: "31c92c5b-de4e-41b2-aa80-0b8fa0ae7e92",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13826,7 +13826,7 @@ const dataset = [
     {
         id: "43ecce89-6aad-4878-8cd9-58bd54693731",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13837,7 +13837,7 @@ const dataset = [
     {
         id: "7b4d8a32-6bc0-4400-a24e-51994370275c",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13848,7 +13848,7 @@ const dataset = [
     {
         id: "7bbc4fee-ba7c-4907-8d62-dc3e6cbf57f0",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13859,7 +13859,7 @@ const dataset = [
     {
         id: "e15c720c-8867-4a86-9f26-2b64fb71679f",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13870,7 +13870,7 @@ const dataset = [
     {
         id: "3c1b2172-613c-4700-88da-5d0ae4cf6583",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13881,7 +13881,7 @@ const dataset = [
     {
         id: "d4316c5f-2f54-4647-be82-ce8dc92880d7",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13892,7 +13892,7 @@ const dataset = [
     {
         id: "4441d1a7-4e49-4a0d-ae6c-5e14fe6e2a6e",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13903,7 +13903,7 @@ const dataset = [
     {
         id: "6934999d-cafd-4284-987a-253deb95ad41",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13914,7 +13914,7 @@ const dataset = [
     {
         id: "3aca03e8-fdef-4b53-a6d3-e6a295f856c0",
         recipient_id: "4b983ded-e4ac-49ed-af83-13f2add5430d",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -13925,7 +13925,7 @@ const dataset = [
     {
         id: "99ee49e0-5bd2-4e1f-830c-f0199b8976e0",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -13936,7 +13936,7 @@ const dataset = [
     {
         id: "4ee82a39-27c9-46df-97c4-c78a0005ab45",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -13947,7 +13947,7 @@ const dataset = [
     {
         id: "d764930b-2e0b-4b56-bc79-20e9b176592c",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -13958,7 +13958,7 @@ const dataset = [
     {
         id: "13485a69-f6f0-465d-9a40-a86e0308981e",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -13969,7 +13969,7 @@ const dataset = [
     {
         id: "e465672c-98fe-4e11-b3d2-6fe2564e02e1",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -13980,7 +13980,7 @@ const dataset = [
     {
         id: "c6460a8f-4e0c-45de-81e5-dfdf2560f857",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -13991,7 +13991,7 @@ const dataset = [
     {
         id: "927aadf9-0009-4844-8c53-bf5afe659651",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -14002,7 +14002,7 @@ const dataset = [
     {
         id: "965f7406-9e76-41df-9337-73dd179817b5",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -14013,7 +14013,7 @@ const dataset = [
     {
         id: "10e51dc7-6914-4c9c-a7a5-159802e4a14f",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -14024,7 +14024,7 @@ const dataset = [
     {
         id: "86ef66ae-3045-4f08-8d08-e784a8db3d90",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -14035,7 +14035,7 @@ const dataset = [
     {
         id: "24fe3579-d44f-4e14-bbd8-bfc44bf2664e",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -14046,7 +14046,7 @@ const dataset = [
     {
         id: "20303e1f-8e6c-489c-b492-b9045a315552",
         recipient_id: "b6d365f2-7555-4173-80b0-4e64d407edb4",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -14057,7 +14057,7 @@ const dataset = [
     {
         id: "f25de63b-0996-4ef7-836e-dd6fe9ede3c2",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14068,7 +14068,7 @@ const dataset = [
     {
         id: "80e4cb93-cbb9-4afe-8b18-602f948f9143",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14079,7 +14079,7 @@ const dataset = [
     {
         id: "f9206cf3-56f5-43f4-a4ad-30a21fcc660d",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14090,7 +14090,7 @@ const dataset = [
     {
         id: "72ddc1f7-ef1d-4b4f-b5ea-75db30ac3a65",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14101,7 +14101,7 @@ const dataset = [
     {
         id: "72076194-e5fe-4b2d-8a47-fc1f538ce5b1",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14112,7 +14112,7 @@ const dataset = [
     {
         id: "d2a594ad-8be8-49e6-a078-71a7d04c08c2",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14123,7 +14123,7 @@ const dataset = [
     {
         id: "b019c030-84aa-4578-9cc3-6b18850b9cee",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14134,7 +14134,7 @@ const dataset = [
     {
         id: "3d7ee909-536e-423c-a6e6-084193f94bb6",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14145,7 +14145,7 @@ const dataset = [
     {
         id: "1f46d112-ebc8-4b1c-b4ee-b298a2f48560",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14156,7 +14156,7 @@ const dataset = [
     {
         id: "f426b9e6-843c-4208-a0d6-93d8d77ea714",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14167,7 +14167,7 @@ const dataset = [
     {
         id: "f85d974c-383e-40fa-bcb0-d95f0798ee5d",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14178,7 +14178,7 @@ const dataset = [
     {
         id: "9f8f9959-2376-49e0-9c8e-77759cccc80c",
         recipient_id: "b3a21994-f3db-4a45-8cfc-b687b28ab984",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -14189,7 +14189,7 @@ const dataset = [
     {
         id: "9916e4ce-98ca-4cf8-8ede-e740e01f342f",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14200,7 +14200,7 @@ const dataset = [
     {
         id: "a5a00729-cb1d-4688-be6f-778e42a7300c",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14211,7 +14211,7 @@ const dataset = [
     {
         id: "f3c9b5b4-6c2d-45a4-bf1a-def76a9b08d8",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14222,7 +14222,7 @@ const dataset = [
     {
         id: "e7add858-9b08-4e71-ace8-3bec668592dd",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14233,7 +14233,7 @@ const dataset = [
     {
         id: "09eff663-ff59-4f08-a3e4-5cd2644316ff",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14244,7 +14244,7 @@ const dataset = [
     {
         id: "0dbddfb5-1f3b-46ef-9c0f-2a47b78edbcb",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14255,7 +14255,7 @@ const dataset = [
     {
         id: "7a92fcac-6d2e-4330-9ace-1776e6feaa18",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14266,7 +14266,7 @@ const dataset = [
     {
         id: "fcfac294-5c5a-4534-9771-690d73e6e7f5",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14277,7 +14277,7 @@ const dataset = [
     {
         id: "4841c1a3-176c-476c-9658-41543c8d34d3",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14288,7 +14288,7 @@ const dataset = [
     {
         id: "1a924027-4d1d-43b5-8022-562809383493",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14299,7 +14299,7 @@ const dataset = [
     {
         id: "e7fc8fae-5164-4d0b-a0fe-d1c70e2f8964",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14310,7 +14310,7 @@ const dataset = [
     {
         id: "fb2a198a-9ec7-4a14-9f01-bada19be0fd4",
         recipient_id: "99fecab7-e423-48cb-b5c1-1aa3bbcd5b4f",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -14321,7 +14321,7 @@ const dataset = [
     {
         id: "ce6a6726-b2b0-459e-9fc0-e7e0ffa2fe50",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14332,7 +14332,7 @@ const dataset = [
     {
         id: "83212580-f7f2-47bd-b7b5-b7b9a4a2a644",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14343,7 +14343,7 @@ const dataset = [
     {
         id: "ffc00ed5-aea5-485e-a171-d3ae960019a3",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14354,7 +14354,7 @@ const dataset = [
     {
         id: "ba25ac53-d01c-4b3e-ae04-b62e6fd1466d",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14365,7 +14365,7 @@ const dataset = [
     {
         id: "f905c38d-7b6c-4814-8db7-2a68a0bce947",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14376,7 +14376,7 @@ const dataset = [
     {
         id: "b276cf58-6ddb-4027-9c49-1e2f70b2b493",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14387,7 +14387,7 @@ const dataset = [
     {
         id: "190ffc81-6cfc-462b-a4cf-9ce823c667cc",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14398,7 +14398,7 @@ const dataset = [
     {
         id: "56e7e11f-d230-4123-a3bc-98f0ad76d5f6",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14409,7 +14409,7 @@ const dataset = [
     {
         id: "60d456aa-ca12-432f-a2b9-64802e03f45c",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14420,7 +14420,7 @@ const dataset = [
     {
         id: "21055e5f-c595-42d0-8f84-297e6f2b5132",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14431,7 +14431,7 @@ const dataset = [
     {
         id: "97f971a9-3148-48e8-ba09-b42354a4a228",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14442,7 +14442,7 @@ const dataset = [
     {
         id: "0e41882d-ddd8-405d-b649-74aa8b1f11cf",
         recipient_id: "8265e351-bc8b-4164-88ed-c06f8a6a3e15",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -14453,7 +14453,7 @@ const dataset = [
     {
         id: "9eee3696-36a5-4b10-9f4d-743c52fdc6ec",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14464,7 +14464,7 @@ const dataset = [
     {
         id: "6dec484b-2e0c-407a-97be-58f56e8c2623",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14475,7 +14475,7 @@ const dataset = [
     {
         id: "9ac2c2bd-3735-4a2e-ae12-4c4262da9be3",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14486,7 +14486,7 @@ const dataset = [
     {
         id: "3db8fe30-ff38-46b3-9737-9cf06554c1cc",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14497,7 +14497,7 @@ const dataset = [
     {
         id: "f9b95d04-6d80-468e-8abf-95d78704263a",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14508,7 +14508,7 @@ const dataset = [
     {
         id: "6f707dbe-9707-41d8-a1c5-5bbe9ab0d11e",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14519,7 +14519,7 @@ const dataset = [
     {
         id: "90876d89-02f4-4c3e-9364-fda985b214fa",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14530,7 +14530,7 @@ const dataset = [
     {
         id: "08dd9795-dcc3-43e0-af43-c4df3409aff8",
         recipient_id: "d10689ea-99b7-41d1-9de0-1a8ccf53e267",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -14541,7 +14541,7 @@ const dataset = [
     {
         id: "8e22d5b1-5c4b-4837-aeb5-f98dd13fd070",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14552,7 +14552,7 @@ const dataset = [
     {
         id: "debe88db-cd1e-4779-9607-d5f27e13ecb0",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14563,7 +14563,7 @@ const dataset = [
     {
         id: "c8f059ba-98b6-4a0c-be22-046384dac838",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14574,7 +14574,7 @@ const dataset = [
     {
         id: "9b276239-04b3-4550-adfb-8ccc44152989",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14585,7 +14585,7 @@ const dataset = [
     {
         id: "10093074-5fba-472c-ae12-c990b262b262",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14596,7 +14596,7 @@ const dataset = [
     {
         id: "9a66f776-0bf6-43f1-935d-85dfeadede61",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14607,7 +14607,7 @@ const dataset = [
     {
         id: "e6ff62c8-8838-4f8a-947f-1aeeeb2b9afa",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14618,7 +14618,7 @@ const dataset = [
     {
         id: "bb02b330-7821-4600-9ca0-33b6527c56ed",
         recipient_id: "50d51194-c313-4779-9488-d4a510f41868",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -14629,7 +14629,7 @@ const dataset = [
     {
         id: "b14196e9-d74f-40c1-a76d-64ea68b986b5",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14640,7 +14640,7 @@ const dataset = [
     {
         id: "f4dc1954-730f-456e-a31e-809267df2bc9",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14651,7 +14651,7 @@ const dataset = [
     {
         id: "c1d09bfb-9015-4651-92ed-f79659aa9c3f",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14662,7 +14662,7 @@ const dataset = [
     {
         id: "3888c88e-dbbc-4d9b-bcad-4aec2f9bfaac",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14673,7 +14673,7 @@ const dataset = [
     {
         id: "1f64555f-ea90-4f4d-a13f-9de4726c2402",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14684,7 +14684,7 @@ const dataset = [
     {
         id: "75f937b7-2da1-4977-98b4-db53c9d9fa88",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14695,7 +14695,7 @@ const dataset = [
     {
         id: "9ad1d676-ddf8-4549-97d2-4306b3ad3454",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14706,7 +14706,7 @@ const dataset = [
     {
         id: "70e2117f-3870-4658-b645-bc9fd43ef225",
         recipient_id: "e0a65606-3141-4a68-bec3-3526876bd259",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -14717,7 +14717,7 @@ const dataset = [
     {
         id: "fb89f329-ecde-42fc-8ae0-49e3272a5f8c",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14728,7 +14728,7 @@ const dataset = [
     {
         id: "d707018f-c1c4-49e0-85fe-affc94dcdc8f",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14739,7 +14739,7 @@ const dataset = [
     {
         id: "c737ee1f-96db-4190-901d-4899a771c755",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14750,7 +14750,7 @@ const dataset = [
     {
         id: "57d280e2-5c8e-4224-9ab7-4746f99b9d98",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14761,7 +14761,7 @@ const dataset = [
     {
         id: "b1fa7828-6537-40a3-a3ab-00e9aaf040e2",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14772,7 +14772,7 @@ const dataset = [
     {
         id: "26044a5b-8a09-4f39-b7d3-7add45fa3021",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14783,7 +14783,7 @@ const dataset = [
     {
         id: "73235a34-1034-4160-a72d-ae7aee99e48a",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14794,7 +14794,7 @@ const dataset = [
     {
         id: "a8c02fba-5e6e-41e1-bca3-32c660691627",
         recipient_id: "cf69d353-0e22-4dc0-9d3e-20bf26c19417",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -14805,7 +14805,7 @@ const dataset = [
     {
         id: "3d0fc08e-d885-4394-8557-7b5e47973e11",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14816,7 +14816,7 @@ const dataset = [
     {
         id: "51ec84d2-243f-41e2-a36f-30295cdcfe81",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14827,7 +14827,7 @@ const dataset = [
     {
         id: "e70435af-a2c3-45dc-89cf-937f6257918d",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14838,7 +14838,7 @@ const dataset = [
     {
         id: "8b4716e2-5270-41b8-8c76-431deac621d4",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14849,7 +14849,7 @@ const dataset = [
     {
         id: "e943b665-2ad1-442c-9f3b-dacffed578e5",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14860,7 +14860,7 @@ const dataset = [
     {
         id: "cd1f314b-50cb-4f80-a1b8-e47d0a4c85ae",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14871,7 +14871,7 @@ const dataset = [
     {
         id: "233ba17b-720d-4074-a031-939dd84aaed4",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14882,7 +14882,7 @@ const dataset = [
     {
         id: "39f4d9d4-b05b-4e80-a183-48f7115b3822",
         recipient_id: "f08eea55-eda1-45b9-82b5-f0f8831aba39",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -14893,7 +14893,7 @@ const dataset = [
     {
         id: "109a4fcb-3d0f-4426-8fcb-99681a0f1fa3",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14904,7 +14904,7 @@ const dataset = [
     {
         id: "f369b075-9b69-4ca0-9f6b-61b1378ee3a7",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14915,7 +14915,7 @@ const dataset = [
     {
         id: "3a5c2a50-cdf2-4d43-91dd-bff85bcdff92",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14926,7 +14926,7 @@ const dataset = [
     {
         id: "b89b7ed4-0246-401f-965b-61ffcaffccdc",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14937,7 +14937,7 @@ const dataset = [
     {
         id: "24bc37cb-a564-4153-aba8-32a5154e1a83",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14948,7 +14948,7 @@ const dataset = [
     {
         id: "250dbdc7-a77a-4e7c-9b73-c079aec20b44",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14959,7 +14959,7 @@ const dataset = [
     {
         id: "cd49be8e-8151-48ae-afb5-0ee7297b99a0",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14970,7 +14970,7 @@ const dataset = [
     {
         id: "37e99d63-30c7-4645-bee7-7e0be83a655f",
         recipient_id: "11c46189-02f6-456a-9d03-6b972a65e89e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -14981,7 +14981,7 @@ const dataset = [
     {
         id: "06cc4edf-7f67-4f49-86a5-7be042365014",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -14992,7 +14992,7 @@ const dataset = [
     {
         id: "40700d03-cf0b-494f-97e5-f4bf802355aa",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -15003,7 +15003,7 @@ const dataset = [
     {
         id: "e8a52a64-79bb-4f42-a713-99a02b0907e9",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -15014,7 +15014,7 @@ const dataset = [
     {
         id: "e057eeda-bc25-4e50-ba69-b77b04a2dd0c",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -15025,7 +15025,7 @@ const dataset = [
     {
         id: "a2621fe3-f51a-4c30-be18-bb14d39d5e33",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -15036,7 +15036,7 @@ const dataset = [
     {
         id: "b4f52f50-cdf4-472a-ad76-ae4f821ec380",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -15047,7 +15047,7 @@ const dataset = [
     {
         id: "a672c820-f09e-400f-9485-32de26b360d2",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -15058,7 +15058,7 @@ const dataset = [
     {
         id: "adb7bab7-f355-497a-8e0e-92572b547d5d",
         recipient_id: "b0742209-9c17-4952-95c6-e2c39e985575",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -15069,7 +15069,7 @@ const dataset = [
     {
         id: "d0e9eb0f-de16-4a4a-94c1-0990201f310d",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15080,7 +15080,7 @@ const dataset = [
     {
         id: "429189a4-6c87-4fc8-b525-8f120a527562",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15091,7 +15091,7 @@ const dataset = [
     {
         id: "19cf09ee-151c-4d22-9ad1-e13c5168a229",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15102,7 +15102,7 @@ const dataset = [
     {
         id: "4a2d1db1-9ddc-4e80-ad6d-72f9b00f8067",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15113,7 +15113,7 @@ const dataset = [
     {
         id: "1e88fb54-3ea5-464a-a406-44d45b8278a5",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15124,7 +15124,7 @@ const dataset = [
     {
         id: "05cbef34-83b7-4c8d-9072-c84aaaa00534",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15135,7 +15135,7 @@ const dataset = [
     {
         id: "4f4ac7b8-97ab-40d6-a7de-84d1cc6b5e0c",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15146,7 +15146,7 @@ const dataset = [
     {
         id: "52f49536-02cc-41c9-9a81-0ba32d67ae7a",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15157,7 +15157,7 @@ const dataset = [
     {
         id: "7d142b4b-dcac-4f90-979e-008d67bf231a",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15168,7 +15168,7 @@ const dataset = [
     {
         id: "02b17f91-3cae-4b9d-9849-08d5e7eef91c",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15179,7 +15179,7 @@ const dataset = [
     {
         id: "29873b78-4cc4-4b5b-95fe-607fc46bab1e",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15190,7 +15190,7 @@ const dataset = [
     {
         id: "a4676b11-2b86-4a12-b011-c32403f8364c",
         recipient_id: "2c52b9a3-854e-49e8-b428-6356e891f554",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -15201,7 +15201,7 @@ const dataset = [
     {
         id: "f78b1732-33dc-4a7c-aa02-e5606ef4261b",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15212,7 +15212,7 @@ const dataset = [
     {
         id: "99e5bf86-507d-4065-ac85-3f231a5e09df",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15223,7 +15223,7 @@ const dataset = [
     {
         id: "55ec2344-bd87-48c7-bde6-2424341d9239",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15234,7 +15234,7 @@ const dataset = [
     {
         id: "01fb185f-0d85-4781-ae17-5b46541a2644",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15245,7 +15245,7 @@ const dataset = [
     {
         id: "a3d6e97f-d8aa-4945-a8a6-6368fd70cc06",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15256,7 +15256,7 @@ const dataset = [
     {
         id: "abcb4b47-1fac-4a6e-bfb5-b275cf304e7f",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15267,7 +15267,7 @@ const dataset = [
     {
         id: "34b3fd35-1293-4e47-9e8d-222970b83258",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15278,7 +15278,7 @@ const dataset = [
     {
         id: "cb0c55ad-9543-4694-b185-b49e693d87de",
         recipient_id: "b01ddd4c-a702-4b5b-96df-b285de9ef39a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -15289,7 +15289,7 @@ const dataset = [
     {
         id: "75e13045-827e-4691-aa3d-a6a0515e2364",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15300,7 +15300,7 @@ const dataset = [
     {
         id: "7c5eadf7-bee9-4e29-b023-bf679d986def",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15311,7 +15311,7 @@ const dataset = [
     {
         id: "d98fadfb-8725-4c29-b511-f02ca00e9194",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15322,7 +15322,7 @@ const dataset = [
     {
         id: "1b8dd987-3123-43a0-873b-e7b2a00c10d6",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15333,7 +15333,7 @@ const dataset = [
     {
         id: "e182f738-2908-40d8-91b2-f3410f716b30",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15344,7 +15344,7 @@ const dataset = [
     {
         id: "a7e77d55-ecb3-42eb-bd75-8de2b552876e",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15355,7 +15355,7 @@ const dataset = [
     {
         id: "d417b1f7-e7e8-4a78-a5bd-9060983917c2",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15366,7 +15366,7 @@ const dataset = [
     {
         id: "027040fe-b031-4c12-ba72-15c48948aa5b",
         recipient_id: "bbdc7148-537b-4168-ac49-87a75500c6e5",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -15377,7 +15377,7 @@ const dataset = [
     {
         id: "4ad62e4e-e52d-45a1-b6d0-f62860647dd6",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15388,7 +15388,7 @@ const dataset = [
     {
         id: "41f81603-e53d-400f-a4db-06f14ffa1019",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15399,7 +15399,7 @@ const dataset = [
     {
         id: "0028ad36-c429-4f17-b314-20509f187c0f",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15410,7 +15410,7 @@ const dataset = [
     {
         id: "1cb79a32-5a59-4a53-828e-bc5e47131412",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15421,7 +15421,7 @@ const dataset = [
     {
         id: "315dda26-7101-4379-9070-4e1851b4cd97",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15432,7 +15432,7 @@ const dataset = [
     {
         id: "8cc12a06-f1b9-48ea-8301-ae419c0b0b67",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15443,7 +15443,7 @@ const dataset = [
     {
         id: "2b475b8c-1abb-4416-861a-e4a47c274085",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15454,7 +15454,7 @@ const dataset = [
     {
         id: "41447518-3991-46a9-8424-50a98a039d6c",
         recipient_id: "5309ed86-82bc-4728-bcdd-cc3091b1dceb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -15465,7 +15465,7 @@ const dataset = [
     {
         id: "9598a5a3-5f17-4e57-a19a-b5f3c73b6130",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15476,7 +15476,7 @@ const dataset = [
     {
         id: "baa09d6e-48a0-45b7-9aec-2ef9151bee70",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15487,7 +15487,7 @@ const dataset = [
     {
         id: "82588582-830e-4be2-92ea-dfd124e33d6f",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15498,7 +15498,7 @@ const dataset = [
     {
         id: "a2a1e661-5128-43da-ac1e-e1171dd9a436",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15509,7 +15509,7 @@ const dataset = [
     {
         id: "cdd2da14-83cc-4f2a-8978-070ef9a605c5",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15520,7 +15520,7 @@ const dataset = [
     {
         id: "1a72db51-7da9-4818-96fa-8975ba09e02f",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15531,7 +15531,7 @@ const dataset = [
     {
         id: "61c963b6-42f9-4a07-b19f-37d1b7a44025",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15542,7 +15542,7 @@ const dataset = [
     {
         id: "0372c14d-0a02-4eeb-bbc8-6e6183f94d2f",
         recipient_id: "f4ca0fe6-fcfa-42a3-ac6e-e7a36a45abf1",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -15553,7 +15553,7 @@ const dataset = [
     {
         id: "5f79bbc5-df26-498e-b10f-aee5c40b1810",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15564,7 +15564,7 @@ const dataset = [
     {
         id: "9e09baa0-8678-47b2-8376-4a89c179b23a",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15575,7 +15575,7 @@ const dataset = [
     {
         id: "31e837fd-293c-4af1-b930-57e3f8974486",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15586,7 +15586,7 @@ const dataset = [
     {
         id: "02443f6a-f335-4314-ad97-1185554a702d",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15597,7 +15597,7 @@ const dataset = [
     {
         id: "f32719c2-8b0c-4198-988f-b547fadc330c",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15608,7 +15608,7 @@ const dataset = [
     {
         id: "5119a2ff-5f1f-462a-a0d6-89e65644766b",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15619,7 +15619,7 @@ const dataset = [
     {
         id: "646a37d1-832c-488d-8f49-3da6bdc4975f",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15630,7 +15630,7 @@ const dataset = [
     {
         id: "97c0f7ed-ac9a-4e7e-9be2-5209d5aadb56",
         recipient_id: "d328fcd5-da66-47bf-9157-bc2f59ec84f9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -15641,7 +15641,7 @@ const dataset = [
     {
         id: "5cdcf227-feb7-4108-8d24-3ebcd8d8a8ba",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15652,7 +15652,7 @@ const dataset = [
     {
         id: "e3ac0870-8284-4a31-82c9-7b678831c3ab",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15663,7 +15663,7 @@ const dataset = [
     {
         id: "f3efdfd0-a330-4404-967b-56de38ae5d82",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15674,7 +15674,7 @@ const dataset = [
     {
         id: "20706adf-b46c-44f2-9e10-b6bd240cee71",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15685,7 +15685,7 @@ const dataset = [
     {
         id: "df56ecad-ff33-46c3-bf00-f0e72da3e163",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15696,7 +15696,7 @@ const dataset = [
     {
         id: "5f1c57f4-5eff-4fa8-972f-7e07765ea976",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15707,7 +15707,7 @@ const dataset = [
     {
         id: "d3520433-f962-4031-bcb9-cb5ace487096",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15718,7 +15718,7 @@ const dataset = [
     {
         id: "c102a0ea-0882-4b37-9acf-e57a470e59f9",
         recipient_id: "8ec40b1d-3f3b-4d78-ac0b-84944e7611d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -15729,7 +15729,7 @@ const dataset = [
     {
         id: "7fe23400-c1a0-4841-b4ca-f0a2f7c941d7",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15740,7 +15740,7 @@ const dataset = [
     {
         id: "85231f59-ffe8-403f-8d04-a681cd5bff50",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15751,7 +15751,7 @@ const dataset = [
     {
         id: "ecc5042a-dcdc-4f17-8bfe-bc8e7f8ba346",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15762,7 +15762,7 @@ const dataset = [
     {
         id: "853fbd53-23e1-419c-a3ed-5514854f38c7",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15773,7 +15773,7 @@ const dataset = [
     {
         id: "5df976af-dc3b-41cd-9d01-28e1104a6b80",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15784,7 +15784,7 @@ const dataset = [
     {
         id: "249da370-289a-499b-bfc2-4c0c4916c43f",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15795,7 +15795,7 @@ const dataset = [
     {
         id: "31bc0c74-8975-4dc0-bb66-16dd4496fb07",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15806,7 +15806,7 @@ const dataset = [
     {
         id: "23c4a9d1-118d-48d1-baca-ebd3cee321ac",
         recipient_id: "d499657c-5fc4-4ba9-b5d0-3fba9f6013ab",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -15817,7 +15817,7 @@ const dataset = [
     {
         id: "31d82eab-fdf6-4627-af1d-681e186ac6e3",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15828,7 +15828,7 @@ const dataset = [
     {
         id: "e2510848-4236-4708-81f8-44f1a09f961d",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15839,7 +15839,7 @@ const dataset = [
     {
         id: "28cd973a-604f-463a-a1cf-3417cefbce75",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15850,7 +15850,7 @@ const dataset = [
     {
         id: "414680ac-1e8e-4f2a-81fd-26eeebc8e0f6",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15861,7 +15861,7 @@ const dataset = [
     {
         id: "f3c21113-7919-4b84-a9fb-c2944c83d4ba",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15872,7 +15872,7 @@ const dataset = [
     {
         id: "b71e9d54-8f2a-4ad2-bc22-4f06bf666b53",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15883,7 +15883,7 @@ const dataset = [
     {
         id: "37503e06-f6d8-4714-99e1-7357bfd857ae",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15894,7 +15894,7 @@ const dataset = [
     {
         id: "b61e8820-7105-4054-9434-3e8e5ee1e501",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15905,7 +15905,7 @@ const dataset = [
     {
         id: "b05e6299-7863-4abf-b08d-29616951e3ef",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15916,7 +15916,7 @@ const dataset = [
     {
         id: "20afc924-571b-41e9-8e7f-ae13531d872e",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15927,7 +15927,7 @@ const dataset = [
     {
         id: "a7ee660b-39ce-46ef-9ab3-1a1d84137914",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15938,7 +15938,7 @@ const dataset = [
     {
         id: "0924f226-541e-45b8-abb6-d18cfa1207d3",
         recipient_id: "1421c05b-2bdb-4a72-acc2-aa456514fe58",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -15949,7 +15949,7 @@ const dataset = [
     {
         id: "f9d30f25-9113-44cb-a14a-a77dfcb32afe",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -15960,7 +15960,7 @@ const dataset = [
     {
         id: "37df86a9-6a88-4e39-9575-bf200966c8ae",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -15971,7 +15971,7 @@ const dataset = [
     {
         id: "ec3f5c47-6d0d-4cad-b022-29c6c5f02c59",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -15982,7 +15982,7 @@ const dataset = [
     {
         id: "6af29c23-624d-47dd-a937-b695453f22c7",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -15993,7 +15993,7 @@ const dataset = [
     {
         id: "b95154cc-b262-495e-9121-fa66cc979a0b",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -16004,7 +16004,7 @@ const dataset = [
     {
         id: "78efde9a-919c-4cef-a1bc-dcc8ca56f1eb",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -16015,7 +16015,7 @@ const dataset = [
     {
         id: "139271cd-5988-4d42-bc58-dc1f62e1aa33",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -16026,7 +16026,7 @@ const dataset = [
     {
         id: "df9f7b19-2989-432d-aaf9-d7e68f13db6c",
         recipient_id: "89ab3612-f0f0-4314-97c8-9f98de267b4f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -16037,7 +16037,7 @@ const dataset = [
     {
         id: "70229e65-7328-453b-9b94-aa96be21b2a7",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16048,7 +16048,7 @@ const dataset = [
     {
         id: "7fbc1c0e-6cbb-4d11-9d6a-58341caf9755",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16059,7 +16059,7 @@ const dataset = [
     {
         id: "83a3300e-d96c-4883-ad0a-40e57a9acee3",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16070,7 +16070,7 @@ const dataset = [
     {
         id: "055b6f16-27fb-4b7a-8d21-37bdc141758a",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16081,7 +16081,7 @@ const dataset = [
     {
         id: "e8d9bf3a-3fd8-434a-8c01-ba93b139fdbe",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16092,7 +16092,7 @@ const dataset = [
     {
         id: "ea3fea94-d187-414c-8d3b-5879b09f3ebd",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16103,7 +16103,7 @@ const dataset = [
     {
         id: "e72b4882-a684-498e-848a-bcaa7bb65dee",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16114,7 +16114,7 @@ const dataset = [
     {
         id: "0d465045-740e-49e0-a3f7-09ec857fd120",
         recipient_id: "fa845082-24c3-41ea-a261-606f83213c78",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -16125,7 +16125,7 @@ const dataset = [
     {
         id: "a254da3d-2bc8-43a5-b942-5ec5e52001b0",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16136,7 +16136,7 @@ const dataset = [
     {
         id: "c067b761-c1de-4b1d-849c-3a3f428013e2",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16147,7 +16147,7 @@ const dataset = [
     {
         id: "f3c8d372-28e7-4b78-bcb1-630cee401e11",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16158,7 +16158,7 @@ const dataset = [
     {
         id: "5c97749f-3d1d-4b82-b322-4907eb70968a",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16169,7 +16169,7 @@ const dataset = [
     {
         id: "8b51bded-d782-42a9-ba03-63427101ae2d",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16180,7 +16180,7 @@ const dataset = [
     {
         id: "82887911-99f6-4465-aaea-1cbacb6bad74",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16191,7 +16191,7 @@ const dataset = [
     {
         id: "baee45be-78ab-490b-9c75-caee1a19306d",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16202,7 +16202,7 @@ const dataset = [
     {
         id: "31beb7bf-edc2-4485-93c7-d31833284a22",
         recipient_id: "bcb049a4-8ad4-4f4d-9b47-466b972d86a3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -16213,7 +16213,7 @@ const dataset = [
     {
         id: "2b30e47a-3681-48c7-b933-eb2516cbf2a4",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16224,7 +16224,7 @@ const dataset = [
     {
         id: "95d57b84-ba68-486c-982c-80d74fc256b5",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16235,7 +16235,7 @@ const dataset = [
     {
         id: "2b243d1a-e4f7-4226-ae08-701fc2412529",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16246,7 +16246,7 @@ const dataset = [
     {
         id: "dd9345b0-3d46-4057-8f2c-56692bf39fed",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16257,7 +16257,7 @@ const dataset = [
     {
         id: "e583447a-7abf-4e86-ac07-04b6970d7b07",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16268,7 +16268,7 @@ const dataset = [
     {
         id: "c07b7965-2c5c-4a63-809c-31d4cf499577",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16279,7 +16279,7 @@ const dataset = [
     {
         id: "2f5ea46d-631c-418a-84f9-884f904b5f95",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16290,7 +16290,7 @@ const dataset = [
     {
         id: "7968564a-3781-47fe-af57-9d1048158a04",
         recipient_id: "e48f3108-8d74-4786-820d-39d648f8bb3b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -16301,7 +16301,7 @@ const dataset = [
     {
         id: "e3e87a3a-39f8-4262-a7a0-8c8dd39efc7d",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16312,7 +16312,7 @@ const dataset = [
     {
         id: "0637cb72-12c7-4e05-9e21-8b6beab82a53",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16323,7 +16323,7 @@ const dataset = [
     {
         id: "e29d2569-762a-4d38-bb6a-ea42e79a5b1d",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16334,7 +16334,7 @@ const dataset = [
     {
         id: "6c308229-93e1-4339-84f1-f7ad1f98b0a5",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16345,7 +16345,7 @@ const dataset = [
     {
         id: "281b5587-f2ef-4f07-a78f-cd00d2f67ae5",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16356,7 +16356,7 @@ const dataset = [
     {
         id: "2b4b5995-b7d8-4242-b6ef-bbe6ab1fe5db",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16367,7 +16367,7 @@ const dataset = [
     {
         id: "f33bf61e-c181-42ad-80a2-30ad52e6139b",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16378,7 +16378,7 @@ const dataset = [
     {
         id: "981d1d31-7ea8-4c61-b4c5-8b283c9f385b",
         recipient_id: "2827f0cc-be4a-48cf-a291-febc88796423",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -16389,7 +16389,7 @@ const dataset = [
     {
         id: "228b5520-b8ca-4055-ae33-66d6d7768b4a",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16400,7 +16400,7 @@ const dataset = [
     {
         id: "c08215bd-105c-433f-ada0-ff9ed23854df",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16411,7 +16411,7 @@ const dataset = [
     {
         id: "12010f1e-10b1-4b94-ace5-9df29dd351dd",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16422,7 +16422,7 @@ const dataset = [
     {
         id: "334870d4-bace-4faf-b210-0a8abae32bbc",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16433,7 +16433,7 @@ const dataset = [
     {
         id: "7dcae44d-7ff5-4d78-a30d-7ce49216d817",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16444,7 +16444,7 @@ const dataset = [
     {
         id: "22bb5bd7-b824-4df4-8111-c1de9b03d98e",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16455,7 +16455,7 @@ const dataset = [
     {
         id: "fbc0504b-561c-4fec-a702-162f1f07b884",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16466,7 +16466,7 @@ const dataset = [
     {
         id: "539a7c9e-b93c-4656-b019-aa1e3e02b7c1",
         recipient_id: "0c75d5dc-2fc2-425d-9033-22a50d1ed026",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -16477,7 +16477,7 @@ const dataset = [
     {
         id: "c0844556-4e7f-4494-b00e-9da80955a1e7",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16488,7 +16488,7 @@ const dataset = [
     {
         id: "1d6c2d89-d3f9-45ea-b761-d830de45b06b",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16499,7 +16499,7 @@ const dataset = [
     {
         id: "ab91485f-f839-48d0-87dc-7a6cb737272a",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16510,7 +16510,7 @@ const dataset = [
     {
         id: "0ee14c9b-b7c0-42c9-b1cb-5ef3c7c055b6",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16521,7 +16521,7 @@ const dataset = [
     {
         id: "b59ab9d4-37d3-4a68-b030-e1c6e0c1ed99",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16532,7 +16532,7 @@ const dataset = [
     {
         id: "e18a4383-7b04-423c-a16a-a25717add437",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16543,7 +16543,7 @@ const dataset = [
     {
         id: "1d247fa5-1340-4ed1-97b1-a2b47e2d6b35",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16554,7 +16554,7 @@ const dataset = [
     {
         id: "3c8a1c21-c52a-4f4f-aded-c51df5d48b35",
         recipient_id: "1741ef00-9fe6-4dcc-b083-799f02105974",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -16565,7 +16565,7 @@ const dataset = [
     {
         id: "d06681ee-75ad-4588-a4e2-d30ae9bb7c57",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16576,7 +16576,7 @@ const dataset = [
     {
         id: "484cbb42-d9f1-43af-90fa-ccd9614b49d8",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16587,7 +16587,7 @@ const dataset = [
     {
         id: "599fb48c-2f47-4b19-84ea-213dc1f8e1ac",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16598,7 +16598,7 @@ const dataset = [
     {
         id: "8d41acb8-4ffd-4a07-b398-3ad1a2dad866",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16609,7 +16609,7 @@ const dataset = [
     {
         id: "afc6d99c-5176-4876-a400-273ef04519b4",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16620,7 +16620,7 @@ const dataset = [
     {
         id: "58975246-a670-4d57-86c7-df5df55901ba",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16631,7 +16631,7 @@ const dataset = [
     {
         id: "9c69c176-d821-40d0-955f-32d9be16b735",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16642,7 +16642,7 @@ const dataset = [
     {
         id: "9eb301e8-5b65-4c17-84ff-d34f492a20f1",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16653,7 +16653,7 @@ const dataset = [
     {
         id: "0562d483-0de0-49a2-b168-23e6423cca65",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16664,7 +16664,7 @@ const dataset = [
     {
         id: "5e2e5eec-7572-4bae-a94c-83eaf4c33baf",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16675,7 +16675,7 @@ const dataset = [
     {
         id: "d64972dd-d43d-4f10-b9a6-5f66bf307cbe",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16686,7 +16686,7 @@ const dataset = [
     {
         id: "8bd70e3a-b193-48f1-b6ee-c5e3970a706f",
         recipient_id: "fc6bb5fa-99fd-4c5f-916d-922fa69f0991",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -16697,7 +16697,7 @@ const dataset = [
     {
         id: "c2fedc71-616c-4a36-a72d-2b787fbb97a6",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16708,7 +16708,7 @@ const dataset = [
     {
         id: "6d617a1e-8493-4a57-b670-d74877e58b0f",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16719,7 +16719,7 @@ const dataset = [
     {
         id: "bf4ee423-e139-4efc-befd-7f800637fb27",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16730,7 +16730,7 @@ const dataset = [
     {
         id: "f4cfaaac-8c98-4872-bddc-d6249dca226e",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16741,7 +16741,7 @@ const dataset = [
     {
         id: "dad3cce1-d4ee-4c5a-8ac7-90e7f79c131d",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16752,7 +16752,7 @@ const dataset = [
     {
         id: "0edc5302-bebf-4795-a997-f650dfaacccb",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16763,7 +16763,7 @@ const dataset = [
     {
         id: "d0cb6472-8e40-41fd-890f-01c091450035",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16774,7 +16774,7 @@ const dataset = [
     {
         id: "e33ab68f-afa4-463d-984d-e84cfd2962ca",
         recipient_id: "c6d76272-ff2c-42ad-bce2-1f356e6207e9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -16785,7 +16785,7 @@ const dataset = [
     {
         id: "edc175f8-0ccc-4c50-aa52-6530c3419cde",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16796,7 +16796,7 @@ const dataset = [
     {
         id: "10ba9080-931c-4e44-bc20-945e20db4e2f",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16807,7 +16807,7 @@ const dataset = [
     {
         id: "d6cc2913-a958-4394-9fa8-7afc3abce8e0",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16818,7 +16818,7 @@ const dataset = [
     {
         id: "d6a17be0-98c9-4fe4-a018-53f15b064475",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16829,7 +16829,7 @@ const dataset = [
     {
         id: "00c41f99-fc7a-44e7-b5ca-38610d698910",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16840,7 +16840,7 @@ const dataset = [
     {
         id: "75bfe0e9-6a46-4da4-a51a-363bc8e4dfa2",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16851,7 +16851,7 @@ const dataset = [
     {
         id: "d28dba80-2d0b-4039-8062-a890591375a2",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16862,7 +16862,7 @@ const dataset = [
     {
         id: "7e72c0a7-36b0-42e3-b785-b592c40ff53a",
         recipient_id: "7711d752-a297-416b-8807-54eae414f0ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -16873,7 +16873,7 @@ const dataset = [
     {
         id: "17217434-b3a6-4155-8541-9d11eb23192e",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16884,7 +16884,7 @@ const dataset = [
     {
         id: "c2bb8d36-2799-4da6-b434-19bc48ff4c07",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16895,7 +16895,7 @@ const dataset = [
     {
         id: "49759ad5-900c-4a4d-ae5f-667d63b98878",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16906,7 +16906,7 @@ const dataset = [
     {
         id: "317871cf-64dd-4a7d-a2df-f2904c9af11d",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16917,7 +16917,7 @@ const dataset = [
     {
         id: "a3e7426f-bf2b-4c19-947c-1d9bf4f6156c",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16928,7 +16928,7 @@ const dataset = [
     {
         id: "65d26295-0591-4dd0-938a-dce27099425b",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16939,7 +16939,7 @@ const dataset = [
     {
         id: "3d59c712-5cad-490e-b893-d0b95228ebea",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16950,7 +16950,7 @@ const dataset = [
     {
         id: "0e549309-48e0-4b9f-bedf-a6ab1160f7ac",
         recipient_id: "92df565c-224d-48cf-b3da-f90cc19fcd4e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -16961,7 +16961,7 @@ const dataset = [
     {
         id: "551e9a16-28dc-4547-9f2c-d0490ec440f3",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -16972,7 +16972,7 @@ const dataset = [
     {
         id: "efce2d56-04a1-4a3f-b32f-e6e675de098e",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -16983,7 +16983,7 @@ const dataset = [
     {
         id: "e6f6cac0-13f1-4f83-8a5d-286caecf1312",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -16994,7 +16994,7 @@ const dataset = [
     {
         id: "0312de1f-ef81-4b4a-a53d-9e31705839f5",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -17005,7 +17005,7 @@ const dataset = [
     {
         id: "6c5e12ce-d3b3-4dc7-8355-d82b96f3686c",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -17016,7 +17016,7 @@ const dataset = [
     {
         id: "7fdfce8c-791e-4d1d-a631-0efb0a21f215",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -17027,7 +17027,7 @@ const dataset = [
     {
         id: "fd96c1fc-77c7-4f40-b441-196274f1d81d",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -17038,7 +17038,7 @@ const dataset = [
     {
         id: "8a33126b-dc80-4bf3-b6e9-263b6954db50",
         recipient_id: "52bc3c5a-1c05-4592-96d7-d5f9f87eabdb",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -17049,7 +17049,7 @@ const dataset = [
     {
         id: "1cf50029-591d-4494-82a6-2aacac5d4f03",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17060,7 +17060,7 @@ const dataset = [
     {
         id: "c3897ae6-8a5f-4974-a6b3-25ff85c2f471",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17071,7 +17071,7 @@ const dataset = [
     {
         id: "2a704860-caad-4fdf-800a-ebe85bb14dd3",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17082,7 +17082,7 @@ const dataset = [
     {
         id: "cab1d177-3243-4264-8ef0-e8817ab1b5e7",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17093,7 +17093,7 @@ const dataset = [
     {
         id: "34e79d72-8289-40c2-9ed6-f63c552444c5",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17104,7 +17104,7 @@ const dataset = [
     {
         id: "eba1d1da-02ad-4d4e-8c3e-51fa7d0f0e3c",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17115,7 +17115,7 @@ const dataset = [
     {
         id: "b4dfdc18-02a2-4455-89e0-ceea5b3d29ad",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17126,7 +17126,7 @@ const dataset = [
     {
         id: "c15e9015-823c-41a9-bee6-ef443e6632c2",
         recipient_id: "21fbd8da-0990-4edd-b6fa-b6f53ec1ac0e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -17137,7 +17137,7 @@ const dataset = [
     {
         id: "59403d2c-b622-41d6-a0c3-da37859ab6a8",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17148,7 +17148,7 @@ const dataset = [
     {
         id: "26a71843-97ba-4cd4-8f8d-a10d9eea495e",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17159,7 +17159,7 @@ const dataset = [
     {
         id: "a824100a-bbe5-4c2f-b993-e2e9e1aec3d0",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17170,7 +17170,7 @@ const dataset = [
     {
         id: "726714d2-6890-4152-a821-e2013d53789f",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17181,7 +17181,7 @@ const dataset = [
     {
         id: "ce386a89-9291-4454-8972-7dd9b956b321",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17192,7 +17192,7 @@ const dataset = [
     {
         id: "6b6b9945-2300-4c1d-a693-e46bbf695cbd",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17203,7 +17203,7 @@ const dataset = [
     {
         id: "454b872e-de29-493d-9cec-045f55d2bd64",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17214,7 +17214,7 @@ const dataset = [
     {
         id: "389a4f88-b63f-4bea-98a1-2ffbb895ebb0",
         recipient_id: "67bd19c2-1fa7-481f-b5c8-99df1fa544e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -17225,7 +17225,7 @@ const dataset = [
     {
         id: "0e2c6c5a-d09a-4714-bafe-0c404b4f4d54",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17236,7 +17236,7 @@ const dataset = [
     {
         id: "87f81188-a8a2-4e2c-aa01-beec7c470f1a",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17247,7 +17247,7 @@ const dataset = [
     {
         id: "0d4c1771-7832-4dbd-8c0a-9969f50eefe6",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17258,7 +17258,7 @@ const dataset = [
     {
         id: "875584bc-3036-4328-8e40-bdda1c189c0c",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17269,7 +17269,7 @@ const dataset = [
     {
         id: "9e3e4e35-8374-40bf-989d-517e1685ec97",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17280,7 +17280,7 @@ const dataset = [
     {
         id: "f776d607-b989-436f-9443-7a6f070ffcd8",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17291,7 +17291,7 @@ const dataset = [
     {
         id: "20075f62-080a-4d85-9556-99b5a406a60e",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17302,7 +17302,7 @@ const dataset = [
     {
         id: "47b0564b-bd12-4414-b617-31d10ea52faf",
         recipient_id: "b8c4701b-3144-4603-bd5c-9242456b43c6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -17313,7 +17313,7 @@ const dataset = [
     {
         id: "e9cc4496-91c5-4405-a2b0-95f175334599",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17324,7 +17324,7 @@ const dataset = [
     {
         id: "2b898dfa-92ab-45c3-875c-d53af5b086d8",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17335,7 +17335,7 @@ const dataset = [
     {
         id: "068387a6-3519-4666-ae8e-da279966c961",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17346,7 +17346,7 @@ const dataset = [
     {
         id: "c0acd3dd-1e9c-449b-9fd3-4f92e5e9c52b",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17357,7 +17357,7 @@ const dataset = [
     {
         id: "3d21ebb6-c09f-4b00-9a93-e13a4da9af29",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17368,7 +17368,7 @@ const dataset = [
     {
         id: "f2f11fa0-1083-4f15-80c8-4eb7d1138fe6",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17379,7 +17379,7 @@ const dataset = [
     {
         id: "b286da8b-c414-4107-9997-660883b7ecd0",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17390,7 +17390,7 @@ const dataset = [
     {
         id: "fd93614e-4b2a-4653-94d6-ab0702e464c1",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17401,7 +17401,7 @@ const dataset = [
     {
         id: "a37495ec-6e84-4d22-8ecd-2100b7a84885",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17412,7 +17412,7 @@ const dataset = [
     {
         id: "d8f62439-d441-4408-a4e2-520acccf4253",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17423,7 +17423,7 @@ const dataset = [
     {
         id: "a141a7ca-02a1-4d78-bf50-19cf059c166c",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17434,7 +17434,7 @@ const dataset = [
     {
         id: "36443a24-dba0-40de-824f-7a68af1f5946",
         recipient_id: "ba1ae0bb-0a14-4c92-bdda-ab71fbfb0e90",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -17445,7 +17445,7 @@ const dataset = [
     {
         id: "7129f56a-1005-45e3-ba67-fe63a4d17d1d",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17456,7 +17456,7 @@ const dataset = [
     {
         id: "af1d555a-42f7-4c36-bc9e-18bafa7177af",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17467,7 +17467,7 @@ const dataset = [
     {
         id: "698948d9-098b-4518-8c14-ade2edca1e2c",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17478,7 +17478,7 @@ const dataset = [
     {
         id: "cb9e1f52-082c-46d0-bcfd-549601017c14",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17489,7 +17489,7 @@ const dataset = [
     {
         id: "0a6b795c-9ee6-43bf-a592-8cc3ecdc3355",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17500,7 +17500,7 @@ const dataset = [
     {
         id: "2263af1d-cfc8-429d-86db-e5c397f6e0fc",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17511,7 +17511,7 @@ const dataset = [
     {
         id: "ada0a2de-c1e5-4d17-86dc-13879cfa7172",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17522,7 +17522,7 @@ const dataset = [
     {
         id: "071eff17-412b-4a17-a901-785a30bf9c0f",
         recipient_id: "267660e3-cf7f-4545-a817-be35ea0befb9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -17533,7 +17533,7 @@ const dataset = [
     {
         id: "d6266a8f-7437-41e2-ba5e-6437eaf2218e",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17544,7 +17544,7 @@ const dataset = [
     {
         id: "46eca317-fca4-4298-aba0-2a6f6758df2a",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17555,7 +17555,7 @@ const dataset = [
     {
         id: "ebe2b267-a6c4-493e-a62d-6dea5914d72b",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17566,7 +17566,7 @@ const dataset = [
     {
         id: "400312df-0906-4dbe-ae97-ab32ba99c7d4",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17577,7 +17577,7 @@ const dataset = [
     {
         id: "397feef0-1698-4664-bc47-502e1caf6df2",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17588,7 +17588,7 @@ const dataset = [
     {
         id: "bef2a995-f370-437a-a25e-930602fe381a",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17599,7 +17599,7 @@ const dataset = [
     {
         id: "b073e9a3-88e9-4384-bf06-8a763aa605d2",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17610,7 +17610,7 @@ const dataset = [
     {
         id: "d49c2ff3-a57a-4e25-a0f6-bf50c6d98c2d",
         recipient_id: "a67c08f2-ad04-468f-8338-da4fe3d54e64",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -17621,7 +17621,7 @@ const dataset = [
     {
         id: "827e64e8-8b43-4e00-b8cc-695ad2ef495f",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17632,7 +17632,7 @@ const dataset = [
     {
         id: "b00dc009-9012-4932-ac10-57670bfedfc8",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17643,7 +17643,7 @@ const dataset = [
     {
         id: "a8b02824-8eca-4649-a03e-898b74c60e28",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17654,7 +17654,7 @@ const dataset = [
     {
         id: "7c420425-c0a7-4a5d-acbb-26e6e7d65a80",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17665,7 +17665,7 @@ const dataset = [
     {
         id: "6e31d28d-69e7-45be-a28a-e10c4e5562b4",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17676,7 +17676,7 @@ const dataset = [
     {
         id: "d43b8290-c078-4f6a-905a-3774511a33d7",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17687,7 +17687,7 @@ const dataset = [
     {
         id: "8480a46b-15e7-48df-bdc0-9501710af3d1",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17698,7 +17698,7 @@ const dataset = [
     {
         id: "34a0a7bb-ce4a-45d1-8b8c-c7ccddc5692e",
         recipient_id: "73cd9852-3318-4024-b01f-f80f370c1333",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -17709,7 +17709,7 @@ const dataset = [
     {
         id: "18cafb46-df13-409b-9149-3820878467d6",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17720,7 +17720,7 @@ const dataset = [
     {
         id: "9785b03a-50d9-45a0-ae49-a5ed249babab",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17731,7 +17731,7 @@ const dataset = [
     {
         id: "b1908cf3-687b-4a90-80c7-15aa6581001f",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17742,7 +17742,7 @@ const dataset = [
     {
         id: "a0d08b07-0946-45f6-948d-236e431b6fd3",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17753,7 +17753,7 @@ const dataset = [
     {
         id: "fb94bd2b-0a1c-4146-8457-218a112844b9",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17764,7 +17764,7 @@ const dataset = [
     {
         id: "fef1d74c-5109-4f10-b113-c26a01c8cd2a",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17775,7 +17775,7 @@ const dataset = [
     {
         id: "aebcf29d-798e-48ce-88d2-3fea01fbb498",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17786,7 +17786,7 @@ const dataset = [
     {
         id: "30400c38-b8fb-4fce-8147-2db403af9e23",
         recipient_id: "b4b7ace5-9751-4040-a432-2809d504fe37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -17797,7 +17797,7 @@ const dataset = [
     {
         id: "261acd2d-7d71-41cb-9666-cd1502d094fb",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17808,7 +17808,7 @@ const dataset = [
     {
         id: "bef940e3-e8a6-4cb0-89d3-a64304a023c1",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17819,7 +17819,7 @@ const dataset = [
     {
         id: "8127633b-552b-46bf-86a7-5c057abe92d0",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17830,7 +17830,7 @@ const dataset = [
     {
         id: "fc3dcd1a-8ed4-4018-9b97-4ee8fb084361",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17841,7 +17841,7 @@ const dataset = [
     {
         id: "9c3650bb-a64c-4c5c-87e8-08fef5688045",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17852,7 +17852,7 @@ const dataset = [
     {
         id: "8ee0c099-9827-4b69-a557-8124cf9fdfe0",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17863,7 +17863,7 @@ const dataset = [
     {
         id: "2d2fbc29-13d9-4085-b7f9-19f82c98e0e7",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17874,7 +17874,7 @@ const dataset = [
     {
         id: "4ed8e7e2-8141-4986-b5c7-e441c2b87283",
         recipient_id: "b24d0b5b-1c66-4302-b92c-73c728418f9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -17885,7 +17885,7 @@ const dataset = [
     {
         id: "44e1f5b9-e702-44e6-b4e0-a6eb16dbb5f3",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17896,7 +17896,7 @@ const dataset = [
     {
         id: "93fc320e-8be3-467d-aa16-0f3e94beb126",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17907,7 +17907,7 @@ const dataset = [
     {
         id: "8ff551f9-f606-4ff9-bff8-43b5d1f0512b",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17918,7 +17918,7 @@ const dataset = [
     {
         id: "22b7b915-50f5-4506-ac5a-44ea95c14a9a",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17929,7 +17929,7 @@ const dataset = [
     {
         id: "dc94e466-bb92-4187-b219-ef481f00c51d",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17940,7 +17940,7 @@ const dataset = [
     {
         id: "ecde5cd9-c0a6-4fc0-af08-c6671fce805a",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17951,7 +17951,7 @@ const dataset = [
     {
         id: "55dc8d56-d6fe-4447-b88d-3a511680e57d",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17962,7 +17962,7 @@ const dataset = [
     {
         id: "b96911df-1cf6-48fc-9834-d0150e6dc44f",
         recipient_id: "abf67175-fd5e-4259-81bb-810e080f79da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -17973,7 +17973,7 @@ const dataset = [
     {
         id: "d87d4919-1a8a-44c0-81b3-a8bc8621a048",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -17984,7 +17984,7 @@ const dataset = [
     {
         id: "f896e06e-17a4-473e-be96-a1f49706617b",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -17995,7 +17995,7 @@ const dataset = [
     {
         id: "eac42915-f8b1-4090-b5f2-f38a2bdf4509",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -18006,7 +18006,7 @@ const dataset = [
     {
         id: "3f8509a6-a81c-4905-95c7-bdde3b7c495f",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -18017,7 +18017,7 @@ const dataset = [
     {
         id: "e28cd50c-9b1e-4d0e-9706-2168e749bf36",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -18028,7 +18028,7 @@ const dataset = [
     {
         id: "2723ee2f-f9e7-4b26-8c0d-8f67ec76beaf",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -18039,7 +18039,7 @@ const dataset = [
     {
         id: "88674603-b4a5-48e1-a455-228744026083",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -18050,7 +18050,7 @@ const dataset = [
     {
         id: "2f215440-d19b-4297-9aef-fea7505029a5",
         recipient_id: "004e7f14-58c7-4867-8641-d594461c242f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -18061,7 +18061,7 @@ const dataset = [
     {
         id: "804bd5ca-2d68-445f-b75b-91a166895d57",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18072,7 +18072,7 @@ const dataset = [
     {
         id: "35d7804b-0984-40b4-ad66-c0d56dc410c2",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18083,7 +18083,7 @@ const dataset = [
     {
         id: "c9bf685c-b211-451c-9ade-a536a3183cb4",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18094,7 +18094,7 @@ const dataset = [
     {
         id: "2b532593-41ad-4c9d-bee0-09b654ac1638",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18105,7 +18105,7 @@ const dataset = [
     {
         id: "c53bb810-9eff-42fe-afcf-3ddd9ed8a83c",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18116,7 +18116,7 @@ const dataset = [
     {
         id: "f24ac9a8-1bb6-45cd-bfe6-f6624f3a1153",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18127,7 +18127,7 @@ const dataset = [
     {
         id: "1463bac8-7823-4f8f-a3a6-5a3056702509",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18138,7 +18138,7 @@ const dataset = [
     {
         id: "01ab3598-10cc-4cad-a1e8-6a6398277d3d",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18149,7 +18149,7 @@ const dataset = [
     {
         id: "bc2bddf0-631a-4443-84f9-3d7bf89f99b9",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18160,7 +18160,7 @@ const dataset = [
     {
         id: "7c218e9a-1a99-426b-b9a2-5a5eff383bbb",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18171,7 +18171,7 @@ const dataset = [
     {
         id: "93304078-55eb-47ff-99cb-5590ffcf2b1e",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18182,7 +18182,7 @@ const dataset = [
     {
         id: "24ba5403-c0ff-4e0a-81a5-6c5f950eae5c",
         recipient_id: "f80fa869-fbce-4ec4-8625-382c39b1af80",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -18193,7 +18193,7 @@ const dataset = [
     {
         id: "0fc589d8-c46b-4735-927d-455ab3ade752",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18204,7 +18204,7 @@ const dataset = [
     {
         id: "acf31e2f-1669-42f5-aff3-f5c72563f820",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18215,7 +18215,7 @@ const dataset = [
     {
         id: "0116282e-f683-4b53-a6d2-fab657294118",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18226,7 +18226,7 @@ const dataset = [
     {
         id: "90e490b6-98e7-4b3b-b9ed-8e48fa27fd74",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18237,7 +18237,7 @@ const dataset = [
     {
         id: "267cb359-039d-4cfe-a9fb-fb62890885a9",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18248,7 +18248,7 @@ const dataset = [
     {
         id: "7e0ad21d-ae8f-45de-b2ac-b03eadf4ce8e",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18259,7 +18259,7 @@ const dataset = [
     {
         id: "5982626d-16cc-49f3-9164-8b90709a4ea0",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18270,7 +18270,7 @@ const dataset = [
     {
         id: "05363050-505a-4acd-93ba-0833eb2c50e7",
         recipient_id: "1d88277f-89ef-4eff-9546-b910a2c7feb3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -18281,7 +18281,7 @@ const dataset = [
     {
         id: "d1f31ccb-a101-4d13-8a7f-4c29d6047a4c",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18292,7 +18292,7 @@ const dataset = [
     {
         id: "bd3501bb-6c50-4e6e-89e5-17e64e7ec170",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18303,7 +18303,7 @@ const dataset = [
     {
         id: "2d549fe1-f0c2-4f54-b721-61ed6e15f0fe",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18314,7 +18314,7 @@ const dataset = [
     {
         id: "4fd5071e-5cc7-4b5f-a0ff-4e5ed08c382e",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18325,7 +18325,7 @@ const dataset = [
     {
         id: "ee3bd28e-1212-4e5b-865a-28ce32612891",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18336,7 +18336,7 @@ const dataset = [
     {
         id: "4173866a-b0c2-4c8b-ab9d-8db47bfbad2f",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18347,7 +18347,7 @@ const dataset = [
     {
         id: "4ecd2f67-5a04-46f2-91d9-aa1b401b7fe9",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18358,7 +18358,7 @@ const dataset = [
     {
         id: "61d04376-dbef-48c8-9f1c-e50f0ef73b1f",
         recipient_id: "f9182a6e-1640-4c3a-b7fe-6ad93145a24a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -18369,7 +18369,7 @@ const dataset = [
     {
         id: "5773b495-4771-4478-b7fc-8cf3c369f6ca",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18380,7 +18380,7 @@ const dataset = [
     {
         id: "5a3a4c26-e3fd-4d5b-a8c5-1274c4f75447",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18391,7 +18391,7 @@ const dataset = [
     {
         id: "751ddb17-43e4-4e5c-8f46-0e0f79ae1efb",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18402,7 +18402,7 @@ const dataset = [
     {
         id: "a3aa6694-b136-4702-8052-9e82350ec257",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18413,7 +18413,7 @@ const dataset = [
     {
         id: "061e4883-f843-44a1-925d-1ea3442c646f",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18424,7 +18424,7 @@ const dataset = [
     {
         id: "c76fab72-0cb2-4c17-827e-e295aadee318",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18435,7 +18435,7 @@ const dataset = [
     {
         id: "812dabe6-6c94-4bd2-b785-baf7c5081c1f",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18446,7 +18446,7 @@ const dataset = [
     {
         id: "aa75830a-f56c-4d46-b825-34ddf75ff3ab",
         recipient_id: "59373a83-e5f3-4f61-a551-6c3cbd67c9ec",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -18457,7 +18457,7 @@ const dataset = [
     {
         id: "6ee57633-85af-4571-905d-20b91173a0fb",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18468,7 +18468,7 @@ const dataset = [
     {
         id: "b21be52e-c74e-4cc5-b6e4-b57f19053e8b",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18479,7 +18479,7 @@ const dataset = [
     {
         id: "07dce676-4fb2-4d54-9fd1-6f71e3b006c9",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18490,7 +18490,7 @@ const dataset = [
     {
         id: "f105175d-6c49-4768-9987-371a5f52ecc2",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18501,7 +18501,7 @@ const dataset = [
     {
         id: "117ec5b0-d5eb-441a-b5cc-ff4164913678",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18512,7 +18512,7 @@ const dataset = [
     {
         id: "f3dcdf32-5375-4bf7-a4d5-f937376cf65d",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18523,7 +18523,7 @@ const dataset = [
     {
         id: "3e81cde8-1320-450f-8285-a12c316c18ba",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18534,7 +18534,7 @@ const dataset = [
     {
         id: "47120300-ee51-45b2-9ef5-2fbe49257569",
         recipient_id: "fc7a9060-c11b-4665-a352-1e29e39ad232",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -18545,7 +18545,7 @@ const dataset = [
     {
         id: "da665de5-92d1-42e8-b3fe-43d93e022826",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18556,7 +18556,7 @@ const dataset = [
     {
         id: "008b9148-763c-4444-9eab-1490f72fd1f1",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18567,7 +18567,7 @@ const dataset = [
     {
         id: "6c8c5a1f-fb7b-4f5e-b5f3-664c37973d6d",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18578,7 +18578,7 @@ const dataset = [
     {
         id: "d8749c5d-0161-4cfe-aca9-62944c74b95f",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18589,7 +18589,7 @@ const dataset = [
     {
         id: "81eea947-af67-4ef7-acaa-d27f46c5b3f5",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18600,7 +18600,7 @@ const dataset = [
     {
         id: "1c536ea1-2381-4ce3-8cda-b0f1f101dcac",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18611,7 +18611,7 @@ const dataset = [
     {
         id: "a8e9b4e0-9069-430d-9d4b-6653d9d9d143",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18622,7 +18622,7 @@ const dataset = [
     {
         id: "c3a05625-6fd1-409f-a9d3-42b37e918447",
         recipient_id: "5cd30550-b899-4f64-b499-9acde778aace",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -18633,7 +18633,7 @@ const dataset = [
     {
         id: "9c9d48b7-ef69-4359-82df-ed11296c822b",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18644,7 +18644,7 @@ const dataset = [
     {
         id: "7f534c67-f567-4f96-b8a8-c6fdda6acdcd",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18655,7 +18655,7 @@ const dataset = [
     {
         id: "241206d8-0fea-4bbd-aeb5-465065b93761",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18666,7 +18666,7 @@ const dataset = [
     {
         id: "435320b6-9b8b-4945-8a3b-291a85992ddd",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18677,7 +18677,7 @@ const dataset = [
     {
         id: "c4cd4c1e-02fa-430e-8ff5-2fd2153cb4ed",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18688,7 +18688,7 @@ const dataset = [
     {
         id: "0ed2919f-c863-4b60-bac2-3e081da834a7",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18699,7 +18699,7 @@ const dataset = [
     {
         id: "e96d5a0a-2859-462e-861e-e76c0652eab3",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18710,7 +18710,7 @@ const dataset = [
     {
         id: "a67c9f2d-b39f-4b5e-84e1-9bac665fe311",
         recipient_id: "5fd270f2-b496-4efc-9162-1ea39df90871",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -18721,7 +18721,7 @@ const dataset = [
     {
         id: "c106666f-600e-4a51-8c11-8c86ae42bbd0",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18732,7 +18732,7 @@ const dataset = [
     {
         id: "418916d9-5e70-44ca-bd15-57b4ee1d34d3",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18743,7 +18743,7 @@ const dataset = [
     {
         id: "73863f42-4be8-4d8b-931c-d97dc3b2d921",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18754,7 +18754,7 @@ const dataset = [
     {
         id: "b3ce0d12-4044-4e41-9144-3c79ad67fcfb",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18765,7 +18765,7 @@ const dataset = [
     {
         id: "bbec9a4e-73b1-4893-b196-8df59eb61002",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18776,7 +18776,7 @@ const dataset = [
     {
         id: "357e5375-2063-4b6c-9389-5e32e028d4c9",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18787,7 +18787,7 @@ const dataset = [
     {
         id: "7b8c7f2d-19a0-44e4-83f1-c5b558008bb8",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18798,7 +18798,7 @@ const dataset = [
     {
         id: "94b195ee-65ca-493d-9d49-5c2b47b052c5",
         recipient_id: "60200cb1-895b-4574-818a-4f9946d623d3",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -18809,7 +18809,7 @@ const dataset = [
     {
         id: "8b6fd881-8cfa-4351-975f-c824c3d779f4",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18820,7 +18820,7 @@ const dataset = [
     {
         id: "cba0be0e-4df8-4ae0-8a4e-54fc86dfabdc",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18831,7 +18831,7 @@ const dataset = [
     {
         id: "d9ecec15-3b83-4cf2-bf45-2c511f61ba49",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18842,7 +18842,7 @@ const dataset = [
     {
         id: "faf6d645-5847-45d0-a94d-f3f34dfbc8a1",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18853,7 +18853,7 @@ const dataset = [
     {
         id: "a370c49a-12d3-4ad3-ac42-c4c5899940c7",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18864,7 +18864,7 @@ const dataset = [
     {
         id: "795c0f41-3a22-4cce-b5c9-30702835ed8f",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18875,7 +18875,7 @@ const dataset = [
     {
         id: "254465e3-1db1-4822-943d-9beb64df32b0",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18886,7 +18886,7 @@ const dataset = [
     {
         id: "343e2c0a-aa60-4599-a7cf-016a4e6ccd44",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18897,7 +18897,7 @@ const dataset = [
     {
         id: "abf9444c-f0bc-4240-b84f-0249dc1f8a8b",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18908,7 +18908,7 @@ const dataset = [
     {
         id: "073f50bb-df4e-4317-a98e-20cb5e993b99",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18919,7 +18919,7 @@ const dataset = [
     {
         id: "099aa016-ff7d-4b3f-8ee4-cf95829c03d3",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18930,7 +18930,7 @@ const dataset = [
     {
         id: "07748a62-0d77-460c-ac68-f8ef5dfcd52a",
         recipient_id: "894e098a-f80f-4d8b-93ab-7f926314d940",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -18941,7 +18941,7 @@ const dataset = [
     {
         id: "efaed892-fa2a-4b84-8d71-2b910c6eece3",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -18952,7 +18952,7 @@ const dataset = [
     {
         id: "69ba1ebe-0d0e-47cb-931c-f80fb443f1aa",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -18963,7 +18963,7 @@ const dataset = [
     {
         id: "3767b7b4-37c3-42ba-92d1-2c67363ac26e",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -18974,7 +18974,7 @@ const dataset = [
     {
         id: "229af3b0-098a-48b8-b0d6-b88bc4efcd72",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -18985,7 +18985,7 @@ const dataset = [
     {
         id: "dbb2559a-833f-40a3-a9e0-40658548b680",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -18996,7 +18996,7 @@ const dataset = [
     {
         id: "fb88e378-e621-49f4-befb-7793ca85e48c",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -19007,7 +19007,7 @@ const dataset = [
     {
         id: "deebc564-edc7-446c-9d25-798dfd92cbcb",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -19018,7 +19018,7 @@ const dataset = [
     {
         id: "9b7f5865-d957-4fde-92d9-2845765e6e6e",
         recipient_id: "c23fb61d-f2e2-48e4-9f22-9b55586ba0ff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -19029,7 +19029,7 @@ const dataset = [
     {
         id: "fb609758-d77d-429e-b0f1-247426bd43f7",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19040,7 +19040,7 @@ const dataset = [
     {
         id: "a678930e-4476-4e77-8a8b-2866fa32a7f6",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19051,7 +19051,7 @@ const dataset = [
     {
         id: "85093831-c51d-4ebb-9978-317e04346529",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19062,7 +19062,7 @@ const dataset = [
     {
         id: "14bdebe8-eb0b-4cde-8963-99397b9c1df5",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19073,7 +19073,7 @@ const dataset = [
     {
         id: "4c876a05-0573-4f9c-88ad-d1d6631e0e08",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19084,7 +19084,7 @@ const dataset = [
     {
         id: "1662a4af-63ef-463a-ae1d-9fbb7fb0a05f",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19095,7 +19095,7 @@ const dataset = [
     {
         id: "c3786e3a-09ac-4503-870d-edbf7cd95602",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19106,7 +19106,7 @@ const dataset = [
     {
         id: "0119506b-6cf3-4318-88f1-91ea5ad205bf",
         recipient_id: "26778abb-c2ab-4ab7-a719-6857ab739d7e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -19117,7 +19117,7 @@ const dataset = [
     {
         id: "b3d8ef93-18f8-40ba-a372-e3dbd7f216f1",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19128,7 +19128,7 @@ const dataset = [
     {
         id: "60d72719-2658-49bb-9fa0-47ae26ed38be",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19139,7 +19139,7 @@ const dataset = [
     {
         id: "ce139457-c9cf-4157-bacd-c4111719173d",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19150,7 +19150,7 @@ const dataset = [
     {
         id: "79f89843-e8f1-49c3-a9ed-5dcf78bcc749",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19161,7 +19161,7 @@ const dataset = [
     {
         id: "a2000698-2abe-4028-a8a3-c00001e73763",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19172,7 +19172,7 @@ const dataset = [
     {
         id: "5f531aa7-6859-49b8-bbf8-53331294e4fd",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19183,7 +19183,7 @@ const dataset = [
     {
         id: "6524f135-1124-4fd3-8efc-f09e7c523808",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19194,7 +19194,7 @@ const dataset = [
     {
         id: "c591f5c5-3aa3-467a-8a24-bb634b6720c5",
         recipient_id: "6d9729b6-de37-4fbd-9936-056ff841fd41",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -19205,7 +19205,7 @@ const dataset = [
     {
         id: "c90f6785-a18c-45cb-8176-2a4d4896ac5b",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19216,7 +19216,7 @@ const dataset = [
     {
         id: "00d0a0a1-7778-4a36-893a-f4428c8582cd",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19227,7 +19227,7 @@ const dataset = [
     {
         id: "8078e1b6-2bb4-4393-bf7f-3813441a512d",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19238,7 +19238,7 @@ const dataset = [
     {
         id: "f7a8f89c-1fe0-4041-ad57-37993fc8f850",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19249,7 +19249,7 @@ const dataset = [
     {
         id: "3dbc8e1f-f33a-46ee-9ec2-eb980df8b5fe",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19260,7 +19260,7 @@ const dataset = [
     {
         id: "a64be016-c7fb-43e6-9c0e-832da36491d3",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19271,7 +19271,7 @@ const dataset = [
     {
         id: "61141b4f-6c29-47f8-a3fc-3ce8755c3ade",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19282,7 +19282,7 @@ const dataset = [
     {
         id: "a8544550-7188-4516-9dd7-96d0983abca4",
         recipient_id: "8f1dd63c-8ffd-4840-a947-1f396385a7bc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -19293,7 +19293,7 @@ const dataset = [
     {
         id: "5353a747-096d-4722-80fd-fd02bfc3514b",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19304,7 +19304,7 @@ const dataset = [
     {
         id: "a07419a5-e096-4780-b137-8ab85e30e073",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19315,7 +19315,7 @@ const dataset = [
     {
         id: "b3212b01-fc99-45e6-a6d1-b4048a68693e",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19326,7 +19326,7 @@ const dataset = [
     {
         id: "938187db-205b-4651-8dfe-fdfeb37eeb49",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19337,7 +19337,7 @@ const dataset = [
     {
         id: "8f01e5b4-f660-47dd-bbd4-da2dd69b5c0d",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19348,7 +19348,7 @@ const dataset = [
     {
         id: "56ab120c-a17e-4a94-949e-a3c519a289b8",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19359,7 +19359,7 @@ const dataset = [
     {
         id: "e608f5a2-a288-46b3-8b74-69ed60dac77f",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19370,7 +19370,7 @@ const dataset = [
     {
         id: "8ae1cd98-2718-4e26-8127-039ce04d911a",
         recipient_id: "dccafa9c-2281-4736-95b1-41b8f7844a9f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -19381,7 +19381,7 @@ const dataset = [
     {
         id: "7aade317-4994-45d3-ab87-00032e12bfa7",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19392,7 +19392,7 @@ const dataset = [
     {
         id: "79bfaef1-8f66-4c28-ba8b-d1849895a0af",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19403,7 +19403,7 @@ const dataset = [
     {
         id: "9cf94e27-aece-49bc-9f55-975042fc7928",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19414,7 +19414,7 @@ const dataset = [
     {
         id: "d0791182-71b7-429b-9b9b-bc853596bf14",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19425,7 +19425,7 @@ const dataset = [
     {
         id: "9879597d-6121-48a1-905e-08d5db4188f8",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19436,7 +19436,7 @@ const dataset = [
     {
         id: "5d5ffd71-4444-450d-9dc8-3ba95d5c11c6",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19447,7 +19447,7 @@ const dataset = [
     {
         id: "67b9e2e6-98b2-4d44-9953-a178d49ef3a7",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19458,7 +19458,7 @@ const dataset = [
     {
         id: "ee795973-a212-4ec5-8491-c8b23e610eae",
         recipient_id: "ac24a79b-b258-4a11-8606-5c928b77e498",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -19469,7 +19469,7 @@ const dataset = [
     {
         id: "30d78c19-83cd-4bce-93be-5de78ee772dc",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19480,7 +19480,7 @@ const dataset = [
     {
         id: "13ce3c78-b8da-43b0-bc87-16feae15c7e6",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19491,7 +19491,7 @@ const dataset = [
     {
         id: "b290fac9-0094-4b7c-8122-f1443326bef5",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19502,7 +19502,7 @@ const dataset = [
     {
         id: "61292d44-53a2-4ffd-83c6-7a074ba18741",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19513,7 +19513,7 @@ const dataset = [
     {
         id: "9565901c-9ef8-421b-b3a5-4fcc1bb86626",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19524,7 +19524,7 @@ const dataset = [
     {
         id: "f8bf8945-a91a-49f4-bdb4-e9b5cd5d42ce",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19535,7 +19535,7 @@ const dataset = [
     {
         id: "260eab6a-393b-4282-a4f6-278cc3863ce5",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19546,7 +19546,7 @@ const dataset = [
     {
         id: "b0e67010-77ec-47bd-a140-da8ed46c17c3",
         recipient_id: "2e0a6b91-e44e-4446-a061-dbf838ccdfbd",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -19557,7 +19557,7 @@ const dataset = [
     {
         id: "523cb5ab-5de5-400c-958d-b6421297fecc",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19568,7 +19568,7 @@ const dataset = [
     {
         id: "cce17972-8303-4965-876f-8a50932ae6c4",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19579,7 +19579,7 @@ const dataset = [
     {
         id: "8a55d946-5f36-4b35-9b02-951167020b67",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19590,7 +19590,7 @@ const dataset = [
     {
         id: "73f8f78b-938d-4f2a-a209-15d02375daac",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19601,7 +19601,7 @@ const dataset = [
     {
         id: "461ec066-af34-4bf9-99e7-7c4d8bbc36f8",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19612,7 +19612,7 @@ const dataset = [
     {
         id: "f84fdd28-30a5-41bd-8227-3760a01d50a5",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19623,7 +19623,7 @@ const dataset = [
     {
         id: "27110015-b080-4ebb-84dc-f7fde2827165",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19634,7 +19634,7 @@ const dataset = [
     {
         id: "ac38584c-ad71-433b-b39a-e4211aca598d",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19645,7 +19645,7 @@ const dataset = [
     {
         id: "7d50e610-691b-4fdf-9554-6aed98c97ac9",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19656,7 +19656,7 @@ const dataset = [
     {
         id: "3bb7764f-64fa-4fcd-975d-fec4050e5ebd",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19667,7 +19667,7 @@ const dataset = [
     {
         id: "c66a9fdd-be19-4d7d-aba7-5f117cdc4b36",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19678,7 +19678,7 @@ const dataset = [
     {
         id: "233c53ad-5749-47f1-9873-4a501af0fe33",
         recipient_id: "1803af87-fdd0-4055-84cd-a0e753a0cb21",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -19689,7 +19689,7 @@ const dataset = [
     {
         id: "dd618498-d336-41d9-9521-6c91a301b59f",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19700,7 +19700,7 @@ const dataset = [
     {
         id: "6a8649d8-87ed-45ab-a7bd-083d6f281372",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19711,7 +19711,7 @@ const dataset = [
     {
         id: "127568fd-ce21-447d-a536-0415644cefcf",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19722,7 +19722,7 @@ const dataset = [
     {
         id: "b93d763b-c8b4-4e75-b84c-140c7f67f663",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19733,7 +19733,7 @@ const dataset = [
     {
         id: "3f88ef5f-de16-4ba9-b58f-58c80c4f3c12",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19744,7 +19744,7 @@ const dataset = [
     {
         id: "13398728-9655-435e-8cd8-a2e7cae660b9",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19755,7 +19755,7 @@ const dataset = [
     {
         id: "b15e5a43-acb5-4bd9-b156-ff2d96a78820",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19766,7 +19766,7 @@ const dataset = [
     {
         id: "d753fa09-3352-4ea0-8234-63a7a3c49429",
         recipient_id: "b044eb10-ab51-4099-9c98-a64d1d23fa37",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -19777,7 +19777,7 @@ const dataset = [
     {
         id: "4a8d30d2-a856-4c6f-972b-46d1e8cb1856",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19788,7 +19788,7 @@ const dataset = [
     {
         id: "2232efb1-a7de-466a-962c-86a37899fd7c",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19799,7 +19799,7 @@ const dataset = [
     {
         id: "802b4fb3-bedb-43cf-9cc2-ae53ce199e8d",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19810,7 +19810,7 @@ const dataset = [
     {
         id: "23f44a7e-aa1c-4a8f-94d8-86fc10d44044",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19821,7 +19821,7 @@ const dataset = [
     {
         id: "ac794e4c-7f16-4600-b5d5-bf880892fdbb",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19832,7 +19832,7 @@ const dataset = [
     {
         id: "c282fa62-d1e8-4bc5-97a2-fc63a30e3c78",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19843,7 +19843,7 @@ const dataset = [
     {
         id: "973d5659-e517-4b2c-a38b-aa0732aeac4a",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19854,7 +19854,7 @@ const dataset = [
     {
         id: "f2943082-9055-45bf-9336-27774d7af978",
         recipient_id: "ff201e5d-33a5-450e-ba2a-01a5c1486dc7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -19865,7 +19865,7 @@ const dataset = [
     {
         id: "caf5a2e4-d49c-4031-b9a5-979f5b4b9c96",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19876,7 +19876,7 @@ const dataset = [
     {
         id: "7f8723cc-0b41-4351-bd11-9a6c73bfafac",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19887,7 +19887,7 @@ const dataset = [
     {
         id: "f66d8f05-a0a6-4345-b9e1-32f55b61c1d9",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19898,7 +19898,7 @@ const dataset = [
     {
         id: "8ba29f21-33d7-40b0-8e93-db1e3e487c6a",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19909,7 +19909,7 @@ const dataset = [
     {
         id: "58c5de7d-8902-462a-b489-71ef893dcaec",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19920,7 +19920,7 @@ const dataset = [
     {
         id: "c63fd820-9250-4303-ad06-ab79ac5468bd",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19931,7 +19931,7 @@ const dataset = [
     {
         id: "4fd796dd-6a1b-4eed-8f55-765e73bbee42",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19942,7 +19942,7 @@ const dataset = [
     {
         id: "144903b8-7d37-40a0-894d-09d4a8a50033",
         recipient_id: "33c33c49-6056-4f4c-9637-5bf796a22add",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -19953,7 +19953,7 @@ const dataset = [
     {
         id: "86c49655-fe1a-4894-a548-e39aaaa58263",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -19964,7 +19964,7 @@ const dataset = [
     {
         id: "70d404da-bf1b-4853-81c0-1d8d3fbea68a",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -19975,7 +19975,7 @@ const dataset = [
     {
         id: "abec7517-1114-4238-bfe2-3e589c20f7f4",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -19986,7 +19986,7 @@ const dataset = [
     {
         id: "6b83a128-6991-476e-b316-bd0fa835b026",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -19997,7 +19997,7 @@ const dataset = [
     {
         id: "a955b3e2-96da-4ff9-a4df-786018b6a67b",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -20008,7 +20008,7 @@ const dataset = [
     {
         id: "ab3b3546-6fb4-4c83-b718-8e2ca1a71034",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -20019,7 +20019,7 @@ const dataset = [
     {
         id: "0d08d2fa-ede2-49f0-b0c3-be4fc88f7ea6",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -20030,7 +20030,7 @@ const dataset = [
     {
         id: "5ae25149-108e-4177-9654-a01dec423592",
         recipient_id: "8721fd67-c6a9-426e-b40b-936b47f59633",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -20041,7 +20041,7 @@ const dataset = [
     {
         id: "82508d40-671e-4213-b797-985c867c9391",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20052,7 +20052,7 @@ const dataset = [
     {
         id: "34855660-f313-4039-9b29-e3ccb0818b23",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20063,7 +20063,7 @@ const dataset = [
     {
         id: "b6e0b3c6-5ac0-4ac0-a48b-5c721786a0c6",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20074,7 +20074,7 @@ const dataset = [
     {
         id: "3d4d5b3c-ea42-4ff6-ad6d-bd4180fce908",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20085,7 +20085,7 @@ const dataset = [
     {
         id: "dbfe384b-372d-44d1-9d62-33f73592e9e3",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20096,7 +20096,7 @@ const dataset = [
     {
         id: "c50eb87b-680c-4019-ae9a-d89d89679e52",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20107,7 +20107,7 @@ const dataset = [
     {
         id: "621387ca-ee51-4e97-a52d-a4c162eb82ba",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20118,7 +20118,7 @@ const dataset = [
     {
         id: "2efdea01-e08a-45e3-b920-fa09850c66b4",
         recipient_id: "a51457a0-4f64-410a-a6e8-0c449202e886",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -20129,7 +20129,7 @@ const dataset = [
     {
         id: "3c1e7dab-df4d-450d-8bd0-a13660a72775",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20140,7 +20140,7 @@ const dataset = [
     {
         id: "a39ab4d8-a588-4b7b-b0ca-b5aa5d67a54f",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20151,7 +20151,7 @@ const dataset = [
     {
         id: "6589171e-2b30-4334-8085-2d34cc45967a",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20162,7 +20162,7 @@ const dataset = [
     {
         id: "9db95397-c118-4264-b4fd-09f374557382",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20173,7 +20173,7 @@ const dataset = [
     {
         id: "8a9d7b97-e8ba-4f40-aef1-978281079918",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20184,7 +20184,7 @@ const dataset = [
     {
         id: "9cecbe53-4b65-4dde-bed0-cd5bf05b9bbb",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20195,7 +20195,7 @@ const dataset = [
     {
         id: "dfae7d16-0239-4402-80e8-9eb29db25bd0",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20206,7 +20206,7 @@ const dataset = [
     {
         id: "a7ebb6d7-0afa-408b-8a54-b2ef3fd1c6bf",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20217,7 +20217,7 @@ const dataset = [
     {
         id: "4db862af-0cf0-495e-a4ef-acada56531ed",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20228,7 +20228,7 @@ const dataset = [
     {
         id: "7bbfeace-ae70-4466-92cd-6c0cad13ac9f",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20239,7 +20239,7 @@ const dataset = [
     {
         id: "6da9c3d1-f7b5-4269-8370-1f15589462ef",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20250,7 +20250,7 @@ const dataset = [
     {
         id: "d53e23a6-0950-4584-a4fb-9ead518dab3d",
         recipient_id: "cb48d0c6-56aa-4d9e-8958-7e65573474b0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -20261,7 +20261,7 @@ const dataset = [
     {
         id: "abee99ef-9080-4fb1-9800-533c448d72e4",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20272,7 +20272,7 @@ const dataset = [
     {
         id: "dcb1097b-006e-408e-867a-c0ae89333386",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20283,7 +20283,7 @@ const dataset = [
     {
         id: "46de1122-552f-423a-af66-010b7c298fdf",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20294,7 +20294,7 @@ const dataset = [
     {
         id: "00e4d72c-66a1-4554-b064-77a71895a0d8",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20305,7 +20305,7 @@ const dataset = [
     {
         id: "68dc2c4b-1b81-4d74-9f39-e429493de241",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20316,7 +20316,7 @@ const dataset = [
     {
         id: "95665c04-e728-422e-9bcf-711f36e617a2",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20327,7 +20327,7 @@ const dataset = [
     {
         id: "c7f128bd-0dc6-4237-a09c-126595455c33",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20338,7 +20338,7 @@ const dataset = [
     {
         id: "87489183-d74e-4133-80ca-2fd7dae5174e",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20349,7 +20349,7 @@ const dataset = [
     {
         id: "a85eb9c0-a7fb-407d-94d4-3d3580475d33",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20360,7 +20360,7 @@ const dataset = [
     {
         id: "04206703-a75a-413b-9c77-8124d1b93017",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20371,7 +20371,7 @@ const dataset = [
     {
         id: "7f1658d3-fb59-4c78-af87-420c58add57a",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20382,7 +20382,7 @@ const dataset = [
     {
         id: "6fa9fb56-2614-4688-8ac5-b297dafaad43",
         recipient_id: "5fc3bb51-b53b-4e8e-bd9d-9e437910fe3e",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -20393,7 +20393,7 @@ const dataset = [
     {
         id: "b907e5dd-f4b5-4072-92e9-a6bb4afecbf0",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20404,7 +20404,7 @@ const dataset = [
     {
         id: "a64299a4-5b4a-42a8-afa7-d32d066ec1e3",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20415,7 +20415,7 @@ const dataset = [
     {
         id: "8d029778-b7e7-440b-95bb-644bb9295fea",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20426,7 +20426,7 @@ const dataset = [
     {
         id: "e11a86a8-e991-412e-84cd-282ffa051bf5",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20437,7 +20437,7 @@ const dataset = [
     {
         id: "c1eb6335-90be-4c2c-ba2b-2e059f618f8d",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20448,7 +20448,7 @@ const dataset = [
     {
         id: "9a4f18e5-ab15-4498-af58-c0b78dea0cda",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20459,7 +20459,7 @@ const dataset = [
     {
         id: "9d7654d5-8678-48bd-ac10-e68ee225ba36",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20470,7 +20470,7 @@ const dataset = [
     {
         id: "e43a49bb-4992-474f-95da-48576171a4d6",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20481,7 +20481,7 @@ const dataset = [
     {
         id: "a2d2e656-78d4-4412-9dac-edd60ce93449",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20492,7 +20492,7 @@ const dataset = [
     {
         id: "3d463d93-3a25-4957-9202-a382bc6a18dd",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20503,7 +20503,7 @@ const dataset = [
     {
         id: "53202813-46da-4b02-855c-efec04b631f1",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20514,7 +20514,7 @@ const dataset = [
     {
         id: "9f7d5f91-1906-4379-9667-ce80cc4a27b7",
         recipient_id: "0f29782a-ab5a-4e0b-96d9-04cadf30df07",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -20525,7 +20525,7 @@ const dataset = [
     {
         id: "01782a70-122f-435c-a392-6016069ab13b",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20536,7 +20536,7 @@ const dataset = [
     {
         id: "037a04e5-11d6-404b-8462-cd6ddade5555",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20547,7 +20547,7 @@ const dataset = [
     {
         id: "8f3af121-54c2-4003-ac71-d87b03aed6f1",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20558,7 +20558,7 @@ const dataset = [
     {
         id: "ee0157c9-b134-4029-9ff1-7611ff44dc4c",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20569,7 +20569,7 @@ const dataset = [
     {
         id: "f298085d-e0c7-4779-a8f2-a068f8dd381b",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20580,7 +20580,7 @@ const dataset = [
     {
         id: "545434fc-4fe3-4591-9caa-1b05736d8551",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20591,7 +20591,7 @@ const dataset = [
     {
         id: "8a58fc95-c575-4e47-83b4-87f4076b43f3",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20602,7 +20602,7 @@ const dataset = [
     {
         id: "51f2cda2-35a6-4f20-80d1-36bd205239dc",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20613,7 +20613,7 @@ const dataset = [
     {
         id: "ed1d9948-34f5-443f-939f-467af923b406",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20624,7 +20624,7 @@ const dataset = [
     {
         id: "25efd560-ed98-445e-97d7-5a931a4f417c",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20635,7 +20635,7 @@ const dataset = [
     {
         id: "9f9e3a92-0dfa-4a95-81a9-08908bf585a2",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20646,7 +20646,7 @@ const dataset = [
     {
         id: "b65a9d1e-f8ae-425b-a63e-65f8fa0e28f3",
         recipient_id: "c035766c-0b0d-4805-aed1-f9b3dfdac8f6",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -20657,7 +20657,7 @@ const dataset = [
     {
         id: "8a5b1aa8-9a60-40c0-b0c9-7b5c9ea876d4",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20668,7 +20668,7 @@ const dataset = [
     {
         id: "6aaa7794-59ea-46c2-a5ed-63ea59c30b34",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20679,7 +20679,7 @@ const dataset = [
     {
         id: "9af1e1ad-d8f6-4316-ba0c-b6046571a67a",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20690,7 +20690,7 @@ const dataset = [
     {
         id: "1908da3a-aa90-4df3-acf5-02d8808963cf",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20701,7 +20701,7 @@ const dataset = [
     {
         id: "7f26d8e4-7da6-4730-a5be-651f2f59d240",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20712,7 +20712,7 @@ const dataset = [
     {
         id: "1b3a983e-30f5-49a5-bcc7-eb06c267a715",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20723,7 +20723,7 @@ const dataset = [
     {
         id: "01278fb2-1ae7-4d94-8660-efbc58dd0f6f",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20734,7 +20734,7 @@ const dataset = [
     {
         id: "5fadfaec-3ffa-4854-9871-6fec1929d477",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20745,7 +20745,7 @@ const dataset = [
     {
         id: "729b020e-83da-4262-bf73-0b55275fc0ab",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20756,7 +20756,7 @@ const dataset = [
     {
         id: "50225190-9f02-448f-acbe-38bd81e38cec",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20767,7 +20767,7 @@ const dataset = [
     {
         id: "87453bfd-bb97-43ec-8a83-9ad7f0ee7e96",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20778,7 +20778,7 @@ const dataset = [
     {
         id: "0a6c3926-9bbd-4e80-9a30-f3e3b3d0d373",
         recipient_id: "e819b245-d172-4c8d-80ab-104215601386",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -20789,7 +20789,7 @@ const dataset = [
     {
         id: "69af721a-c9a3-496e-a1f7-56e340e0602a",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20800,7 +20800,7 @@ const dataset = [
     {
         id: "92e5595d-3fba-4aeb-8b8d-6f4fd5751552",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20811,7 +20811,7 @@ const dataset = [
     {
         id: "7ef4824f-c1b6-4259-b75a-3196fb932e9d",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20822,7 +20822,7 @@ const dataset = [
     {
         id: "b9ebb32b-10a6-45b4-b610-08c8db32622b",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20833,7 +20833,7 @@ const dataset = [
     {
         id: "57e6ccbb-9a1c-4ae7-89e3-40d8d1729e77",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20844,7 +20844,7 @@ const dataset = [
     {
         id: "ddc66895-b290-496a-abd1-967e27587c84",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20855,7 +20855,7 @@ const dataset = [
     {
         id: "5d3860b0-df37-4e48-8cf6-0354d2bc39fe",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20866,7 +20866,7 @@ const dataset = [
     {
         id: "9d5b80ce-f2ba-4ab1-bc10-eb89a3074d2c",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20877,7 +20877,7 @@ const dataset = [
     {
         id: "b8fcf020-ebcf-48ac-8dfc-a87d76aded7e",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20888,7 +20888,7 @@ const dataset = [
     {
         id: "acef6662-351c-4d04-bcc8-d9b0af6606cc",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20899,7 +20899,7 @@ const dataset = [
     {
         id: "951f7fdd-de69-439e-b484-6b9c48304631",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20910,7 +20910,7 @@ const dataset = [
     {
         id: "23fb963b-4db5-4692-b393-ffa83c2a3279",
         recipient_id: "70f85eba-784a-4b49-aa12-dfa33f6f2146",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -20921,7 +20921,7 @@ const dataset = [
     {
         id: "3dfb8ace-a5a6-450e-b401-c7490cb8b1bb",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -20932,7 +20932,7 @@ const dataset = [
     {
         id: "724b4698-27e7-4197-96b8-33daaafa56e7",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -20943,7 +20943,7 @@ const dataset = [
     {
         id: "9e4fcb38-47ae-4eb2-8686-966fe47fa520",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -20954,7 +20954,7 @@ const dataset = [
     {
         id: "623e1b63-6b2d-4e7d-aebf-080bd125cacd",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -20965,7 +20965,7 @@ const dataset = [
     {
         id: "ee2e1bfa-18b9-408f-b005-938b5d5bb771",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -20976,7 +20976,7 @@ const dataset = [
     {
         id: "86aac75b-9a79-4cc4-9774-2bcd0cb24d6b",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -20987,7 +20987,7 @@ const dataset = [
     {
         id: "e5ff65cd-6995-4507-95c5-41a3676df571",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -20998,7 +20998,7 @@ const dataset = [
     {
         id: "e4b7e3b3-6380-41fe-acd9-4b1708ec233b",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -21009,7 +21009,7 @@ const dataset = [
     {
         id: "c64386ab-d8fc-4bbb-af68-82861de806b5",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -21020,7 +21020,7 @@ const dataset = [
     {
         id: "6f03068c-cabe-4328-a715-a9c500d45022",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -21031,7 +21031,7 @@ const dataset = [
     {
         id: "2e5f014c-f4d8-4db0-9ac6-1624cc417e0c",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -21042,7 +21042,7 @@ const dataset = [
     {
         id: "bb96e91a-2da4-448d-b674-2b4c5efc3b41",
         recipient_id: "9dee0c32-e53e-401c-95cd-1fe269fdcaa7",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -21053,7 +21053,7 @@ const dataset = [
     {
         id: "6c4b749d-d30e-460e-91ee-73fd2c03c2bc",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21064,7 +21064,7 @@ const dataset = [
     {
         id: "465c3079-f29c-4e04-aea2-ada63ed0973d",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21075,7 +21075,7 @@ const dataset = [
     {
         id: "77972e5f-b0ca-44f2-bd0a-0ac9b9839a7e",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21086,7 +21086,7 @@ const dataset = [
     {
         id: "d14c9507-0919-4b74-8cec-0111fdf3e7d7",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21097,7 +21097,7 @@ const dataset = [
     {
         id: "2d94546d-89a2-4fdc-9b46-c3df5700009e",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21108,7 +21108,7 @@ const dataset = [
     {
         id: "1b863481-7c31-496d-86ac-a4cfa4175571",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21119,7 +21119,7 @@ const dataset = [
     {
         id: "0b3b3d40-ff4d-4fc0-a429-e45c48bff016",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21130,7 +21130,7 @@ const dataset = [
     {
         id: "3809a9e3-d2b9-4e9e-8aca-9a8c317a7e7a",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21141,7 +21141,7 @@ const dataset = [
     {
         id: "80442c4c-dad5-4f69-9bfe-a76a379a57c3",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21152,7 +21152,7 @@ const dataset = [
     {
         id: "d8cf5297-4a27-4905-a002-aa8b81965072",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21163,7 +21163,7 @@ const dataset = [
     {
         id: "40a79763-c5d1-47bc-9c7a-56a9abf2212e",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21174,7 +21174,7 @@ const dataset = [
     {
         id: "c59906f8-476f-4c49-aae4-1aaa3cbb290d",
         recipient_id: "29a7e26f-7493-4188-92bb-3285201bc6b8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -21185,7 +21185,7 @@ const dataset = [
     {
         id: "587fbe7f-7fc5-42cf-9c43-85a8f513d04c",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21196,7 +21196,7 @@ const dataset = [
     {
         id: "7295e988-40d6-4ea4-a32c-b3339f9bc72e",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21207,7 +21207,7 @@ const dataset = [
     {
         id: "a9670881-cfe0-4448-a095-5a48424d5ff0",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21218,7 +21218,7 @@ const dataset = [
     {
         id: "b48db2cf-86b7-45c2-a4c2-5c1a0de33e44",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21229,7 +21229,7 @@ const dataset = [
     {
         id: "d3ecf1b8-f67f-48dc-a7ac-581909520bf0",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21240,7 +21240,7 @@ const dataset = [
     {
         id: "6731aa6a-5945-4e6e-8c4a-4398136b0f4f",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21251,7 +21251,7 @@ const dataset = [
     {
         id: "23c74c8b-64ac-4cfd-bbf0-f9065599cc78",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21262,7 +21262,7 @@ const dataset = [
     {
         id: "d72aa9bf-8d15-42e6-a383-817bb4220ae0",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21273,7 +21273,7 @@ const dataset = [
     {
         id: "d67bf179-b6d4-480b-acd0-7d12e19fe50b",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21284,7 +21284,7 @@ const dataset = [
     {
         id: "44cfea40-4e97-49e5-922f-f81aa4982f7d",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21295,7 +21295,7 @@ const dataset = [
     {
         id: "cc8f9129-08c9-4e4e-9625-cfde00e6b5b6",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21306,7 +21306,7 @@ const dataset = [
     {
         id: "dafbd520-a07e-461b-a19c-c55b18351a6f",
         recipient_id: "177f5eb1-a797-40e8-8eac-06890dae5329",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -21317,7 +21317,7 @@ const dataset = [
     {
         id: "366f3282-fadd-4519-8070-7b9c464fa74c",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21328,7 +21328,7 @@ const dataset = [
     {
         id: "a5998a9f-1754-4af3-a198-f407a955a3ed",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21339,7 +21339,7 @@ const dataset = [
     {
         id: "b8a3daaf-bc8c-41ef-9356-f9c795872095",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21350,7 +21350,7 @@ const dataset = [
     {
         id: "c91bcf4b-9024-43fe-a59a-2a7d527acc63",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21361,7 +21361,7 @@ const dataset = [
     {
         id: "5b0acc55-895c-4d12-8b05-e4f1259c6516",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21372,7 +21372,7 @@ const dataset = [
     {
         id: "6078f4f1-95f5-42b6-bb1d-09f68076fc4c",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21383,7 +21383,7 @@ const dataset = [
     {
         id: "b836a391-3dc0-4f73-87b0-bbac71d4e802",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21394,7 +21394,7 @@ const dataset = [
     {
         id: "dd69abe3-7409-4f14-8c84-3e10d2727729",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21405,7 +21405,7 @@ const dataset = [
     {
         id: "cacd2009-f523-44f9-84cd-b06c4b993157",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21416,7 +21416,7 @@ const dataset = [
     {
         id: "6024e0b7-2e1b-4115-a253-91960b557c4a",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21427,7 +21427,7 @@ const dataset = [
     {
         id: "3f2d865b-7d2b-4ca8-aa33-be6b559a60d1",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21438,7 +21438,7 @@ const dataset = [
     {
         id: "8a600f26-beb0-4833-921f-bdfc84b275ca",
         recipient_id: "d238b550-8b09-4463-aa68-78feb303fad0",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -21449,7 +21449,7 @@ const dataset = [
     {
         id: "60578900-bd6d-475c-b67d-884ddebd3ca2",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21460,7 +21460,7 @@ const dataset = [
     {
         id: "b1937ae4-f2f4-4cc8-8e4d-3651d9df387b",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21471,7 +21471,7 @@ const dataset = [
     {
         id: "a82d69ef-cefb-4586-8fea-e8d0a0ea21cb",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21482,7 +21482,7 @@ const dataset = [
     {
         id: "f37ef192-6b58-448c-b0e9-f8e682c57ff4",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21493,7 +21493,7 @@ const dataset = [
     {
         id: "c1199dd3-ee23-4705-a033-394da65e4d39",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21504,7 +21504,7 @@ const dataset = [
     {
         id: "9548accf-ec92-45fe-842f-ead21ea9ddca",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21515,7 +21515,7 @@ const dataset = [
     {
         id: "a50d7592-4f65-435b-bec1-eddcc2f85921",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21526,7 +21526,7 @@ const dataset = [
     {
         id: "0e42223e-82a7-4f19-8ae1-30cab26977c0",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21537,7 +21537,7 @@ const dataset = [
     {
         id: "6d880d8a-6fd1-42fe-afb8-fb1a455ff93e",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21548,7 +21548,7 @@ const dataset = [
     {
         id: "c42b5ecc-7bb0-424d-a1ee-c2c3474d0ce0",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21559,7 +21559,7 @@ const dataset = [
     {
         id: "0f664afa-e468-47f4-a55a-642f0817bd7b",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21570,7 +21570,7 @@ const dataset = [
     {
         id: "0cd2fb79-8b1d-4f00-85e6-6853dd9e9209",
         recipient_id: "edcb2f0e-b89d-4d28-ac75-6d99e6e7a890",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -21581,7 +21581,7 @@ const dataset = [
     {
         id: "5d5a801a-ab19-4968-8b42-f37d7bfd861c",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21592,7 +21592,7 @@ const dataset = [
     {
         id: "d91db3f0-072c-43c0-add8-ddac12a4b236",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21603,7 +21603,7 @@ const dataset = [
     {
         id: "a252c192-c161-4a91-95ae-f3383d004570",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21614,7 +21614,7 @@ const dataset = [
     {
         id: "0f31e007-6fe3-4029-a39f-43064f50b134",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21625,7 +21625,7 @@ const dataset = [
     {
         id: "9ee33108-5269-463c-8a8b-bc6ba8aa7b17",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21636,7 +21636,7 @@ const dataset = [
     {
         id: "9e8fe57d-c89a-424f-b1d2-48f2ccf269f2",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21647,7 +21647,7 @@ const dataset = [
     {
         id: "71f64b70-ba10-4b1b-a645-9c4cebd90ff7",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21658,7 +21658,7 @@ const dataset = [
     {
         id: "2f98fe7f-d899-48d9-8896-a5d60f35517d",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21669,7 +21669,7 @@ const dataset = [
     {
         id: "888fb39e-bedf-4340-9224-87e38668bc3d",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21680,7 +21680,7 @@ const dataset = [
     {
         id: "c7cb4bd7-6b68-45b2-840b-437ccb46f7e2",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21691,7 +21691,7 @@ const dataset = [
     {
         id: "cab0b191-b7c6-4536-b653-4c6af02674d4",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21702,7 +21702,7 @@ const dataset = [
     {
         id: "a8e01c22-ee76-4b7d-a99b-6b3e04c4a827",
         recipient_id: "f902a16f-3ac5-4d4c-bdf8-d429b7b5c133",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -21713,7 +21713,7 @@ const dataset = [
     {
         id: "a0bc406b-b41e-4fd0-bba4-985748a23db9",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21724,7 +21724,7 @@ const dataset = [
     {
         id: "3380ebbd-165e-4eba-a2cc-9c3dc757f93f",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21735,7 +21735,7 @@ const dataset = [
     {
         id: "9808a41d-6808-41ab-b55f-fd094ac1621e",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21746,7 +21746,7 @@ const dataset = [
     {
         id: "c273a97c-7b0b-43d5-98fa-073a2f0b6582",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21757,7 +21757,7 @@ const dataset = [
     {
         id: "3a16c4f9-0b0f-474c-8391-eb51ebd0bb19",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21768,7 +21768,7 @@ const dataset = [
     {
         id: "ce37efac-6c86-4a24-9da3-4c6c73d0cff6",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21779,7 +21779,7 @@ const dataset = [
     {
         id: "c08ae1d4-b749-426d-883b-7c10f875e5d5",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21790,7 +21790,7 @@ const dataset = [
     {
         id: "a6b92eec-05a9-4fdf-ab75-c4003916fb46",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21801,7 +21801,7 @@ const dataset = [
     {
         id: "2730756b-3507-4578-bb58-20d19e1c855f",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21812,7 +21812,7 @@ const dataset = [
     {
         id: "678a5e61-d25e-49ce-8195-fe2ff8b99a96",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21823,7 +21823,7 @@ const dataset = [
     {
         id: "9bd8da5b-0887-4ff4-aa5d-f4004d0eaffb",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21834,7 +21834,7 @@ const dataset = [
     {
         id: "767665ae-6c43-4de1-8cbf-91706bb0cae7",
         recipient_id: "dda17a3c-0033-4c22-b1bb-6c56a29b0c7a",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -21845,7 +21845,7 @@ const dataset = [
     {
         id: "280e2734-426a-45fc-a736-c615aa25a2d8",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21856,7 +21856,7 @@ const dataset = [
     {
         id: "110b10af-66f8-4df4-9656-521e6e242aa1",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21867,7 +21867,7 @@ const dataset = [
     {
         id: "6657480a-b2a9-4fb7-a0fc-0d6ca12c1f52",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21878,7 +21878,7 @@ const dataset = [
     {
         id: "e12a9222-f93a-4e5b-8cc7-0ae8ab9b801b",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21889,7 +21889,7 @@ const dataset = [
     {
         id: "195608b5-3743-425f-9f08-91af802b623d",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21900,7 +21900,7 @@ const dataset = [
     {
         id: "7b6df1c3-aeb7-4fac-b78a-15fe4498a800",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21911,7 +21911,7 @@ const dataset = [
     {
         id: "d5cbbdc4-e477-463d-81b3-66ca68c7654a",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21922,7 +21922,7 @@ const dataset = [
     {
         id: "59d82398-2818-4c69-a7a7-4c17efc13aa9",
         recipient_id: "07dc46a4-ffd5-4301-9a5e-9f76ac143500",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -21933,7 +21933,7 @@ const dataset = [
     {
         id: "93591e2a-77b0-4627-83a9-8f56a17c8710",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -21944,7 +21944,7 @@ const dataset = [
     {
         id: "9f68b52a-a493-4d58-b22c-63a08de3713f",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -21955,7 +21955,7 @@ const dataset = [
     {
         id: "7debd8bb-95bd-46fb-a089-eaee5d77bc75",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -21966,7 +21966,7 @@ const dataset = [
     {
         id: "854be787-9793-4802-8149-86fb17b7a369",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -21977,7 +21977,7 @@ const dataset = [
     {
         id: "7935c51c-add9-49d9-8b73-5667b2f47a97",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -21988,7 +21988,7 @@ const dataset = [
     {
         id: "3024749c-7064-4a76-9cd0-80d96b82a1c9",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -21999,7 +21999,7 @@ const dataset = [
     {
         id: "d6d05def-fdec-4996-a303-9fd8996349ed",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -22010,7 +22010,7 @@ const dataset = [
     {
         id: "3131adb6-f60a-4be4-919d-b9ebb74183ec",
         recipient_id: "ca6de85a-e032-4e33-b1db-1c98a5a2e58d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -22021,7 +22021,7 @@ const dataset = [
     {
         id: "4e67453f-0429-4a87-80fb-b8988b73cf9b",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22032,7 +22032,7 @@ const dataset = [
     {
         id: "8e13f00f-fdce-46cd-8e35-39cbfad055b9",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22043,7 +22043,7 @@ const dataset = [
     {
         id: "0982c044-6a3f-4f03-8b20-cfd31c5a69fd",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22054,7 +22054,7 @@ const dataset = [
     {
         id: "8c6aecec-7de7-4169-a803-bbf18ce6b784",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22065,7 +22065,7 @@ const dataset = [
     {
         id: "8e9c0bee-e14d-40b7-a2e4-b502b2597795",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22076,7 +22076,7 @@ const dataset = [
     {
         id: "e5a6b046-8100-45c5-a717-dc534bdc2dd1",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22087,7 +22087,7 @@ const dataset = [
     {
         id: "114151f1-e86f-4ccf-989d-b58c95eafe9b",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22098,7 +22098,7 @@ const dataset = [
     {
         id: "0498a7b3-3d16-40be-8c48-33a445ed22d4",
         recipient_id: "532eee7d-f0cf-4f2e-9444-c8be7eb6c517",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -22109,7 +22109,7 @@ const dataset = [
     {
         id: "868e2b22-7731-422e-b56f-caf12ec350be",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22120,7 +22120,7 @@ const dataset = [
     {
         id: "b0d102be-8197-4feb-ba52-dd933eec7999",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22131,7 +22131,7 @@ const dataset = [
     {
         id: "b9d4fb0a-a142-4ea2-bded-171063e99069",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22142,7 +22142,7 @@ const dataset = [
     {
         id: "b76377b1-a8bc-4df6-8eb0-dbb0feb09512",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22153,7 +22153,7 @@ const dataset = [
     {
         id: "f3359f40-3656-410f-9275-c48b6dc45856",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22164,7 +22164,7 @@ const dataset = [
     {
         id: "5c35bbb1-0bf2-4395-a3b5-5e6f05ead3cd",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22175,7 +22175,7 @@ const dataset = [
     {
         id: "58cf2f97-6908-48f1-ade1-99edb1d17196",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22186,7 +22186,7 @@ const dataset = [
     {
         id: "6fa25cc7-78bf-443b-9de2-9a4cba535b0d",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22197,7 +22197,7 @@ const dataset = [
     {
         id: "97c1723a-62e5-4201-b3cf-30d498a12b5d",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22208,7 +22208,7 @@ const dataset = [
     {
         id: "98126d98-76f2-4fc1-bd7a-04b3d62913a2",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22219,7 +22219,7 @@ const dataset = [
     {
         id: "202d4d6a-2325-41a6-9a3e-bd56ca75ad82",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22230,7 +22230,7 @@ const dataset = [
     {
         id: "f5821976-8b0c-4ff9-b4fd-137ac3591661",
         recipient_id: "869684ed-3229-4d6c-8e5e-4b25c993b375",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -22241,7 +22241,7 @@ const dataset = [
     {
         id: "109f24d0-c229-4147-a385-f886ab1ed006",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22252,7 +22252,7 @@ const dataset = [
     {
         id: "edb3065b-536a-4066-a541-3d44594abbc8",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22263,7 +22263,7 @@ const dataset = [
     {
         id: "a8a8abd7-18f2-4800-9c83-92259f2f3c16",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22274,7 +22274,7 @@ const dataset = [
     {
         id: "1f2441a4-5a1d-4e61-95e3-238eb5fe0306",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22285,7 +22285,7 @@ const dataset = [
     {
         id: "93b2e5a5-0378-4741-af14-a276620d2062",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22296,7 +22296,7 @@ const dataset = [
     {
         id: "e051f974-0bb5-44d9-9e5a-a81668a29e68",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22307,7 +22307,7 @@ const dataset = [
     {
         id: "b638d4f0-ce09-4450-a60c-6d685851db73",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22318,7 +22318,7 @@ const dataset = [
     {
         id: "d9478270-0ba4-4ac3-8742-508efcbbfd91",
         recipient_id: "18a2ad85-ad8d-4b19-87c0-6ebcf163b8e2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -22329,7 +22329,7 @@ const dataset = [
     {
         id: "beb489c1-339b-44df-a343-457814fafcea",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22340,7 +22340,7 @@ const dataset = [
     {
         id: "7b9a3799-9a61-43e6-a59a-535c1f267692",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22351,7 +22351,7 @@ const dataset = [
     {
         id: "00cf5a4e-a6e7-4af7-819f-2ac41b30c04f",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22362,7 +22362,7 @@ const dataset = [
     {
         id: "fd81a5e3-c6bb-4ab9-a73d-a4e081c503c8",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22373,7 +22373,7 @@ const dataset = [
     {
         id: "ef392b0a-4c1f-410c-ae10-4e89d3512403",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22384,7 +22384,7 @@ const dataset = [
     {
         id: "0f6d27cd-3c87-4d5d-96d5-083376bcc851",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22395,7 +22395,7 @@ const dataset = [
     {
         id: "b5b08d4d-c86b-46e5-a077-c7482cb0aa46",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22406,7 +22406,7 @@ const dataset = [
     {
         id: "dbad84c3-4935-4fd5-8f96-1db40fbd12e2",
         recipient_id: "ecae7c6f-4e3a-43ac-8696-4cf6f5f4dc32",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -22417,7 +22417,7 @@ const dataset = [
     {
         id: "ac482233-7813-456e-bee3-b475022fed12",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22428,7 +22428,7 @@ const dataset = [
     {
         id: "2099570b-6ddb-4a70-9a27-baa6ae047392",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22439,7 +22439,7 @@ const dataset = [
     {
         id: "496bfaf4-e797-4e41-bc80-f28d56b6c516",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22450,7 +22450,7 @@ const dataset = [
     {
         id: "4d667766-dbe1-4b02-a290-e211005c749b",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22461,7 +22461,7 @@ const dataset = [
     {
         id: "70d9c10f-79c8-4684-a343-49c0f312d1df",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22472,7 +22472,7 @@ const dataset = [
     {
         id: "18446c18-755d-4772-acd3-a975d79b7671",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22483,7 +22483,7 @@ const dataset = [
     {
         id: "439f67c4-e4b6-4ad8-8a5b-dfc0a9f80528",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22494,7 +22494,7 @@ const dataset = [
     {
         id: "6a977178-e621-41f5-80fa-410dab6f933b",
         recipient_id: "757b8bf4-f1e9-4fe4-9c63-4d2280b297b9",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -22505,7 +22505,7 @@ const dataset = [
     {
         id: "e44c99da-15bc-4678-ba69-2b79c9cb34d3",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22516,7 +22516,7 @@ const dataset = [
     {
         id: "54265580-c5f4-4251-8cb9-d9a18a64f8d3",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22527,7 +22527,7 @@ const dataset = [
     {
         id: "1893d18f-c5d6-4f0e-9968-452f28d5caef",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22538,7 +22538,7 @@ const dataset = [
     {
         id: "b482ea4a-76c6-43fd-a2f3-9b9259fec7a1",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22549,7 +22549,7 @@ const dataset = [
     {
         id: "0c2648f9-a614-4f6a-a03e-73cffb5c757e",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22560,7 +22560,7 @@ const dataset = [
     {
         id: "4944d91e-ba81-4bd9-a02b-8d53cfa45c0d",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22571,7 +22571,7 @@ const dataset = [
     {
         id: "8ebd53a5-a459-47b6-93f6-5e4c6cbadcf0",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22582,7 +22582,7 @@ const dataset = [
     {
         id: "e384d94c-d9a1-4170-a696-69de450bcc36",
         recipient_id: "8f7d72eb-3b7b-40bc-976a-7f77ad657125",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -22593,7 +22593,7 @@ const dataset = [
     {
         id: "23c2d793-a35a-4c47-9156-a7b4b669cf93",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22604,7 +22604,7 @@ const dataset = [
     {
         id: "ea188024-afc0-4e7f-a657-aafe82f44b30",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22615,7 +22615,7 @@ const dataset = [
     {
         id: "c55a2a89-b852-4f8c-89f4-a30c65678256",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22626,7 +22626,7 @@ const dataset = [
     {
         id: "344bf75b-008d-46e2-bca4-03b9256b1699",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22637,7 +22637,7 @@ const dataset = [
     {
         id: "31bb62b7-2519-43f0-b27e-2c5a5f00073c",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22648,7 +22648,7 @@ const dataset = [
     {
         id: "3b882ef6-9159-4682-99af-8a68401b63bd",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22659,7 +22659,7 @@ const dataset = [
     {
         id: "c2ebc100-7835-4b6f-a207-c36e1e87970c",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22670,7 +22670,7 @@ const dataset = [
     {
         id: "a64856a2-4d2e-4cf8-a4d3-f3d58414e044",
         recipient_id: "b9462782-4da4-48f6-b699-608061598c10",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -22681,7 +22681,7 @@ const dataset = [
     {
         id: "9b3e2307-5f4e-4cd2-bf8e-f33c24383d5a",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22692,7 +22692,7 @@ const dataset = [
     {
         id: "8a768e08-553d-4549-8b19-af7845c74832",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22703,7 +22703,7 @@ const dataset = [
     {
         id: "a741512f-9bd5-48c9-9ab3-f2ead8e32397",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22714,7 +22714,7 @@ const dataset = [
     {
         id: "1b5f1f4a-8be1-42dc-95d8-23a112ca2cc7",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22725,7 +22725,7 @@ const dataset = [
     {
         id: "d35e0f55-d0d2-4421-b50a-c4477e431a3d",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22736,7 +22736,7 @@ const dataset = [
     {
         id: "521c04a3-5dc0-4efe-8ca6-30ce0fd6cb92",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22747,7 +22747,7 @@ const dataset = [
     {
         id: "8b322820-df2a-4d37-8690-30e6e0e77496",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22758,7 +22758,7 @@ const dataset = [
     {
         id: "bf37c428-7bef-4551-9351-b0fc62934c36",
         recipient_id: "1a74a1ef-9cf2-489b-9478-7e23ff335d50",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -22769,7 +22769,7 @@ const dataset = [
     {
         id: "3e1bb2a9-adb2-445a-a74c-be3ee250a75b",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22780,7 +22780,7 @@ const dataset = [
     {
         id: "b15fc4ab-e68b-4e1c-8628-8437551868dc",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22791,7 +22791,7 @@ const dataset = [
     {
         id: "69581547-cbb0-4797-9ae5-35b96feee7c3",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22802,7 +22802,7 @@ const dataset = [
     {
         id: "8ed0297d-fc95-4eac-803c-6653f651a786",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22813,7 +22813,7 @@ const dataset = [
     {
         id: "ea2d3004-1e73-4ac2-b176-6a05175eb6f4",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22824,7 +22824,7 @@ const dataset = [
     {
         id: "3065cd12-e4f5-4817-8aee-d0aa49f5c301",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22835,7 +22835,7 @@ const dataset = [
     {
         id: "bd12760b-fcfc-4d5b-84e3-11a2f2bef64c",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22846,7 +22846,7 @@ const dataset = [
     {
         id: "a8e76814-7650-48b2-aa9c-c095835d9e66",
         recipient_id: "967df9de-a111-4410-a18a-8bdcebf5a40e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-09T09:00:00.000Z"),
@@ -22857,7 +22857,7 @@ const dataset = [
     {
         id: "485a1c47-239b-4752-81e4-214d86129658",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22868,7 +22868,7 @@ const dataset = [
     {
         id: "2385c6eb-bfb8-4e4a-8aba-e3b0dd15d897",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22879,7 +22879,7 @@ const dataset = [
     {
         id: "3f29544d-dec3-43e5-a907-06e0f9e7e3d3",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22890,7 +22890,7 @@ const dataset = [
     {
         id: "1f7663ea-7bbc-4060-b567-cf1af7c165a2",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22901,7 +22901,7 @@ const dataset = [
     {
         id: "53b414d8-646b-41bd-a18f-70a1267f6b61",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22912,7 +22912,7 @@ const dataset = [
     {
         id: "f8e281f1-1c27-4474-9895-1d25a5a2c21d",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22923,7 +22923,7 @@ const dataset = [
     {
         id: "350bfa0a-ced1-4ab8-b00b-abee5b8da2c7",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22934,7 +22934,7 @@ const dataset = [
     {
         id: "09b24dca-0ca6-4eed-b55c-9c2ae0d2160f",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22945,7 +22945,7 @@ const dataset = [
     {
         id: "40e4b5be-9384-405d-b054-9627ff4adc7a",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22956,7 +22956,7 @@ const dataset = [
     {
         id: "315a9ff2-8a0c-470d-aeb6-bf9a9b9a4535",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22967,7 +22967,7 @@ const dataset = [
     {
         id: "4028a5b4-0515-4919-a8d1-bbac75a1847e",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22978,7 +22978,7 @@ const dataset = [
     {
         id: "6a2dd269-7305-4aaf-b131-527af05b86ad",
         recipient_id: "0812a645-0a49-438f-97a5-83e23431afb8",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -22989,7 +22989,7 @@ const dataset = [
     {
         id: "c0c8e098-4729-4442-96bc-e0a18a8df206",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23000,7 +23000,7 @@ const dataset = [
     {
         id: "ceac2afc-fa8e-4f43-b952-d61279793b18",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23011,7 +23011,7 @@ const dataset = [
     {
         id: "510d843b-8e09-4f0f-9ba9-158132917ad7",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23022,7 +23022,7 @@ const dataset = [
     {
         id: "3f8daa4f-55ab-4ef2-aa0c-4196bf4c06d3",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23033,7 +23033,7 @@ const dataset = [
     {
         id: "48a25c73-c3ac-46de-8e64-a85b0ae1e6df",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23044,7 +23044,7 @@ const dataset = [
     {
         id: "a866f609-04d0-47bb-a861-0b273931f9ba",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23055,7 +23055,7 @@ const dataset = [
     {
         id: "8082c168-7392-43ed-870f-a5383081ec38",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23066,7 +23066,7 @@ const dataset = [
     {
         id: "1ca9bba7-02c6-4296-bde8-9cc70a98c481",
         recipient_id: "35bf203b-ac74-46e1-8553-3dd652c66cff",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -23077,7 +23077,7 @@ const dataset = [
     {
         id: "8ef7fa31-cc87-447a-b8f9-9d7779cad09f",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23088,7 +23088,7 @@ const dataset = [
     {
         id: "168e954c-26dd-4e3d-ab2c-735a8e635eef",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23099,7 +23099,7 @@ const dataset = [
     {
         id: "0ba930f3-8e32-43f2-9520-68c473a9ad75",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23110,7 +23110,7 @@ const dataset = [
     {
         id: "150317da-89d3-4adf-b36a-66694ccc530c",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23121,7 +23121,7 @@ const dataset = [
     {
         id: "24c43c29-a51f-4cf5-889a-ddaaca3a9e9d",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23132,7 +23132,7 @@ const dataset = [
     {
         id: "ad1b114d-3fe4-416b-b561-2cc113aac680",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23143,7 +23143,7 @@ const dataset = [
     {
         id: "654e8cce-bc29-4479-b9b1-a8665da119d9",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23154,7 +23154,7 @@ const dataset = [
     {
         id: "563e3308-a7a4-45ac-b1dd-25689946aaa4",
         recipient_id: "cd3fb543-f86d-4b5e-98f7-49a232727b22",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-30T09:00:00.000Z"),
@@ -23165,7 +23165,7 @@ const dataset = [
     {
         id: "ee7cdcb6-6b76-460e-a6a4-625b6df4e6c4",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23176,7 +23176,7 @@ const dataset = [
     {
         id: "597d0aee-54a2-43fd-bfd4-9f1b91a2f0e5",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23187,7 +23187,7 @@ const dataset = [
     {
         id: "2172660a-9741-42e8-9c4d-c4a2f120abea",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23198,7 +23198,7 @@ const dataset = [
     {
         id: "c395c7c4-e15c-4b26-b92b-04780ae8ad75",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23209,7 +23209,7 @@ const dataset = [
     {
         id: "3027e3c4-be2f-4941-a324-b63f9d5cf135",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23220,7 +23220,7 @@ const dataset = [
     {
         id: "0101d4a0-c095-41fe-9120-5d7ce5ee562f",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23231,7 +23231,7 @@ const dataset = [
     {
         id: "9a1f96a9-6063-41bb-9275-0076cb51fec9",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23242,7 +23242,7 @@ const dataset = [
     {
         id: "156163a5-f7d9-4910-81cc-c184b934db91",
         recipient_id: "870c780a-9516-415e-8d67-4804cea0ce11",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23253,7 +23253,7 @@ const dataset = [
     {
         id: "6605f34e-fa51-410c-8918-b9f89d97549e",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23264,7 +23264,7 @@ const dataset = [
     {
         id: "ae561163-f26b-4228-b39d-d1aeb1f3e4e6",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23275,7 +23275,7 @@ const dataset = [
     {
         id: "a5a8bbb4-6d91-433c-9158-67ab971ca431",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23286,7 +23286,7 @@ const dataset = [
     {
         id: "a54a50da-2b6d-4ffb-a45a-595d8affd100",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23297,7 +23297,7 @@ const dataset = [
     {
         id: "46c89232-9c77-4c62-a87a-35bff073b059",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23308,7 +23308,7 @@ const dataset = [
     {
         id: "5aa3f4be-4956-45a0-be3e-0a954e0d357b",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23319,7 +23319,7 @@ const dataset = [
     {
         id: "f8d64b72-ac53-4ff2-9e60-604b07ed4265",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23330,7 +23330,7 @@ const dataset = [
     {
         id: "3d4ea658-7f05-4a4b-8e9c-59de66596a84",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23341,7 +23341,7 @@ const dataset = [
     {
         id: "c9258130-c414-429f-89ca-3f1dfa7a54bf",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23352,7 +23352,7 @@ const dataset = [
     {
         id: "68d976b0-d9dd-4e6e-a1af-e69bec49012e",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23363,7 +23363,7 @@ const dataset = [
     {
         id: "46e9299d-1cb8-4a55-8292-8644e82df69f",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23374,7 +23374,7 @@ const dataset = [
     {
         id: "deebb8a0-4b26-4eed-a070-2d38de0ac44a",
         recipient_id: "76458590-8f25-44fc-add9-5681c6ec0724",
-        channel_type: "SMS",
+        channel_type: ChannelType.SMS,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-28T09:00:00.000Z"),
@@ -23385,7 +23385,7 @@ const dataset = [
     {
         id: "1c340575-7465-46d5-90e8-8e7a032888e3",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23396,7 +23396,7 @@ const dataset = [
     {
         id: "be10b0bf-2d70-418f-b23c-838a8948d9e3",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23407,7 +23407,7 @@ const dataset = [
     {
         id: "49b563c8-6e27-46f3-8293-8a22ab7d489e",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23418,7 +23418,7 @@ const dataset = [
     {
         id: "c71268af-4263-49a5-93e1-372875eb7dd1",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23429,7 +23429,7 @@ const dataset = [
     {
         id: "b7a89505-276e-422b-b728-f585f75d1dae",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23440,7 +23440,7 @@ const dataset = [
     {
         id: "a9bee7e7-b299-4450-8724-96e6a6ca27e5",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23451,7 +23451,7 @@ const dataset = [
     {
         id: "5fafffc6-f444-417b-8c39-8ade3d1b1d91",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23462,7 +23462,7 @@ const dataset = [
     {
         id: "2c8346b3-7d85-4b7d-ae16-6f9ce2dc2ee7",
         recipient_id: "74e34ca8-f55f-4179-8010-0c1a1eb9a96b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-03-02T09:00:00.000Z"),
@@ -23473,7 +23473,7 @@ const dataset = [
     {
         id: "0e1231ba-d876-4e8d-9e0e-c7f949db0b15",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23484,7 +23484,7 @@ const dataset = [
     {
         id: "24b0211c-e111-4636-87af-fa45868c9222",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23495,7 +23495,7 @@ const dataset = [
     {
         id: "c5780005-5943-40f4-895a-5752889a09aa",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23506,7 +23506,7 @@ const dataset = [
     {
         id: "666c5542-aebf-48d3-9d95-762350dbca44",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23517,7 +23517,7 @@ const dataset = [
     {
         id: "2d55a27f-f63a-42ce-8e1f-4ae69a4e9c38",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23528,7 +23528,7 @@ const dataset = [
     {
         id: "86c940af-6060-4294-a7ed-33c196468ffb",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23539,7 +23539,7 @@ const dataset = [
     {
         id: "b01cbb5d-9f27-487a-853b-3acaa2a305f7",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23550,7 +23550,7 @@ const dataset = [
     {
         id: "45df5be3-8dc5-4070-8bf4-972f0337d840",
         recipient_id: "7159e7dc-93e0-4b3c-b6b7-f5ace2b79469",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -23561,7 +23561,7 @@ const dataset = [
     {
         id: "54c2c647-4bdf-43c4-ac0c-04afa0e6c29d",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23572,7 +23572,7 @@ const dataset = [
     {
         id: "c1596613-4989-40f3-ab78-fec81bcbb044",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23583,7 +23583,7 @@ const dataset = [
     {
         id: "bb5a3ac4-4d38-46da-b665-3e3d2622f324",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23594,7 +23594,7 @@ const dataset = [
     {
         id: "284e03ef-dc7c-4ce0-a2c7-fcf0bc9e232d",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23605,7 +23605,7 @@ const dataset = [
     {
         id: "33c8812f-d160-41b8-af64-0d4f0adb6c80",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23616,7 +23616,7 @@ const dataset = [
     {
         id: "538f8d84-c672-4bad-9363-02caaf1b1561",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23627,7 +23627,7 @@ const dataset = [
     {
         id: "8b251330-660d-402e-a658-e7422a988506",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23638,7 +23638,7 @@ const dataset = [
     {
         id: "0ed5ba3e-63f3-4858-8cbf-0e7460f4afc1",
         recipient_id: "e895dd6b-3594-484a-9218-7128f23c4478",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-30T09:00:00.000Z"),
@@ -23649,7 +23649,7 @@ const dataset = [
     {
         id: "039ae591-6678-428f-9387-d7214a5b88b1",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23660,7 +23660,7 @@ const dataset = [
     {
         id: "50d1255d-46f8-4d7c-a085-5b70898d6844",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23671,7 +23671,7 @@ const dataset = [
     {
         id: "84b4e98e-7e89-4c8b-9a04-c3c5d18a628b",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23682,7 +23682,7 @@ const dataset = [
     {
         id: "ff7f80d0-9e9f-4ba0-9761-8acdafb20302",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23693,7 +23693,7 @@ const dataset = [
     {
         id: "462b98de-d792-4206-988a-9a3437402d3e",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23704,7 +23704,7 @@ const dataset = [
     {
         id: "d8a3491c-d5c9-4b8c-b859-17d9f92f24fa",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23715,7 +23715,7 @@ const dataset = [
     {
         id: "c11ddbc5-012d-4620-b72c-c7fcf92c8c8f",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23726,7 +23726,7 @@ const dataset = [
     {
         id: "46b7a38c-877c-4127-9d25-e9c5a76fda39",
         recipient_id: "fdb6ea24-d764-4b2c-964f-eba3fb5a2b15",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-02T09:00:00.000Z"),
@@ -23737,7 +23737,7 @@ const dataset = [
     {
         id: "e4d22c58-6bb5-4f56-ae1f-f9c6a83408cb",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23748,7 +23748,7 @@ const dataset = [
     {
         id: "2cbc9e59-e80c-44ff-8f9e-5f87c7be6769",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23759,7 +23759,7 @@ const dataset = [
     {
         id: "b6473e50-1316-42f7-8603-edc4752b9d24",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23770,7 +23770,7 @@ const dataset = [
     {
         id: "c4e495fd-bf8c-4ef5-afba-698b767165e2",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23781,7 +23781,7 @@ const dataset = [
     {
         id: "e5a5abfc-1f3e-4570-a647-de680837492a",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23792,7 +23792,7 @@ const dataset = [
     {
         id: "5bf45d66-b0de-4887-b57f-4c6eb2f18c1f",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23803,7 +23803,7 @@ const dataset = [
     {
         id: "fe7fc584-40d7-4cd8-95eb-51291595b9ca",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23814,7 +23814,7 @@ const dataset = [
     {
         id: "12a64241-998d-490b-8e1c-1a57c5d89495",
         recipient_id: "bff3b1dd-8115-491e-bf6f-bf0a4617ce71",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -23825,7 +23825,7 @@ const dataset = [
     {
         id: "30e878cf-f76a-489d-a663-9646f7718336",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23836,7 +23836,7 @@ const dataset = [
     {
         id: "6ccf3285-f758-449e-8114-1f47c7851422",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23847,7 +23847,7 @@ const dataset = [
     {
         id: "71eb35c0-3fdb-4b8c-b34f-a5ab35894daa",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23858,7 +23858,7 @@ const dataset = [
     {
         id: "be41b5b5-c00e-4571-b68c-2bc4338f2be3",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23869,7 +23869,7 @@ const dataset = [
     {
         id: "a6aec1aa-7cf7-49e1-a5b3-eb1a77ed3ec2",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23880,7 +23880,7 @@ const dataset = [
     {
         id: "4846696f-4b81-45bf-a44c-ebf122ed165f",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23891,7 +23891,7 @@ const dataset = [
     {
         id: "4eefcac5-f024-4463-8f27-6d97a8056087",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23902,7 +23902,7 @@ const dataset = [
     {
         id: "bb01802d-f039-4ba7-9bd4-3c1c6071357a",
         recipient_id: "1e4c5491-72df-411d-a67a-aaa712a9a30f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -23913,7 +23913,7 @@ const dataset = [
     {
         id: "def750b4-28b9-4f85-b1a5-205c38274ca4",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -23924,7 +23924,7 @@ const dataset = [
     {
         id: "8612cec0-c45c-4b9a-b599-9ec734a5e179",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -23935,7 +23935,7 @@ const dataset = [
     {
         id: "af94132e-24fc-45c6-a073-5e14b7698c8e",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -23946,7 +23946,7 @@ const dataset = [
     {
         id: "7a8ea468-e91d-4bbb-9827-03b1a87f1d21",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -23957,7 +23957,7 @@ const dataset = [
     {
         id: "87c8f8aa-3328-4d85-a7ac-c74b8b5883c4",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -23968,7 +23968,7 @@ const dataset = [
     {
         id: "1a8c2aac-1a2d-4590-b260-2ed6557f9dd9",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -23979,7 +23979,7 @@ const dataset = [
     {
         id: "2b79098c-da8a-40b4-a55e-e22ba6468f21",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -23990,7 +23990,7 @@ const dataset = [
     {
         id: "fca13815-ad98-48d2-a1eb-afb3bbcb01f9",
         recipient_id: "fc62cc65-233f-4229-beb6-0bb3eddea837",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24001,7 +24001,7 @@ const dataset = [
     {
         id: "1177997a-9e46-43b4-b7ec-694fd890f21c",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24012,7 +24012,7 @@ const dataset = [
     {
         id: "dab43294-3005-448b-a808-e83e2a93dfba",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24023,7 +24023,7 @@ const dataset = [
     {
         id: "d2b8f3bd-ee89-4d8b-a4da-c1491e38f05e",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24034,7 +24034,7 @@ const dataset = [
     {
         id: "d78e72c6-deed-4793-b0b4-6a9091af75c3",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24045,7 +24045,7 @@ const dataset = [
     {
         id: "51e09462-a990-43f1-872e-06ce8393be79",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24056,7 +24056,7 @@ const dataset = [
     {
         id: "345a3c3d-5c72-4f21-b239-ac04e08f5f25",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24067,7 +24067,7 @@ const dataset = [
     {
         id: "2350be33-7b96-4c82-9fe4-8df7cb7bbcb2",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24078,7 +24078,7 @@ const dataset = [
     {
         id: "1f00824e-aa4b-4fdd-95de-07705de77b35",
         recipient_id: "c4c54e22-d12e-4a64-9b33-fd454f28bede",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-24T09:00:00.000Z"),
@@ -24089,7 +24089,7 @@ const dataset = [
     {
         id: "b05fab3f-8596-40ff-8de7-bb4b03a3a545",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24100,7 +24100,7 @@ const dataset = [
     {
         id: "6ff21758-c8f6-4826-8035-84aedfcf6b5e",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24111,7 +24111,7 @@ const dataset = [
     {
         id: "258edaae-2c0f-4472-be0b-fd692a7da62f",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24122,7 +24122,7 @@ const dataset = [
     {
         id: "a460042c-26c0-466e-a7e9-c9a078e19a66",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24133,7 +24133,7 @@ const dataset = [
     {
         id: "0c5882a3-b5e8-4cc1-b4f0-9745e780712b",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24144,7 +24144,7 @@ const dataset = [
     {
         id: "ee45a4c3-3271-4a3c-9757-192c9e4f4332",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24155,7 +24155,7 @@ const dataset = [
     {
         id: "79268452-da41-45be-b060-a8cdd58f9af3",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24166,7 +24166,7 @@ const dataset = [
     {
         id: "60cc89db-01a4-4318-9908-ec82e097c03b",
         recipient_id: "3460fb8c-28d1-4e65-ad90-978e680157ad",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24177,7 +24177,7 @@ const dataset = [
     {
         id: "2b1ac4cc-ed75-4989-b3ff-a587524ff5c5",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24188,7 +24188,7 @@ const dataset = [
     {
         id: "ae940d35-142f-4e20-91ed-955a613b8950",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24199,7 +24199,7 @@ const dataset = [
     {
         id: "e45b002f-447a-4f46-9850-e4e6235c9181",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24210,7 +24210,7 @@ const dataset = [
     {
         id: "28767dcc-01ef-4372-96df-653ea7d345e0",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24221,7 +24221,7 @@ const dataset = [
     {
         id: "97939128-7b83-45c3-a5af-d96a4a08265b",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24232,7 +24232,7 @@ const dataset = [
     {
         id: "cfc95d88-c794-4140-98a6-96f338578ac9",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24243,7 +24243,7 @@ const dataset = [
     {
         id: "a3c66241-7834-4ca6-94e3-3faac8c390a4",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24254,7 +24254,7 @@ const dataset = [
     {
         id: "83a033ee-6b30-44a5-9e07-3080c1f6e0ec",
         recipient_id: "acb63cc6-4570-495c-a27d-3f7f12052693",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24265,7 +24265,7 @@ const dataset = [
     {
         id: "64be64d3-c4c7-4f34-9424-d999ba8ea733",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24276,7 +24276,7 @@ const dataset = [
     {
         id: "b1bd6807-4421-4d5d-8f29-80cb27638ce5",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24287,7 +24287,7 @@ const dataset = [
     {
         id: "776de5a1-29fb-40b3-9b75-5cb8be33d18d",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24298,7 +24298,7 @@ const dataset = [
     {
         id: "a015afbc-efdb-4a76-98bf-95cd150fbb9f",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24309,7 +24309,7 @@ const dataset = [
     {
         id: "66669b65-d7f2-4a77-8177-9219bb2f4e78",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24320,7 +24320,7 @@ const dataset = [
     {
         id: "41196de2-eb6a-42be-8145-212c5f244ae5",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24331,7 +24331,7 @@ const dataset = [
     {
         id: "d510d7d5-06f2-468f-88d8-14515b877f04",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24342,7 +24342,7 @@ const dataset = [
     {
         id: "88173bd1-df4a-43bf-bc4a-7892e9c62d9e",
         recipient_id: "756191e5-4416-46ef-b156-8351321bcb9c",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24353,7 +24353,7 @@ const dataset = [
     {
         id: "c0817b7a-643c-4545-99f6-955d869c8323",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24364,7 +24364,7 @@ const dataset = [
     {
         id: "6a5e6ea1-44fa-40d8-a00b-245194e606af",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24375,7 +24375,7 @@ const dataset = [
     {
         id: "14de57ac-269c-4ad2-9755-2d38cc42c2fc",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24386,7 +24386,7 @@ const dataset = [
     {
         id: "3c703056-3931-42f3-95b8-f7b4aeba3b41",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24397,7 +24397,7 @@ const dataset = [
     {
         id: "5522ee0c-b068-48d8-9dcf-080212288f74",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24408,7 +24408,7 @@ const dataset = [
     {
         id: "b0ca81ac-08f8-470e-b398-f07c82327c0f",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24419,7 +24419,7 @@ const dataset = [
     {
         id: "759630ed-b432-448f-a786-1f86473977e6",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24430,7 +24430,7 @@ const dataset = [
     {
         id: "3b17df6e-120e-4948-b9e7-0bc454f9e23c",
         recipient_id: "401e056c-0764-48fb-8709-b87edc2066d7",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-29T09:00:00.000Z"),
@@ -24441,7 +24441,7 @@ const dataset = [
     {
         id: "61de9dd3-6714-40b8-847c-1553b93e6bb7",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24452,7 +24452,7 @@ const dataset = [
     {
         id: "54330d1e-deac-4005-a9ed-ee14919b3bc3",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24463,7 +24463,7 @@ const dataset = [
     {
         id: "cbea0908-1319-4d82-80e0-1c61f0d21066",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24474,7 +24474,7 @@ const dataset = [
     {
         id: "6f4e5359-85be-4456-b8e9-11ca39a068aa",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24485,7 +24485,7 @@ const dataset = [
     {
         id: "c385d3e0-d407-47ec-a747-0230d7ffb37c",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24496,7 +24496,7 @@ const dataset = [
     {
         id: "5e201aea-a92c-4c82-ab16-21a55a11b2d4",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24507,7 +24507,7 @@ const dataset = [
     {
         id: "612e619d-59f6-4e33-9f99-d0ad4a27b542",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24518,7 +24518,7 @@ const dataset = [
     {
         id: "e688ae7f-a997-4854-8e0d-9397eb5d4256",
         recipient_id: "6566f1ce-8caa-4f10-bb53-152bbc46a67e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -24529,7 +24529,7 @@ const dataset = [
     {
         id: "7f721835-7266-4b59-baa4-703192a45c11",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24540,7 +24540,7 @@ const dataset = [
     {
         id: "0e9eba8c-7c57-4a13-acd3-241da186db7f",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24551,7 +24551,7 @@ const dataset = [
     {
         id: "6113697b-d11e-4c5d-b8bd-24eea284fae7",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24562,7 +24562,7 @@ const dataset = [
     {
         id: "3acd16fe-d4ca-4a9d-a9bb-00116e10b91f",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24573,7 +24573,7 @@ const dataset = [
     {
         id: "5e2ad81d-57cf-42d0-9b13-5ffedecc74ce",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24584,7 +24584,7 @@ const dataset = [
     {
         id: "9ce67cf8-425f-4cac-a99b-a55d56935be0",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24595,7 +24595,7 @@ const dataset = [
     {
         id: "11eb5743-403e-4426-86f5-ed85acb8a35f",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24606,7 +24606,7 @@ const dataset = [
     {
         id: "36253f33-83d8-4a89-9741-11b23661168b",
         recipient_id: "accbc7fd-9efa-4f27-aa1e-4ecb94edbe0b",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24617,7 +24617,7 @@ const dataset = [
     {
         id: "8c8f52d7-c9fb-42ea-9b19-4fc6928de882",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24628,7 +24628,7 @@ const dataset = [
     {
         id: "93942f02-46a0-48c9-899e-9b622196bf90",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24639,7 +24639,7 @@ const dataset = [
     {
         id: "82ccc157-6c05-4c4e-a38a-ee6b6e948c3d",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24650,7 +24650,7 @@ const dataset = [
     {
         id: "352c9ec4-2a2d-4b92-bfb5-6147525764bb",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24661,7 +24661,7 @@ const dataset = [
     {
         id: "c9874c74-e532-4f18-bbd0-d7f78ec3bb2b",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24672,7 +24672,7 @@ const dataset = [
     {
         id: "401899c1-4aff-4cef-b37f-4469e6a2d2c9",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24683,7 +24683,7 @@ const dataset = [
     {
         id: "e8075f28-1d2b-4358-bd7d-586d3e32acb2",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24694,7 +24694,7 @@ const dataset = [
     {
         id: "e38c4505-d084-458f-b5ce-c412ed1e46de",
         recipient_id: "33e771cf-9d9e-493c-bb9e-2b10747c6c1e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24705,7 +24705,7 @@ const dataset = [
     {
         id: "11021535-ab22-4e8f-b914-0c9238c95ca4",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24716,7 +24716,7 @@ const dataset = [
     {
         id: "69e9fea0-9d4b-4ff6-bb6a-fc17096c7f80",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24727,7 +24727,7 @@ const dataset = [
     {
         id: "05a41da3-9329-4581-be6a-ca70a916d9ac",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24738,7 +24738,7 @@ const dataset = [
     {
         id: "2fdfa039-4a66-4296-88ee-babd2d5e96fd",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24749,7 +24749,7 @@ const dataset = [
     {
         id: "36a7b073-c125-45b5-81ae-e7d6737fe879",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24760,7 +24760,7 @@ const dataset = [
     {
         id: "87400a2b-1bf3-46f3-8d32-bf6d3c6d9e0f",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24771,7 +24771,7 @@ const dataset = [
     {
         id: "69acbbb8-075a-4e6d-bf49-5b47f60ad81d",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24782,7 +24782,7 @@ const dataset = [
     {
         id: "a6a2a639-24d5-48a1-b710-aae90a2d1c5f",
         recipient_id: "59b88725-09e4-4579-8841-053b9bd6e09f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24793,7 +24793,7 @@ const dataset = [
     {
         id: "75e9b378-b655-4b07-89f9-7a012f623c0f",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24804,7 +24804,7 @@ const dataset = [
     {
         id: "a85178f8-fd0f-4abd-9476-31a6c5032eae",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24815,7 +24815,7 @@ const dataset = [
     {
         id: "4d797e97-8dbb-4740-9347-cf3ebf51cc2d",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24826,7 +24826,7 @@ const dataset = [
     {
         id: "1461c25f-5d1d-4cf3-9162-c67b8796144a",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24837,7 +24837,7 @@ const dataset = [
     {
         id: "58b5abc1-3374-4af0-8a6e-3aad3dbb8456",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24848,7 +24848,7 @@ const dataset = [
     {
         id: "1847a001-1c00-4541-a1bd-df7e3e742cb5",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24859,7 +24859,7 @@ const dataset = [
     {
         id: "7ce53a21-74db-4424-af03-13ae3a52b5e1",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24870,7 +24870,7 @@ const dataset = [
     {
         id: "33047001-f20c-471a-aeb8-d9ddcb6d2190",
         recipient_id: "02c48bab-7ddd-4edb-b430-b1664614fa12",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-10-27T09:00:00.000Z"),
@@ -24881,7 +24881,7 @@ const dataset = [
     {
         id: "706d0e08-72ba-447b-abfd-5c48b33bb7f5",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24892,7 +24892,7 @@ const dataset = [
     {
         id: "25ce2acc-49f1-44c1-b38c-3f1bd9ba6a8a",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24903,7 +24903,7 @@ const dataset = [
     {
         id: "a4567315-c541-4a23-8591-d63f8744e527",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24914,7 +24914,7 @@ const dataset = [
     {
         id: "90a192b7-4033-47ab-bdd9-18e55e1de89a",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24925,7 +24925,7 @@ const dataset = [
     {
         id: "90d451f7-d00d-488a-b0e0-c79c155282f8",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24936,7 +24936,7 @@ const dataset = [
     {
         id: "31bb2160-a837-4055-9ce2-69058820a450",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24947,7 +24947,7 @@ const dataset = [
     {
         id: "c12b2344-eb90-4cef-aada-d55101e1f814",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24958,7 +24958,7 @@ const dataset = [
     {
         id: "5a9610bf-0d65-49a8-82cf-b16d58c787ad",
         recipient_id: "52b01648-df62-4d30-ab30-9f840b45f224",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-06-16T09:00:00.000Z"),
@@ -24969,7 +24969,7 @@ const dataset = [
     {
         id: "18fac3e6-d364-42b6-a4ac-777b632f1148",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -24980,7 +24980,7 @@ const dataset = [
     {
         id: "5057ff16-ad76-4211-b9e1-22aa20284b2e",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -24991,7 +24991,7 @@ const dataset = [
     {
         id: "07e3aeb5-7509-4500-937a-28186a90a777",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -25002,7 +25002,7 @@ const dataset = [
     {
         id: "c4c421f2-9bf2-43fb-905d-97dff09c0b27",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -25013,7 +25013,7 @@ const dataset = [
     {
         id: "14173c4d-e7cc-4035-bcb3-c8f80b1dec20",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -25024,7 +25024,7 @@ const dataset = [
     {
         id: "f654c580-5bbf-47d0-b8fe-e5e6e85a03bc",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -25035,7 +25035,7 @@ const dataset = [
     {
         id: "f26e2702-9048-4a5b-ae48-0c6205517f78",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -25046,7 +25046,7 @@ const dataset = [
     {
         id: "c78d792c-17cf-4346-a7dd-48db48eb6007",
         recipient_id: "ac710503-3550-43d5-9ed7-23319509308f",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -25057,7 +25057,7 @@ const dataset = [
     {
         id: "a196bf44-7398-4120-8e6b-83c9d26dc717",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25068,7 +25068,7 @@ const dataset = [
     {
         id: "a8df6ee2-9dfc-4ac4-a8c2-ddf24287bd5c",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25079,7 +25079,7 @@ const dataset = [
     {
         id: "120f6c7c-89ca-4fd6-905e-e30c24c2167d",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25090,7 +25090,7 @@ const dataset = [
     {
         id: "63e590c1-9164-45e4-912b-f7dce0bb2d3d",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25101,7 +25101,7 @@ const dataset = [
     {
         id: "fbab175a-eb1d-4adb-b4b1-4e6bd6092ebc",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25112,7 +25112,7 @@ const dataset = [
     {
         id: "fb95124c-0aa8-4d03-a9b2-5978a3b839ea",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25123,7 +25123,7 @@ const dataset = [
     {
         id: "defa94d2-b0e8-401c-8227-86e4f9e85547",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25134,7 +25134,7 @@ const dataset = [
     {
         id: "00fe0475-f76d-45b5-918d-761732472ef5",
         recipient_id: "1d0b8d90-33b2-46ee-9b1e-4c6f44312fe2",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-21T09:00:00.000Z"),
@@ -25145,7 +25145,7 @@ const dataset = [
     {
         id: "10891606-32b1-4d6c-af5a-0836601b12fa",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25156,7 +25156,7 @@ const dataset = [
     {
         id: "01e8cdb3-f467-4386-8d8e-882638273434",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25167,7 +25167,7 @@ const dataset = [
     {
         id: "e75c142d-b530-4497-8b32-8092efda3939",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25178,7 +25178,7 @@ const dataset = [
     {
         id: "3732d678-1774-4fbe-b8af-4b423d20a888",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25189,7 +25189,7 @@ const dataset = [
     {
         id: "45779d51-705b-41ea-879f-0161c5419569",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25200,7 +25200,7 @@ const dataset = [
     {
         id: "cd41359f-4cbd-487e-aaaa-010784c84a86",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25211,7 +25211,7 @@ const dataset = [
     {
         id: "fee4fbbf-6763-4984-b7e8-82a6f7ccaa8f",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25222,7 +25222,7 @@ const dataset = [
     {
         id: "aef28e79-1566-4c27-bcd2-1ebb27d1e0e3",
         recipient_id: "38126fec-fa1e-449f-98e9-69455116dde8",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-04T09:00:00.000Z"),
@@ -25233,7 +25233,7 @@ const dataset = [
     {
         id: "1907d912-c5b5-407f-a3ba-c49f282d8de7",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25244,7 +25244,7 @@ const dataset = [
     {
         id: "831ab8ab-1df9-45f0-a463-3a8843f77151",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25255,7 +25255,7 @@ const dataset = [
     {
         id: "1075616c-2002-4da5-9e21-8e4632ee8784",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25266,7 +25266,7 @@ const dataset = [
     {
         id: "471cef38-6bef-46b2-b036-d52ac9c63e8e",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25277,7 +25277,7 @@ const dataset = [
     {
         id: "49cb2b41-e158-426e-bbc2-78c23fc7b2f9",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25288,7 +25288,7 @@ const dataset = [
     {
         id: "b3b2b717-e132-41bd-b1b3-3c8ccdac3acc",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25299,7 +25299,7 @@ const dataset = [
     {
         id: "0adf545b-2012-438d-8653-8c1ad33ed8c7",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25310,7 +25310,7 @@ const dataset = [
     {
         id: "18852e11-9bdb-4950-af3b-d8649d60d4e2",
         recipient_id: "14238a2a-53dd-494a-b589-171001f95570",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-11T09:00:00.000Z"),
@@ -25321,7 +25321,7 @@ const dataset = [
     {
         id: "a74d91e3-fba8-4e96-a480-f6741c4f32fc",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25332,7 +25332,7 @@ const dataset = [
     {
         id: "6529371f-1a14-4760-9423-68eab44feda6",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25343,7 +25343,7 @@ const dataset = [
     {
         id: "4978f5cf-5c19-4fe5-af99-78464b4b3b70",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25354,7 +25354,7 @@ const dataset = [
     {
         id: "cfd98dde-8e7f-41b3-85af-3c9eae73382c",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25365,7 +25365,7 @@ const dataset = [
     {
         id: "e617a5e6-bdd6-4c90-9a69-6d37d5f1fe76",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25376,7 +25376,7 @@ const dataset = [
     {
         id: "78c2b046-710c-4e59-8d02-d10059267dd6",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25387,7 +25387,7 @@ const dataset = [
     {
         id: "b234333e-659c-488b-9e0c-04c31a85c68d",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25398,7 +25398,7 @@ const dataset = [
     {
         id: "e72268da-6a52-4a8d-b0d4-57ad369c109b",
         recipient_id: "2195b184-e82c-4ad6-9e7d-0f81186659da",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-08-25T09:00:00.000Z"),
@@ -25409,7 +25409,7 @@ const dataset = [
     {
         id: "65731e62-a17b-4e97-b3cb-10e8be8a7476",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25420,7 +25420,7 @@ const dataset = [
     {
         id: "dbae2f6c-ca2b-4448-a803-d0e761411721",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25431,7 +25431,7 @@ const dataset = [
     {
         id: "5ca4b072-10b1-426a-9891-8245302d45ec",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25442,7 +25442,7 @@ const dataset = [
     {
         id: "55eb1ee3-418a-4677-b6d8-30c582625c18",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25453,7 +25453,7 @@ const dataset = [
     {
         id: "b02933fb-8861-437f-a80d-3d94d657d176",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25464,7 +25464,7 @@ const dataset = [
     {
         id: "cc53ca9c-b5fb-4316-aa32-9fb573075f39",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25475,7 +25475,7 @@ const dataset = [
     {
         id: "31a37a86-c5c0-4ecc-a6f4-196aa15bfdcc",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25486,7 +25486,7 @@ const dataset = [
     {
         id: "609c84e7-e9b9-498a-b46c-50a7f8f6b583",
         recipient_id: "347ad086-5208-47b0-a93d-6bab4d16c5fc",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -25497,7 +25497,7 @@ const dataset = [
     {
         id: "c3519e49-b0ec-4c60-bc6d-99c2a146ce1d",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25508,7 +25508,7 @@ const dataset = [
     {
         id: "c53b20ea-f8f7-4fe0-87f2-7d113a0c9e9c",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25519,7 +25519,7 @@ const dataset = [
     {
         id: "e31f61c2-b618-4c5e-9640-bb10e4a30bac",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25530,7 +25530,7 @@ const dataset = [
     {
         id: "1f0ddd56-3a32-4c94-ac9c-db6afa4ee2af",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25541,7 +25541,7 @@ const dataset = [
     {
         id: "0fed1e16-4afa-47ec-9da6-2fc3a43e18ad",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25552,7 +25552,7 @@ const dataset = [
     {
         id: "119956d4-35ea-4558-a642-4cb17945150f",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25563,7 +25563,7 @@ const dataset = [
     {
         id: "c097563b-a221-42ec-8d39-c058b3c40fb6",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25574,7 +25574,7 @@ const dataset = [
     {
         id: "6d7b4866-fffe-40fa-833c-df451c889884",
         recipient_id: "edccb32f-3a1a-4124-bf9f-a9d57592bb19",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-08T09:00:00.000Z"),
@@ -25585,7 +25585,7 @@ const dataset = [
     {
         id: "e256df04-a397-405f-9430-4a2e12a6f38e",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25596,7 +25596,7 @@ const dataset = [
     {
         id: "a83c0137-90db-48da-9bb9-d93c9f89230d",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25607,7 +25607,7 @@ const dataset = [
     {
         id: "83a9ca7f-954a-4397-a2a8-e0198e512db0",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25618,7 +25618,7 @@ const dataset = [
     {
         id: "d961e729-ce86-4461-b546-85f331ff01ad",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25629,7 +25629,7 @@ const dataset = [
     {
         id: "ac1a176a-da80-4a49-b98a-6ff948628547",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25640,7 +25640,7 @@ const dataset = [
     {
         id: "34b3734d-7b45-4c00-b6e3-51bbbd4a4a24",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25651,7 +25651,7 @@ const dataset = [
     {
         id: "abe72287-44d5-4c22-9208-638f3dc2546d",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25662,7 +25662,7 @@ const dataset = [
     {
         id: "708ecf72-8939-4876-8249-d7d8101e7a6d",
         recipient_id: "fa602670-6249-4c54-b9d4-6b25b5ea3f42",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25673,7 +25673,7 @@ const dataset = [
     {
         id: "bf74878c-63f4-4227-91b2-0acc4f460295",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25684,7 +25684,7 @@ const dataset = [
     {
         id: "4f28fc42-c2ee-42ce-a2a5-2878182d77c5",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25695,7 +25695,7 @@ const dataset = [
     {
         id: "e79f5606-4e21-42ca-b6f4-119b5932055d",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25706,7 +25706,7 @@ const dataset = [
     {
         id: "b2f7ffd2-37e2-4892-9de1-7d4d7a37cffe",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25717,7 +25717,7 @@ const dataset = [
     {
         id: "49fc9ec5-4904-4cd4-9c5a-f266eee77803",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25728,7 +25728,7 @@ const dataset = [
     {
         id: "bbe807f3-3de7-46f5-bdb4-5c65d8cf9082",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25739,7 +25739,7 @@ const dataset = [
     {
         id: "f213816f-603e-4def-895b-3e748374286b",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25750,7 +25750,7 @@ const dataset = [
     {
         id: "e80a7dcf-e946-48da-8b48-236eb1d10012",
         recipient_id: "99b8c370-af6c-47d0-bdbc-377bfc99d17e",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25761,7 +25761,7 @@ const dataset = [
     {
         id: "9e068c55-b4b7-4357-9a68-5b7a51cf4f8a",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25772,7 +25772,7 @@ const dataset = [
     {
         id: "992ba0c4-f6e1-484b-a714-2b65d03d0ccc",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25783,7 +25783,7 @@ const dataset = [
     {
         id: "41b797c1-b285-45dc-841c-2a36a0035f83",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25794,7 +25794,7 @@ const dataset = [
     {
         id: "ba0dcc5e-d293-4edd-8999-f60afd54948b",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25805,7 +25805,7 @@ const dataset = [
     {
         id: "fd31c987-ae58-461e-8773-d72503e57195",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25816,7 +25816,7 @@ const dataset = [
     {
         id: "70f078a7-aa8c-455c-a347-cf99fd227633",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25827,7 +25827,7 @@ const dataset = [
     {
         id: "3b1c5f37-d563-4de5-8c22-0ca912b0273c",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25838,7 +25838,7 @@ const dataset = [
     {
         id: "44b32e3d-10af-46cd-9ef5-0babbc73ae1d",
         recipient_id: "1a7e3411-a9ef-4ce5-b100-7a21233919e0",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25849,7 +25849,7 @@ const dataset = [
     {
         id: "a0630131-5c26-4509-87bc-4519f5a2d35e",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25860,7 +25860,7 @@ const dataset = [
     {
         id: "812cefcd-4d24-4970-a1ac-69f96479d77e",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25871,7 +25871,7 @@ const dataset = [
     {
         id: "1eda249a-bacc-4e5a-aa37-e2d48c2f87ae",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25882,7 +25882,7 @@ const dataset = [
     {
         id: "8919a9ef-f93b-420f-811c-ad1832e7995b",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25893,7 +25893,7 @@ const dataset = [
     {
         id: "6791d985-0809-4abf-a278-9aab39409dc3",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25904,7 +25904,7 @@ const dataset = [
     {
         id: "145cd8b9-5ee4-4eca-8a9b-45dac83d399c",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25915,7 +25915,7 @@ const dataset = [
     {
         id: "f0b69651-79d4-457f-928b-5e4bbf31a960",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25926,7 +25926,7 @@ const dataset = [
     {
         id: "c93f7c7c-018b-4e48-9ea9-44b410aff7f1",
         recipient_id: "0d3c7b2f-6053-4fec-909a-119a563a1611",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25937,7 +25937,7 @@ const dataset = [
     {
         id: "7ffd138a-cc5d-4a60-af4f-d32d4287d8c9",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25948,7 +25948,7 @@ const dataset = [
     {
         id: "16b451c0-336a-4aa8-a9f2-75547941ad0c",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25959,7 +25959,7 @@ const dataset = [
     {
         id: "926c5b7b-493f-49df-bfb8-5ae08ed95328",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25970,7 +25970,7 @@ const dataset = [
     {
         id: "2e0ef84c-814e-4dbe-a33c-4eed2be1491e",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25981,7 +25981,7 @@ const dataset = [
     {
         id: "ab7a778c-2157-4a3c-8c77-90c5468d1e3e",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -25992,7 +25992,7 @@ const dataset = [
     {
         id: "950bbe0a-897a-40fd-a5d5-1853555a6f8a",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26003,7 +26003,7 @@ const dataset = [
     {
         id: "66ad99d2-b06b-4076-9ebd-1a5a2d0d1245",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26014,7 +26014,7 @@ const dataset = [
     {
         id: "541f0211-05fa-4334-8373-15c3de346c1e",
         recipient_id: "da6f57a9-dc30-4bc3-bc25-09ece262d369",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26025,7 +26025,7 @@ const dataset = [
     {
         id: "af95fbcb-0c88-41f1-9947-6e438f2fdf68",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26036,7 +26036,7 @@ const dataset = [
     {
         id: "f1d1584d-460e-40eb-a728-8ec731180017",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26047,7 +26047,7 @@ const dataset = [
     {
         id: "3d80eeda-5846-4346-90a2-acc900730df1",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26058,7 +26058,7 @@ const dataset = [
     {
         id: "01e7aaef-0f77-4189-bc2e-d5500a0483e2",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26069,7 +26069,7 @@ const dataset = [
     {
         id: "f072dc8f-7307-436f-b03c-5eb240b0d9c4",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26080,7 +26080,7 @@ const dataset = [
     {
         id: "7c0ed7d4-b850-4130-9f27-55983f22352a",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26091,7 +26091,7 @@ const dataset = [
     {
         id: "4f8433a5-4006-424c-ac45-4833af60038b",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26102,7 +26102,7 @@ const dataset = [
     {
         id: "3790eecd-b989-45e4-aca4-fc6a7a6455a8",
         recipient_id: "627f1103-3ac3-4b26-a3c1-cdeebc6132ce",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26113,7 +26113,7 @@ const dataset = [
     {
         id: "300abe5d-8732-457c-8156-12c1c41ec3a2",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26124,7 +26124,7 @@ const dataset = [
     {
         id: "564e0202-d2b4-42cc-b12d-926f5a849c0d",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26135,7 +26135,7 @@ const dataset = [
     {
         id: "9348bbb1-4ac0-49f9-b42b-6644f703ad72",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26146,7 +26146,7 @@ const dataset = [
     {
         id: "9fb3c49e-cd1d-4211-83fa-e26f1e8b4401",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26157,7 +26157,7 @@ const dataset = [
     {
         id: "b64f8aa7-5328-4d16-a350-261c0efe5e33",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26168,7 +26168,7 @@ const dataset = [
     {
         id: "d85a0bfa-8978-453c-a6af-5a4c12223f92",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26179,7 +26179,7 @@ const dataset = [
     {
         id: "e3874634-a2e4-4d16-a869-d1a2e951b7c9",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26190,7 +26190,7 @@ const dataset = [
     {
         id: "4b76df6d-fdc6-4e16-81aa-2199c4034e95",
         recipient_id: "c85377cf-762b-4e84-8d7f-5ffd154c14ba",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26201,7 +26201,7 @@ const dataset = [
     {
         id: "135e3bd3-0018-4a42-b2ff-e093c1de95fa",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26212,7 +26212,7 @@ const dataset = [
     {
         id: "4444d181-8fff-4bc1-bf23-e8bfb4b27284",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26223,7 +26223,7 @@ const dataset = [
     {
         id: "fc695e5d-bae1-4b9a-9798-e21783ac1a17",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26234,7 +26234,7 @@ const dataset = [
     {
         id: "ef269411-3bde-4e26-90ae-68a3b186c56c",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26245,7 +26245,7 @@ const dataset = [
     {
         id: "b7d0bcf7-4644-432e-99d6-c35c943a57bf",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26256,7 +26256,7 @@ const dataset = [
     {
         id: "4e21bdb0-5910-4c66-879b-2e15aa1856bd",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26267,7 +26267,7 @@ const dataset = [
     {
         id: "8e080443-17c0-4f49-93f7-c14c13ba1a4b",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26278,7 +26278,7 @@ const dataset = [
     {
         id: "5aa4f9cb-f9c4-43b9-b543-6653b7208c08",
         recipient_id: "82d5aa6b-68f3-4c67-8314-514c14553c8a",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-02-23T09:00:00.000Z"),
@@ -26289,7 +26289,7 @@ const dataset = [
     {
         id: "2e8e4572-5dfa-455a-9d16-9a1717a4893f",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26300,7 +26300,7 @@ const dataset = [
     {
         id: "f3530cce-a942-4f4b-9e7e-ee897c6c41e8",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26311,7 +26311,7 @@ const dataset = [
     {
         id: "d78dfed1-46b8-483c-bf30-8aecec9bbdd7",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26322,7 +26322,7 @@ const dataset = [
     {
         id: "b54df408-fd1a-43f3-b004-84d2727eed88",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26333,7 +26333,7 @@ const dataset = [
     {
         id: "421e2540-b17b-413b-8f2f-94a6c81a377a",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26344,7 +26344,7 @@ const dataset = [
     {
         id: "bef6b69f-a14f-498f-8d7a-9bb112c9f966",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26355,7 +26355,7 @@ const dataset = [
     {
         id: "0d6fc0c5-8acd-4133-ac5a-04bf5b66451e",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26366,7 +26366,7 @@ const dataset = [
     {
         id: "bad49ef4-3ff6-4af6-b4c7-4f7c32299d3b",
         recipient_id: "6f77c40e-15e1-42cd-b5ab-77e3c5bbfd65",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-07-07T09:00:00.000Z"),
@@ -26377,7 +26377,7 @@ const dataset = [
     {
         id: "2e937313-71a4-4a59-890b-3e65572770c5",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26388,7 +26388,7 @@ const dataset = [
     {
         id: "e344e366-89a8-4f00-845b-fce2fea2b716",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26399,7 +26399,7 @@ const dataset = [
     {
         id: "8d1d6035-0a67-429b-844b-161a2503f588",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26410,7 +26410,7 @@ const dataset = [
     {
         id: "4a27eaba-38e4-479c-b594-37965ff1f93e",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26421,7 +26421,7 @@ const dataset = [
     {
         id: "3ef27027-9102-4b6b-9524-77d9ab375fda",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26432,7 +26432,7 @@ const dataset = [
     {
         id: "dea999aa-68c6-4389-b846-5efdcfa0c906",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26443,7 +26443,7 @@ const dataset = [
     {
         id: "589fca12-0f16-4eef-9f3f-d46e7722e233",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26454,7 +26454,7 @@ const dataset = [
     {
         id: "9b24f569-9f7d-4752-af5b-e3b4dabe709f",
         recipient_id: "ab31ffcd-cbc6-4fec-b415-2f39b8c5971d",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-09-01T09:00:00.000Z"),
@@ -26465,7 +26465,7 @@ const dataset = [
     {
         id: "c5e34446-1ec9-4742-b1b5-cb89cbfb9eb7",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26476,7 +26476,7 @@ const dataset = [
     {
         id: "656f7c50-8ac2-4969-8bac-b0eb85b51631",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26487,7 +26487,7 @@ const dataset = [
     {
         id: "9196ddf4-616a-4d0d-886b-68df75a4d6b9",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26498,7 +26498,7 @@ const dataset = [
     {
         id: "e0c7b64a-de7c-4ed3-abee-e1cb85553963",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26509,7 +26509,7 @@ const dataset = [
     {
         id: "23677882-0d13-47f7-b090-b3b4537d7da7",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26520,7 +26520,7 @@ const dataset = [
     {
         id: "fc51dae5-815e-4060-9f9e-f823c977a412",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26531,7 +26531,7 @@ const dataset = [
     {
         id: "1b08d01c-1a77-40b0-82ed-05370959f3ed",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26542,7 +26542,7 @@ const dataset = [
     {
         id: "424e6b7d-5b6e-45d6-8126-e372eff7d206",
         recipient_id: "c31ebcd6-9304-426d-8f35-d0f01d8db253",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2025-11-10T09:00:00.000Z"),
@@ -26553,7 +26553,7 @@ const dataset = [
     {
         id: "0e252e9e-c9e6-4243-9d5c-33c516ca4736",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -26564,7 +26564,7 @@ const dataset = [
     {
         id: "c6287b30-5247-451f-ae8a-4687ae3d9411",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -26575,7 +26575,7 @@ const dataset = [
     {
         id: "e8d0b93d-9755-4bec-86e8-4ac7b2b547fd",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -26586,7 +26586,7 @@ const dataset = [
     {
         id: "8f3ca655-f129-4970-9c44-a7c26551078d",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "IN_APP",
+        channel_type: ChannelType.IN_APP,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -26597,7 +26597,7 @@ const dataset = [
     {
         id: "1a1ba529-2e53-4456-94f8-7249d8476184",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SECURITY,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -26608,7 +26608,7 @@ const dataset = [
     {
         id: "9bea2b5c-aefd-47ed-a79c-63af4eb9bf99",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.INVITES,
         is_duplication_enabled: true,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -26619,7 +26619,7 @@ const dataset = [
     {
         id: "02b047b6-b3e2-42ad-991c-2da803059642",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.SYSTEM,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
@@ -26630,10 +26630,250 @@ const dataset = [
     {
         id: "30d16646-0f1b-44f6-903c-e0250ea42313",
         recipient_id: "49bfe86f-30f9-44c4-aa5b-066060442068",
-        channel_type: "EMAIL",
+        channel_type: ChannelType.EMAIL,
         category: NotificationCategory.OTHER,
         is_duplication_enabled: false,
         created_at: new Date("2026-01-05T09:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "122b4ea6-fbea-4d9e-b152-dff463811054",
+        recipient_id: "01873048-c488-4cfd-a857-ceb260fe0630",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-17T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "e2474254-2d31-4773-8124-58b69a59b067",
+        recipient_id: "4718d839-5cfc-4a75-bf77-05fe1b2c2f9c",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-16T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "9dbe8fd8-2455-47e1-b3f3-3f6e240de56e",
+        recipient_id: "8fa5a6e6-9b94-4206-9a9d-d4f6897aac16",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-15T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "04b8ce5f-6b7b-436a-acb1-bff54d5118bd",
+        recipient_id: "88c4b737-dd96-4cde-9209-4b541f35c421",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-14T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "f2e4ae99-49dd-4ebc-962f-b9fb96e86cd0",
+        recipient_id: "72d89a12-747f-4a6f-bde7-045c8dca9c04",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-13T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "7a37a785-f0d7-4161-b6c8-4394aba92a5f",
+        recipient_id: "eea6863b-7f1b-42b9-a246-a4dc41ec5e7d",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-12T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "cb385862-846f-43e9-b115-2822a09af481",
+        recipient_id: "b8c9d851-4ea7-4bdf-83a3-b875dc0fb2cc",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-11T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "30857a69-e97b-4c01-a318-8098dbc3959e",
+        recipient_id: "6ed46fb4-41d9-4349-80dc-6fd4279ecfc0",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-17T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "7f6e4f8a-b98a-4f5e-9c06-33c5ed91a95d",
+        recipient_id: "2ab20190-cf7f-47ac-bc9c-1367f93e3db9",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-16T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "69b5cc84-9459-4927-8acf-b849b115f79a",
+        recipient_id: "adc9ba25-3fab-4b28-8227-4a0c65142683",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-15T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "4fe0fa91-402d-4c38-abc3-c46e2f46949a",
+        recipient_id: "937e88c4-0c47-4204-b1c7-24fb51fe22ff",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-14T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "f41030c8-16f3-417f-8254-d8093260f70c",
+        recipient_id: "92a7efe2-c807-4602-b1ea-8a44668d6aee",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-13T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "85b068b2-43e4-4b1e-9487-c9742f27332a",
+        recipient_id: "534a6414-dcae-4edf-ad51-fc645dabd427",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-12T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "f7567a53-115b-49aa-bdf8-3224f710150e",
+        recipient_id: "a031ffa6-effb-472a-906f-5bc4db90321c",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-11T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "901bff08-8d75-4a9d-8f34-f19aac22832a",
+        recipient_id: "1a11b8be-d432-41ce-9bbf-c57e4d754a45",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-17T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "3c4debc4-809e-4467-bdf9-12dc54881665",
+        recipient_id: "cbbcd87a-7ece-4465-92a7-6dccc93b3363",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-16T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "200bb07c-fc4f-47a6-b485-8ee30e18a320",
+        recipient_id: "4c4c4e70-0a70-4a5a-a2b1-39a248066475",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-15T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "3418c488-ed09-4760-8469-ae7a54b999db",
+        recipient_id: "421f6951-d586-481c-bfcb-073b962e6c87",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-14T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "9a8c5ae4-a728-4774-a97f-4f0b6cfdd76d",
+        recipient_id: "28c2eb2a-9494-4b11-9d4a-637f3e433cba",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-13T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "fde9298a-106e-4590-89fb-47f21afaa025",
+        recipient_id: "db9cd388-be8b-44a4-847d-0958507a7e78",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-12T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "6d8bcb17-0af5-4cca-bb15-2d3f53030432",
+        recipient_id: "b8dec78a-6611-48da-bebe-556a3f716551",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-11T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "efe31903-c77b-4501-9e9c-9507dedfcf73",
+        recipient_id: "9cbc6195-bfc3-4dd6-89fa-ef7d96d38bf7",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-17T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "75603025-0901-4a85-86af-3fac6123aba5",
+        recipient_id: "c1b772cd-31df-4393-9f65-2762dae474c4",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-16T00:00:00.000Z"),
+        updated_at: null,
+        version: 1,
+    },
+    {
+        id: "83f54d5a-7979-43ba-83ad-b1b699097e74",
+        recipient_id: "3cac0f8d-aef8-4371-b7cf-a2a2753a08bc",
+        channel_type: ChannelType.IN_APP,
+        category: NotificationCategory.SYSTEM,
+        is_duplication_enabled: true,
+        created_at: new Date("2026-10-15T00:00:00.000Z"),
         updated_at: null,
         version: 1,
     },

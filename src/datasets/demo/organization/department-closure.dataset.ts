@@ -69,6 +69,54 @@ const dataset = [
         descendant_id: "339d50dc-8934-4997-9e92-aa8e1bcf96db",
         depth: 0,
     },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "475dc7bf-84bb-40dd-812e-7eff0c48a503",
+        depth: 1,
+    },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "ed4d5cd8-afd6-4e1e-9ebe-adf55cdc73b2",
+        depth: 1,
+    },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "1a75622c-f729-4d44-b0c4-180d3888f6e2",
+        depth: 1,
+    },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "133bb201-1eb1-4961-a986-5da5eba2c2f7",
+        depth: 1,
+    },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "2b25eca2-9e6f-4e94-a7ec-e25e92ed3b0f",
+        depth: 1,
+    },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "14445992-c5c3-454d-a10d-3f2d24dec1ce",
+        depth: 1,
+    },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "8c7941b3-127a-4b60-b96c-e85b2e3ddfff",
+        depth: 1,
+    },
+    {
+        organization_id: "727b53df-bf8b-4434-aa84-6870a620d239",
+        ancestor_id: "2a94dac8-d9c7-489e-b891-4878ad0e92fd",
+        descendant_id: "f639544d-6531-4153-bfd2-4fe1601d0412",
+        depth: 1,
+    },
 ];
 
 export const DepartmentClosures = {
