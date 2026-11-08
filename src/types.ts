@@ -34,6 +34,9 @@ declare global {
                 type Response = {
                     privileges: Record<string, PrivilegeScope.REALM>;
                     global: Record<string, PrivilegeScope.GLOBAL>;
+                    globalRevision: Record<string, string>;
+                    revision: Record<string, string>;
+                    revisioned: boolean;
                 };
             }
         }
@@ -719,12 +722,22 @@ declare global {
         }
 
         namespace ProjectionJournal {
-            type Message = {
-                actionType: ProjectionScript;
-                payload: Record<string, unknown> & {
+            type Checkpoint = {
+                actionType: ProjectionScript.CHECKPOINT;
+                payload: {
                     realm: string;
+                    items: (AccessCache.AccountRealmItem | AccessCache.RealmItem)[];
                 };
             };
+
+            type Message =
+                | Checkpoint
+                | {
+                      actionType: Exclude<ProjectionScript, ProjectionScript.CHECKPOINT>;
+                      payload: Record<string, unknown> & {
+                          realm: string;
+                      };
+                  };
         }
 
         namespace Blacklist {

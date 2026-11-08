@@ -6,28 +6,55 @@
     {
       "type": "object",
       "additionalProperties": false,
-      "required": ["actionType", "payload"],
+      "required": [
+        "actionType",
+        "payload"
+      ],
       "properties": {
-        "actionType": { "const": "CREATE" },
+        "actionType": {
+          "const": "CREATE"
+        },
         "payload": {
           "oneOf": [
             {
               "type": "object",
               "additionalProperties": false,
-              "required": ["input"],
+              "required": [
+                "input"
+              ],
               "properties": {
-                "actor": { "type": "string" },
-                "realm": { "type": "string" },
+                "actor": {
+                  "type": "string"
+                },
+                "realm": {
+                  "type": "string"
+                },
                 "input": {
                   "type": "object",
                   "additionalProperties": false,
-                  "required": ["kind", "recipient", "category", "sourceService", "title", "text"],
+                  "required": [
+                    "kind",
+                    "recipient",
+                    "category",
+                    "sourceService",
+                    "title",
+                    "text"
+                  ],
                   "properties": {
-                    "kind": { "const": "CONTENT" },
-                    "recipient": { "type": "string" },
+                    "kind": {
+                      "const": "CONTENT"
+                    },
+                    "recipient": {
+                      "type": "string"
+                    },
                     "category": {
                       "type": "string",
-                      "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                      "enum": [
+                        "SECURITY",
+                        "INVITES",
+                        "SYSTEM",
+                        "OTHER"
+                      ]
                     },
                     "sourceService": {
                       "type": "string",
@@ -41,19 +68,40 @@
                         "hr-service"
                       ]
                     },
-                    "dedupKey": { "type": "string" },
+                    "dedupKey": {
+                      "type": "string"
+                    },
                     "delivery": {
                       "type": "object",
                       "additionalProperties": false,
-                      "required": ["channelType", "address"],
+                      "required": [
+                        "channelType",
+                        "address"
+                      ],
                       "properties": {
-                        "channelType": { "type": "string", "enum": ["EMAIL", "SMS"] },
-                        "address": { "type": "string", "minLength": 1 }
+                        "channelType": {
+                          "type": "string",
+                          "enum": [
+                            "EMAIL",
+                            "SMS"
+                          ]
+                        },
+                        "address": {
+                          "type": "string",
+                          "minLength": 1
+                        }
                       }
                     },
-                    "language": { "type": "string", "minLength": 1 },
-                    "title": { "type": "string" },
-                    "text": { "type": "string" }
+                    "language": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -61,20 +109,41 @@
             {
               "type": "object",
               "additionalProperties": false,
-              "required": ["input"],
+              "required": [
+                "input"
+              ],
               "properties": {
-                "actor": { "type": "string" },
-                "realm": { "type": "string" },
+                "actor": {
+                  "type": "string"
+                },
+                "realm": {
+                  "type": "string"
+                },
                 "input": {
                   "type": "object",
                   "additionalProperties": false,
-                  "required": ["kind", "recipient", "category", "sourceService", "template"],
+                  "required": [
+                    "kind",
+                    "recipient",
+                    "category",
+                    "sourceService",
+                    "template"
+                  ],
                   "properties": {
-                    "kind": { "const": "TEMPLATE" },
-                    "recipient": { "type": "string" },
+                    "kind": {
+                      "const": "TEMPLATE"
+                    },
+                    "recipient": {
+                      "type": "string"
+                    },
                     "category": {
                       "type": "string",
-                      "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                      "enum": [
+                        "SECURITY",
+                        "INVITES",
+                        "SYSTEM",
+                        "OTHER"
+                      ]
                     },
                     "sourceService": {
                       "type": "string",
@@ -88,19 +157,35 @@
                         "hr-service"
                       ]
                     },
-                    "dedupKey": { "type": "string" },
+                    "dedupKey": {
+                      "type": "string"
+                    },
                     "delivery": {
                       "type": "object",
                       "additionalProperties": false,
-                      "required": ["channelType", "address"],
+                      "required": [
+                        "channelType",
+                        "address"
+                      ],
                       "properties": {
-                        "channelType": { "type": "string", "enum": ["EMAIL", "SMS"] },
-                        "address": { "type": "string", "minLength": 1 }
+                        "channelType": {
+                          "type": "string",
+                          "enum": [
+                            "EMAIL",
+                            "SMS"
+                          ]
+                        },
+                        "address": {
+                          "type": "string",
+                          "minLength": 1
+                        }
                       }
                     },
                     "params": {
                       "type": "object",
-                      "additionalProperties": { "type": "string" }
+                      "additionalProperties": {
+                        "type": "string"
+                      }
                     },
                     "template": {
                       "type": "string",
@@ -123,7 +208,93 @@
                         "ASSIGNMENT_REVOKED",
                         "REALM_EXCLUDED",
                         "INVITE_CANCELLED",
-                        "INVITE_RECEIVED",
+                        "INVITE_RECEIVED"
+                      ]
+                    },
+                    "language": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "input"
+              ],
+              "properties": {
+                "actor": {
+                  "type": "string"
+                },
+                "realm": {
+                  "type": "string"
+                },
+                "input": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "kind",
+                    "recipient",
+                    "category",
+                    "sourceService",
+                    "template",
+                    "dedupKey",
+                    "params"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "const": "TEMPLATE"
+                    },
+                    "recipient": {
+                      "type": "string"
+                    },
+                    "category": {
+                      "type": "string",
+                      "enum": [
+                        "SECURITY",
+                        "INVITES",
+                        "SYSTEM",
+                        "OTHER"
+                      ]
+                    },
+                    "sourceService": {
+                      "const": "hr-service"
+                    },
+                    "dedupKey": {
+                      "type": "string"
+                    },
+                    "params": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "requestId",
+                        "requestType"
+                      ],
+                      "properties": {
+                        "requestId": {
+                          "type": "string",
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                        },
+                        "requestType": {
+                          "enum": [
+                            "HIRE",
+                            "REHIRE",
+                            "TRANSFER",
+                            "CHANGE_TERMS",
+                            "TERMINATE",
+                            "ABSENCE",
+                            "OVERTIME",
+                            "LEAVE_ADJUSTMENT",
+                            "CANCEL_REQUEST"
+                          ]
+                        }
+                      }
+                    },
+                    "template": {
+                      "type": "string",
+                      "enum": [
                         "HR_APPROVAL_REQUIRED",
                         "HR_APPROVAL_REASSIGNED",
                         "HR_REQUEST_RETURNED",
@@ -133,51 +304,10 @@
                         "HR_REQUEST_FAILED"
                       ]
                     },
-                    "language": { "type": "string" }
-                  },
-                  "allOf": [
-                    {
-                      "if": {
-                        "properties": {
-                          "template": {
-                            "enum": [
-                              "HR_APPROVAL_REQUIRED",
-                              "HR_APPROVAL_REASSIGNED",
-                              "HR_REQUEST_RETURNED",
-                              "HR_REQUEST_REJECTED",
-                              "HR_REQUEST_APPROVED",
-                              "HR_REQUEST_APPLIED",
-                              "HR_REQUEST_FAILED"
-                            ]
-                          }
-                        }
-                      },
-                      "then": {
-                        "required": ["dedupKey", "params"],
-                        "properties": {
-                          "sourceService": { "const": "hr-service" },
-                          "params": {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "required": ["requestId", "requestType"],
-                            "properties": {
-                              "requestId": {
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
-                              },
-                              "requestType": {
-                                "enum": [
-                                  "HIRE", "REHIRE", "TRANSFER", "CHANGE_TERMS", "TERMINATE",
-                                  "ABSENCE", "OVERTIME", "LEAVE_ADJUSTMENT", "CANCEL_REQUEST"
-                                ]
-                              }
-                            }
-                          }
-                        },
-                        "not": { "required": ["delivery"] }
-                      }
+                    "language": {
+                      "type": "string"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -188,41 +318,79 @@
     {
       "type": "object",
       "additionalProperties": false,
-      "required": ["actionType", "payload"],
+      "required": [
+        "actionType",
+        "payload"
+      ],
       "properties": {
-        "actionType": { "const": "CANCEL" },
+        "actionType": {
+          "const": "CANCEL"
+        },
         "payload": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["input"],
+          "required": [
+            "input"
+          ],
           "properties": {
-            "actor": { "type": "string" },
-            "realm": { "type": "string" },
+            "actor": {
+              "type": "string"
+            },
+            "realm": {
+              "type": "string"
+            },
             "input": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["dedupKey", "override"],
+              "required": [
+                "dedupKey",
+                "override"
+              ],
               "properties": {
-                "dedupKey": { "type": "string" },
+                "dedupKey": {
+                  "type": "string"
+                },
                 "override": {
                   "oneOf": [
                     {
                       "type": "object",
                       "additionalProperties": false,
-                      "required": ["input"],
+                      "required": [
+                        "input"
+                      ],
                       "properties": {
-                        "actor": { "type": "string" },
-                        "realm": { "type": "string" },
+                        "actor": {
+                          "type": "string"
+                        },
+                        "realm": {
+                          "type": "string"
+                        },
                         "input": {
                           "type": "object",
                           "additionalProperties": false,
-                          "required": ["kind", "recipient", "category", "sourceService", "title", "text"],
+                          "required": [
+                            "kind",
+                            "recipient",
+                            "category",
+                            "sourceService",
+                            "title",
+                            "text"
+                          ],
                           "properties": {
-                            "kind": { "const": "CONTENT" },
-                            "recipient": { "type": "string" },
+                            "kind": {
+                              "const": "CONTENT"
+                            },
+                            "recipient": {
+                              "type": "string"
+                            },
                             "category": {
                               "type": "string",
-                              "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                              "enum": [
+                                "SECURITY",
+                                "INVITES",
+                                "SYSTEM",
+                                "OTHER"
+                              ]
                             },
                             "sourceService": {
                               "type": "string",
@@ -236,19 +404,40 @@
                                 "hr-service"
                               ]
                             },
-                            "dedupKey": { "type": "string" },
+                            "dedupKey": {
+                              "type": "string"
+                            },
                             "delivery": {
                               "type": "object",
                               "additionalProperties": false,
-                              "required": ["channelType", "address"],
+                              "required": [
+                                "channelType",
+                                "address"
+                              ],
                               "properties": {
-                                "channelType": { "type": "string", "enum": ["EMAIL", "SMS"] },
-                                "address": { "type": "string", "minLength": 1 }
+                                "channelType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "EMAIL",
+                                    "SMS"
+                                  ]
+                                },
+                                "address": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
                               }
                             },
-                            "language": { "type": "string", "minLength": 1 },
-                            "title": { "type": "string" },
-                            "text": { "type": "string" }
+                            "language": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
                           }
                         }
                       }
@@ -256,20 +445,41 @@
                     {
                       "type": "object",
                       "additionalProperties": false,
-                      "required": ["input"],
+                      "required": [
+                        "input"
+                      ],
                       "properties": {
-                        "actor": { "type": "string" },
-                        "realm": { "type": "string" },
+                        "actor": {
+                          "type": "string"
+                        },
+                        "realm": {
+                          "type": "string"
+                        },
                         "input": {
                           "type": "object",
                           "additionalProperties": false,
-                          "required": ["kind", "recipient", "category", "sourceService", "template"],
+                          "required": [
+                            "kind",
+                            "recipient",
+                            "category",
+                            "sourceService",
+                            "template"
+                          ],
                           "properties": {
-                            "kind": { "const": "TEMPLATE" },
-                            "recipient": { "type": "string" },
+                            "kind": {
+                              "const": "TEMPLATE"
+                            },
+                            "recipient": {
+                              "type": "string"
+                            },
                             "category": {
                               "type": "string",
-                              "enum": ["SECURITY", "INVITES", "SYSTEM", "OTHER"]
+                              "enum": [
+                                "SECURITY",
+                                "INVITES",
+                                "SYSTEM",
+                                "OTHER"
+                              ]
                             },
                             "sourceService": {
                               "type": "string",
@@ -283,19 +493,35 @@
                                 "hr-service"
                               ]
                             },
-                            "dedupKey": { "type": "string" },
+                            "dedupKey": {
+                              "type": "string"
+                            },
                             "delivery": {
                               "type": "object",
                               "additionalProperties": false,
-                              "required": ["channelType", "address"],
+                              "required": [
+                                "channelType",
+                                "address"
+                              ],
                               "properties": {
-                                "channelType": { "type": "string", "enum": ["EMAIL", "SMS"] },
-                                "address": { "type": "string", "minLength": 1 }
+                                "channelType": {
+                                  "type": "string",
+                                  "enum": [
+                                    "EMAIL",
+                                    "SMS"
+                                  ]
+                                },
+                                "address": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
                               }
                             },
                             "params": {
                               "type": "object",
-                              "additionalProperties": { "type": "string" }
+                              "additionalProperties": {
+                                "type": "string"
+                              }
                             },
                             "template": {
                               "type": "string",
@@ -318,7 +544,93 @@
                                 "ASSIGNMENT_REVOKED",
                                 "REALM_EXCLUDED",
                                 "INVITE_CANCELLED",
-                                "INVITE_RECEIVED",
+                                "INVITE_RECEIVED"
+                              ]
+                            },
+                            "language": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "input"
+                      ],
+                      "properties": {
+                        "actor": {
+                          "type": "string"
+                        },
+                        "realm": {
+                          "type": "string"
+                        },
+                        "input": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "kind",
+                            "recipient",
+                            "category",
+                            "sourceService",
+                            "template",
+                            "dedupKey",
+                            "params"
+                          ],
+                          "properties": {
+                            "kind": {
+                              "const": "TEMPLATE"
+                            },
+                            "recipient": {
+                              "type": "string"
+                            },
+                            "category": {
+                              "type": "string",
+                              "enum": [
+                                "SECURITY",
+                                "INVITES",
+                                "SYSTEM",
+                                "OTHER"
+                              ]
+                            },
+                            "sourceService": {
+                              "const": "hr-service"
+                            },
+                            "dedupKey": {
+                              "type": "string"
+                            },
+                            "params": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "requestId",
+                                "requestType"
+                              ],
+                              "properties": {
+                                "requestId": {
+                                  "type": "string",
+                                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                                },
+                                "requestType": {
+                                  "enum": [
+                                    "HIRE",
+                                    "REHIRE",
+                                    "TRANSFER",
+                                    "CHANGE_TERMS",
+                                    "TERMINATE",
+                                    "ABSENCE",
+                                    "OVERTIME",
+                                    "LEAVE_ADJUSTMENT",
+                                    "CANCEL_REQUEST"
+                                  ]
+                                }
+                              }
+                            },
+                            "template": {
+                              "type": "string",
+                              "enum": [
                                 "HR_APPROVAL_REQUIRED",
                                 "HR_APPROVAL_REASSIGNED",
                                 "HR_REQUEST_RETURNED",
@@ -328,51 +640,10 @@
                                 "HR_REQUEST_FAILED"
                               ]
                             },
-                            "language": { "type": "string" }
-                          },
-                          "allOf": [
-                            {
-                              "if": {
-                                "properties": {
-                                  "template": {
-                                    "enum": [
-                                      "HR_APPROVAL_REQUIRED",
-                                      "HR_APPROVAL_REASSIGNED",
-                                      "HR_REQUEST_RETURNED",
-                                      "HR_REQUEST_REJECTED",
-                                      "HR_REQUEST_APPROVED",
-                                      "HR_REQUEST_APPLIED",
-                                      "HR_REQUEST_FAILED"
-                                    ]
-                                  }
-                                }
-                              },
-                              "then": {
-                                "required": ["dedupKey", "params"],
-                                "properties": {
-                                  "sourceService": { "const": "hr-service" },
-                                  "params": {
-                                    "type": "object",
-                                    "additionalProperties": false,
-                                    "required": ["requestId", "requestType"],
-                                    "properties": {
-                                      "requestId": {
-                                        "type": "string",
-                                        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
-                                      },
-                                      "requestType": {
-                                        "enum": [
-                                          "HIRE", "REHIRE", "TRANSFER", "CHANGE_TERMS", "TERMINATE",
-                                          "ABSENCE", "OVERTIME", "LEAVE_ADJUSTMENT", "CANCEL_REQUEST"
-                                        ]
-                                      }
-                                    }
-                                  }
-                                },
-                                "not": { "required": ["delivery"] }
-                              }
+                            "language": {
+                              "type": "string"
                             }
-                          ]
+                          }
                         }
                       }
                     }
@@ -387,15 +658,25 @@
     {
       "type": "object",
       "additionalProperties": false,
-      "required": ["actionType", "payload"],
+      "required": [
+        "actionType",
+        "payload"
+      ],
       "properties": {
-        "actionType": { "const": "CANCEL" },
+        "actionType": {
+          "const": "CANCEL"
+        },
         "payload": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["realm", "input"],
+          "required": [
+            "realm",
+            "input"
+          ],
           "properties": {
-            "actor": { "type": "string" },
+            "actor": {
+              "type": "string"
+            },
             "realm": {
               "type": "string",
               "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
@@ -403,15 +684,27 @@
             "input": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["invalidate", "recipient", "sourceService", "dedupKey"],
+              "required": [
+                "invalidate",
+                "recipient",
+                "sourceService",
+                "dedupKey"
+              ],
               "properties": {
-                "invalidate": { "const": true },
+                "invalidate": {
+                  "const": true
+                },
                 "recipient": {
                   "type": "string",
                   "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
                 },
-                "sourceService": { "const": "hr-service" },
-                "dedupKey": { "type": "string", "minLength": 1 }
+                "sourceService": {
+                  "const": "hr-service"
+                },
+                "dedupKey": {
+                  "type": "string",
+                  "minLength": 1
+                }
               }
             }
           }
