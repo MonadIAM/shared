@@ -7,8 +7,14 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/position.schema.json",
-      "producers": ["hr-service", "organization-service"],
-      "consumers": ["hr-service", "organization-service"]
+      "producers": [
+        "organization-service",
+        "hr-service"
+      ],
+      "consumers": [
+        "hr-service",
+        "organization-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -16,7 +22,10 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["hr-service", "organization-service"],
+      "producers": [
+        "organization-service",
+        "hr-service"
+      ],
       "consumers": []
     },
     {
@@ -25,8 +34,16 @@
       "schemaType": "PROTOBUF",
       "protocol": "grpc",
       "path": "grpc/access_control.proto",
-      "producers": ["access-control-service"],
-      "consumers": ["identity-service", "notification-service"]
+      "producers": [
+        "access-control-service"
+      ],
+      "consumers": [
+        "organization-service",
+        "notification-service",
+        "identity-service",
+        "template-service",
+        "hr-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -34,8 +51,14 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/account.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["access-control-service", "organization-service", "notification-service"]
+      "producers": [
+        "identity-service"
+      ],
+      "consumers": [
+        "access-control-service",
+        "organization-service",
+        "notification-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -43,8 +66,17 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/realm.schema.json",
-      "producers": ["hr-service", "organization-service", "access-control-service"],
-      "consumers": ["hr-service", "access-control-service", "organization-service", "identity-service"]
+      "producers": [
+        "access-control-service",
+        "organization-service",
+        "hr-service"
+      ],
+      "consumers": [
+        "access-control-service",
+        "organization-service",
+        "identity-service",
+        "hr-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -52,8 +84,15 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/access_cache.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": ["identity-service", "notification-service", "template-service", "organization-service"]
+      "producers": [
+        "access-control-service"
+      ],
+      "consumers": [
+        "notification-service",
+        "organization-service",
+        "identity-service",
+        "template-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -61,8 +100,14 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/notification.schema.json",
-      "producers": ["hr-service", "identity-service", "access-control-service"],
-      "consumers": ["notification-service"]
+      "producers": [
+        "access-control-service",
+        "identity-service",
+        "hr-service"
+      ],
+      "consumers": [
+        "notification-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -70,8 +115,16 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/blacklist.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["access-control-service", "notification-service", "identity-service", "template-service", "organization-service"]
+      "producers": [
+        "identity-service"
+      ],
+      "consumers": [
+        "access-control-service",
+        "notification-service",
+        "organization-service",
+        "identity-service",
+        "template-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -79,8 +132,16 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/reauthentication.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["access-control-service", "notification-service", "identity-service", "template-service", "organization-service"]
+      "producers": [
+        "identity-service"
+      ],
+      "consumers": [
+        "access-control-service",
+        "notification-service",
+        "organization-service",
+        "identity-service",
+        "template-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -88,8 +149,17 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/projection_journal.schema.json",
-      "producers": ["access-control-service"],
-      "consumers": ["access-control-service"]
+      "producers": [
+        "access-control-service"
+      ],
+      "consumers": [
+        "access-control-service",
+        "organization-service",
+        "notification-service",
+        "identity-service",
+        "template-service",
+        "hr-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -97,8 +167,12 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/message_dispatch.schema.json",
-      "producers": ["notification-service"],
-      "consumers": ["notification-service"]
+      "producers": [
+        "notification-service"
+      ],
+      "consumers": [
+        "notification-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -106,7 +180,12 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["identity-service", "notification-service", "template-service", "organization-service"],
+      "producers": [
+        "notification-service",
+        "organization-service",
+        "identity-service",
+        "template-service"
+      ],
       "consumers": []
     },
     {
@@ -115,7 +194,10 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service", "organization-service"],
+      "producers": [
+        "access-control-service",
+        "organization-service"
+      ],
       "consumers": []
     },
     {
@@ -124,7 +206,12 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["hr-service", "access-control-service", "organization-service", "identity-service"],
+      "producers": [
+        "access-control-service",
+        "organization-service",
+        "identity-service",
+        "hr-service"
+      ],
       "consumers": []
     },
     {
@@ -133,7 +220,9 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["notification-service"],
+      "producers": [
+        "notification-service"
+      ],
       "consumers": []
     },
     {
@@ -142,7 +231,9 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["notification-service"],
+      "producers": [
+        "notification-service"
+      ],
       "consumers": []
     },
     {
@@ -151,7 +242,9 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service"],
+      "producers": [
+        "access-control-service"
+      ],
       "consumers": []
     },
     {
@@ -160,7 +253,10 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["identity-service", "organization-service"],
+      "producers": [
+        "organization-service",
+        "identity-service"
+      ],
       "consumers": []
     },
     {
@@ -169,7 +265,13 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["access-control-service", "identity-service", "notification-service", "template-service", "organization-service"],
+      "producers": [
+        "access-control-service",
+        "notification-service",
+        "organization-service",
+        "identity-service",
+        "template-service"
+      ],
       "consumers": []
     },
     {
@@ -178,8 +280,14 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/interface_client.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["notification-service", "template-service", "access-control-service"]
+      "producers": [
+        "identity-service"
+      ],
+      "consumers": [
+        "access-control-service",
+        "notification-service",
+        "template-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -187,8 +295,12 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/service_client.schema.json",
-      "producers": ["identity-service"],
-      "consumers": ["certificate-service"]
+      "producers": [
+        "identity-service"
+      ],
+      "consumers": [
+        "certificate-service"
+      ]
     },
     {
       "groupId": "monadiam.kafka",
@@ -196,7 +308,13 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/audit_log_archive.schema.json",
-      "producers": ["identity-service", "access-control-service", "notification-service", "template-service", "organization-service"],
+      "producers": [
+        "access-control-service",
+        "notification-service",
+        "organization-service",
+        "identity-service",
+        "template-service"
+      ],
       "consumers": []
     },
     {
@@ -205,7 +323,13 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/change_log_archive.schema.json",
-      "producers": ["identity-service", "access-control-service", "notification-service", "template-service", "organization-service"],
+      "producers": [
+        "access-control-service",
+        "notification-service",
+        "organization-service",
+        "identity-service",
+        "template-service"
+      ],
       "consumers": []
     },
     {
@@ -214,8 +338,12 @@
       "schemaType": "JSON",
       "protocol": "kafka",
       "path": "kafka/envelope.schema.json",
-      "producers": ["notification-service"],
-      "consumers": ["notification-service"]
+      "producers": [
+        "notification-service"
+      ],
+      "consumers": [
+        "notification-service"
+      ]
     }
   ]
 }

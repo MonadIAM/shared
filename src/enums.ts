@@ -68,6 +68,8 @@ export enum ProjectionScript {
     PERMISSION_UPDATE = "permission/update",
     PERMISSION_PURGE  = "permission/purge",
 
+    CHECKPOINT = "projection/checkpoint",
+
     REALM_CREATE = "realm/create",
     REALM_UPDATE = "realm/update",
     REALM_PURGE  = "realm/purge",

@@ -20,4 +20,7 @@ enum PrivilegeScope {
 message ListEffectivePrivilegesResponse {
     map<string, PrivilegeScope> privileges = 1;
     map<string, PrivilegeScope> global = 2;
+    map<string, string> revision = 3;
+    map<string, string> global_revision = 4;
+    bool revisioned = 5;
 }
